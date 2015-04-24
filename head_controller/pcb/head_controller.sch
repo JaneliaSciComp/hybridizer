@@ -39,78 +39,13 @@ encoding utf-8
 Sheet 1 1
 Title "head_controller"
 Date ""
-Rev "1.2"
+Rev "1.0"
 Comp "Janelia"
 Comment1 ""
 Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-NoConn ~ 1350 1300
-NoConn ~ 1350 1500
-$Comp
-L +5V #PWR01
-U 1 1 5474AD6E
-P 850 1250
-F 0 "#PWR01" H 850 1340 20  0001 C CNN
-F 1 "+5V" H 850 1340 30  0000 C CNN
-F 2 "" H 850 1250 60  0000 C CNN
-F 3 "" H 850 1250 60  0000 C CNN
-	1    850  1250
-	1    0    0    -1  
-$EndComp
-$Comp
-L PWR_FLAG #FLG02
-U 1 1 5474AD82
-P 700 1250
-F 0 "#FLG02" H 700 1345 30  0001 C CNN
-F 1 "PWR_FLAG" H 700 1430 30  0000 C CNN
-F 2 "" H 700 1250 60  0000 C CNN
-F 3 "" H 700 1250 60  0000 C CNN
-	1    700  1250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	700  1250 700  1600
-Wire Wire Line
-	700  1600 1350 1600
-Wire Wire Line
-	850  1250 850  1600
-Connection ~ 850  1600
-$Comp
-L GND #PWR03
-U 1 1 5474ADAC
-P 850 1850
-F 0 "#PWR03" H 850 1850 30  0001 C CNN
-F 1 "GND" H 850 1780 30  0001 C CNN
-F 2 "" H 850 1850 60  0000 C CNN
-F 3 "" H 850 1850 60  0000 C CNN
-	1    850  1850
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1350 1700 850  1700
-Wire Wire Line
-	850  1700 850  1850
-Wire Wire Line
-	1350 1800 850  1800
-Connection ~ 850  1800
-NoConn ~ 1350 2300
-NoConn ~ 1350 2400
-NoConn ~ 1350 2500
-NoConn ~ 1350 2600
-NoConn ~ 1350 2700
-NoConn ~ 1350 2800
-NoConn ~ 1350 3000
-NoConn ~ 1350 3100
-NoConn ~ 1350 3200
-NoConn ~ 1350 3300
-NoConn ~ 1350 3400
-NoConn ~ 1350 3500
-NoConn ~ 1350 3600
-NoConn ~ 1350 3700
-NoConn ~ 1350 3950
-NoConn ~ 1350 4050
 NoConn ~ 1350 4850
 NoConn ~ 1350 4950
 NoConn ~ 1350 5050
@@ -119,18 +54,6 @@ NoConn ~ 1350 5250
 NoConn ~ 1350 5350
 NoConn ~ 1350 5500
 NoConn ~ 1350 5600
-NoConn ~ 3550 1000
-NoConn ~ 3550 1100
-NoConn ~ 3550 1300
-NoConn ~ 3550 1400
-NoConn ~ 3550 1600
-NoConn ~ 3550 2000
-NoConn ~ 3550 2100
-NoConn ~ 3550 2200
-NoConn ~ 3550 2500
-NoConn ~ 3550 2600
-NoConn ~ 3550 2900
-NoConn ~ 3550 3000
 NoConn ~ 3550 3850
 NoConn ~ 3550 4400
 NoConn ~ 3550 4500
@@ -188,23 +111,23 @@ F 3 "" H 3900 5550 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4100 5550 4350 5550
+	4100 5550 4250 5550
+Wire Wire Line
+	4250 5550 4350 5550
 Wire Wire Line
 	4100 5550 4100 5450
 Wire Wire Line
 	4250 5450 4250 5550
 Connection ~ 4250 5550
 Wire Wire Line
-	3900 5650 4350 5650
+	3900 5650 4250 5650
+Wire Wire Line
+	4250 5650 4350 5650
 Wire Wire Line
 	3900 5650 3900 5550
 Wire Wire Line
 	4250 5650 4250 5750
 Connection ~ 4250 5650
-Wire Wire Line
-	1350 1900 1000 1900
-Text Label 1000 1900 0    60   ~ 0
-V_IN
 Wire Wire Line
 	900  6650 1000 6650
 Text Label 1000 6650 0    60   ~ 0
@@ -221,7 +144,9 @@ F 3 "" H 1300 6700 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1300 6450 1300 6700
+	1300 6450 1300 6550
+Wire Wire Line
+	1300 6550 1300 6700
 Wire Wire Line
 	900  6550 1300 6550
 Connection ~ 1300 6550
@@ -241,7 +166,9 @@ Wire Wire Line
 Wire Wire Line
 	1300 6000 1000 6000
 Wire Wire Line
-	1000 5950 1000 6450
+	1000 5950 1000 6000
+Wire Wire Line
+	1000 6000 1000 6450
 Wire Wire Line
 	1000 6450 900  6450
 Connection ~ 1000 6000
@@ -281,20 +208,28 @@ F 3 "" H 4550 4750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 4500 4550 4750
+	4550 4500 4550 4650
+Wire Wire Line
+	4550 4650 4550 4750
 Wire Wire Line
 	3900 4600 3900 4650
 Wire Wire Line
-	3900 4650 5200 4650
+	3900 4650 4550 4650
+Wire Wire Line
+	4550 4650 5200 4650
 Connection ~ 4550 4650
 Wire Wire Line
 	5200 4650 5200 4600
 Wire Wire Line
 	3900 4200 3900 4150
 Wire Wire Line
-	3900 4150 4150 4150
+	3900 4150 3950 4150
 Wire Wire Line
-	4950 4150 5450 4150
+	3950 4150 4150 4150
+Wire Wire Line
+	4950 4150 5200 4150
+Wire Wire Line
+	5200 4150 5450 4150
 Wire Wire Line
 	5200 4200 5200 4150
 Connection ~ 5200 4150
@@ -315,7 +250,9 @@ F 3 "" H 1350 7800 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  7650 1350 7650
+	950  7650 1050 7650
+Wire Wire Line
+	1050 7650 1350 7650
 Wire Wire Line
 	1350 7650 1350 7800
 Wire Wire Line
@@ -334,7 +271,11 @@ F 3 "" H 2000 6950 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	950  7150 2000 7150
+	950  7150 1650 7150
+Wire Wire Line
+	1650 7150 1900 7150
+Wire Wire Line
+	1900 7150 2000 7150
 Wire Wire Line
 	2000 7150 2000 6950
 Wire Wire Line
@@ -348,13 +289,17 @@ Wire Wire Line
 Wire Wire Line
 	1550 7250 1550 7800
 Wire Wire Line
-	1550 7800 2000 7800
+	1550 7800 1650 7800
+Wire Wire Line
+	1650 7800 2000 7800
 Wire Wire Line
 	950  7350 1500 7350
 Wire Wire Line
 	1500 7350 1500 7900
 Wire Wire Line
-	1500 7900 2000 7900
+	1500 7900 1900 7900
+Wire Wire Line
+	1900 7900 2000 7900
 Text Label 1050 7450 0    60   ~ 0
 ENC_BTN
 Text Label 2000 7800 0    60   ~ 0
@@ -402,19 +347,6 @@ F 3 "" H 3750 7100 60  0000 C CNN
 	1    3750 7100
 	1    0    0    -1  
 $EndComp
-$Comp
-L VAA #PWR017
-U 1 1 547DE3D4
-P 600 2350
-F 0 "#PWR017" H 600 2410 30  0001 C CNN
-F 1 "VAA" H 600 2460 30  0000 C CNN
-F 2 "" H 600 2350 60  0000 C CNN
-F 3 "" H 600 2350 60  0000 C CNN
-	1    600  2350
-	1    0    0    -1  
-$EndComp
-Text Label 1000 1700 0    60   ~ 0
-GND
 $Comp
 L PWR_JACK_2.5x5.5 P1
 U 1 1 5488FCDE
@@ -555,13 +487,6 @@ F 6 "IC DEBOUNCER SWITCH DUAL SOT23-6" H 3650 7600 60  0001 C CNN "Description"
 	1    3100 7550
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1350 1400 1000 1400
-Text Label 1000 1400 0    60   ~ 0
-RST
-NoConn ~ 1350 2200
-NoConn ~ 3550 1700
-NoConn ~ 3550 1900
 NoConn ~ 3550 4000
 NoConn ~ 3550 4100
 NoConn ~ 3550 4200
@@ -587,148 +512,6 @@ CS
 Text Label 1000 4750 0    60   ~ 0
 IN
 $Comp
-L TLE723X U5
-U 1 1 548B22AA
-P 9550 1150
-F 0 "U5" H 9950 1650 60  0000 C CNN
-F 1 "TLE723X" H 9550 1650 60  0000 C CNN
-F 2 "head_controller:TLE723X" H 9850 1550 60  0001 C CNN
-F 3 "" H 9950 1650 60  0000 C CNN
-F 4 "digikey" H 10050 1750 60  0001 C CNN "Vendor"
-F 5 "TLE7230GCT-ND" H 10150 1850 60  0001 C CNN "PartNumber"
-F 6 "IC SW SMART OCTAL LOWSIDE PDSO24" H 10250 1950 60  0001 C CNN "Description"
-	1    9550 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 1000 8800 1000
-Wire Wire Line
-	9050 1100 8800 1100
-Wire Wire Line
-	9050 1200 8800 1200
-Wire Wire Line
-	9050 1300 8800 1300
-Wire Wire Line
-	9050 1400 8800 1400
-Wire Wire Line
-	9050 1500 8800 1500
-Text Label 8800 1000 0    60   ~ 0
-RST
-Text Label 8800 1400 0    60   ~ 0
-SI2
-Text Label 8800 1100 0    60   ~ 0
-IN
-Text Label 8800 1200 0    60   ~ 0
-CS
-Text Label 8800 1300 0    60   ~ 0
-SCK
-Text Label 8800 1500 0    60   ~ 0
-SI3
-$Comp
-L 0.1uF C8
-U 1 1 548B293B
-P 8600 1200
-F 0 "C8" H 8600 1300 40  0000 L CNN
-F 1 "0.1uF" H 8606 1115 40  0000 L CNN
-F 2 "head_controller:SM1210" H 8638 1050 30  0001 C CNN
-F 3 "" H 8600 1200 60  0000 C CNN
-F 4 "digikey" H 8700 1400 60  0001 C CNN "Vendor"
-F 5 "478-3586-1-ND" H 8800 1500 60  0001 C CNN "PartNumber"
-F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 8900 1600 60  0001 C CNN "Description"
-	1    8600 1200
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR018
-U 1 1 548B2978
-P 8600 750
-F 0 "#PWR018" H 8600 600 60  0001 C CNN
-F 1 "+5V" H 8600 890 60  0000 C CNN
-F 2 "" H 8600 750 60  0000 C CNN
-F 3 "" H 8600 750 60  0000 C CNN
-	1    8600 750 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 750  8600 1000
-Wire Wire Line
-	9050 800  8600 800 
-Connection ~ 8600 800 
-Wire Wire Line
-	9050 900  8600 900 
-Connection ~ 8600 900 
-$Comp
-L GND #PWR019
-U 1 1 548B2B28
-P 8600 1950
-F 0 "#PWR019" H 8600 1700 60  0001 C CNN
-F 1 "GND" H 8600 1800 60  0000 C CNN
-F 2 "" H 8600 1950 60  0000 C CNN
-F 3 "" H 8600 1950 60  0000 C CNN
-	1    8600 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 1900 9900 1850
-Wire Wire Line
-	8600 1900 9900 1900
-Wire Wire Line
-	8600 1400 8600 1950
-Connection ~ 8600 1900
-Wire Wire Line
-	9200 1850 9200 1900
-Connection ~ 9200 1900
-Wire Wire Line
-	9300 1850 9300 1900
-Connection ~ 9300 1900
-Wire Wire Line
-	9400 1850 9400 1900
-Connection ~ 9400 1900
-Wire Wire Line
-	9500 1850 9500 1900
-Connection ~ 9500 1900
-Wire Wire Line
-	9600 1850 9600 1900
-Connection ~ 9600 1900
-Wire Wire Line
-	9700 1850 9700 1900
-Connection ~ 9700 1900
-Wire Wire Line
-	9800 1850 9800 1900
-Connection ~ 9800 1900
-Wire Wire Line
-	10050 800  10150 800 
-Wire Wire Line
-	10050 900  10150 900 
-Wire Wire Line
-	10050 1000 10150 1000
-Wire Wire Line
-	10050 1100 10150 1100
-Wire Wire Line
-	10050 1200 10150 1200
-Wire Wire Line
-	10050 1300 10150 1300
-Wire Wire Line
-	10050 1400 10150 1400
-Wire Wire Line
-	10050 1500 10150 1500
-Text Label 10150 800  0    60   ~ 0
-OUT16
-Text Label 10150 900  0    60   ~ 0
-OUT17
-Text Label 10150 1000 0    60   ~ 0
-OUT18
-Text Label 10150 1100 0    60   ~ 0
-OUT19
-Text Label 10150 1200 0    60   ~ 0
-OUT20
-Text Label 10150 1300 0    60   ~ 0
-OUT21
-Text Label 10150 1400 0    60   ~ 0
-OUT22
-Text Label 10150 1500 0    60   ~ 0
-OUT23
-$Comp
 L ENCODER_C14 E1
 U 1 1 548B5C76
 P 800 7400
@@ -742,148 +525,6 @@ F 6 "CONN FMALE-ON-BRD 6POS VERT SMD" H 1100 7350 60  0001 C CNN "Description"
 	1    800  7400
 	1    0    0    -1  
 $EndComp
-$Comp
-L TLE723X U6
-U 1 1 54AADA19
-P 9550 2800
-F 0 "U6" H 9950 3300 60  0000 C CNN
-F 1 "TLE723X" H 9550 3300 60  0000 C CNN
-F 2 "head_controller:TLE723X" H 9850 3200 60  0001 C CNN
-F 3 "" H 9950 3300 60  0000 C CNN
-F 4 "digikey" H 10050 3400 60  0001 C CNN "Vendor"
-F 5 "TLE7230GCT-ND" H 10150 3500 60  0001 C CNN "PartNumber"
-F 6 "IC SW SMART OCTAL LOWSIDE PDSO24" H 10250 3600 60  0001 C CNN "Description"
-	1    9550 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 2650 8800 2650
-Wire Wire Line
-	9050 2750 8800 2750
-Wire Wire Line
-	9050 2850 8800 2850
-Wire Wire Line
-	9050 2950 8800 2950
-Wire Wire Line
-	9050 3050 8800 3050
-Wire Wire Line
-	9050 3150 8800 3150
-Text Label 8800 2650 0    60   ~ 0
-RST
-Text Label 8800 3050 0    60   ~ 0
-SI3
-Text Label 8800 2750 0    60   ~ 0
-IN
-Text Label 8800 2850 0    60   ~ 0
-CS
-Text Label 8800 2950 0    60   ~ 0
-SCK
-Text Label 8800 3150 0    60   ~ 0
-MISO
-$Comp
-L 0.1uF C9
-U 1 1 54AADA2E
-P 8600 2850
-F 0 "C9" H 8600 2950 40  0000 L CNN
-F 1 "0.1uF" H 8606 2765 40  0000 L CNN
-F 2 "head_controller:SM1210" H 8638 2700 30  0001 C CNN
-F 3 "" H 8600 2850 60  0000 C CNN
-F 4 "digikey" H 8700 3050 60  0001 C CNN "Vendor"
-F 5 "478-3586-1-ND" H 8800 3150 60  0001 C CNN "PartNumber"
-F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 8900 3250 60  0001 C CNN "Description"
-	1    8600 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR020
-U 1 1 54AADA34
-P 8600 2400
-F 0 "#PWR020" H 8600 2250 60  0001 C CNN
-F 1 "+5V" H 8600 2540 60  0000 C CNN
-F 2 "" H 8600 2400 60  0000 C CNN
-F 3 "" H 8600 2400 60  0000 C CNN
-	1    8600 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8600 2400 8600 2650
-Wire Wire Line
-	9050 2450 8600 2450
-Connection ~ 8600 2450
-Wire Wire Line
-	9050 2550 8600 2550
-Connection ~ 8600 2550
-$Comp
-L GND #PWR021
-U 1 1 54AADA3F
-P 8600 3600
-F 0 "#PWR021" H 8600 3350 60  0001 C CNN
-F 1 "GND" H 8600 3450 60  0000 C CNN
-F 2 "" H 8600 3600 60  0000 C CNN
-F 3 "" H 8600 3600 60  0000 C CNN
-	1    8600 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9900 3550 9900 3500
-Wire Wire Line
-	8600 3550 9900 3550
-Wire Wire Line
-	8600 3050 8600 3600
-Connection ~ 8600 3550
-Wire Wire Line
-	9200 3500 9200 3550
-Connection ~ 9200 3550
-Wire Wire Line
-	9300 3500 9300 3550
-Connection ~ 9300 3550
-Wire Wire Line
-	9400 3500 9400 3550
-Connection ~ 9400 3550
-Wire Wire Line
-	9500 3500 9500 3550
-Connection ~ 9500 3550
-Wire Wire Line
-	9600 3500 9600 3550
-Connection ~ 9600 3550
-Wire Wire Line
-	9700 3500 9700 3550
-Connection ~ 9700 3550
-Wire Wire Line
-	9800 3500 9800 3550
-Connection ~ 9800 3550
-Wire Wire Line
-	10050 2450 10150 2450
-Wire Wire Line
-	10050 2550 10150 2550
-Wire Wire Line
-	10050 2650 10150 2650
-Wire Wire Line
-	10050 2750 10150 2750
-Wire Wire Line
-	10050 2850 10150 2850
-Wire Wire Line
-	10050 2950 10150 2950
-Wire Wire Line
-	10050 3050 10150 3050
-Wire Wire Line
-	10050 3150 10150 3150
-Text Label 10150 2450 0    60   ~ 0
-OUT24
-Text Label 10150 2550 0    60   ~ 0
-OUT25
-Text Label 10150 2650 0    60   ~ 0
-OUT26
-Text Label 10150 2750 0    60   ~ 0
-OUT27
-Text Label 10150 2850 0    60   ~ 0
-OUT28
-Text Label 10150 2950 0    60   ~ 0
-OUT29
-Text Label 10150 3050 0    60   ~ 0
-OUT30
-Text Label 10150 3150 0    60   ~ 0
-OUT31
 Wire Wire Line
 	650  5200 650  5100
 Text Label 650  5100 0    60   ~ 0
@@ -988,261 +629,14 @@ Wire Wire Line
 	6350 5700 6350 5800
 Text Label 6350 6300 0    60   ~ 0
 OUT27
-$Comp
-L LED_24V D28
-U 1 1 54AB07A3
-P 6700 6000
-F 0 "D28" H 6700 6100 50  0000 C CNN
-F 1 "LED_24V" H 6700 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 6600 6000 60  0001 C CNN
-F 3 "" H 6700 6000 60  0000 C CNN
-F 4 "digikey" H 6800 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 6900 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7000 6400 60  0001 C CNN "Description"
-	1    6700 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6700 6200 6700 6300
-Wire Wire Line
-	6700 5700 6700 5800
-Text Label 6700 6300 0    60   ~ 0
-OUT26
-$Comp
-L LED_24V D27
-U 1 1 54AB07AF
-P 7050 6000
-F 0 "D27" H 7050 6100 50  0000 C CNN
-F 1 "LED_24V" H 7050 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 6950 6000 60  0001 C CNN
-F 3 "" H 7050 6000 60  0000 C CNN
-F 4 "digikey" H 7150 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 7250 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7350 6400 60  0001 C CNN "Description"
-	1    7050 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7050 6200 7050 6300
-Wire Wire Line
-	7050 5700 7050 5800
-Text Label 7050 6300 0    60   ~ 0
-OUT25
-$Comp
-L LED_24V D26
-U 1 1 54AB07BB
-P 7400 6000
-F 0 "D26" H 7400 6100 50  0000 C CNN
-F 1 "LED_24V" H 7400 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 7300 6000 60  0001 C CNN
-F 3 "" H 7400 6000 60  0000 C CNN
-F 4 "digikey" H 7500 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 7600 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7700 6400 60  0001 C CNN "Description"
-	1    7400 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7400 6200 7400 6300
-Wire Wire Line
-	7400 5700 7400 5800
-Text Label 7400 6300 0    60   ~ 0
-OUT24
-$Comp
-L LED_24V D25
-U 1 1 54AB0B65
-P 7750 6000
-F 0 "D25" H 7750 6100 50  0000 C CNN
-F 1 "LED_24V" H 7750 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 7650 6000 60  0001 C CNN
-F 3 "" H 7750 6000 60  0000 C CNN
-F 4 "digikey" H 7850 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 7950 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8050 6400 60  0001 C CNN "Description"
-	1    7750 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7750 6200 7750 6300
-Wire Wire Line
-	7750 5700 7750 5800
-Text Label 7750 6300 0    60   ~ 0
-OUT23
-$Comp
-L LED_24V D24
-U 1 1 54AB0B71
-P 8100 6000
-F 0 "D24" H 8100 6100 50  0000 C CNN
-F 1 "LED_24V" H 8100 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 8000 6000 60  0001 C CNN
-F 3 "" H 8100 6000 60  0000 C CNN
-F 4 "digikey" H 8200 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 8300 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8400 6400 60  0001 C CNN "Description"
-	1    8100 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8100 6200 8100 6300
-Wire Wire Line
-	8100 5700 8100 5800
-Text Label 8100 6300 0    60   ~ 0
-OUT22
-$Comp
-L LED_24V D23
-U 1 1 54AB0B7D
-P 8450 6000
-F 0 "D23" H 8450 6100 50  0000 C CNN
-F 1 "LED_24V" H 8450 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 8350 6000 60  0001 C CNN
-F 3 "" H 8450 6000 60  0000 C CNN
-F 4 "digikey" H 8550 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 8650 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8750 6400 60  0001 C CNN "Description"
-	1    8450 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8450 6200 8450 6300
-Wire Wire Line
-	8450 5700 8450 5800
-Text Label 8450 6300 0    60   ~ 0
-OUT21
-$Comp
-L LED_24V D22
-U 1 1 54AB0B89
-P 8800 6000
-F 0 "D22" H 8800 6100 50  0000 C CNN
-F 1 "LED_24V" H 8800 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 8700 6000 60  0001 C CNN
-F 3 "" H 8800 6000 60  0000 C CNN
-F 4 "digikey" H 8900 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 9000 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9100 6400 60  0001 C CNN "Description"
-	1    8800 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8800 6200 8800 6300
-Wire Wire Line
-	8800 5700 8800 5800
-Text Label 8800 6300 0    60   ~ 0
-OUT20
-$Comp
-L LED_24V D21
-U 1 1 54AB0B95
-P 9150 6000
-F 0 "D21" H 9150 6100 50  0000 C CNN
-F 1 "LED_24V" H 9150 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 9050 6000 60  0001 C CNN
-F 3 "" H 9150 6000 60  0000 C CNN
-F 4 "digikey" H 9250 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 9350 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9450 6400 60  0001 C CNN "Description"
-	1    9150 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 6200 9150 6300
-Wire Wire Line
-	9150 5700 9150 5800
-Text Label 9150 6300 0    60   ~ 0
-OUT19
-$Comp
-L LED_24V D20
-U 1 1 54AB0BA1
-P 9500 6000
-F 0 "D20" H 9500 6100 50  0000 C CNN
-F 1 "LED_24V" H 9500 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 9400 6000 60  0001 C CNN
-F 3 "" H 9500 6000 60  0000 C CNN
-F 4 "digikey" H 9600 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 9700 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9800 6400 60  0001 C CNN "Description"
-	1    9500 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9500 6200 9500 6300
-Wire Wire Line
-	9500 5700 9500 5800
-Text Label 9500 6300 0    60   ~ 0
-OUT18
-$Comp
-L LED_24V D19
-U 1 1 54AB0BAD
-P 9850 6000
-F 0 "D19" H 9850 6100 50  0000 C CNN
-F 1 "LED_24V" H 9850 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 9750 6000 60  0001 C CNN
-F 3 "" H 9850 6000 60  0000 C CNN
-F 4 "digikey" H 9950 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 10050 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 10150 6400 60  0001 C CNN "Description"
-	1    9850 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9850 6200 9850 6300
-Wire Wire Line
-	9850 5700 9850 5800
-Text Label 9850 6300 0    60   ~ 0
-OUT17
-$Comp
-L LED_24V D18
-U 1 1 54AB0BB9
-P 10200 6000
-F 0 "D18" H 10200 6100 50  0000 C CNN
-F 1 "LED_24V" H 10200 5900 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 10100 6000 60  0001 C CNN
-F 3 "" H 10200 6000 60  0000 C CNN
-F 4 "digikey" H 10300 6200 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 10400 6300 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 10500 6400 60  0001 C CNN "Description"
-	1    10200 6000
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10200 6200 10200 6300
-Wire Wire Line
-	10200 5700 10200 5800
-Text Label 10200 6300 0    60   ~ 0
-OUT16
 Wire Wire Line
 	3550 3300 3750 3300
 Text Label 3750 3300 0    60   ~ 0
 D_ENC_BTN
-Wire Wire Line
-	3550 2800 3750 2800
-Text Label 3750 2800 0    60   ~ 0
-TX3
-Text Label 3750 3200 0    60   ~ 0
-ENC_A
-Text Label 3750 2400 0    60   ~ 0
-ENC_B
-Wire Wire Line
-	4950 5700 10200 5700
 Connection ~ 5300 5700
 Connection ~ 5650 5700
 Connection ~ 6000 5700
 Connection ~ 6350 5700
-Connection ~ 6700 5700
-Connection ~ 7050 5700
-Connection ~ 7400 5700
-Connection ~ 7750 5700
-Connection ~ 8100 5700
-Connection ~ 8450 5700
-Connection ~ 8800 5700
-Connection ~ 9150 5700
-Connection ~ 9500 5700
-Connection ~ 9850 5700
-Wire Wire Line
-	7550 5700 7550 5600
-Wire Wire Line
-	7550 5600 7650 5600
-Connection ~ 7550 5700
-Text Label 7650 5600 0    60   ~ 0
-LED_PWR
 NoConn ~ 1350 5700
 NoConn ~ 1350 5800
 $Comp
@@ -1272,61 +666,6 @@ Text Label 4850 1600 0    60   ~ 0
 OUT6
 Text Label 4850 1700 0    60   ~ 0
 OUT7
-Text Label 4850 2000 0    60   ~ 0
-OUT8
-Text Label 4850 2100 0    60   ~ 0
-OUT9
-Text Label 4850 2200 0    60   ~ 0
-OUT10
-Text Label 4850 2300 0    60   ~ 0
-OUT11
-Text Label 4850 2400 0    60   ~ 0
-OUT12
-Text Label 4850 2500 0    60   ~ 0
-OUT13
-Text Label 4850 2600 0    60   ~ 0
-OUT14
-Text Label 4850 2700 0    60   ~ 0
-OUT15
-$Comp
-L ARDUINO_MEGA ARDUINO1
-U 1 1 54AD3990
-P 2500 3350
-F 0 "ARDUINO1" H 2550 6100 60  0000 C CNN
-F 1 "ARDUINO_MEGA" H 2500 650 60  0000 C CNN
-F 2 "head_controller:ARDUINO_MEGA_SHIELD" H 2450 6000 60  0001 C CNN
-F 3 "" H 2550 6100 60  0000 C CNN
-F 4 "digikey" H 2650 6200 60  0001 C CNN "Vendor"
-F 5 "1050-1018-ND" H 2750 6300 60  0001 C CNN "PartNumber"
-F 6 "BOARD MCU MEGA2560" H 2850 6400 60  0001 C CNN "Description"
-	1    2500 3350
-	1    0    0    -1  
-$EndComp
-$Comp
-L 5.11k R3
-U 1 1 54AD64AC
-P 600 3300
-F 0 "R3" V 680 3300 40  0000 C CNN
-F 1 "5.11k" V 607 3301 40  0000 C CNN
-F 2 "head_controller:SM1210" V 530 3300 30  0001 C CNN
-F 3 "" H 600 3300 30  0000 C CNN
-F 4 "digikey" V 780 3400 60  0001 C CNN "Vendor"
-F 5 "P5.11KAACT-ND" V 880 3500 60  0001 C CNN "PartNumber"
-F 6 "RES SMD 5.11K OHM 1% 1/2W 1210" V 980 3600 60  0001 C CNN "Description"
-	1    600  3300
-	1    0    0    -1  
-$EndComp
-$Comp
-L GND #PWR023
-U 1 1 54AD735F
-P 600 3650
-F 0 "#PWR023" H 600 3400 60  0001 C CNN
-F 1 "GND" H 600 3500 60  0000 C CNN
-F 2 "" H 600 3650 60  0000 C CNN
-F 3 "" H 600 3650 60  0000 C CNN
-	1    600  3650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2700 7550 2300 7550
 Text Label 2300 7550 0    60   ~ 0
@@ -1334,8 +673,6 @@ LED_PWR
 Wire Wire Line
 	3500 7550 3600 7550
 Text Label 3600 7550 0    60   ~ 0
-D_LED_PWR
-Text Label 3750 3100 0    60   ~ 0
 D_LED_PWR
 $Comp
 L GND #PWR024
@@ -1351,7 +688,9 @@ $EndComp
 Wire Wire Line
 	2650 6400 2750 6400
 Wire Wire Line
-	2750 6400 2750 6650
+	2750 6400 2750 6500
+Wire Wire Line
+	2750 6500 2750 6650
 Wire Wire Line
 	2650 6500 2750 6500
 Connection ~ 2750 6500
@@ -1363,9 +702,6 @@ Text Label 1800 6400 0    60   ~ 0
 BNC_A
 Text Label 1800 6500 0    60   ~ 0
 BNC_B
-Text Label 3750 2300 0    60   ~ 0
-BNC_B
-NoConn ~ 3550 1200
 $Comp
 L BNC_DOUBLE_RA P3
 U 1 1 54ADBC63
@@ -1380,13 +716,6 @@ F 6 "CONN BNC JACK R/A 75 OHM PCB" H 2700 6900 60  0001 C CNN "Description"
 	1    2400 6450
 	1    0    0    -1  
 $EndComp
-NoConn ~ 1350 4200
-Wire Wire Line
-	1350 2100 1000 2100
-Text Label 1000 2100 0    60   ~ 0
-BNC_A
-NoConn ~ 3550 900 
-NoConn ~ 3550 800 
 Wire Wire Line
 	4850 1000 4800 1000
 Wire Wire Line
@@ -1403,35 +732,10 @@ Wire Wire Line
 	4850 1600 4800 1600
 Wire Wire Line
 	4850 1700 4800 1700
-$Comp
-L VAA #PWR025
-U 1 1 54AEFA4B
-P 4250 1950
-F 0 "#PWR025" H 4250 1800 60  0001 C CNN
-F 1 "VAA" H 4250 2100 60  0000 C CNN
-F 2 "" H 4250 1950 60  0000 C CNN
-F 3 "" H 4250 1950 60  0000 C CNN
-	1    4250 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
-	4850 2000 4800 2000
+	3750 6550 3750 6600
 Wire Wire Line
-	4850 2100 4800 2100
-Wire Wire Line
-	4850 2200 4800 2200
-Wire Wire Line
-	4850 2300 4800 2300
-Wire Wire Line
-	4850 2400 4800 2400
-Wire Wire Line
-	4850 2500 4800 2500
-Wire Wire Line
-	4850 2600 4800 2600
-Wire Wire Line
-	4850 2700 4800 2700
-Wire Wire Line
-	3750 6550 3750 6650
+	3750 6600 3750 6650
 Wire Wire Line
 	3750 7050 3750 7100
 Wire Wire Line
@@ -1441,31 +745,6 @@ Wire Wire Line
 Wire Wire Line
 	3600 7050 3500 7050
 Connection ~ 3750 6600
-$Comp
-L SPST_SERIES_M SW1
-U 1 1 54BECF3D
-P 600 2700
-F 0 "SW1" H 600 2650 40  0000 C CNN
-F 1 "SPST_SERIES_M" H 600 2800 40  0000 C CNN
-F 2 "head_controller:SPST_SERIES_M" H 500 2500 60  0001 C CNN
-F 3 "" H 600 2700 60  0000 C CNN
-F 4 "digikey" H 700 2900 60  0001 C CNN "Vendor"
-F 5 "360-3243-ND" H 800 3000 60  0001 C CNN "PartNumber"
-F 6 "SWITCH TOGGLE SPST 6A 125V" H 900 3100 60  0001 C CNN "Description"
-	1    600  2700
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	600  2450 600  2350
-Wire Wire Line
-	600  2950 600  3050
-Wire Wire Line
-	600  3000 700  3000
-Connection ~ 600  3000
-Text Label 700  3000 0    60   ~ 0
-LED_PWR
-Wire Wire Line
-	600  3550 600  3650
 $Comp
 L HEADER_01X03 P2
 U 1 1 54BEEA7F
@@ -1513,7 +792,9 @@ $EndComp
 Wire Wire Line
 	4150 3750 4150 3700
 Wire Wire Line
-	3550 3750 4150 3750
+	3550 3750 3800 3750
+Wire Wire Line
+	3800 3750 4150 3750
 Wire Wire Line
 	3800 3700 3800 3750
 Connection ~ 3800 3750
@@ -1597,7 +878,9 @@ Wire Wire Line
 Text Label 5450 7550 0    60   ~ 0
 D_SWITCH
 Wire Wire Line
-	5600 6550 5600 6650
+	5600 6550 5600 6600
+Wire Wire Line
+	5600 6600 5600 6650
 Wire Wire Line
 	5600 7050 5600 7100
 Wire Wire Line
@@ -1782,287 +1065,10 @@ Wire Wire Line
 	6350 4850 6350 4950
 Text Label 6350 5450 0    60   ~ 0
 OUT11
-$Comp
-L LED_24V D12
-U 1 1 54BF4B73
-P 6700 5150
-F 0 "D12" H 6700 5250 50  0000 C CNN
-F 1 "LED_24V" H 6700 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 6600 5150 60  0001 C CNN
-F 3 "" H 6700 5150 60  0000 C CNN
-F 4 "digikey" H 6800 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 6900 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7000 5550 60  0001 C CNN "Description"
-	1    6700 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6700 5350 6700 5450
-Wire Wire Line
-	6700 4850 6700 4950
-Text Label 6700 5450 0    60   ~ 0
-OUT10
-$Comp
-L LED_24V D11
-U 1 1 54BF4B7F
-P 7050 5150
-F 0 "D11" H 7050 5250 50  0000 C CNN
-F 1 "LED_24V" H 7050 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 6950 5150 60  0001 C CNN
-F 3 "" H 7050 5150 60  0000 C CNN
-F 4 "digikey" H 7150 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 7250 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7350 5550 60  0001 C CNN "Description"
-	1    7050 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7050 5350 7050 5450
-Wire Wire Line
-	7050 4850 7050 4950
-Text Label 7050 5450 0    60   ~ 0
-OUT9
-$Comp
-L LED_24V D10
-U 1 1 54BF4B8B
-P 7400 5150
-F 0 "D10" H 7400 5250 50  0000 C CNN
-F 1 "LED_24V" H 7400 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 7300 5150 60  0001 C CNN
-F 3 "" H 7400 5150 60  0000 C CNN
-F 4 "digikey" H 7500 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 7600 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 7700 5550 60  0001 C CNN "Description"
-	1    7400 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7400 5350 7400 5450
-Wire Wire Line
-	7400 4850 7400 4950
-Text Label 7400 5450 0    60   ~ 0
-OUT8
-$Comp
-L LED_24V D9
-U 1 1 54BF4B97
-P 7750 5150
-F 0 "D9" H 7750 5250 50  0000 C CNN
-F 1 "LED_24V" H 7750 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 7650 5150 60  0001 C CNN
-F 3 "" H 7750 5150 60  0000 C CNN
-F 4 "digikey" H 7850 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 7950 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8050 5550 60  0001 C CNN "Description"
-	1    7750 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	7750 5350 7750 5450
-Wire Wire Line
-	7750 4850 7750 4950
-Text Label 7750 5450 0    60   ~ 0
-OUT7
-$Comp
-L LED_24V D8
-U 1 1 54BF4BA3
-P 8100 5150
-F 0 "D8" H 8100 5250 50  0000 C CNN
-F 1 "LED_24V" H 8100 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 8000 5150 60  0001 C CNN
-F 3 "" H 8100 5150 60  0000 C CNN
-F 4 "digikey" H 8200 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 8300 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8400 5550 60  0001 C CNN "Description"
-	1    8100 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8100 5350 8100 5450
-Wire Wire Line
-	8100 4850 8100 4950
-Text Label 8100 5450 0    60   ~ 0
-OUT6
-$Comp
-L LED_24V D7
-U 1 1 54BF4BAF
-P 8450 5150
-F 0 "D7" H 8450 5250 50  0000 C CNN
-F 1 "LED_24V" H 8450 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 8350 5150 60  0001 C CNN
-F 3 "" H 8450 5150 60  0000 C CNN
-F 4 "digikey" H 8550 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 8650 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 8750 5550 60  0001 C CNN "Description"
-	1    8450 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8450 5350 8450 5450
-Wire Wire Line
-	8450 4850 8450 4950
-Text Label 8450 5450 0    60   ~ 0
-OUT5
-$Comp
-L LED_24V D6
-U 1 1 54BF4BBB
-P 8800 5150
-F 0 "D6" H 8800 5250 50  0000 C CNN
-F 1 "LED_24V" H 8800 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 8700 5150 60  0001 C CNN
-F 3 "" H 8800 5150 60  0000 C CNN
-F 4 "digikey" H 8900 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 9000 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9100 5550 60  0001 C CNN "Description"
-	1    8800 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	8800 5350 8800 5450
-Wire Wire Line
-	8800 4850 8800 4950
-Text Label 8800 5450 0    60   ~ 0
-OUT4
-$Comp
-L LED_24V D5
-U 1 1 54BF4BC7
-P 9150 5150
-F 0 "D5" H 9150 5250 50  0000 C CNN
-F 1 "LED_24V" H 9150 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 9050 5150 60  0001 C CNN
-F 3 "" H 9150 5150 60  0000 C CNN
-F 4 "digikey" H 9250 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 9350 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9450 5550 60  0001 C CNN "Description"
-	1    9150 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9150 5350 9150 5450
-Wire Wire Line
-	9150 4850 9150 4950
-Text Label 9150 5450 0    60   ~ 0
-OUT3
-$Comp
-L LED_24V D4
-U 1 1 54BF4BD3
-P 9500 5150
-F 0 "D4" H 9500 5250 50  0000 C CNN
-F 1 "LED_24V" H 9500 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 9400 5150 60  0001 C CNN
-F 3 "" H 9500 5150 60  0000 C CNN
-F 4 "digikey" H 9600 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 9700 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 9800 5550 60  0001 C CNN "Description"
-	1    9500 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9500 5350 9500 5450
-Wire Wire Line
-	9500 4850 9500 4950
-Text Label 9500 5450 0    60   ~ 0
-OUT2
-$Comp
-L LED_24V D3
-U 1 1 54BF4BDF
-P 9850 5150
-F 0 "D3" H 9850 5250 50  0000 C CNN
-F 1 "LED_24V" H 9850 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 9750 5150 60  0001 C CNN
-F 3 "" H 9850 5150 60  0000 C CNN
-F 4 "digikey" H 9950 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 10050 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 10150 5550 60  0001 C CNN "Description"
-	1    9850 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	9850 5350 9850 5450
-Wire Wire Line
-	9850 4850 9850 4950
-Text Label 9850 5450 0    60   ~ 0
-OUT1
-$Comp
-L LED_24V D2
-U 1 1 54BF4BEB
-P 10200 5150
-F 0 "D2" H 10200 5250 50  0000 C CNN
-F 1 "LED_24V" H 10200 5050 50  0000 C CNN
-F 2 "head_controller:LED_555-3XXX" H 10100 5150 60  0001 C CNN
-F 3 "" H 10200 5150 60  0000 C CNN
-F 4 "digikey" H 10300 5350 60  0001 C CNN "Vendor"
-F 5 "350-1723-ND" H 10400 5450 60  0001 C CNN "PartNumber"
-F 6 "LED 2MM 24V VERTICAL RED PC MNT" H 10500 5550 60  0001 C CNN "Description"
-	1    10200 5150
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	10200 5350 10200 5450
-Wire Wire Line
-	10200 4850 10200 4950
-Text Label 10200 5450 0    60   ~ 0
-OUT0
-Wire Wire Line
-	4950 4850 10200 4850
 Connection ~ 5300 4850
 Connection ~ 5650 4850
 Connection ~ 6000 4850
 Connection ~ 6350 4850
-Connection ~ 6700 4850
-Connection ~ 7050 4850
-Connection ~ 7400 4850
-Connection ~ 7750 4850
-Connection ~ 8100 4850
-Connection ~ 8450 4850
-Connection ~ 8800 4850
-Connection ~ 9150 4850
-Connection ~ 9500 4850
-Connection ~ 9850 4850
-Wire Wire Line
-	7550 4850 7550 4750
-Wire Wire Line
-	7550 4750 7650 4750
-Connection ~ 7550 4850
-Text Label 7650 4750 0    60   ~ 0
-LED_PWR
-$Comp
-L TLE723X U3
-U 1 1 54BF6DD8
-P 7550 1150
-F 0 "U3" H 7950 1650 60  0000 C CNN
-F 1 "TLE723X" H 7550 1650 60  0000 C CNN
-F 2 "head_controller:TLE723X" H 7850 1550 60  0001 C CNN
-F 3 "" H 7950 1650 60  0000 C CNN
-F 4 "digikey" H 8050 1750 60  0001 C CNN "Vendor"
-F 5 "TLE7230GCT-ND" H 8150 1850 60  0001 C CNN "PartNumber"
-F 6 "IC SW SMART OCTAL LOWSIDE PDSO24" H 8250 1950 60  0001 C CNN "Description"
-	1    7550 1150
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 1000 6800 1000
-Wire Wire Line
-	7050 1100 6800 1100
-Wire Wire Line
-	7050 1200 6800 1200
-Wire Wire Line
-	7050 1300 6800 1300
-Wire Wire Line
-	7050 1400 6800 1400
-Wire Wire Line
-	7050 1500 6800 1500
-Text Label 6800 1000 0    60   ~ 0
-RST
-Text Label 6800 1400 0    60   ~ 0
-MOSI
-Text Label 6800 1100 0    60   ~ 0
-IN
-Text Label 6800 1200 0    60   ~ 0
-CS
-Text Label 6800 1300 0    60   ~ 0
-SCK
-Text Label 6800 1500 0    60   ~ 0
-SI1
 $Comp
 L 0.1uF C6
 U 1 1 54BF6DED
@@ -2089,255 +1095,23 @@ F 3 "" H 6600 750 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6600 750  6600 1000
-Wire Wire Line
-	7050 800  6600 800 
-Connection ~ 6600 800 
-Wire Wire Line
-	7050 900  6600 900 
-Connection ~ 6600 900 
-$Comp
-L GND #PWR035
-U 1 1 54BF6DFE
-P 6600 1950
-F 0 "#PWR035" H 6600 1700 60  0001 C CNN
-F 1 "GND" H 6600 1800 60  0000 C CNN
-F 2 "" H 6600 1950 60  0000 C CNN
-F 3 "" H 6600 1950 60  0000 C CNN
-	1    6600 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 1900 7900 1850
-Wire Wire Line
-	6600 1900 7900 1900
-Wire Wire Line
-	6600 1400 6600 1950
-Connection ~ 6600 1900
-Wire Wire Line
-	7200 1850 7200 1900
-Connection ~ 7200 1900
-Wire Wire Line
-	7300 1850 7300 1900
-Connection ~ 7300 1900
-Wire Wire Line
-	7400 1850 7400 1900
-Connection ~ 7400 1900
-Wire Wire Line
-	7500 1850 7500 1900
-Connection ~ 7500 1900
-Wire Wire Line
-	7600 1850 7600 1900
-Connection ~ 7600 1900
-Wire Wire Line
-	7700 1850 7700 1900
-Connection ~ 7700 1900
-Wire Wire Line
-	7800 1850 7800 1900
-Connection ~ 7800 1900
-Wire Wire Line
-	8050 800  8150 800 
-Wire Wire Line
-	8050 900  8150 900 
-Wire Wire Line
-	8050 1000 8150 1000
-Wire Wire Line
-	8050 1100 8150 1100
-Wire Wire Line
-	8050 1200 8150 1200
-Wire Wire Line
-	8050 1300 8150 1300
-Wire Wire Line
-	8050 1400 8150 1400
-Wire Wire Line
-	8050 1500 8150 1500
-Text Label 8150 800  0    60   ~ 0
-OUT0
-Text Label 8150 900  0    60   ~ 0
-OUT1
-Text Label 8150 1000 0    60   ~ 0
-OUT2
-Text Label 8150 1100 0    60   ~ 0
-OUT3
-Text Label 8150 1200 0    60   ~ 0
-OUT4
-Text Label 8150 1300 0    60   ~ 0
-OUT5
-Text Label 8150 1400 0    60   ~ 0
-OUT6
-Text Label 8150 1500 0    60   ~ 0
-OUT7
-$Comp
-L TLE723X U4
-U 1 1 54BF6E29
-P 7550 2800
-F 0 "U4" H 7950 3300 60  0000 C CNN
-F 1 "TLE723X" H 7550 3300 60  0000 C CNN
-F 2 "head_controller:TLE723X" H 7850 3200 60  0001 C CNN
-F 3 "" H 7950 3300 60  0000 C CNN
-F 4 "digikey" H 8050 3400 60  0001 C CNN "Vendor"
-F 5 "TLE7230GCT-ND" H 8150 3500 60  0001 C CNN "PartNumber"
-F 6 "IC SW SMART OCTAL LOWSIDE PDSO24" H 8250 3600 60  0001 C CNN "Description"
-	1    7550 2800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7050 2650 6800 2650
-Wire Wire Line
-	7050 2750 6800 2750
-Wire Wire Line
-	7050 2850 6800 2850
-Wire Wire Line
-	7050 2950 6800 2950
-Wire Wire Line
-	7050 3050 6800 3050
-Wire Wire Line
-	7050 3150 6800 3150
-Text Label 6800 2650 0    60   ~ 0
-RST
-Text Label 6800 3050 0    60   ~ 0
-SI1
-Text Label 6800 2750 0    60   ~ 0
-IN
-Text Label 6800 2850 0    60   ~ 0
-CS
-Text Label 6800 2950 0    60   ~ 0
-SCK
-Text Label 6800 3150 0    60   ~ 0
-SI2
-$Comp
-L 0.1uF C7
-U 1 1 54BF6E3E
-P 6600 2850
-F 0 "C7" H 6600 2950 40  0000 L CNN
-F 1 "0.1uF" H 6606 2765 40  0000 L CNN
-F 2 "head_controller:SM1210" H 6638 2700 30  0001 C CNN
-F 3 "" H 6600 2850 60  0000 C CNN
-F 4 "digikey" H 6700 3050 60  0001 C CNN "Vendor"
-F 5 "478-3586-1-ND" H 6800 3150 60  0001 C CNN "PartNumber"
-F 6 "CAP CER 0.1UF 50V 10% X7R 1210" H 6900 3250 60  0001 C CNN "Description"
-	1    6600 2850
-	1    0    0    -1  
-$EndComp
-$Comp
-L +5V #PWR036
-U 1 1 54BF6E44
-P 6600 2400
-F 0 "#PWR036" H 6600 2250 60  0001 C CNN
-F 1 "+5V" H 6600 2540 60  0000 C CNN
-F 2 "" H 6600 2400 60  0000 C CNN
-F 3 "" H 6600 2400 60  0000 C CNN
-	1    6600 2400
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6600 2400 6600 2650
-Wire Wire Line
-	7050 2450 6600 2450
-Connection ~ 6600 2450
-Wire Wire Line
-	7050 2550 6600 2550
-Connection ~ 6600 2550
-$Comp
-L GND #PWR037
-U 1 1 54BF6E4F
-P 6600 3600
-F 0 "#PWR037" H 6600 3350 60  0001 C CNN
-F 1 "GND" H 6600 3450 60  0000 C CNN
-F 2 "" H 6600 3600 60  0000 C CNN
-F 3 "" H 6600 3600 60  0000 C CNN
-	1    6600 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7900 3550 7900 3500
-Wire Wire Line
-	6600 3550 7900 3550
-Wire Wire Line
-	6600 3050 6600 3600
-Connection ~ 6600 3550
-Wire Wire Line
-	7200 3500 7200 3550
-Connection ~ 7200 3550
-Wire Wire Line
-	7300 3500 7300 3550
-Connection ~ 7300 3550
-Wire Wire Line
-	7400 3500 7400 3550
-Connection ~ 7400 3550
-Wire Wire Line
-	7500 3500 7500 3550
-Connection ~ 7500 3550
-Wire Wire Line
-	7600 3500 7600 3550
-Connection ~ 7600 3550
-Wire Wire Line
-	7700 3500 7700 3550
-Connection ~ 7700 3550
-Wire Wire Line
-	7800 3500 7800 3550
-Connection ~ 7800 3550
-Wire Wire Line
-	8050 2450 8150 2450
-Wire Wire Line
-	8050 2550 8150 2550
-Wire Wire Line
-	8050 2650 8150 2650
-Wire Wire Line
-	8050 2750 8150 2750
-Wire Wire Line
-	8050 2850 8150 2850
-Wire Wire Line
-	8050 2950 8150 2950
-Wire Wire Line
-	8050 3050 8150 3050
-Wire Wire Line
-	8050 3150 8150 3150
-Text Label 8150 2450 0    60   ~ 0
-OUT8
-Text Label 8150 2550 0    60   ~ 0
-OUT9
-Text Label 8150 2650 0    60   ~ 0
-OUT10
-Text Label 8150 2750 0    60   ~ 0
-OUT11
-Text Label 8150 2850 0    60   ~ 0
-OUT12
-Text Label 8150 2950 0    60   ~ 0
-OUT13
-Text Label 8150 3050 0    60   ~ 0
-OUT14
-Text Label 8150 3150 0    60   ~ 0
-OUT15
-Wire Wire Line
-	4250 2700 4300 2700
-Wire Wire Line
-	4250 1950 4250 2700
-Wire Wire Line
-	4300 2000 4250 2000
-Connection ~ 4250 2000
-Wire Wire Line
-	4300 2100 4250 2100
-Connection ~ 4250 2100
-Wire Wire Line
-	4300 2200 4250 2200
-Connection ~ 4250 2200
-Wire Wire Line
-	4300 2300 4250 2300
-Connection ~ 4250 2300
-Wire Wire Line
-	4300 2400 4250 2400
-Connection ~ 4250 2400
-Wire Wire Line
-	4300 2500 4250 2500
-Connection ~ 4250 2500
-Wire Wire Line
-	4300 2600 4250 2600
-Connection ~ 4250 2600
-Wire Wire Line
 	4250 1700 4300 1700
 Wire Wire Line
-	4250 950  4250 1700
+	4250 950  4250 1000
+Wire Wire Line
+	4250 1000 4250 1100
+Wire Wire Line
+	4250 1100 4250 1200
+Wire Wire Line
+	4250 1200 4250 1300
+Wire Wire Line
+	4250 1300 4250 1400
+Wire Wire Line
+	4250 1400 4250 1500
+Wire Wire Line
+	4250 1500 4250 1600
+Wire Wire Line
+	4250 1600 4250 1700
 Wire Wire Line
 	4300 1000 4250 1000
 Connection ~ 4250 1000
@@ -2373,192 +1147,5 @@ F 6 "CONN HEADER LO-PRO 16POS AU SMD" H 4850 2100 60  0001 C CNN "Description"
 	1    4550 1350
 	1    0    0    -1  
 $EndComp
-$Comp
-L HEADER_02X08_SMD P5
-U 1 1 54BFEC24
-P 4550 2350
-F 0 "P5" H 4550 2800 50  0000 C CNN
-F 1 "HEADER_02X08_SMD" V 4550 2350 50  0000 C CNN
-F 2 "head_controller:HEADER_02x08_SMD" H 4550 1150 60  0001 C CNN
-F 3 "" H 4550 1150 60  0000 C CNN
-F 4 "digikey" H 4650 2900 60  0001 C CNN "Vendor"
-F 5 "HSL16H-ND" H 4750 3000 60  0001 C CNN "PartNumber"
-F 6 "CONN HEADER LO-PRO 16POS AU SMD" H 4850 3100 60  0001 C CNN "Description"
-	1    4550 2350
-	1    0    0    -1  
-$EndComp
-$Comp
-L VAA #PWR038
-U 1 1 54BFF1C6
-P 5200 950
-F 0 "#PWR038" H 5200 800 60  0001 C CNN
-F 1 "VAA" H 5200 1100 60  0000 C CNN
-F 2 "" H 5200 950 60  0000 C CNN
-F 3 "" H 5200 950 60  0000 C CNN
-	1    5200 950 
-	1    0    0    -1  
-$EndComp
-Text Label 5800 1000 0    60   ~ 0
-OUT16
-Text Label 5800 1100 0    60   ~ 0
-OUT17
-Text Label 5800 1200 0    60   ~ 0
-OUT18
-Text Label 5800 1300 0    60   ~ 0
-OUT19
-Text Label 5800 1400 0    60   ~ 0
-OUT20
-Text Label 5800 1500 0    60   ~ 0
-OUT21
-Text Label 5800 1600 0    60   ~ 0
-OUT22
-Text Label 5800 1700 0    60   ~ 0
-OUT23
-Text Label 5800 2000 0    60   ~ 0
-OUT24
-Text Label 5800 2100 0    60   ~ 0
-OUT25
-Text Label 5800 2200 0    60   ~ 0
-OUT26
-Text Label 5800 2300 0    60   ~ 0
-OUT27
-Text Label 5800 2400 0    60   ~ 0
-OUT28
-Text Label 5800 2500 0    60   ~ 0
-OUT29
-Text Label 5800 2600 0    60   ~ 0
-OUT30
-Text Label 5800 2700 0    60   ~ 0
-OUT31
-Wire Wire Line
-	5800 1000 5750 1000
-Wire Wire Line
-	5800 1100 5750 1100
-Wire Wire Line
-	5800 1200 5750 1200
-Wire Wire Line
-	5800 1300 5750 1300
-Wire Wire Line
-	5800 1400 5750 1400
-Wire Wire Line
-	5800 1500 5750 1500
-Wire Wire Line
-	5800 1600 5750 1600
-Wire Wire Line
-	5800 1700 5750 1700
-$Comp
-L VAA #PWR039
-U 1 1 54BFF1E4
-P 5200 1950
-F 0 "#PWR039" H 5200 1800 60  0001 C CNN
-F 1 "VAA" H 5200 2100 60  0000 C CNN
-F 2 "" H 5200 1950 60  0000 C CNN
-F 3 "" H 5200 1950 60  0000 C CNN
-	1    5200 1950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5800 2000 5750 2000
-Wire Wire Line
-	5800 2100 5750 2100
-Wire Wire Line
-	5800 2200 5750 2200
-Wire Wire Line
-	5800 2300 5750 2300
-Wire Wire Line
-	5800 2400 5750 2400
-Wire Wire Line
-	5800 2500 5750 2500
-Wire Wire Line
-	5800 2600 5750 2600
-Wire Wire Line
-	5800 2700 5750 2700
-Wire Wire Line
-	5200 2700 5250 2700
-Wire Wire Line
-	5200 1950 5200 2700
-Wire Wire Line
-	5250 2000 5200 2000
-Connection ~ 5200 2000
-Wire Wire Line
-	5250 2100 5200 2100
-Connection ~ 5200 2100
-Wire Wire Line
-	5250 2200 5200 2200
-Connection ~ 5200 2200
-Wire Wire Line
-	5250 2300 5200 2300
-Connection ~ 5200 2300
-Wire Wire Line
-	5250 2400 5200 2400
-Connection ~ 5200 2400
-Wire Wire Line
-	5250 2500 5200 2500
-Connection ~ 5200 2500
-Wire Wire Line
-	5250 2600 5200 2600
-Connection ~ 5200 2600
-Wire Wire Line
-	5200 1700 5250 1700
-Wire Wire Line
-	5200 950  5200 1700
-Wire Wire Line
-	5250 1000 5200 1000
-Connection ~ 5200 1000
-Wire Wire Line
-	5250 1600 5200 1600
-Connection ~ 5200 1600
-Wire Wire Line
-	5250 1500 5200 1500
-Connection ~ 5200 1500
-Wire Wire Line
-	5250 1400 5200 1400
-Connection ~ 5200 1400
-Wire Wire Line
-	5250 1300 5200 1300
-Connection ~ 5200 1300
-Wire Wire Line
-	5250 1200 5200 1200
-Connection ~ 5200 1200
-Wire Wire Line
-	5250 1100 5200 1100
-Connection ~ 5200 1100
-$Comp
-L HEADER_02X08_SMD P6
-U 1 1 54BFF215
-P 5500 1350
-F 0 "P6" H 5500 1800 50  0000 C CNN
-F 1 "HEADER_02X08_SMD" V 5500 1350 50  0000 C CNN
-F 2 "head_controller:HEADER_02x08_SMD" H 5500 150 60  0001 C CNN
-F 3 "" H 5500 150 60  0000 C CNN
-F 4 "digikey" H 5600 1900 60  0001 C CNN "Vendor"
-F 5 "HSL16H-ND" H 5700 2000 60  0001 C CNN "PartNumber"
-F 6 "CONN HEADER LO-PRO 16POS AU SMD" H 5800 2100 60  0001 C CNN "Description"
-	1    5500 1350
-	1    0    0    -1  
-$EndComp
-$Comp
-L HEADER_02X08_SMD P7
-U 1 1 54BFF21E
-P 5500 2350
-F 0 "P7" H 5500 2800 50  0000 C CNN
-F 1 "HEADER_02X08_SMD" V 5500 2350 50  0000 C CNN
-F 2 "head_controller:HEADER_02x08_SMD" H 5500 1150 60  0001 C CNN
-F 3 "" H 5500 1150 60  0000 C CNN
-F 4 "digikey" H 5600 2900 60  0001 C CNN "Vendor"
-F 5 "HSL16H-ND" H 5700 3000 60  0001 C CNN "PartNumber"
-F 6 "CONN HEADER LO-PRO 16POS AU SMD" H 5800 3100 60  0001 C CNN "Description"
-	1    5500 2350
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3550 3200 3750 3200
-Wire Wire Line
-	3550 2400 3750 2400
-Wire Wire Line
-	3550 2300 3750 2300
-NoConn ~ 3550 1500
 NoConn ~ 3550 5050
-Wire Wire Line
-	3550 3100 3750 3100
 $EndSCHEMATC
