@@ -3,12 +3,12 @@
   (general
     (links 0)
     (no_connects 0)
-    (area 0 0 0 0)
+    (area 22.173772 24.3364 87.046228 157.772101)
     (thickness 1.6)
     (drawings 14)
     (tracks 0)
     (zones 0)
-    (modules 6)
+    (modules 13)
     (nets 1)
   )
 
@@ -63,15 +63,15 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 3.81 3.81)
-    (pad_drill 2.8448)
+    (pad_size 7.874 7.874)
+    (pad_drill 7.366)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
     (pcbplotparams
-      (layerselection 0x00030_80000001)
-      (usegerberextensions false)
-      (excludeedgelayer true)
+      (layerselection 0x000f0_80000001)
+      (usegerberextensions true)
+      (excludeedgelayer false)
       (linewidth 0.100000)
       (plotframeref false)
       (viasonmask false)
@@ -87,12 +87,12 @@
       (plotvalue true)
       (plotinvisibletext false)
       (padsonsilk false)
-      (subtractmaskfromsilk false)
+      (subtractmaskfromsilk true)
       (outputformat 1)
       (mirror false)
-      (drillshape 1)
+      (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory gerbers/))
   )
 
   (net 0 "")
@@ -170,6 +170,83 @@
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (pad "" thru_hole circle (at 0.5842 0.5334) (size 3.81 3.81) (drill 2.8448) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553A8323) (tstamp 553A8286)
+    (at 42.926 42.672)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (pad "" thru_hole circle (at -11.8364 -6.1722) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553A8339) (tstamp 553A82A0)
+    (at 78.486 36.068)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (pad "" thru_hole circle (at 0.4572 0.4318) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553A835C) (tstamp 553A82AA)
+    (at 33.02 73.66)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (pad "" thru_hole circle (at -1.9304 0.381) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553A8378) (tstamp 553A82B3)
+    (at 76.2 76.2)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (pad "" thru_hole circle (at 2.7432 -2.159) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553A847A) (tstamp 553A82BC)
+    (at 35.56 116.84)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (pad "" thru_hole circle (at -4.4704 -5.2324) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553A84A7) (tstamp 553A82C5)
+    (at 73.66 116.84)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (pad "" thru_hole circle (at 5.2832 -5.2324) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+  )
+
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553A8567) (tstamp 553A82CE)
+    (at 53.34 149.86)
+    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
+      (effects (font (size 1.016 1.016) (thickness 0.1016)))
+    )
+    (pad "" thru_hole circle (at 1.6764 2.1082) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
   )
 
   (gr_arc (start 55.0164 151.9682) (end 60.706 151.9682) (angle 180) (layer Edge.Cuts) (width 0.2286))
