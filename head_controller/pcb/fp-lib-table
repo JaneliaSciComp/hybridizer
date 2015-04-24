@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name head_controller)(type KiCad)(uri ${KIPRJMOD}/head_controller.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri /home/polidorop/git/kicad-libraries/footprints.pretty)(options "")(descr ""))
+)
