@@ -1,9 +1,9 @@
-(module valve_hole (layer F.Cu) (tedit 553A825F)
+(module valve_hole (layer F.Cu) (tedit 553EA0A2)
   (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
     (effects (font (size 1.016 1.016) (thickness 0.1016)))
   )
   (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
     (effects (font (size 1.016 1.016) (thickness 0.1016)))
   )
-  (pad "" thru_hole circle (at 0 0) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+  (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
 )

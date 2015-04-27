@@ -63,8 +63,8 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 7.874 7.874)
-    (pad_drill 7.366)
+    (pad_size 8.382 8.382)
+    (pad_drill 7.62)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
     (visible_elements FFFFFF7F)
@@ -106,147 +106,147 @@
     (uvia_drill 0.1)
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 553A78EF) (tstamp 553A6100)
-    (at 43.18 55.88)
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 553EA065) (tstamp 553A78EB)
+    (at 81.8642 119.9134)
     (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at -14.986 -27.686) (size 3.81 3.81) (drill 2.8448) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 553A7938) (tstamp 553A78C7)
-    (at 81.28 27.94)
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 553E9FA4) (tstamp 553A78E2)
+    (at 28.194 119.9134)
     (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 0.5842 0.254) (size 3.81 3.81) (drill 2.8448) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 553A7905) (tstamp 553A78D0)
-    (at 27.94 66.04)
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 553EA040) (tstamp 553A78D9)
+    (at 81.8642 65.7352)
     (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 0.254 -0.3048) (size 3.81 3.81) (drill 2.8448) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 553A7C3F) (tstamp 553A78D9)
-    (at 81.28 66.04)
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 553E9F84) (tstamp 553A78D0)
+    (at 28.194 65.7352)
     (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 0.5842 -0.3048) (size 3.81 3.81) (drill 2.8448) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 553A791B) (tstamp 553A78E2)
-    (at 27.94 119.38)
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 553EA00F) (tstamp 553A78C7)
+    (at 81.8642 28.194)
     (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 0.254 0.5334) (size 3.81 3.81) (drill 2.8448) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 553A7C4C) (tstamp 553A78EB)
-    (at 81.28 119.38)
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 553E9F27) (tstamp 553A6100)
+    (at 28.194 28.194)
     (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 0.5842 0.5334) (size 3.81 3.81) (drill 2.8448) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553A8323) (tstamp 553A8286)
-    (at 42.926 42.672)
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA221) (tstamp 553A82CE)
+    (at 55.0164 151.9682)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at -11.8364 -6.1722) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553A8339) (tstamp 553A82A0)
-    (at 78.486 36.068)
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA0A2) (tstamp 553A82C5)
+    (at 78.9432 111.6076)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 0.4572 0.4318) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553A835C) (tstamp 553A82AA)
-    (at 33.02 73.66)
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA0A2) (tstamp 553A82BC)
+    (at 31.0896 111.6076)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at -1.9304 0.381) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553A8378) (tstamp 553A82B3)
-    (at 76.2 76.2)
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA0A2) (tstamp 553A82B3)
+    (at 78.9432 74.041)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 2.7432 -2.159) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553A847A) (tstamp 553A82BC)
-    (at 35.56 116.84)
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA176) (tstamp 553A82AA)
+    (at 31.0896 74.041)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at -4.4704 -5.2324) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553A84A7) (tstamp 553A82C5)
-    (at 73.66 116.84)
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA147) (tstamp 553A82A0)
+    (at 78.9432 36.4998)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 5.2832 -5.2324) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553A8567) (tstamp 553A82CE)
-    (at 53.34 149.86)
+  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA11C) (tstamp 553A8286)
+    (at 31.0896 36.4998)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
-    (pad "" thru_hole circle (at 1.6764 2.1082) (size 7.874 7.874) (drill 7.366) (layers *.Cu *.Mask F.SilkS))
+    (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
   (gr_arc (start 55.0164 151.9682) (end 60.706 151.9682) (angle 180) (layer Edge.Cuts) (width 0.2286))
