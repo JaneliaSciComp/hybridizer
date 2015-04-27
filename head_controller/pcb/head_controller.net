@@ -27,7 +27,7 @@
       (tstamp 54BFE706))
     (comp (ref S1)
       (value HEADER_01X02_SMD)
-      (footprint header_controller:Header_2_Pin_SMD)
+      (footprint head_controller:Header_2_Pin_SMD)
       (fields
         (field (name Vendor) digikey)
         (field (name PartNumber) 609-3500-ND)
@@ -37,7 +37,7 @@
       (tstamp 553EB780))
     (comp (ref S2)
       (value HEADER_01X02_SMD)
-      (footprint header_controller:Header_2_Pin_SMD)
+      (footprint head_controller:Header_2_Pin_SMD)
       (fields
         (field (name Vendor) digikey)
         (field (name PartNumber) 609-3500-ND)
@@ -47,7 +47,7 @@
       (tstamp 553EB8EE))
     (comp (ref S3)
       (value HEADER_01X02_SMD)
-      (footprint header_controller:Header_2_Pin_SMD)
+      (footprint head_controller:Header_2_Pin_SMD)
       (fields
         (field (name Vendor) digikey)
         (field (name PartNumber) 609-3500-ND)
@@ -57,7 +57,7 @@
       (tstamp 553EBA0B))
     (comp (ref S4)
       (value HEADER_01X02_SMD)
-      (footprint header_controller:Header_2_Pin_SMD)
+      (footprint head_controller:Header_2_Pin_SMD)
       (fields
         (field (name Vendor) digikey)
         (field (name PartNumber) 609-3500-ND)
@@ -67,7 +67,7 @@
       (tstamp 553EBA14))
     (comp (ref S5)
       (value HEADER_01X02_SMD)
-      (footprint header_controller:Header_2_Pin_SMD)
+      (footprint head_controller:Header_2_Pin_SMD)
       (fields
         (field (name Vendor) digikey)
         (field (name PartNumber) 609-3500-ND)
@@ -77,7 +77,7 @@
       (tstamp 553EBB4C))
     (comp (ref S6)
       (value HEADER_01X02_SMD)
-      (footprint header_controller:Header_2_Pin_SMD)
+      (footprint head_controller:Header_2_Pin_SMD)
       (fields
         (field (name Vendor) digikey)
         (field (name PartNumber) 609-3500-ND)
@@ -87,7 +87,7 @@
       (tstamp 553EBB55))
     (comp (ref S7)
       (value HEADER_01X02_SMD)
-      (footprint header_controller:Header_2_Pin_SMD)
+      (footprint head_controller:Header_2_Pin_SMD)
       (fields
         (field (name Vendor) digikey)
         (field (name PartNumber) 609-3500-ND)
@@ -175,7 +175,7 @@
       (fields
         (field (name Reference) S)
         (field (name Value) HEADER_01X02_SMD)
-        (field (name Footprint) header_controller:Header_2_Pin_SMD)
+        (field (name Footprint) head_controller:Header_2_Pin_SMD)
         (field (name Vendor) digikey)
         (field (name PartNumber) 609-3500-ND)
         (field (name Description) "CONN HEADER 2POS .100 VERT GOLD"))
