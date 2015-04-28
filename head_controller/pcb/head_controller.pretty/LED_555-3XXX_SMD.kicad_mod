@@ -1,8 +1,8 @@
-(module LED_555-3XXX_SMD (layer F.Cu) (tedit 553EA42F)
-  (fp_text reference LED_555-3XXX_SMD (at 0 -7.874 90) (layer F.SilkS)
+(module LED_555-3XXX_SMD (layer F.Cu) (tedit 553FC084)
+  (fp_text reference LED_555-3XXX_SMD (at 0 -6.604 90) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.254)))
   )
-  (fp_text value VAL** (at 0 7.62) (layer F.SilkS) hide
+  (fp_text value VAL** (at 0 5.842) (layer F.SilkS) hide
     (effects (font (size 1.016 1.016) (thickness 0.254)))
   )
   (fp_line (start -0.508 -1.778) (end 0.508 -1.778) (layer F.SilkS) (width 0.2286))
@@ -11,6 +11,6 @@
   (fp_line (start 1.27 -3.81) (end 1.27 3.81) (layer F.SilkS) (width 0.2286))
   (fp_line (start 1.27 3.81) (end -1.27 3.81) (layer F.SilkS) (width 0.2286))
   (fp_line (start -1.27 3.81) (end -1.27 -3.81) (layer F.SilkS) (width 0.2286))
-  (pad 1 smd rect (at 0 -4.445) (size 1.524 3.81) (layers F.Cu F.Paste F.Mask))
-  (pad 2 smd rect (at 0 4.445) (size 1.524 3.81) (layers F.Cu F.Paste F.Mask))
+  (pad 1 smd rect (at 0 -3.81) (size 1.524 2.54) (layers F.Cu F.Paste F.Mask))
+  (pad 2 smd rect (at 0 3.81) (size 1.524 2.54) (layers F.Cu F.Paste F.Mask))
 )

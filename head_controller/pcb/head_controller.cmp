@@ -1,4 +1,4 @@
-Cmp-Mod V01 Genere par PcbNew le Mon 27 Apr 2015 05:03:22 PM EDT
+Cmp-Mod V01 Genere par PcbNew le Tue 28 Apr 2015 01:17:04 PM EDT
 
 BeginCmp
 TimeStamp = 553A78EB
@@ -169,41 +169,57 @@ IdModule  = head_controller:Header_2_Pin_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 553EA45F
-Path = /553ECFE2
-Reference = D7;
-ValeurCmp = LED_24V_SMD;
-IdModule  = head_controller:LED_555-3XXX_SMD;
+TimeStamp = 553FBFD8
+Path = 
+Reference = REF**;
+ValeurCmp = clearance_hole;
+IdModule  = head_controller:clearance_hole;
 EndCmp
 
 BeginCmp
-TimeStamp = 553EA453
-Path = /553ECF70
-Reference = D6;
-ValeurCmp = LED_24V_SMD;
-IdModule  = head_controller:LED_555-3XXX_SMD;
+TimeStamp = 553FBFE1
+Path = 
+Reference = REF**;
+ValeurCmp = clearance_hole;
+IdModule  = head_controller:clearance_hole;
 EndCmp
 
 BeginCmp
-TimeStamp = 553EA447
-Path = /553ECF33
-Reference = D5;
-ValeurCmp = LED_24V_SMD;
-IdModule  = head_controller:LED_555-3XXX_SMD;
+TimeStamp = 553FBFEA
+Path = 
+Reference = REF**;
+ValeurCmp = clearance_hole;
+IdModule  = head_controller:clearance_hole;
 EndCmp
 
 BeginCmp
-TimeStamp = 553EA43B
-Path = /553ECEF9
-Reference = D4;
-ValeurCmp = LED_24V_SMD;
-IdModule  = head_controller:LED_555-3XXX_SMD;
+TimeStamp = 553FBFF3
+Path = 
+Reference = REF**;
+ValeurCmp = clearance_hole;
+IdModule  = head_controller:clearance_hole;
 EndCmp
 
 BeginCmp
-TimeStamp = 553EA42F
-Path = /553ECE94
-Reference = D3;
+TimeStamp = 553FBFFC
+Path = 
+Reference = REF**;
+ValeurCmp = clearance_hole;
+IdModule  = head_controller:clearance_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FC005
+Path = 
+Reference = REF**;
+ValeurCmp = clearance_hole;
+IdModule  = head_controller:clearance_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA417
+Path = /553ECDB2
+Reference = D1;
 ValeurCmp = LED_24V_SMD;
 IdModule  = head_controller:LED_555-3XXX_SMD;
 EndCmp
@@ -217,9 +233,41 @@ IdModule  = head_controller:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 553EA417
-Path = /553ECDB2
-Reference = D1;
+TimeStamp = 553EA42F
+Path = /553ECE94
+Reference = D3;
+ValeurCmp = LED_24V_SMD;
+IdModule  = head_controller:LED_555-3XXX_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA43B
+Path = /553ECEF9
+Reference = D4;
+ValeurCmp = LED_24V_SMD;
+IdModule  = head_controller:LED_555-3XXX_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA447
+Path = /553ECF33
+Reference = D5;
+ValeurCmp = LED_24V_SMD;
+IdModule  = head_controller:LED_555-3XXX_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA453
+Path = /553ECF70
+Reference = D6;
+ValeurCmp = LED_24V_SMD;
+IdModule  = head_controller:LED_555-3XXX_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA45F
+Path = /553ECFE2
+Reference = D7;
 ValeurCmp = LED_24V_SMD;
 IdModule  = head_controller:LED_555-3XXX_SMD;
 EndCmp
