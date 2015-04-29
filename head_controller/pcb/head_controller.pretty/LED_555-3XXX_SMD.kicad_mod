@@ -1,5 +1,5 @@
-(module LED_555-3XXX_SMD (layer F.Cu) (tedit 553FC084)
-  (fp_text reference LED_555-3XXX_SMD (at 0 -6.604 90) (layer F.SilkS)
+(module LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A)
+  (fp_text reference LED_555-3XXX_SMD (at 0 6.35 90) (layer F.SilkS)
     (effects (font (size 1.016 1.016) (thickness 0.254)))
   )
   (fp_text value VAL** (at 0 5.842) (layer F.SilkS) hide
