@@ -42,22 +42,22 @@
   )
 
   (setup
-    (last_trace_width 0.25)
-    (trace_clearance 0.2)
+    (last_trace_width 0.254)
+    (trace_clearance 0.254)
     (zone_clearance 0.508)
     (zone_45_only no)
     (trace_min 0.2)
     (segment_width 0.2)
     (edge_width 0.2286)
-    (via_size 0.6)
-    (via_drill 0.4)
+    (via_size 0.889)
+    (via_drill 0.635)
     (via_min_size 0.4)
     (via_min_drill 0.3)
-    (uvia_size 0.3)
-    (uvia_drill 0.1)
+    (uvia_size 0.508)
+    (uvia_drill 0.127)
     (uvias_allowed no)
-    (uvia_min_size 0.2)
-    (uvia_min_drill 0.1)
+    (uvia_min_size 0)
+    (uvia_min_drill 0)
     (pcb_text_width 0.3)
     (pcb_text_size 1.5 1.5)
     (mod_edge_width 0.15)
@@ -68,7 +68,7 @@
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
     (grid_origin 93.599 74.05116)
-    (visible_elements FFFFFF7F)
+    (visible_elements FFFFF77F)
     (pcbplotparams
       (layerselection 0x000f0_80000001)
       (usegerberextensions true)
@@ -145,20 +145,31 @@
   (net 46 "Net-(U14-Pad5)")
 
   (net_class Default "This is the default net class."
-    (clearance 0.2)
-    (trace_width 0.25)
-    (via_dia 0.6)
-    (via_drill 0.4)
-    (uvia_dia 0.3)
-    (uvia_drill 0.1)
+    (clearance 0.254)
+    (trace_width 0.254)
+    (via_dia 0.889)
+    (via_drill 0.635)
+    (uvia_dia 0.508)
+    (uvia_drill 0.127)
+  )
+
+  (net_class GND ""
+    (clearance 0.254)
+    (trace_width 0.508)
+    (via_dia 0.889)
+    (via_drill 0.635)
+    (uvia_dia 0.508)
+    (uvia_drill 0.127)
+  )
+
+  (net_class POWER ""
+    (clearance 0.254)
+    (trace_width 0.8128)
+    (via_dia 0.889)
+    (via_drill 0.635)
+    (uvia_dia 0.508)
+    (uvia_drill 0.127)
     (add_net +5V)
-    (add_net /A0)
-    (add_net /A1)
-    (add_net /A2)
-    (add_net /A3)
-    (add_net /A4)
-    (add_net /A5)
-    (add_net /A6)
     (add_net /OUT0)
     (add_net /OUT1)
     (add_net /OUT2)
@@ -168,6 +179,23 @@
     (add_net /OUT6)
     (add_net /OUT7)
     (add_net GND)
+    (add_net VAA)
+  )
+
+  (net_class SIGNAL ""
+    (clearance 0.254)
+    (trace_width 0.4064)
+    (via_dia 0.889)
+    (via_drill 0.635)
+    (uvia_dia 0.508)
+    (uvia_drill 0.127)
+    (add_net /A0)
+    (add_net /A1)
+    (add_net /A2)
+    (add_net /A3)
+    (add_net /A4)
+    (add_net /A5)
+    (add_net /A6)
     (add_net "Net-(C11-Pad1)")
     (add_net "Net-(C14-Pad1)")
     (add_net "Net-(C17-Pad1)")
@@ -196,11 +224,10 @@
     (add_net "Net-(U6-Pad5)")
     (add_net "Net-(U8-Pad1)")
     (add_net "Net-(U8-Pad5)")
-    (add_net VAA)
   )
 
   (module head_controller:valve_hole (layer F.Cu) (tedit 553EA221) (tstamp 553A82CE)
-    (at 93.599 151.9682)
+    (at 93.599 151.95804)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
@@ -210,9 +237,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA0A2) (tstamp 553A82C5)
-    (at 117.53342 111.6076)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+  (module head_controller:valve_hole (layer F.Cu) (tedit 554154D0) (tstamp 553A82C5)
+    (at 117.53342 111.61268)
+    (fp_text reference VALVE_HOLE_3 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -221,9 +248,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA0A2) (tstamp 553A82BC)
-    (at 69.66712 111.6076)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+  (module head_controller:valve_hole (layer F.Cu) (tedit 5541565A) (tstamp 553A82BC)
+    (at 69.66712 111.61268)
+    (fp_text reference VALVE_HOLE_6 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -232,9 +259,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA0A2) (tstamp 553A82B3)
-    (at 117.53342 74.041)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+  (module head_controller:valve_hole (layer F.Cu) (tedit 554154C4) (tstamp 553A82B3)
+    (at 117.53342 74.05116)
+    (fp_text reference VALVE_HOLE_2 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -243,9 +270,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA176) (tstamp 553A82AA)
-    (at 69.66712 74.041)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+  (module head_controller:valve_hole (layer F.Cu) (tedit 5541564D) (tstamp 553A82AA)
+    (at 69.66712 74.05116)
+    (fp_text reference VALVE_HOLE_5 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -254,9 +281,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA147) (tstamp 553A82A0)
-    (at 117.53342 36.4998)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+  (module head_controller:valve_hole (layer F.Cu) (tedit 554154B9) (tstamp 553A82A0)
+    (at 117.53342 36.48964)
+    (fp_text reference VALVE_HOLE_1 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -265,9 +292,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA11C) (tstamp 553A8286)
-    (at 69.66712 36.4998)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+  (module head_controller:valve_hole (layer F.Cu) (tedit 554154DD) (tstamp 553A8286)
+    (at 69.66712 36.48964)
+    (fp_text reference VALVE_HOLE_4 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value valve_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -276,10 +303,10 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 553E972F) (tstamp 553EA487)
+  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 554151D4) (tstamp 553EA487)
     (at 93.599 143.90116 180)
     (path /553EB780)
-    (fp_text reference S1 (at -3.81 0 270) (layer F.SilkS)
+    (fp_text reference S1 (at 3.81 0 270) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value HEADER_01X02_SMD (at 0 -4.445 180) (layer F.SilkS) hide
@@ -430,9 +457,9 @@
       (net 1 VAA))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 553FBA90) (tstamp 553FBFD8)
+  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415489) (tstamp 553FBFD8)
     (at 58.38444 36.48964)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+    (fp_text reference CLEARANCE_HOLE_4 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value clearance_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -441,9 +468,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 553FBA90) (tstamp 553FBFE1)
+  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415496) (tstamp 553FBFE1)
     (at 58.38444 74.05116)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+    (fp_text reference CLEARANCE_HOLE_5 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value clearance_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -452,9 +479,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 553FBA90) (tstamp 553FBFEA)
+  (module head_controller:clearance_hole (layer F.Cu) (tedit 554154A4) (tstamp 553FBFEA)
     (at 58.38444 111.61268)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+    (fp_text reference CLEARANCE_HOLE_6 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value clearance_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -463,9 +490,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 553FBA90) (tstamp 553FBFF3)
+  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415454) (tstamp 553FBFF3)
     (at 128.8161 36.48964)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+    (fp_text reference CLEARANCE_HOLE_1 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value clearance_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -474,9 +501,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 553FBA90) (tstamp 553FBFFC)
+  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415461) (tstamp 553FBFFC)
     (at 128.8161 74.05116)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+    (fp_text reference CLEARANCE_HOLE_2 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value clearance_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -485,9 +512,9 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 553FBA90) (tstamp 553FC005)
+  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415474) (tstamp 553FC005)
     (at 128.8161 111.61268)
-    (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
+    (fp_text reference CLEARANCE_HOLE_3 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value clearance_hole (at 0 -5.08) (layer F.SilkS) hide
@@ -496,10 +523,10 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:LEE_VALVE_PLUG_IN (layer F.Cu) (tedit 5540E0B4) (tstamp 553FC8EE)
+  (module head_controller:LEE_VALVE_PLUG_IN (layer F.Cu) (tedit 554151C7) (tstamp 553FC8EE)
     (at 93.599 136.38784)
     (path /55411716)
-    (fp_text reference S8 (at 3.81 3.048) (layer F.SilkS)
+    (fp_text reference S8 (at -3.175 -3.28168) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value LEE_VALVE_PLUG_IN (at 0 -1.905) (layer F.SilkS) hide
@@ -542,10 +569,10 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 553FF348) (tstamp 554129C7)
+  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 55415131) (tstamp 554129C7)
     (at 109.474 56.27116 180)
     (path /55417F08)
-    (fp_text reference U4 (at 3.81 0 270) (layer F.SilkS)
+    (fp_text reference U4 (at -3.81 0 270) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value MAX4215 (at -3.81 0 270) (layer F.SilkS) hide
@@ -632,10 +659,10 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 5541498D) (tstamp 55412A0C)
+  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 5541511A) (tstamp 55412A0C)
     (at 77.724 56.27116 180)
     (path /5541856D)
-    (fp_text reference U10 (at -3.81 0 270) (layer F.SilkS)
+    (fp_text reference U10 (at 3.81 0 270) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value MAX4215 (at -3.81 0 270) (layer F.SilkS) hide
@@ -692,10 +719,10 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 553FF348) (tstamp 55412A3A)
+  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 55415198) (tstamp 55412A3A)
     (at 84.709 98.18116)
     (path /55418A58)
-    (fp_text reference U14 (at 3.81 0 90) (layer F.SilkS)
+    (fp_text reference U14 (at -3.81 0 90) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_text value MAX4215 (at -3.81 0 90) (layer F.SilkS) hide
@@ -722,9 +749,9 @@
       (net 10 +5V))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55412A68) (tstamp 553A6100)
-    (at 66.7639 28.194)
-    (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415426) (tstamp 553A6100)
+    (at 66.7639 28.1813)
+    (fp_text reference MOUNTING_HOLE_4 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
@@ -734,9 +761,9 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55412A68) (tstamp 553A78C7)
-    (at 120.4341 28.194)
-    (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 554153FA) (tstamp 553A78C7)
+    (at 120.4341 28.1813)
+    (fp_text reference MOUNTING_HOLE_1 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
@@ -746,9 +773,9 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55412A68) (tstamp 553A78D0)
-    (at 66.7639 65.7352)
-    (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415434) (tstamp 553A78D0)
+    (at 66.7639 65.74282)
+    (fp_text reference MOUNTING_HOLE_5 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
@@ -758,9 +785,9 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55412A68) (tstamp 553A78D9)
-    (at 120.4341 65.7352)
-    (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415407) (tstamp 553A78D9)
+    (at 120.4341 65.74282)
+    (fp_text reference MOUNTING_HOLE_2 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
@@ -770,9 +797,9 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55412A68) (tstamp 553A78E2)
-    (at 66.7639 119.9134)
-    (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415441) (tstamp 553A78E2)
+    (at 66.7639 119.92102)
+    (fp_text reference MOUNTING_HOLE_6 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
@@ -782,9 +809,9 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55412A68) (tstamp 553A78EB)
-    (at 120.4341 119.9134)
-    (fp_text reference REF** (at 0 2.54) (layer F.SilkS) hide
+  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415418) (tstamp 553A78EB)
+    (at 120.4341 119.92102)
+    (fp_text reference MOUNTING_HOLE_3 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
     )
     (fp_text value mounting_hole (at 0 -2.54) (layer F.SilkS) hide
@@ -1176,15 +1203,15 @@
       (net 18 GND))
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413BEC)
+  (module head_controller:SM1210 (layer F.Cu) (tedit 554151F3) (tstamp 55413BEC)
     (at 96.139 140.09116)
     (tags "CMS SM")
     (path /553FED9B)
     (attr smd)
-    (fp_text reference C1 (at 0 -2.286) (layer F.SilkS)
+    (fp_text reference C1 (at 1.27 2.54) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
-    (fp_text value 0.1uF (at 0 2.286) (layer F.SilkS)
+    (fp_text value 0.1uF (at 1.905 -3.81 90) (layer F.SilkS)
       (effects (font (size 1.016 1.016) (thickness 0.254)))
     )
     (fp_line (start -0.762 -1.397) (end -2.286 -1.397) (layer F.SilkS) (width 0.127))
@@ -1233,7 +1260,7 @@
   )
 
   (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C04)
-    (at 87.249 115.96116 270)
+    (at 87.249 117.23116 270)
     (tags "CMS SM")
     (path /55413A90)
     (attr smd)
@@ -1317,7 +1344,7 @@
   )
 
   (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C28)
-    (at 115.824 56.27116 90)
+    (at 103.124 56.27116 90)
     (tags "CMS SM")
     (path /554153E4)
     (attr smd)
@@ -1569,7 +1596,7 @@
   )
 
   (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C94)
-    (at 71.374 56.27116 90)
+    (at 84.074 56.27116 90)
     (tags "CMS SM")
     (path /55416281)
     (attr smd)
