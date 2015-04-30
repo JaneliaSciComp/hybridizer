@@ -14,7 +14,7 @@
 
   (page A4)
   (title_block
-    (title head_controller)
+    (title hybridizer_head_interface)
     (rev 1.0)
   )
 
@@ -226,7 +226,7 @@
     (add_net "Net-(U8-Pad5)")
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 553EA221) (tstamp 553A82CE)
+  (module hybridizer_head_interface:valve_hole (layer F.Cu) (tedit 553EA221) (tstamp 553A82CE)
     (at 93.599 151.95804)
     (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -237,7 +237,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 554154D0) (tstamp 553A82C5)
+  (module hybridizer_head_interface:valve_hole (layer F.Cu) (tedit 554154D0) (tstamp 553A82C5)
     (at 117.53342 111.61268)
     (fp_text reference VALVE_HOLE_3 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -248,7 +248,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 5541565A) (tstamp 553A82BC)
+  (module hybridizer_head_interface:valve_hole (layer F.Cu) (tedit 5541565A) (tstamp 553A82BC)
     (at 69.66712 111.61268)
     (fp_text reference VALVE_HOLE_6 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -259,7 +259,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 554154C4) (tstamp 553A82B3)
+  (module hybridizer_head_interface:valve_hole (layer F.Cu) (tedit 554154C4) (tstamp 553A82B3)
     (at 117.53342 74.05116)
     (fp_text reference VALVE_HOLE_2 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -270,7 +270,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 5541564D) (tstamp 553A82AA)
+  (module hybridizer_head_interface:valve_hole (layer F.Cu) (tedit 5541564D) (tstamp 553A82AA)
     (at 69.66712 74.05116)
     (fp_text reference VALVE_HOLE_5 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -281,7 +281,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 554154B9) (tstamp 553A82A0)
+  (module hybridizer_head_interface:valve_hole (layer F.Cu) (tedit 554154B9) (tstamp 553A82A0)
     (at 117.53342 36.48964)
     (fp_text reference VALVE_HOLE_1 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -292,7 +292,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:valve_hole (layer F.Cu) (tedit 554154DD) (tstamp 553A8286)
+  (module hybridizer_head_interface:valve_hole (layer F.Cu) (tedit 554154DD) (tstamp 553A8286)
     (at 69.66712 36.48964)
     (fp_text reference VALVE_HOLE_4 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -303,7 +303,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.382 8.382) (drill 7.62) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 554151D4) (tstamp 553EA487)
+  (module hybridizer_head_interface:Header_2_Pin_SMD (layer F.Cu) (tedit 554151D4) (tstamp 553EA487)
     (at 93.599 143.90116 180)
     (path /553EB780)
     (fp_text reference S1 (at 3.81 0 270) (layer F.SilkS)
@@ -325,7 +325,7 @@
       (net 1 VAA))
   )
 
-  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 553E972F) (tstamp 553EA494)
+  (module hybridizer_head_interface:Header_2_Pin_SMD (layer F.Cu) (tedit 553E972F) (tstamp 553EA494)
     (at 117.729 44.84116 180)
     (path /553EB8EE)
     (fp_text reference S2 (at -3.81 0 270) (layer F.SilkS)
@@ -347,7 +347,7 @@
       (net 1 VAA))
   )
 
-  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 553E972F) (tstamp 553EA4A1)
+  (module hybridizer_head_interface:Header_2_Pin_SMD (layer F.Cu) (tedit 553E972F) (tstamp 553EA4A1)
     (at 117.729 82.94116 180)
     (path /553EBA0B)
     (fp_text reference S3 (at -3.81 0 270) (layer F.SilkS)
@@ -369,7 +369,7 @@
       (net 1 VAA))
   )
 
-  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 553E972F) (tstamp 553EA4AE)
+  (module hybridizer_head_interface:Header_2_Pin_SMD (layer F.Cu) (tedit 553E972F) (tstamp 553EA4AE)
     (at 117.729 103.26116 180)
     (path /553EBA14)
     (fp_text reference S4 (at -3.81 0 270) (layer F.SilkS)
@@ -391,7 +391,7 @@
       (net 1 VAA))
   )
 
-  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 55412D25) (tstamp 553EA4BB)
+  (module hybridizer_head_interface:Header_2_Pin_SMD (layer F.Cu) (tedit 55412D25) (tstamp 553EA4BB)
     (at 69.469 44.84116 180)
     (path /553EBB4C)
     (fp_text reference S5 (at 3.81 0 270) (layer F.SilkS)
@@ -413,7 +413,7 @@
       (net 1 VAA))
   )
 
-  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 55412D2C) (tstamp 553EA4C8)
+  (module hybridizer_head_interface:Header_2_Pin_SMD (layer F.Cu) (tedit 55412D2C) (tstamp 553EA4C8)
     (at 69.469 82.94116 180)
     (path /553EBB55)
     (fp_text reference S6 (at 3.81 0 270) (layer F.SilkS)
@@ -435,7 +435,7 @@
       (net 1 VAA))
   )
 
-  (module head_controller:Header_2_Pin_SMD (layer F.Cu) (tedit 55412D32) (tstamp 553EA4D5)
+  (module hybridizer_head_interface:Header_2_Pin_SMD (layer F.Cu) (tedit 55412D32) (tstamp 553EA4D5)
     (at 69.469 103.26116 180)
     (path /553EBB5E)
     (fp_text reference S7 (at 3.81 0 270) (layer F.SilkS)
@@ -457,7 +457,7 @@
       (net 1 VAA))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415489) (tstamp 553FBFD8)
+  (module hybridizer_head_interface:clearance_hole (layer F.Cu) (tedit 55415489) (tstamp 553FBFD8)
     (at 58.38444 36.48964)
     (fp_text reference CLEARANCE_HOLE_4 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -468,7 +468,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415496) (tstamp 553FBFE1)
+  (module hybridizer_head_interface:clearance_hole (layer F.Cu) (tedit 55415496) (tstamp 553FBFE1)
     (at 58.38444 74.05116)
     (fp_text reference CLEARANCE_HOLE_5 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -479,7 +479,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 554154A4) (tstamp 553FBFEA)
+  (module hybridizer_head_interface:clearance_hole (layer F.Cu) (tedit 554154A4) (tstamp 553FBFEA)
     (at 58.38444 111.61268)
     (fp_text reference CLEARANCE_HOLE_6 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -490,7 +490,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415454) (tstamp 553FBFF3)
+  (module hybridizer_head_interface:clearance_hole (layer F.Cu) (tedit 55415454) (tstamp 553FBFF3)
     (at 128.8161 36.48964)
     (fp_text reference CLEARANCE_HOLE_1 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -501,7 +501,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415461) (tstamp 553FBFFC)
+  (module hybridizer_head_interface:clearance_hole (layer F.Cu) (tedit 55415461) (tstamp 553FBFFC)
     (at 128.8161 74.05116)
     (fp_text reference CLEARANCE_HOLE_2 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -512,7 +512,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:clearance_hole (layer F.Cu) (tedit 55415474) (tstamp 553FC005)
+  (module hybridizer_head_interface:clearance_hole (layer F.Cu) (tedit 55415474) (tstamp 553FC005)
     (at 128.8161 111.61268)
     (fp_text reference CLEARANCE_HOLE_3 (at 0 5.08) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -523,7 +523,7 @@
     (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:LEE_VALVE_PLUG_IN (layer F.Cu) (tedit 554151C7) (tstamp 553FC8EE)
+  (module hybridizer_head_interface:LEE_VALVE_PLUG_IN (layer F.Cu) (tedit 554151C7) (tstamp 553FC8EE)
     (at 93.599 136.38784)
     (path /55411716)
     (fp_text reference S8 (at -3.175 -3.28168) (layer F.SilkS)
@@ -539,7 +539,7 @@
       (net 9 /OUT7) (solder_mask_margin 0.1016) (clearance 0.1016))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 553FF348) (tstamp 554129B0)
+  (module hybridizer_head_interface:SOIC_8_N (layer F.Cu) (tedit 553FF348) (tstamp 554129B0)
     (at 93.599 115.96116)
     (path /55417CC2)
     (fp_text reference U2 (at 3.81 0 90) (layer F.SilkS)
@@ -569,7 +569,7 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 55415131) (tstamp 554129C7)
+  (module hybridizer_head_interface:SOIC_8_N (layer F.Cu) (tedit 55415131) (tstamp 554129C7)
     (at 109.474 56.27116 180)
     (path /55417F08)
     (fp_text reference U4 (at -3.81 0 270) (layer F.SilkS)
@@ -599,7 +599,7 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 553FF348) (tstamp 554129DE)
+  (module hybridizer_head_interface:SOIC_8_N (layer F.Cu) (tedit 553FF348) (tstamp 554129DE)
     (at 109.474 93.73616 180)
     (path /55418018)
     (fp_text reference U6 (at 3.81 0 270) (layer F.SilkS)
@@ -629,7 +629,7 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 553FF348) (tstamp 554129F5)
+  (module hybridizer_head_interface:SOIC_8_N (layer F.Cu) (tedit 553FF348) (tstamp 554129F5)
     (at 102.489 98.18116)
     (path /55418244)
     (fp_text reference U8 (at 3.81 0 90) (layer F.SilkS)
@@ -659,7 +659,7 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 5541511A) (tstamp 55412A0C)
+  (module hybridizer_head_interface:SOIC_8_N (layer F.Cu) (tedit 5541511A) (tstamp 55412A0C)
     (at 77.724 56.27116 180)
     (path /5541856D)
     (fp_text reference U10 (at 3.81 0 270) (layer F.SilkS)
@@ -689,7 +689,7 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 55414A1B) (tstamp 55412A23)
+  (module hybridizer_head_interface:SOIC_8_N (layer F.Cu) (tedit 55414A1B) (tstamp 55412A23)
     (at 77.724 93.73616 180)
     (path /554188E1)
     (fp_text reference U12 (at -3.81 0 270) (layer F.SilkS)
@@ -719,7 +719,7 @@
       (net 10 +5V))
   )
 
-  (module head_controller:SOIC_8_N (layer F.Cu) (tedit 55415198) (tstamp 55412A3A)
+  (module hybridizer_head_interface:SOIC_8_N (layer F.Cu) (tedit 55415198) (tstamp 55412A3A)
     (at 84.709 98.18116)
     (path /55418A58)
     (fp_text reference U14 (at -3.81 0 90) (layer F.SilkS)
@@ -749,7 +749,7 @@
       (net 10 +5V))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415426) (tstamp 553A6100)
+  (module hybridizer_head_interface:mounting_hole (layer F.Cu) (tedit 55415426) (tstamp 553A6100)
     (at 66.7639 28.1813)
     (fp_text reference MOUNTING_HOLE_4 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -761,7 +761,7 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 554153FA) (tstamp 553A78C7)
+  (module hybridizer_head_interface:mounting_hole (layer F.Cu) (tedit 554153FA) (tstamp 553A78C7)
     (at 120.4341 28.1813)
     (fp_text reference MOUNTING_HOLE_1 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -773,7 +773,7 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415434) (tstamp 553A78D0)
+  (module hybridizer_head_interface:mounting_hole (layer F.Cu) (tedit 55415434) (tstamp 553A78D0)
     (at 66.7639 65.74282)
     (fp_text reference MOUNTING_HOLE_5 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -785,7 +785,7 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415407) (tstamp 553A78D9)
+  (module hybridizer_head_interface:mounting_hole (layer F.Cu) (tedit 55415407) (tstamp 553A78D9)
     (at 120.4341 65.74282)
     (fp_text reference MOUNTING_HOLE_2 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -797,7 +797,7 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415441) (tstamp 553A78E2)
+  (module hybridizer_head_interface:mounting_hole (layer F.Cu) (tedit 55415441) (tstamp 553A78E2)
     (at 66.7639 119.92102)
     (fp_text reference MOUNTING_HOLE_6 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -809,7 +809,7 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:mounting_hole (layer F.Cu) (tedit 55415418) (tstamp 553A78EB)
+  (module hybridizer_head_interface:mounting_hole (layer F.Cu) (tedit 55415418) (tstamp 553A78EB)
     (at 120.4341 119.92102)
     (fp_text reference MOUNTING_HOLE_3 (at 0 2.54) (layer F.SilkS) hide
       (effects (font (size 1.016 1.016) (thickness 0.1016)))
@@ -821,7 +821,7 @@
     (pad "" thru_hole circle (at 0 0) (size 3.81 3.81) (drill 3.0988) (layers *.Cu *.Mask F.SilkS))
   )
 
-  (module head_controller:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412D8B) (tstamp 553FC8E8)
+  (module hybridizer_head_interface:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412D8B) (tstamp 553FC8E8)
     (at 57.404 118.50116 90)
     (path /553FC1AD)
     (fp_text reference D8 (at -2.54 0 180) (layer F.SilkS)
@@ -842,7 +842,7 @@
       (net 9 /OUT7))
   )
 
-  (module head_controller:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412D69) (tstamp 553EA45F)
+  (module hybridizer_head_interface:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412D69) (tstamp 553EA45F)
     (at 64.02578 111.61268)
     (path /553ECFE2)
     (fp_text reference D7 (at 0.36322 -6.44652 90) (layer F.SilkS)
@@ -863,7 +863,7 @@
       (net 8 /OUT6))
   )
 
-  (module head_controller:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A) (tstamp 553EA453)
+  (module hybridizer_head_interface:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A) (tstamp 553EA453)
     (at 64.02578 74.05116)
     (path /553ECF70)
     (fp_text reference D6 (at 0 6.35 90) (layer F.SilkS)
@@ -884,7 +884,7 @@
       (net 7 /OUT5))
   )
 
-  (module head_controller:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A) (tstamp 553EA447)
+  (module hybridizer_head_interface:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A) (tstamp 553EA447)
     (at 64.02578 36.48964)
     (path /553ECF33)
     (fp_text reference D5 (at 0 6.35 90) (layer F.SilkS)
@@ -905,7 +905,7 @@
       (net 6 /OUT4))
   )
 
-  (module head_controller:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412D5C) (tstamp 553EA43B)
+  (module hybridizer_head_interface:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412D5C) (tstamp 553EA43B)
     (at 123.17476 111.61268)
     (path /553ECEF9)
     (fp_text reference D4 (at -0.36576 -6.44652 90) (layer F.SilkS)
@@ -926,7 +926,7 @@
       (net 5 /OUT3))
   )
 
-  (module head_controller:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A) (tstamp 553EA42F)
+  (module hybridizer_head_interface:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A) (tstamp 553EA42F)
     (at 123.17476 74.05116)
     (path /553ECE94)
     (fp_text reference D3 (at 0 6.35 90) (layer F.SilkS)
@@ -947,7 +947,7 @@
       (net 4 /OUT2))
   )
 
-  (module head_controller:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A) (tstamp 553EA423)
+  (module hybridizer_head_interface:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412C5A) (tstamp 553EA423)
     (at 123.17476 36.48964)
     (path /553ECE2E)
     (fp_text reference D2 (at 0 6.35 90) (layer F.SilkS)
@@ -968,7 +968,7 @@
       (net 3 /OUT1))
   )
 
-  (module head_controller:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412D55) (tstamp 553EA417)
+  (module hybridizer_head_interface:LED_555-3XXX_SMD (layer F.Cu) (tedit 55412D55) (tstamp 553EA417)
     (at 129.794 118.50116 270)
     (path /553ECDB2)
     (fp_text reference D1 (at 2.54 0 360) (layer F.SilkS)
@@ -989,7 +989,7 @@
       (net 2 /OUT0))
   )
 
-  (module head_controller:HEADER_02x05_SMD (layer F.Cu) (tedit 55412CC3) (tstamp 55412999)
+  (module hybridizer_head_interface:HEADER_02x05_SMD (layer F.Cu) (tedit 55412CC3) (tstamp 55412999)
     (at 58.039 55.00116 90)
     (path /553FDA31)
     (fp_text reference P2 (at 0 6.35 90) (layer F.SilkS)
@@ -1027,7 +1027,7 @@
       (net 18 GND))
   )
 
-  (module head_controller:HEADER_02x08_SMD (layer F.Cu) (tedit 55412CF9) (tstamp 553EA47A)
+  (module hybridizer_head_interface:HEADER_02x08_SMD (layer F.Cu) (tedit 55412CF9) (tstamp 553EA47A)
     (at 58.039 93.10116 90)
     (path /54BFE706)
     (fp_text reference P1 (at 0 6.35 90) (layer F.SilkS)
@@ -1077,7 +1077,7 @@
       (net 9 /OUT7))
   )
 
-  (module head_controller:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 55412A2B)
+  (module hybridizer_head_interface:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 55412A2B)
     (at 76.67244 111.61268 180)
     (path /5541630B)
     (fp_text reference U13 (at 0 -2.667 180) (layer B.SilkS)
@@ -1095,7 +1095,7 @@
       (net 18 GND))
   )
 
-  (module head_controller:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 55412A14)
+  (module hybridizer_head_interface:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 55412A14)
     (at 76.67244 74.05116 180)
     (path /55416296)
     (fp_text reference U11 (at 0 -2.667 180) (layer B.SilkS)
@@ -1113,7 +1113,7 @@
       (net 18 GND))
   )
 
-  (module head_controller:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129FD)
+  (module hybridizer_head_interface:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129FD)
     (at 76.67244 36.48964 180)
     (path /55416221)
     (fp_text reference U9 (at 0 -2.667 180) (layer B.SilkS)
@@ -1131,7 +1131,7 @@
       (net 18 GND))
   )
 
-  (module head_controller:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129E6)
+  (module hybridizer_head_interface:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129E6)
     (at 110.5281 111.61268 180)
     (path /55415B6A)
     (fp_text reference U7 (at 0 -2.667 180) (layer B.SilkS)
@@ -1149,7 +1149,7 @@
       (net 18 GND))
   )
 
-  (module head_controller:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129CF)
+  (module hybridizer_head_interface:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129CF)
     (at 110.5281 74.05116 180)
     (path /55415AF5)
     (fp_text reference U5 (at 0 -2.667 180) (layer B.SilkS)
@@ -1167,7 +1167,7 @@
       (net 18 GND))
   )
 
-  (module head_controller:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129B8)
+  (module hybridizer_head_interface:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129B8)
     (at 110.5281 36.48964 180)
     (path /55415384)
     (fp_text reference U3 (at 0 -2.667 180) (layer B.SilkS)
@@ -1185,7 +1185,7 @@
       (net 18 GND))
   )
 
-  (module head_controller:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129A1)
+  (module hybridizer_head_interface:SOT-23-3 (layer B.Cu) (tedit 55412E60) (tstamp 554129A1)
     (at 93.599 144.95272 90)
     (path /553FCBDD)
     (fp_text reference U1 (at 0 -2.667 90) (layer B.SilkS)
@@ -1203,7 +1203,7 @@
       (net 18 GND))
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 55415C7B) (tstamp 55413BEC)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 55415C7B) (tstamp 55413BEC)
     (at 96.139 140.09116 180)
     (tags "CMS SM")
     (path /553FED9B)
@@ -1231,7 +1231,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413BF8)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413BF8)
     (at 93.599 122.94616 180)
     (tags "CMS SM")
     (path /5540EB70)
@@ -1259,7 +1259,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C04)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C04)
     (at 87.249 117.23116 270)
     (tags "CMS SM")
     (path /55413A90)
@@ -1287,7 +1287,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C10)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C10)
     (at 109.474 36.58616 180)
     (tags "CMS SM")
     (path /5541538D)
@@ -1315,7 +1315,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C1C)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C1C)
     (at 109.474 49.28616)
     (tags "CMS SM")
     (path /554153B7)
@@ -1343,7 +1343,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C28)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C28)
     (at 103.124 56.27116 90)
     (tags "CMS SM")
     (path /554153E4)
@@ -1371,7 +1371,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C34)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C34)
     (at 109.474 74.05116 180)
     (tags "CMS SM")
     (path /55415AFE)
@@ -1399,7 +1399,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C40)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C40)
     (at 109.474 86.75116)
     (tags "CMS SM")
     (path /55415B28)
@@ -1427,7 +1427,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C4C)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C4C)
     (at 115.824 93.73616 90)
     (tags "CMS SM")
     (path /55415B55)
@@ -1455,7 +1455,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C58)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C58)
     (at 109.474 111.51616 180)
     (tags "CMS SM")
     (path /55415B73)
@@ -1483,7 +1483,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C64)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C64)
     (at 102.489 105.16616)
     (tags "CMS SM")
     (path /55415B9D)
@@ -1511,7 +1511,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C70)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C70)
     (at 96.774 98.18116 270)
     (tags "CMS SM")
     (path /55415BCA)
@@ -1539,7 +1539,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C7C)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C7C)
     (at 77.724 36.58616 180)
     (tags "CMS SM")
     (path /5541622A)
@@ -1567,7 +1567,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C88)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C88)
     (at 77.724 49.28616)
     (tags "CMS SM")
     (path /55416254)
@@ -1595,7 +1595,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C94)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413C94)
     (at 84.074 56.27116 90)
     (tags "CMS SM")
     (path /55416281)
@@ -1623,7 +1623,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CA0)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CA0)
     (at 77.724 74.05116 180)
     (tags "CMS SM")
     (path /5541629F)
@@ -1651,7 +1651,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CAC)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CAC)
     (at 77.724 86.75116)
     (tags "CMS SM")
     (path /554162C9)
@@ -1679,7 +1679,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CB8)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CB8)
     (at 71.374 93.73616 90)
     (tags "CMS SM")
     (path /554162F6)
@@ -1707,7 +1707,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CC4)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CC4)
     (at 77.724 111.51616 180)
     (tags "CMS SM")
     (path /55416314)
@@ -1735,7 +1735,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CD0)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CD0)
     (at 84.709 105.16616)
     (tags "CMS SM")
     (path /5541633E)
@@ -1763,7 +1763,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CDC)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CDC)
     (at 90.424 98.18116 270)
     (tags "CMS SM")
     (path /5541636B)
@@ -1791,7 +1791,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CE8)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CE8)
     (at 93.599 129.29616 180)
     (tags "CMS SM")
     (path /5540F542)
@@ -1819,7 +1819,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CF4)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413CF4)
     (at 109.474 42.93616)
     (tags "CMS SM")
     (path /554153C0)
@@ -1847,7 +1847,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D00)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D00)
     (at 109.474 80.40116)
     (tags "CMS SM")
     (path /55415B31)
@@ -1875,7 +1875,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D0C)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D0C)
     (at 102.489 111.51616)
     (tags "CMS SM")
     (path /55415BA6)
@@ -1903,7 +1903,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D18)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D18)
     (at 77.724 42.93616)
     (tags "CMS SM")
     (path /5541625D)
@@ -1931,7 +1931,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D24)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D24)
     (at 77.724 80.40116)
     (tags "CMS SM")
     (path /554162D2)
@@ -1959,7 +1959,7 @@
     )
   )
 
-  (module head_controller:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D30)
+  (module hybridizer_head_interface:SM1210 (layer F.Cu) (tedit 5481F170) (tstamp 55413D30)
     (at 84.709 111.51616)
     (tags "CMS SM")
     (path /55416347)

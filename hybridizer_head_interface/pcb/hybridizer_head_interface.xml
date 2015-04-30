@@ -1,428 +1,428 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/polidorop/git/automatic_hybridizier/head_controller/pcb/head_controller.sch</source>
+    <source>/home/polidorop/git/automatic_hybridizier/hybridizer_head_interface/pcb/hybridizer_head_interface.sch</source>
     <date>Wed 21 Jan 2015 01:27:55 PM EST</date>
     <tool>Eeschema 0.201501192016+5381~20~ubuntu14.04.1-product</tool>
   </design>
   <components>
     <comp ref="P1">
       <value>PWR_JACK_2.5x5.5</value>
-      <footprint>head_controller:DCJACK_2PIN_HIGHCURRENT</footprint>
+      <footprint>hybridizer_head_interface:DCJACK_2PIN_HIGHCURRENT</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">CP-063BH-ND</field>
         <field name="Description">CONN PWR JACK DC 2.5X5.5 8A T/H</field>
       </fields>
-      <libsource lib="head_controller" part="PWR_JACK_2.5x5.5"/>
+      <libsource lib="hybridizer_head_interface" part="PWR_JACK_2.5x5.5"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5488FCDE</tstamp>
     </comp>
     <comp ref="D1">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54891A64</tstamp>
     </comp>
     <comp ref="C1">
       <value>10uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">445-4536-1-ND</field>
         <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
       </fields>
-      <libsource lib="head_controller" part="10uF"/>
+      <libsource lib="hybridizer_head_interface" part="10uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>548925C4</tstamp>
     </comp>
     <comp ref="C2">
       <value>10uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">445-4536-1-ND</field>
         <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
       </fields>
-      <libsource lib="head_controller" part="10uF"/>
+      <libsource lib="hybridizer_head_interface" part="10uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54892682</tstamp>
     </comp>
     <comp ref="C3">
       <value>10uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">445-4536-1-ND</field>
         <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
       </fields>
-      <libsource lib="head_controller" part="10uF"/>
+      <libsource lib="hybridizer_head_interface" part="10uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5489288F</tstamp>
     </comp>
     <comp ref="C4">
       <value>0.1uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">478-3586-1-ND</field>
         <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
       </fields>
-      <libsource lib="head_controller" part="0.1uF"/>
+      <libsource lib="hybridizer_head_interface" part="0.1uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5489352B</tstamp>
     </comp>
     <comp ref="R1">
       <value>5.11k</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">P5.11KAACT-ND</field>
         <field name="Description">RES SMD 5.11K OHM 1% 1/2W 1210</field>
       </fields>
-      <libsource lib="head_controller" part="5.11k"/>
+      <libsource lib="hybridizer_head_interface" part="5.11k"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54893E85</tstamp>
     </comp>
     <comp ref="R2">
       <value>5.11k</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">P5.11KAACT-ND</field>
         <field name="Description">RES SMD 5.11K OHM 1% 1/2W 1210</field>
       </fields>
-      <libsource lib="head_controller" part="5.11k"/>
+      <libsource lib="hybridizer_head_interface" part="5.11k"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54893F36</tstamp>
     </comp>
     <comp ref="REG1">
       <value>CONV_DC_DC_12V_1A</value>
-      <footprint>head_controller:DC_DC_CONV_R78C</footprint>
+      <footprint>hybridizer_head_interface:DC_DC_CONV_R78C</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">945-1392-5-ND</field>
         <field name="Description">CONV DC/DC 1A 12V OUT SIP VERT</field>
       </fields>
-      <libsource lib="head_controller" part="CONV_DC_DC_12V_1A"/>
+      <libsource lib="hybridizer_head_interface" part="CONV_DC_DC_12V_1A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5489CB72</tstamp>
     </comp>
     <comp ref="U1">
       <value>MAX6817</value>
-      <footprint>head_controller:MAX6817</footprint>
+      <footprint>hybridizer_head_interface:MAX6817</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">MAX6817EUT+TCT-ND</field>
         <field name="Description">IC DEBOUNCER SWITCH DUAL SOT23-6</field>
       </fields>
-      <libsource lib="head_controller" part="MAX6817"/>
+      <libsource lib="hybridizer_head_interface" part="MAX6817"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5489DAE1</tstamp>
     </comp>
     <comp ref="U5">
       <value>TLE723X</value>
-      <footprint>head_controller:TLE723X</footprint>
+      <footprint>hybridizer_head_interface:TLE723X</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">TLE7230GCT-ND</field>
         <field name="Description">IC SW SMART OCTAL LOWSIDE PDSO24</field>
       </fields>
-      <libsource lib="head_controller" part="TLE723X"/>
+      <libsource lib="hybridizer_head_interface" part="TLE723X"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>548B22AA</tstamp>
     </comp>
     <comp ref="C8">
       <value>0.1uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">478-3586-1-ND</field>
         <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
       </fields>
-      <libsource lib="head_controller" part="0.1uF"/>
+      <libsource lib="hybridizer_head_interface" part="0.1uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>548B293B</tstamp>
     </comp>
     <comp ref="E1">
       <value>ENCODER_C14</value>
-      <footprint>head_controller:Micro-MaTch_6_SMD</footprint>
+      <footprint>hybridizer_head_interface:Micro-MaTch_6_SMD</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">A99474CT-ND</field>
         <field name="Description">CONN FMALE-ON-BRD 6POS VERT SMD</field>
       </fields>
-      <libsource lib="head_controller" part="ENCODER_C14"/>
+      <libsource lib="hybridizer_head_interface" part="ENCODER_C14"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>548B5C76</tstamp>
     </comp>
     <comp ref="U6">
       <value>TLE723X</value>
-      <footprint>head_controller:TLE723X</footprint>
+      <footprint>hybridizer_head_interface:TLE723X</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">TLE7230GCT-ND</field>
         <field name="Description">IC SW SMART OCTAL LOWSIDE PDSO24</field>
       </fields>
-      <libsource lib="head_controller" part="TLE723X"/>
+      <libsource lib="hybridizer_head_interface" part="TLE723X"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AADA19</tstamp>
     </comp>
     <comp ref="C9">
       <value>0.1uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">478-3586-1-ND</field>
         <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
       </fields>
-      <libsource lib="head_controller" part="0.1uF"/>
+      <libsource lib="hybridizer_head_interface" part="0.1uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AADA2E</tstamp>
     </comp>
     <comp ref="D33">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AAFFE6</tstamp>
     </comp>
     <comp ref="D32">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB05E3</tstamp>
     </comp>
     <comp ref="D31">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0663</tstamp>
     </comp>
     <comp ref="D30">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB066F</tstamp>
     </comp>
     <comp ref="D29">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0797</tstamp>
     </comp>
     <comp ref="D28">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB07A3</tstamp>
     </comp>
     <comp ref="D27">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB07AF</tstamp>
     </comp>
     <comp ref="D26">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB07BB</tstamp>
     </comp>
     <comp ref="D25">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0B65</tstamp>
     </comp>
     <comp ref="D24">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0B71</tstamp>
     </comp>
     <comp ref="D23">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0B7D</tstamp>
     </comp>
     <comp ref="D22">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0B89</tstamp>
     </comp>
     <comp ref="D21">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0B95</tstamp>
     </comp>
     <comp ref="D20">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0BA1</tstamp>
     </comp>
     <comp ref="D19">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0BAD</tstamp>
     </comp>
     <comp ref="D18">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AB0BB9</tstamp>
     </comp>
     <comp ref="ARDUINO1">
       <value>ARDUINO_MEGA</value>
-      <footprint>head_controller:ARDUINO_MEGA_SHIELD</footprint>
+      <footprint>hybridizer_head_interface:ARDUINO_MEGA_SHIELD</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">1050-1018-ND</field>
         <field name="Description">BOARD MCU MEGA2560</field>
       </fields>
-      <libsource lib="head_controller" part="ARDUINO_MEGA"/>
+      <libsource lib="hybridizer_head_interface" part="ARDUINO_MEGA"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AD3990</tstamp>
     </comp>
     <comp ref="R3">
       <value>5.11k</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">P5.11KAACT-ND</field>
         <field name="Description">RES SMD 5.11K OHM 1% 1/2W 1210</field>
       </fields>
-      <libsource lib="head_controller" part="5.11k"/>
+      <libsource lib="hybridizer_head_interface" part="5.11k"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54AD64AC</tstamp>
     </comp>
     <comp ref="P3">
       <value>BNC_DOUBLE_RA</value>
-      <footprint>head_controller:BNC_DOUBLE</footprint>
+      <footprint>hybridizer_head_interface:BNC_DOUBLE</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">ACX1655-ND</field>
         <field name="Description">CONN BNC JACK R/A 75 OHM PCB</field>
       </fields>
-      <libsource lib="head_controller" part="BNC_DOUBLE_RA"/>
+      <libsource lib="hybridizer_head_interface" part="BNC_DOUBLE_RA"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54ADBC63</tstamp>
     </comp>
     <comp ref="SW1">
       <value>SPST_SERIES_M</value>
-      <footprint>head_controller:SPST_SERIES_M</footprint>
+      <footprint>hybridizer_head_interface:SPST_SERIES_M</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">360-3243-ND</field>
         <field name="Description">SWITCH TOGGLE SPST 6A 125V</field>
       </fields>
-      <libsource lib="head_controller" part="SPST_SERIES_M"/>
+      <libsource lib="hybridizer_head_interface" part="SPST_SERIES_M"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BECF3D</tstamp>
     </comp>
@@ -434,349 +434,349 @@
         <field name="PartNumber">609-3461-ND</field>
         <field name="Description">01x03 .100 SR STRAIGHT</field>
       </fields>
-      <libsource lib="head_controller" part="HEADER_01X03"/>
+      <libsource lib="hybridizer_head_interface" part="HEADER_01X03"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BEEA7F</tstamp>
     </comp>
     <comp ref="C5">
       <value>0.1uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">478-3586-1-ND</field>
         <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
       </fields>
-      <libsource lib="head_controller" part="0.1uF"/>
+      <libsource lib="hybridizer_head_interface" part="0.1uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF0196</tstamp>
     </comp>
     <comp ref="U2">
       <value>MAX6817</value>
-      <footprint>head_controller:MAX6817</footprint>
+      <footprint>hybridizer_head_interface:MAX6817</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">MAX6817EUT+TCT-ND</field>
         <field name="Description">IC DEBOUNCER SWITCH DUAL SOT23-6</field>
       </fields>
-      <libsource lib="head_controller" part="MAX6817"/>
+      <libsource lib="hybridizer_head_interface" part="MAX6817"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF019F</tstamp>
     </comp>
     <comp ref="S1">
       <value>HEADER_01X02_SHR</value>
-      <footprint>head_controller:Header_Shrouded_2_Pin</footprint>
+      <footprint>hybridizer_head_interface:Header_Shrouded_2_Pin</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">WM4800-ND</field>
         <field name="Description">CONN HEADER 2POS .100 VERT GOLD</field>
       </fields>
-      <libsource lib="head_controller" part="HEADER_01X02_SHR"/>
+      <libsource lib="hybridizer_head_interface" part="HEADER_01X02_SHR"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF1327</tstamp>
     </comp>
     <comp ref="SW2">
       <value>KT_SWITCH</value>
-      <footprint>head_controller:KT_SWITCH</footprint>
+      <footprint>hybridizer_head_interface:KT_SWITCH</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">CKN1860CT-ND</field>
         <field name="Description">SWITCH TACTILE SPST-NO 1VA 32V</field>
       </fields>
-      <libsource lib="head_controller" part="KT_SWITCH"/>
+      <libsource lib="hybridizer_head_interface" part="KT_SWITCH"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF3084</tstamp>
     </comp>
     <comp ref="D17">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B37</tstamp>
     </comp>
     <comp ref="D16">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B43</tstamp>
     </comp>
     <comp ref="D15">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B4F</tstamp>
     </comp>
     <comp ref="D14">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B5B</tstamp>
     </comp>
     <comp ref="D13">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B67</tstamp>
     </comp>
     <comp ref="D12">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B73</tstamp>
     </comp>
     <comp ref="D11">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B7F</tstamp>
     </comp>
     <comp ref="D10">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B8B</tstamp>
     </comp>
     <comp ref="D9">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4B97</tstamp>
     </comp>
     <comp ref="D8">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4BA3</tstamp>
     </comp>
     <comp ref="D7">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4BAF</tstamp>
     </comp>
     <comp ref="D6">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4BBB</tstamp>
     </comp>
     <comp ref="D5">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4BC7</tstamp>
     </comp>
     <comp ref="D4">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4BD3</tstamp>
     </comp>
     <comp ref="D3">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4BDF</tstamp>
     </comp>
     <comp ref="D2">
       <value>LED_24V</value>
-      <footprint>head_controller:LED_555-3XXX</footprint>
+      <footprint>hybridizer_head_interface:LED_555-3XXX</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
       </fields>
-      <libsource lib="head_controller" part="LED_24V"/>
+      <libsource lib="hybridizer_head_interface" part="LED_24V"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF4BEB</tstamp>
     </comp>
     <comp ref="U3">
       <value>TLE723X</value>
-      <footprint>head_controller:TLE723X</footprint>
+      <footprint>hybridizer_head_interface:TLE723X</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">TLE7230GCT-ND</field>
         <field name="Description">IC SW SMART OCTAL LOWSIDE PDSO24</field>
       </fields>
-      <libsource lib="head_controller" part="TLE723X"/>
+      <libsource lib="hybridizer_head_interface" part="TLE723X"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF6DD8</tstamp>
     </comp>
     <comp ref="C6">
       <value>0.1uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">478-3586-1-ND</field>
         <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
       </fields>
-      <libsource lib="head_controller" part="0.1uF"/>
+      <libsource lib="hybridizer_head_interface" part="0.1uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF6DED</tstamp>
     </comp>
     <comp ref="U4">
       <value>TLE723X</value>
-      <footprint>head_controller:TLE723X</footprint>
+      <footprint>hybridizer_head_interface:TLE723X</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">TLE7230GCT-ND</field>
         <field name="Description">IC SW SMART OCTAL LOWSIDE PDSO24</field>
       </fields>
-      <libsource lib="head_controller" part="TLE723X"/>
+      <libsource lib="hybridizer_head_interface" part="TLE723X"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF6E29</tstamp>
     </comp>
     <comp ref="C7">
       <value>0.1uF</value>
-      <footprint>head_controller:SM1210</footprint>
+      <footprint>hybridizer_head_interface:SM1210</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">478-3586-1-ND</field>
         <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
       </fields>
-      <libsource lib="head_controller" part="0.1uF"/>
+      <libsource lib="hybridizer_head_interface" part="0.1uF"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BF6E3E</tstamp>
     </comp>
     <comp ref="P4">
       <value>HEADER_02X08_SMD</value>
-      <footprint>head_controller:HEADER_02x08_SMD</footprint>
+      <footprint>hybridizer_head_interface:HEADER_02x08_SMD</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">HSL16H-ND</field>
         <field name="Description">CONN HEADER LO-PRO 16POS AU SMD</field>
       </fields>
-      <libsource lib="head_controller" part="HEADER_02X08_SMD"/>
+      <libsource lib="hybridizer_head_interface" part="HEADER_02X08_SMD"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BFE706</tstamp>
     </comp>
     <comp ref="P5">
       <value>HEADER_02X08_SMD</value>
-      <footprint>head_controller:HEADER_02x08_SMD</footprint>
+      <footprint>hybridizer_head_interface:HEADER_02x08_SMD</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">HSL16H-ND</field>
         <field name="Description">CONN HEADER LO-PRO 16POS AU SMD</field>
       </fields>
-      <libsource lib="head_controller" part="HEADER_02X08_SMD"/>
+      <libsource lib="hybridizer_head_interface" part="HEADER_02X08_SMD"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BFEC24</tstamp>
     </comp>
     <comp ref="P6">
       <value>HEADER_02X08_SMD</value>
-      <footprint>head_controller:HEADER_02x08_SMD</footprint>
+      <footprint>hybridizer_head_interface:HEADER_02x08_SMD</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">HSL16H-ND</field>
         <field name="Description">CONN HEADER LO-PRO 16POS AU SMD</field>
       </fields>
-      <libsource lib="head_controller" part="HEADER_02X08_SMD"/>
+      <libsource lib="hybridizer_head_interface" part="HEADER_02X08_SMD"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BFF215</tstamp>
     </comp>
     <comp ref="P7">
       <value>HEADER_02X08_SMD</value>
-      <footprint>head_controller:HEADER_02x08_SMD</footprint>
+      <footprint>hybridizer_head_interface:HEADER_02x08_SMD</footprint>
       <fields>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">HSL16H-ND</field>
         <field name="Description">CONN HEADER LO-PRO 16POS AU SMD</field>
       </fields>
-      <libsource lib="head_controller" part="HEADER_02X08_SMD"/>
+      <libsource lib="hybridizer_head_interface" part="HEADER_02X08_SMD"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>54BFF21E</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="head_controller" part="0.1uF">
+    <libpart lib="hybridizer_head_interface" part="0.1uF">
       <footprints>
         <fp>SM*</fp>
         <fp>C?</fp>
@@ -785,7 +785,7 @@
       <fields>
         <field name="Reference">C</field>
         <field name="Value">0.1uF</field>
-        <field name="Footprint">head_controller:SM1210</field>
+        <field name="Footprint">hybridizer_head_interface:SM1210</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">478-3586-1-ND</field>
         <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
@@ -795,7 +795,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="10uF">
+    <libpart lib="hybridizer_head_interface" part="10uF">
       <footprints>
         <fp>SM*</fp>
         <fp>C?</fp>
@@ -804,7 +804,7 @@
       <fields>
         <field name="Reference">C</field>
         <field name="Value">10uF</field>
-        <field name="Footprint">head_controller:SM1210</field>
+        <field name="Footprint">hybridizer_head_interface:SM1210</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">445-4536-1-ND</field>
         <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
@@ -814,7 +814,7 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="5.11k">
+    <libpart lib="hybridizer_head_interface" part="5.11k">
       <footprints>
         <fp>R?</fp>
         <fp>SM0603</fp>
@@ -825,7 +825,7 @@
       <fields>
         <field name="Reference">R</field>
         <field name="Value">5.11k</field>
-        <field name="Footprint">head_controller:SM1210</field>
+        <field name="Footprint">hybridizer_head_interface:SM1210</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">P5.11KAACT-ND</field>
         <field name="Description">RES SMD 5.11K OHM 1% 1/2W 1210</field>
@@ -835,11 +835,11 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="ARDUINO_MEGA">
+    <libpart lib="hybridizer_head_interface" part="ARDUINO_MEGA">
       <fields>
         <field name="Reference">ARDUINO</field>
         <field name="Value">ARDUINO_MEGA</field>
-        <field name="Footprint">head_controller:ARDUINO_MEGA_SHIELD</field>
+        <field name="Footprint">hybridizer_head_interface:ARDUINO_MEGA_SHIELD</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">1050-1018-ND</field>
         <field name="Description">BOARD MCU MEGA2560</field>
@@ -933,7 +933,7 @@
         <pin num="V_IN" name="V_IN" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="BNC_DOUBLE_RA">
+    <libpart lib="hybridizer_head_interface" part="BNC_DOUBLE_RA">
       <footprints>
         <fp>Pin_Header_Straight_2X02</fp>
         <fp>Pin_Header_Angled_2X02</fp>
@@ -943,7 +943,7 @@
       <fields>
         <field name="Reference">P</field>
         <field name="Value">BNC_DOUBLE_RA</field>
-        <field name="Footprint">head_controller:BNC_DOUBLE</field>
+        <field name="Footprint">hybridizer_head_interface:BNC_DOUBLE</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">ACX1655-ND</field>
         <field name="Description">CONN BNC JACK R/A 75 OHM PCB</field>
@@ -955,11 +955,11 @@
         <pin num="4" name="P4" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="CONV_DC_DC_12V_1A">
+    <libpart lib="hybridizer_head_interface" part="CONV_DC_DC_12V_1A">
       <fields>
         <field name="Reference">REG</field>
         <field name="Value">CONV_DC_DC_12V_1A</field>
-        <field name="Footprint">head_controller:DC_DC_CONV_R78C</field>
+        <field name="Footprint">hybridizer_head_interface:DC_DC_CONV_R78C</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">945-1392-5-ND</field>
         <field name="Description">CONV DC/DC 1A 12V OUT SIP VERT</field>
@@ -970,11 +970,11 @@
         <pin num="3" name="+VOUT" type="power_out"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="ENCODER_C14">
+    <libpart lib="hybridizer_head_interface" part="ENCODER_C14">
       <fields>
         <field name="Reference">E</field>
         <field name="Value">ENCODER_C14</field>
-        <field name="Footprint">head_controller:Micro-MaTch_6_SMD</field>
+        <field name="Footprint">hybridizer_head_interface:Micro-MaTch_6_SMD</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">A99474CT-ND</field>
         <field name="Description">CONN FMALE-ON-BRD 6POS VERT SMD</field>
@@ -988,7 +988,7 @@
         <pin num="6" name="+5V" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="LED_24V">
+    <libpart lib="hybridizer_head_interface" part="LED_24V">
       <footprints>
         <fp>LED-3MM</fp>
         <fp>LED-5MM</fp>
@@ -1001,7 +1001,7 @@
       <fields>
         <field name="Reference">D</field>
         <field name="Value">LED_24V</field>
-        <field name="Footprint">head_controller:LED_555-3XXX</field>
+        <field name="Footprint">hybridizer_head_interface:LED_555-3XXX</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">350-1723-ND</field>
         <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
@@ -1011,11 +1011,11 @@
         <pin num="2" name="K" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="MAX6817">
+    <libpart lib="hybridizer_head_interface" part="MAX6817">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">MAX6817</field>
-        <field name="Footprint">head_controller:MAX6817</field>
+        <field name="Footprint">hybridizer_head_interface:MAX6817</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">MAX6817EUT+TCT-ND</field>
         <field name="Description">IC DEBOUNCER SWITCH DUAL SOT23-6</field>
@@ -1029,7 +1029,7 @@
         <pin num="6" name="OUT1" type="output"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="PWR_JACK_2.5x5.5">
+    <libpart lib="hybridizer_head_interface" part="PWR_JACK_2.5x5.5">
       <footprints>
         <fp>Pin_Header_Straight_1X02</fp>
         <fp>Pin_Header_Angled_1X02</fp>
@@ -1039,7 +1039,7 @@
       <fields>
         <field name="Reference">P</field>
         <field name="Value">PWR_JACK_2.5x5.5</field>
-        <field name="Footprint">head_controller:DCJACK_2PIN_HIGHCURRENT</field>
+        <field name="Footprint">hybridizer_head_interface:DCJACK_2PIN_HIGHCURRENT</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">CP-063BH-ND</field>
         <field name="Description">CONN PWR JACK DC 2.5X5.5 8A T/H</field>
@@ -1049,11 +1049,11 @@
         <pin num="2" name="P2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="TLE723X">
+    <libpart lib="hybridizer_head_interface" part="TLE723X">
       <fields>
         <field name="Reference">U</field>
         <field name="Value">TLE723X</field>
-        <field name="Footprint">head_controller:TLE723X</field>
+        <field name="Footprint">hybridizer_head_interface:TLE723X</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">TLE7230GCT-ND</field>
         <field name="Description">IC SW SMART OCTAL LOWSIDE PDSO24</field>
@@ -1085,7 +1085,7 @@
         <pin num="24" name="RST" type="BiDi"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="HEADER_01X03">
+    <libpart lib="hybridizer_head_interface" part="HEADER_01X03">
       <footprints>
         <fp>Pin_Header_Straight_1X03</fp>
         <fp>Pin_Header_Angled_1X03</fp>
@@ -1106,11 +1106,11 @@
         <pin num="3" name="P3" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="KT_SWITCH">
+    <libpart lib="hybridizer_head_interface" part="KT_SWITCH">
       <fields>
         <field name="Reference">SW</field>
         <field name="Value">KT_SWITCH</field>
-        <field name="Footprint">head_controller:KT_SWITCH</field>
+        <field name="Footprint">hybridizer_head_interface:KT_SWITCH</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">CKN1860CT-ND</field>
         <field name="Description">SWITCH TACTILE SPST-NO 1VA 32V</field>
@@ -1120,11 +1120,11 @@
         <pin num="3" name="3" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="SPST_SERIES_M">
+    <libpart lib="hybridizer_head_interface" part="SPST_SERIES_M">
       <fields>
         <field name="Reference">SW</field>
         <field name="Value">SPST_SERIES_M</field>
-        <field name="Footprint">head_controller:SPST_SERIES_M</field>
+        <field name="Footprint">hybridizer_head_interface:SPST_SERIES_M</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">360-3243-ND</field>
         <field name="Description">SWITCH TOGGLE SPST 6A 125V</field>
@@ -1134,7 +1134,7 @@
         <pin num="3" name="3" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="HEADER_01X02_SHR">
+    <libpart lib="hybridizer_head_interface" part="HEADER_01X02_SHR">
       <footprints>
         <fp>Pin_Header_Straight_1X02</fp>
         <fp>Pin_Header_Angled_1X02</fp>
@@ -1144,7 +1144,7 @@
       <fields>
         <field name="Reference">S</field>
         <field name="Value">HEADER_01X02_SHR</field>
-        <field name="Footprint">head_controller:Header_Shrouded_2_Pin</field>
+        <field name="Footprint">hybridizer_head_interface:Header_Shrouded_2_Pin</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">WM4800-ND</field>
         <field name="Description">CONN HEADER 2POS .100 VERT GOLD</field>
@@ -1154,7 +1154,7 @@
         <pin num="2" name="P2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="head_controller" part="HEADER_02X08_SMD">
+    <libpart lib="hybridizer_head_interface" part="HEADER_02X08_SMD">
       <footprints>
         <fp>Pin_Header_Straight_2X08</fp>
         <fp>Pin_Header_Angled_2X08</fp>
@@ -1164,7 +1164,7 @@
       <fields>
         <field name="Reference">P</field>
         <field name="Value">HEADER_02X08_SMD</field>
-        <field name="Footprint">head_controller:HEADER_02x08_SMD</field>
+        <field name="Footprint">hybridizer_head_interface:HEADER_02x08_SMD</field>
         <field name="Vendor">digikey</field>
         <field name="PartNumber">HSL16H-ND</field>
         <field name="Description">CONN HEADER LO-PRO 16POS AU SMD</field>
@@ -1190,8 +1190,8 @@
     </libpart>
   </libparts>
   <libraries>
-    <library logical="head_controller">
-      <uri>/home/polidorop/git/automatic_hybridizer/head_controller/pcb/head_controller.lib</uri>
+    <library logical="hybridizer_head_interface">
+      <uri>/home/polidorop/git/automatic_hybridizer/hybridizer_head_interface/pcb/hybridizer_head_interface.lib</uri>
     </library>
   </libraries>
   <nets>

@@ -1,18 +1,18 @@
 
-(session head_controller.ses
-  (base_design head_controller.dsn)
+(session hybridizer_head_interface.ses
+  (base_design hybridizer_head_interface.dsn)
   (placement
     (resolution um 10)
-    (component head_controller:KT_SWITCH
+    (component hybridizer_head_interface:KT_SWITCH
       (place SW2 2000250 -882650 front 90)
     )
-    (component head_controller:Header_Shrouded_2_Pin
+    (component hybridizer_head_interface:Header_Shrouded_2_Pin
       (place S1 1841500 -882650 front 270)
     )
     (component footprints:Header_3_Pin
       (place P2 1041400 -1219200 front 180)
     )
-    (component "head_controller:LED_555-3XXX"
+    (component "hybridizer_head_interface:LED_555-3XXX"
       (place D33 1206500 -1212850 front 180)
       (place D32 1231900 -1212850 front 180)
       (place D31 1257300 -1212850 front 180)
@@ -47,7 +47,7 @@
       (place D2 1689100 -984250 front 180)
       (place D1 1873250 -1028700 front 180)
     )
-    (component head_controller:SM1210
+    (component hybridizer_head_interface:SM1210
       (place C9 1416050 -1098550 back 90)
       (place C8 1720850 -1098550 back 90)
       (place C7 1416050 -869950 back 90)
@@ -61,35 +61,35 @@
       (place R1 1847850 -1200150 back 270)
       (place R2 1784350 -1200150 back 90)
     )
-    (component head_controller:SPST_SERIES_M
+    (component hybridizer_head_interface:SPST_SERIES_M
       (place SW1 1816100 -1028700 front 180)
     )
-    (component head_controller:BNC_DOUBLE
+    (component hybridizer_head_interface:BNC_DOUBLE
       (place P3 990600 -1028700 front 90)
     )
-    (component head_controller:ARDUINO_MEGA_SHIELD
+    (component hybridizer_head_interface:ARDUINO_MEGA_SHIELD
       (place ARDUINO1 977900 -1295400 front 0)
     )
-    (component head_controller:DC_DC_CONV_R78C
+    (component hybridizer_head_interface:DC_DC_CONV_R78C
       (place REG1 2000250 -1155700 front 270)
     )
-    (component head_controller:DCJACK_2PIN_HIGHCURRENT
+    (component hybridizer_head_interface:DCJACK_2PIN_HIGHCURRENT
       (place P1 2114550 -1028700 front 270)
     )
-    (component "head_controller:Micro-MaTch_6_SMD"
+    (component "hybridizer_head_interface:Micro-MaTch_6_SMD"
       (place E1 1816100 -1200150 front 0)
     )
-    (component head_controller:MAX6817
+    (component hybridizer_head_interface:MAX6817
       (place U1 1778000 -831850 back 270)
       (place U2 1828800 -831850 back 270)
     )
-    (component head_controller:HEADER_02x08_SMD
+    (component hybridizer_head_interface:HEADER_02x08_SMD
       (place P7 1295400 -1117600 front 0)
       (place P6 1600200 -1117600 front 0)
       (place P5 1295400 -889000 front 0)
       (place P4 1600200 -889000 front 0)
     )
-    (component head_controller:TLE723X
+    (component hybridizer_head_interface:TLE723X
       (place U3 1600200 -869950 back 0)
       (place U4 1295400 -869950 back 0)
       (place U5 1600200 -1098550 back 0)

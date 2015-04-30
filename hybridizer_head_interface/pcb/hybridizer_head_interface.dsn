@@ -1,4 +1,4 @@
-(pcb /home/polidorop/git/automatic_hybridizer/head_controller/pcb/head_controller.dsn
+(pcb /home/polidorop/git/automatic_hybridizer/hybridizer_head_interface/pcb/hybridizer_head_interface.dsn
   (parser
     (string_quote ")
     (space_in_quoted_tokens on)
@@ -51,7 +51,7 @@
     )
   )
   (placement
-    (component head_controller:valve_hole
+    (component hybridizer_head_interface:valve_hole
       (place REF** 93599 -151958 front 0 (PN valve_hole))
       (place VALVE_HOLE_3 117533 -111613 front 0 (PN valve_hole))
       (place VALVE_HOLE_6 69667.1 -111613 front 0 (PN valve_hole))
@@ -60,7 +60,7 @@
       (place VALVE_HOLE_1 117533 -36489.6 front 0 (PN valve_hole))
       (place VALVE_HOLE_4 69667.1 -36489.6 front 0 (PN valve_hole))
     )
-    (component head_controller:Header_2_Pin_SMD
+    (component hybridizer_head_interface:Header_2_Pin_SMD
       (place S1 93599 -143901 front 180 (PN HEADER_01X02_SMD))
       (place S2 117729 -44841.2 front 180 (PN HEADER_01X02_SMD))
       (place S3 117729 -82941.2 front 180 (PN HEADER_01X02_SMD))
@@ -69,7 +69,7 @@
       (place S6 69469 -82941.2 front 180 (PN HEADER_01X02_SMD))
       (place S7 69469 -103261 front 180 (PN HEADER_01X02_SMD))
     )
-    (component head_controller:clearance_hole
+    (component hybridizer_head_interface:clearance_hole
       (place CLEARANCE_HOLE_4 58384.4 -36489.6 front 0 (PN clearance_hole))
       (place CLEARANCE_HOLE_5 58384.4 -74051.2 front 0 (PN clearance_hole))
       (place CLEARANCE_HOLE_6 58384.4 -111613 front 0 (PN clearance_hole))
@@ -77,10 +77,10 @@
       (place CLEARANCE_HOLE_2 128816 -74051.2 front 0 (PN clearance_hole))
       (place CLEARANCE_HOLE_3 128816 -111613 front 0 (PN clearance_hole))
     )
-    (component head_controller:LEE_VALVE_PLUG_IN
+    (component hybridizer_head_interface:LEE_VALVE_PLUG_IN
       (place S8 93599 -136388 front 0 (PN LEE_VALVE_PLUG_IN))
     )
-    (component head_controller:SOIC_8_N
+    (component hybridizer_head_interface:SOIC_8_N
       (place U2 93599 -115961 front 0 (PN MAX4215))
       (place U4 109474 -56271.2 front 180 (PN MAX4215))
       (place U6 109474 -93736.2 front 180 (PN MAX4215))
@@ -89,7 +89,7 @@
       (place U12 77724 -93736.2 front 180 (PN MAX4215))
       (place U14 84709 -98181.2 front 0 (PN MAX4215))
     )
-    (component head_controller:mounting_hole
+    (component hybridizer_head_interface:mounting_hole
       (place MOUNTING_HOLE_4 66763.9 -28181.3 front 0 (PN mounting_hole))
       (place MOUNTING_HOLE_1 120434 -28181.3 front 0 (PN mounting_hole))
       (place MOUNTING_HOLE_5 66763.9 -65742.8 front 0 (PN mounting_hole))
@@ -97,7 +97,7 @@
       (place MOUNTING_HOLE_6 66763.9 -119921 front 0 (PN mounting_hole))
       (place MOUNTING_HOLE_3 120434 -119921 front 0 (PN mounting_hole))
     )
-    (component "head_controller:LED_555-3XXX_SMD"
+    (component "hybridizer_head_interface:LED_555-3XXX_SMD"
       (place D8 57404 -118501 front 90 (PN LED_24V_SMD))
       (place D7 64025.8 -111613 front 0 (PN LED_24V_SMD))
       (place D6 64025.8 -74051.2 front 0 (PN LED_24V_SMD))
@@ -107,13 +107,13 @@
       (place D2 123175 -36489.6 front 0 (PN LED_24V_SMD))
       (place D1 129794 -118501 front 270 (PN LED_24V_SMD))
     )
-    (component head_controller:HEADER_02x05_SMD
+    (component hybridizer_head_interface:HEADER_02x05_SMD
       (place P2 58039 -55001.2 front 90 (PN HEADER_02X05_SMD))
     )
-    (component head_controller:HEADER_02x08_SMD
+    (component hybridizer_head_interface:HEADER_02x08_SMD
       (place P1 58039 -93101.2 front 90 (PN HEADER_02X08_SMD))
     )
-    (component "head_controller:SOT-23-3"
+    (component "hybridizer_head_interface:SOT-23-3"
       (place U13 76672.4 -111613 back 0 (PN HALL_DRV5053))
       (place U11 76672.4 -74051.2 back 0 (PN HALL_DRV5053))
       (place U9 76672.4 -36489.6 back 0 (PN HALL_DRV5053))
@@ -122,7 +122,7 @@
       (place U3 110528 -36489.6 back 0 (PN HALL_DRV5053))
       (place U1 93599 -144953 back 270 (PN HALL_DRV5053))
     )
-    (component head_controller:SM1210
+    (component hybridizer_head_interface:SM1210
       (place C1 96139 -140091 front 180 (PN 0.1uF))
       (place C2 93599 -122946 front 180 (PN 8.2nF))
       (place C3 87249 -117231 front 270 (PN 0.1uF))
@@ -154,10 +154,10 @@
     )
   )
   (library
-    (image head_controller:valve_hole
+    (image hybridizer_head_interface:valve_hole
       (pin Round[A]Pad_8382_um @1 0 0)
     )
-    (image head_controller:Header_2_Pin_SMD
+    (image hybridizer_head_interface:Header_2_Pin_SMD
       (outline (path signal 150  0 -1270  -2540 -1270))
       (outline (path signal 150  -2540 -1270  -2540 1270))
       (outline (path signal 150  2540 -1270  2540 1270))
@@ -168,10 +168,10 @@
       (pin Rect[T]Pad_1270x2971.8_um 2 -1270 1803.4)
       (pin Rect[T]Pad_1270x2971.8_um 1 1270 -1803.4)
     )
-    (image head_controller:clearance_hole
+    (image hybridizer_head_interface:clearance_hole
       (pin Round[A]Pad_8966.2_um @1 0 0)
     )
-    (image head_controller:LEE_VALVE_PLUG_IN
+    (image hybridizer_head_interface:LEE_VALVE_PLUG_IN
       (outline (path signal 150  3556 0  3381.96 -1098.86  2876.86 -2090.16  2090.16 -2876.86
             1098.86 -3381.96  0 -3556  -1098.86 -3381.96  -2090.16 -2876.86
             -2876.86 -2090.16  -3381.96 -1098.86  -3556 0  -3381.96 1098.86
@@ -180,7 +180,7 @@
       (pin Round[A]Pad_2184.4_um 1 -1270 0)
       (pin Round[A]Pad_2184.4_um 2 1270 0)
     )
-    (image head_controller:SOIC_8_N
+    (image hybridizer_head_interface:SOIC_8_N
       (outline (path signal 381  -1270 -889  -1288.65 -1006.74  -1342.77 -1112.95  -1427.05 -1197.23
             -1533.27 -1251.35  -1651 -1270  -1768.73 -1251.35  -1874.95 -1197.23
             -1959.23 -1112.95  -2013.35 -1006.74  -2032 -889  -2013.35 -771.265
@@ -197,7 +197,7 @@
       (pin Rect[T]Pad_711.2x1778_um 7 -635 2540)
       (pin Rect[T]Pad_711.2x1778_um 8 -1905 2540)
     )
-    (image head_controller:mounting_hole
+    (image hybridizer_head_interface:mounting_hole
       (outline (path signal 381  2667 0  2536.47 -824.148  2157.65 -1567.62  1567.62 -2157.65
             824.148 -2536.47  0 -2667  -824.148 -2536.47  -1567.62 -2157.65
             -2157.65 -1567.62  -2536.47 -824.148  -2667 0  -2536.47 824.148
@@ -205,7 +205,7 @@
             824.148 2536.47  1567.62 2157.65  2157.65 1567.62  2536.47 824.148))
       (pin Round[A]Pad_3810_um @1 0 0)
     )
-    (image "head_controller:LED_555-3XXX_SMD"
+    (image "hybridizer_head_interface:LED_555-3XXX_SMD"
       (outline (path signal 228.6  -508 1778  508 1778))
       (outline (path signal 228.6  0 1270  0 2286))
       (outline (path signal 228.6  -1270 3810  1270 3810))
@@ -215,7 +215,7 @@
       (pin Rect[T]Pad_1524x2540_um 1 0 3810)
       (pin Rect[T]Pad_1524x2540_um 2 0 -3810)
     )
-    (image head_controller:HEADER_02x05_SMD
+    (image hybridizer_head_interface:HEADER_02x05_SMD
       (outline (path signal 381  -10160 -4572  10160 -4572))
       (outline (path signal 381  -10160 4572  10160 4572))
       (outline (path signal 381  -10160 4572  -10160 -4572))
@@ -234,7 +234,7 @@
       (pin Rect[T]Pad_1016x4495.8_um 9 -5080 2997.2)
       (pin Rect[T]Pad_1016x4495.8_um 10 -5080 -2997.2)
     )
-    (image head_controller:HEADER_02x08_SMD
+    (image hybridizer_head_interface:HEADER_02x08_SMD
       (outline (path signal 381  13970 4572  -13970 4572))
       (outline (path signal 381  -13970 4572  -13970 -4572))
       (outline (path signal 381  -13970 -4572  13970 -4572))
@@ -259,13 +259,13 @@
       (pin Rect[T]Pad_1016x4495.8_um 15 -8890 2997.2)
       (pin Rect[T]Pad_1016x4495.8_um 16 -8890 -2997.2)
     )
-    (image "head_controller:SOT-23-3"
+    (image "hybridizer_head_interface:SOT-23-3"
       (outline (path signal 150  -1270 0  1270 0))
       (pin Rect[T]Pad_701.04x1000.76_um 1 -949.96 -1198.88)
       (pin Rect[T]Pad_701.04x1000.76_um 2 949.96 -1198.88)
       (pin Rect[T]Pad_701.04x1000.76_um 3 0 1198.88)
     )
-    (image head_controller:SM1210
+    (image hybridizer_head_interface:SM1210
       (outline (path signal 127  -762 1397  -2286 1397))
       (outline (path signal 127  -2286 1397  -2286 -1397))
       (outline (path signal 127  -2286 -1397  -762 -1397))

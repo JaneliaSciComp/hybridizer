@@ -11,7 +11,7 @@ version=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=head_controller.net
+LastNetListRead=hybridizer_head_interface.net
 UseCmpFile=0
 PadDrill=0.889
 PadDrillOvalY=0.889
@@ -75,5 +75,5 @@ LibName27=opto
 LibName28=atmel
 LibName29=contrib
 LibName30=valves
-LibName31=head_controller
+LibName31=hybridizer_head_interface
 LibName32=/home/polidorop/git/kicad-libraries/components

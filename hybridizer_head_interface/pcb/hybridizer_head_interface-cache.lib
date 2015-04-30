@@ -21,7 +21,7 @@ ENDDEF
 DEF 0.1uF C 0 10 N Y 1 F N
 F0 "C" 0 100 40 H V L CNN
 F1 "0.1uF" 6 -85 40 H V L CNN
-F2 "head_controller:SM1210" 38 -150 30 H I C CNN
+F2 "hybridizer_head_interface:SM1210" 38 -150 30 H I C CNN
 F3 "" 0 0 60 H V C CNN
 F4 "digikey" 100 200 60 H I C CNN "Vendor"
 F5 "478-3586-1-ND" 200 300 60 H I C CNN "PartNumber"
@@ -44,7 +44,7 @@ ENDDEF
 DEF 200k R 0 0 N Y 1 F N
 F0 "R" 80 0 40 V V C CNN
 F1 "200k" 7 1 40 V V C CNN
-F2 "head_controller:SM1210" -70 0 30 V I C CNN
+F2 "hybridizer_head_interface:SM1210" -70 0 30 V I C CNN
 F3 "" 80 0 30 V V C CNN
 F4 "digikey" 180 100 60 V I C CNN "Vendor"
 F5 "P200KAACT-ND" 280 200 60 V I C CNN "PartNumber"
@@ -68,7 +68,7 @@ ENDDEF
 DEF 8.2nF C 0 10 N Y 1 F N
 F0 "C" 0 100 40 H V L CNN
 F1 "8.2nF" 6 -85 40 H V L CNN
-F2 "head_controller:SM1210" 38 -150 30 H I C CNN
+F2 "hybridizer_head_interface:SM1210" 38 -150 30 H I C CNN
 F3 "" 0 0 60 H V C CNN
 F4 "digikey" 100 200 60 H I C CNN "Vendor"
 F5 "399-7456-1-ND" 200 300 60 H I C CNN "PartNumber"
@@ -104,7 +104,7 @@ ENDDEF
 DEF HALL_DRV5053 U 0 40 Y Y 1 F N
 F0 "U" 0 -200 40 H V C CNN
 F1 "HALL_DRV5053" 0 200 40 H V C CNN
-F2 "head_controller:SOT-23-3" -100 -300 60 H I C CNN
+F2 "hybridizer_head_interface:SOT-23-3" -100 -300 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 F4 "Digikey" 100 -100 60 H I C CNN "Vendor"
 F5 "296-38460-1-ND" 200 0 60 H I C CNN "PartNumber"
@@ -122,7 +122,7 @@ ENDDEF
 DEF HEADER_01X02_SMD S 0 40 Y N 1 F N
 F0 "S" 0 150 50 H V C CNN
 F1 "HEADER_01X02_SMD" 100 0 50 V V C CNN
-F2 "head_controller:Header_2_Pin_SMD" -100 50 60 H I C CNN
+F2 "hybridizer_head_interface:Header_2_Pin_SMD" -100 50 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 F4 "digikey" 100 250 60 H I C CNN "Vendor"
 F5 "609-3500-ND" 200 350 60 H I C CNN "PartNumber"
@@ -147,7 +147,7 @@ ENDDEF
 DEF HEADER_02X05_SMD P 0 1 Y N 1 F N
 F0 "P" 0 300 50 H V C CNN
 F1 "HEADER_02X05_SMD" 0 -300 50 H V C CNN
-F2 "head_controller:HEADER_02x05_SMD" 0 -1200 60 H I C CNN
+F2 "hybridizer_head_interface:HEADER_02x05_SMD" 0 -1200 60 H I C CNN
 F3 "" 0 -1200 60 H V C CNN
 F4 "digikey" 100 400 60 H I C CNN "Vendor"
 F5 "S9185-ND" 200 500 60 H I C CNN "PartNumber"
@@ -188,7 +188,7 @@ ENDDEF
 DEF HEADER_02X08_SMD P 0 1 Y N 1 F N
 F0 "P" 0 450 50 H V C CNN
 F1 "HEADER_02X08_SMD" 0 0 50 V V C CNN
-F2 "head_controller:HEADER_02x08_SMD" 0 -1200 60 H I C CNN
+F2 "hybridizer_head_interface:HEADER_02x08_SMD" 0 -1200 60 H I C CNN
 F3 "" 0 -1200 60 H V C CNN
 F4 "digikey" 100 550 60 H I C CNN "Vendor"
 F5 "HSL16H-ND" 200 650 60 H I C CNN "PartNumber"
@@ -241,7 +241,7 @@ ENDDEF
 DEF LED_24V_SMD D 0 40 Y N 1 F N
 F0 "D" 0 100 50 H V C CNN
 F1 "LED_24V_SMD" 0 -100 50 H V C CNN
-F2 "head_controller:LED_555-3XXX_SMD" -100 0 60 H I C CNN
+F2 "hybridizer_head_interface:LED_555-3XXX_SMD" -100 0 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 F4 "digikey" 100 200 60 H I C CNN "Vendor"
 F5 "350-1723-ND" 200 300 60 H I C CNN "PartNumber"
@@ -270,7 +270,7 @@ ENDDEF
 DEF LEE_VALVE_PLUG_IN S 0 40 Y N 1 F N
 F0 "S" 0 150 50 H V C CNN
 F1 "LEE_VALVE_PLUG_IN" 100 0 50 V V C CNN
-F2 "head_controller:LEE_VALVE_PLUG_IN" -100 50 60 H I C CNN
+F2 "hybridizer_head_interface:LEE_VALVE_PLUG_IN" -100 50 60 H I C CNN
 F3 "" 0 0 60 H V C CNN
 F4 "digikey" 100 250 60 H I C CNN "Vendor"
 F5 "ED90331-ND" 200 350 60 H I C CNN "PartNumber"
@@ -295,7 +295,7 @@ ENDDEF
 DEF MAX4215 U 0 40 Y Y 1 F N
 F0 "U" 0 -250 40 H V C CNN
 F1 "MAX4215" 0 250 40 H V C CNN
-F2 "head_controller:SOIC_8_N" -100 -350 60 H I C CNN
+F2 "hybridizer_head_interface:SOIC_8_N" -100 -350 60 H I C CNN
 F3 "" 0 -250 60 H V C CNN
 F4 "digikey" 100 -150 60 H I C CNN "Vendor"
 F5 "MAX4215ESA+-ND" 200 -50 60 H I C CNN "PartNumber"
