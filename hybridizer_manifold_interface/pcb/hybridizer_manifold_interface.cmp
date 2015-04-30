@@ -1,199 +1,7 @@
-Cmp-Mod V01 Genere par PcbNew le Thu 30 Apr 2015 02:36:14 PM EDT
+Cmp-Mod V01 Genere par PcbNew le Thu 30 Apr 2015 04:58:42 PM EDT
 
 BeginCmp
-TimeStamp = 553EA487
-Path = /553EB780
-Reference = S1;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_manifold_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA494
-Path = /553EB8EE
-Reference = S2;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_manifold_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4A1
-Path = /553EBA0B
-Reference = S3;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_manifold_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4AE
-Path = /553EBA14
-Reference = S4;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_manifold_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4BB
-Path = /553EBB4C
-Reference = S5;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_manifold_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4C8
-Path = /553EBB55
-Reference = S6;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_manifold_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4D5
-Path = /553EBB5E
-Reference = S7;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_manifold_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FC8EE
-Path = /55411716
-Reference = S8;
-ValeurCmp = LEE_VALVE_PLUG_IN;
-IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129B0
-Path = /55417CC2
-Reference = U2;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_manifold_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129C7
-Path = /55417F08
-Reference = U4;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_manifold_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129DE
-Path = /55418018
-Reference = U6;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_manifold_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129F5
-Path = /55418244
-Reference = U8;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_manifold_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 55412A0C
-Path = /5541856D
-Reference = U10;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_manifold_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 55412A23
-Path = /554188E1
-Reference = U12;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_manifold_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 55412A3A
-Path = /55418A58
-Reference = U14;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_manifold_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FC8E8
-Path = /553FC1AD
-Reference = D8;
-ValeurCmp = LED_24V_SMD;
-IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA45F
-Path = /553ECFE2
-Reference = D7;
-ValeurCmp = LED_24V_SMD;
-IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA453
-Path = /553ECF70
-Reference = D6;
-ValeurCmp = LED_24V_SMD;
-IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA447
-Path = /553ECF33
-Reference = D5;
-ValeurCmp = LED_24V_SMD;
-IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA43B
-Path = /553ECEF9
-Reference = D4;
-ValeurCmp = LED_24V_SMD;
-IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA42F
-Path = /553ECE94
-Reference = D3;
-ValeurCmp = LED_24V_SMD;
-IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA423
-Path = /553ECE2E
-Reference = D2;
-ValeurCmp = LED_24V_SMD;
-IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA417
-Path = /553ECDB2
-Reference = D1;
-ValeurCmp = LED_24V_SMD;
-IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 55412999
-Path = /553FDA31
-Reference = P2;
-ValeurCmp = HEADER_02X05_SMD;
-IdModule  = hybridizer_manifold_interface:HEADER_02x05_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA47A
+TimeStamp = 55428C40
 Path = /54BFE706
 Reference = P1;
 ValeurCmp = HEADER_02X08_SMD;
@@ -201,423 +9,135 @@ IdModule  = hybridizer_manifold_interface:HEADER_02x08_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55412A2B
-Path = /5541630B
-Reference = U13;
-ValeurCmp = HALL_DRV5053;
-IdModule  = hybridizer_manifold_interface:SOT-23-3;
+TimeStamp = 55428C78
+Path = /5542A621
+Reference = S8;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
-TimeStamp = 55412A14
-Path = /55416296
-Reference = U11;
-ValeurCmp = HALL_DRV5053;
-IdModule  = hybridizer_manifold_interface:SOT-23-3;
+TimeStamp = 55428C71
+Path = /5542A5C1
+Reference = S7;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
-TimeStamp = 554129FD
-Path = /55416221
-Reference = U9;
-ValeurCmp = HALL_DRV5053;
-IdModule  = hybridizer_manifold_interface:SOT-23-3;
+TimeStamp = 55428C6A
+Path = /5542A546
+Reference = S6;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
-TimeStamp = 554129E6
-Path = /55415B6A
-Reference = U7;
-ValeurCmp = HALL_DRV5053;
-IdModule  = hybridizer_manifold_interface:SOT-23-3;
+TimeStamp = 55428C63
+Path = /5542A4D4
+Reference = S5;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
-TimeStamp = 554129CF
-Path = /55415AF5
-Reference = U5;
-ValeurCmp = HALL_DRV5053;
-IdModule  = hybridizer_manifold_interface:SOT-23-3;
+TimeStamp = 55428C5C
+Path = /5542A461
+Reference = S4;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
-TimeStamp = 554129B8
-Path = /55415384
-Reference = U3;
-ValeurCmp = HALL_DRV5053;
-IdModule  = hybridizer_manifold_interface:SOT-23-3;
+TimeStamp = 55428C55
+Path = /5542A3F9
+Reference = S3;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
-TimeStamp = 554129A1
-Path = /553FCBDD
-Reference = U1;
-ValeurCmp = HALL_DRV5053;
-IdModule  = hybridizer_manifold_interface:SOT-23-3;
+TimeStamp = 55428C4E
+Path = /5542A342
+Reference = S2;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413BEC
-Path = /553FED9B
-Reference = C1;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55428C47
+Path = /5542A27A
+Reference = S1;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_manifold_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413BF8
-Path = /5540EB70
-Reference = C2;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55429B41
+Path = /5542B18A
+Reference = D1;
+ValeurCmp = LED_24V_SMD;
+IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C04
-Path = /55413A90
-Reference = C3;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55429B4D
+Path = /5542B1F0
+Reference = D2;
+ValeurCmp = LED_24V_SMD;
+IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C10
-Path = /5541538D
-Reference = C4;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55429B59
+Path = /5542B233
+Reference = D3;
+ValeurCmp = LED_24V_SMD;
+IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C1C
-Path = /554153B7
-Reference = C5;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55429B65
+Path = /5542B299
+Reference = D4;
+ValeurCmp = LED_24V_SMD;
+IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C28
-Path = /554153E4
-Reference = C6;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55429B71
+Path = /5542B2D8
+Reference = D5;
+ValeurCmp = LED_24V_SMD;
+IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C34
-Path = /55415AFE
-Reference = C7;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55429B7D
+Path = /5542B334
+Reference = D6;
+ValeurCmp = LED_24V_SMD;
+IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C40
-Path = /55415B28
-Reference = C8;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55429B89
+Path = /5542B3C0
+Reference = D7;
+ValeurCmp = LED_24V_SMD;
+IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C4C
-Path = /55415B55
-Reference = C9;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
+TimeStamp = 55429B95
+Path = /5542B41E
+Reference = D8;
+ValeurCmp = LED_24V_SMD;
+IdModule  = hybridizer_manifold_interface:LED_555-3XXX_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C58
-Path = /55415B73
-Reference = C10;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C64
-Path = /55415B9D
-Reference = C11;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C70
-Path = /55415BCA
-Reference = C12;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C7C
-Path = /5541622A
-Reference = C13;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C88
-Path = /55416254
-Reference = C14;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C94
-Path = /55416281
-Reference = C15;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CA0
-Path = /5541629F
-Reference = C16;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CAC
-Path = /554162C9
-Reference = C17;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CB8
-Path = /554162F6
-Reference = C18;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CC4
-Path = /55416314
-Reference = C19;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CD0
-Path = /5541633E
-Reference = C20;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CDC
-Path = /5541636B
-Reference = C21;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CE8
-Path = /5540F542
-Reference = R1;
-ValeurCmp = 200k;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CF4
-Path = /554153C0
-Reference = R2;
-ValeurCmp = 200k;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D00
-Path = /55415B31
-Reference = R3;
-ValeurCmp = 200k;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D0C
-Path = /55415BA6
-Reference = R4;
-ValeurCmp = 200k;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D18
-Path = /5541625D
-Reference = R5;
-ValeurCmp = 200k;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D24
-Path = /554162D2
-Reference = R6;
-ValeurCmp = 200k;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D30
-Path = /55416347
-Reference = R7;
-ValeurCmp = 200k;
-IdModule  = hybridizer_manifold_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FC005
-Path = 
-Reference = CLEARANCE_HOLE_3;
-ValeurCmp = clearance_hole;
-IdModule  = hybridizer_manifold_interface:clearance_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FBFFC
-Path = 
-Reference = CLEARANCE_HOLE_2;
-ValeurCmp = clearance_hole;
-IdModule  = hybridizer_manifold_interface:clearance_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FBFF3
-Path = 
-Reference = CLEARANCE_HOLE_1;
-ValeurCmp = clearance_hole;
-IdModule  = hybridizer_manifold_interface:clearance_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FBFEA
-Path = 
-Reference = CLEARANCE_HOLE_6;
-ValeurCmp = clearance_hole;
-IdModule  = hybridizer_manifold_interface:clearance_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FBFE1
-Path = 
-Reference = CLEARANCE_HOLE_5;
-ValeurCmp = clearance_hole;
-IdModule  = hybridizer_manifold_interface:clearance_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FBFD8
-Path = 
-Reference = CLEARANCE_HOLE_4;
-ValeurCmp = clearance_hole;
-IdModule  = hybridizer_manifold_interface:clearance_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A8286
-Path = 
-Reference = VALVE_HOLE_4;
-ValeurCmp = valve_hole;
-IdModule  = hybridizer_manifold_interface:valve_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A82A0
-Path = 
-Reference = VALVE_HOLE_1;
-ValeurCmp = valve_hole;
-IdModule  = hybridizer_manifold_interface:valve_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A82AA
-Path = 
-Reference = VALVE_HOLE_5;
-ValeurCmp = valve_hole;
-IdModule  = hybridizer_manifold_interface:valve_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A82B3
-Path = 
-Reference = VALVE_HOLE_2;
-ValeurCmp = valve_hole;
-IdModule  = hybridizer_manifold_interface:valve_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A82BC
-Path = 
-Reference = VALVE_HOLE_6;
-ValeurCmp = valve_hole;
-IdModule  = hybridizer_manifold_interface:valve_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A82C5
-Path = 
-Reference = VALVE_HOLE_3;
-ValeurCmp = valve_hole;
-IdModule  = hybridizer_manifold_interface:valve_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A82CE
-Path = 
-Reference = REF**;
-ValeurCmp = valve_hole;
-IdModule  = hybridizer_manifold_interface:valve_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A78EB
-Path = 
-Reference = MOUNTING_HOLE_3;
-ValeurCmp = mounting_hole;
-IdModule  = hybridizer_manifold_interface:mounting_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A78E2
-Path = 
-Reference = MOUNTING_HOLE_6;
-ValeurCmp = mounting_hole;
-IdModule  = hybridizer_manifold_interface:mounting_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A78D9
-Path = 
-Reference = MOUNTING_HOLE_2;
-ValeurCmp = mounting_hole;
-IdModule  = hybridizer_manifold_interface:mounting_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A78D0
-Path = 
-Reference = MOUNTING_HOLE_5;
-ValeurCmp = mounting_hole;
-IdModule  = hybridizer_manifold_interface:mounting_hole;
-EndCmp
-
-BeginCmp
-TimeStamp = 553A78C7
+TimeStamp = 55429821
 Path = 
 Reference = MOUNTING_HOLE_1;
 ValeurCmp = mounting_hole;
@@ -625,9 +145,9 @@ IdModule  = hybridizer_manifold_interface:mounting_hole;
 EndCmp
 
 BeginCmp
-TimeStamp = 553A6100
+TimeStamp = 55429818
 Path = 
-Reference = MOUNTING_HOLE_4;
+Reference = MOUNTING_HOLE_0;
 ValeurCmp = mounting_hole;
 IdModule  = hybridizer_manifold_interface:mounting_hole;
 EndCmp
