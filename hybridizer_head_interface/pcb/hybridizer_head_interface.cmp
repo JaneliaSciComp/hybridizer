@@ -1,4 +1,4 @@
-Cmp-Mod V01 Genere par PcbNew le Thu 30 Apr 2015 02:36:14 PM EDT
+Cmp-Mod V01 Genere par PcbNew le Thu 30 Apr 2015 03:11:03 PM EDT
 
 BeginCmp
 TimeStamp = 553EA487
@@ -54,14 +54,6 @@ Path = /553EBB5E
 Reference = S7;
 ValeurCmp = HEADER_01X02_SMD;
 IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553FC8EE
-Path = /55411716
-Reference = S8;
-ValeurCmp = LEE_VALVE_PLUG_IN;
-IdModule  = hybridizer_head_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 BeginCmp
@@ -630,6 +622,14 @@ Path =
 Reference = MOUNTING_HOLE_4;
 ValeurCmp = mounting_hole;
 IdModule  = hybridizer_head_interface:mounting_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FC8EE
+Path = /55411716
+Reference = S8;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = hybridizer_head_interface:LEE_VALVE_PLUG_IN;
 EndCmp
 
 EndListe
