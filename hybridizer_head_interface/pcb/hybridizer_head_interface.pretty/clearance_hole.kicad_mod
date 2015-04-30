@@ -1,9 +1,9 @@
-(module clearance_hole (layer F.Cu) (tedit 553FBA90)
+(module clearance_hole (layer F.Cu) (tedit 55427521)
   (fp_text reference REF** (at 0 5.08) (layer F.SilkS) hide
     (effects (font (size 1.016 1.016) (thickness 0.1016)))
   )
   (fp_text value clearance_hole (at 0 -5.08) (layer F.SilkS) hide
     (effects (font (size 1.016 1.016) (thickness 0.1016)))
   )
-  (pad "" thru_hole circle (at 0 0) (size 8.9662 8.9662) (drill 8.2042) (layers *.Cu *.Mask F.SilkS))
+  (pad "" thru_hole circle (at 0 0) (size 8.7122 8.7122) (drill 7.9502) (layers *.Cu *.Mask F.SilkS))
 )
