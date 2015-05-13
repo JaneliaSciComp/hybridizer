@@ -46,3 +46,5 @@ RELEASE-VERSION
 *.bck
 *.dcm
 *-bak
+
+noname.pro
