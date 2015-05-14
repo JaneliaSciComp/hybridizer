@@ -1,4 +1,4 @@
-Cmp-Mod V01 Genere par PcbNew le Wed 13 May 2015 04:21:31 PM EDT
+Cmp-Mod V01 Genere par PcbNew le Thu 14 May 2015 11:17:35 AM EDT
 
 BeginCmp
 TimeStamp = 55428C47
@@ -470,6 +470,134 @@ Path = /555408EB
 Reference = C1;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBCA
+Path = /5555361A
+Reference = R17;
+ValeurCmp = 300;
+IdModule  = hybridizer_manifold_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBD6
+Path = /5555421D
+Reference = R18;
+ValeurCmp = 300;
+IdModule  = hybridizer_manifold_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBE2
+Path = /555543D3
+Reference = R19;
+ValeurCmp = 300;
+IdModule  = hybridizer_manifold_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBEE
+Path = /555543EF
+Reference = R20;
+ValeurCmp = 300;
+IdModule  = hybridizer_manifold_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBFA
+Path = /555546AD
+Reference = R21;
+ValeurCmp = 300;
+IdModule  = hybridizer_manifold_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BC06
+Path = /555546C9
+Reference = R22;
+ValeurCmp = 300;
+IdModule  = hybridizer_manifold_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BC12
+Path = /555546E5
+Reference = R23;
+ValeurCmp = 300;
+IdModule  = hybridizer_manifold_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BC1E
+Path = /55554701
+Reference = R24;
+ValeurCmp = 300;
+IdModule  = hybridizer_manifold_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BB86
+Path = /55550D3F
+Reference = D9;
+ValeurCmp = LED_0805;
+IdModule  = hybridizer_manifold_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BB8E
+Path = /5555420D
+Reference = D10;
+ValeurCmp = LED_0805;
+IdModule  = hybridizer_manifold_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BB96
+Path = /555543C3
+Reference = D11;
+ValeurCmp = LED_0805;
+IdModule  = hybridizer_manifold_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BB9E
+Path = /555543DF
+Reference = D12;
+ValeurCmp = LED_0805;
+IdModule  = hybridizer_manifold_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBA6
+Path = /5555469D
+Reference = D13;
+ValeurCmp = LED_0805;
+IdModule  = hybridizer_manifold_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBAE
+Path = /555546B9
+Reference = D14;
+ValeurCmp = LED_0805;
+IdModule  = hybridizer_manifold_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBB6
+Path = /555546D5
+Reference = D15;
+ValeurCmp = LED_0805;
+IdModule  = hybridizer_manifold_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5554BBBE
+Path = /555546F1
+Reference = D16;
+ValeurCmp = LED_0805;
+IdModule  = hybridizer_manifold_interface:LED0805;
 EndCmp
 
 EndListe

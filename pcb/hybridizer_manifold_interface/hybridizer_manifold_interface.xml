@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <export version="D">
   <design>
-    <source>/home/polidorop/git/automatic_hybridizer/hybridizer_manifold_interface/pcb/hybridizer_manifold_interface.sch</source>
-    <date>Fri 01 May 2015 10:34:58 AM EDT</date>
-    <tool>Eeschema 0.201504221001+5618~22~ubuntu14.04.1-product</tool>
+    <source>/home/polidorop/git/hybridizer/pcb/hybridizer_manifold_interface/hybridizer_manifold_interface.sch</source>
+    <date>Thu 14 May 2015 11:06:23 AM EDT</date>
+    <tool>Eeschema 0.201505120158+5650~23~ubuntu14.04.1-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>hybridizer_manifold_interface</title>
         <company>Janelia</company>
-        <rev>1.0</rev>
+        <rev>1.1</rev>
         <date/>
         <source>hybridizer_manifold_interface.sch</source>
         <comment number="1" value=""/>
@@ -19,18 +19,6 @@
     </sheet>
   </design>
   <components>
-    <comp ref="P1">
-      <value>HEADER_02X08_SMD</value>
-      <footprint>hybridizer_manifold_interface:HEADER_02x08_SMD</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">HSL16H-ND</field>
-        <field name="Description">CONN HEADER LO-PRO 16POS AU SMD</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="HEADER_02X08_SMD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>54BFE706</tstamp>
-    </comp>
     <comp ref="S1">
       <value>LEE_VALVE_PLUG_IN</value>
       <footprint>hybridizer_manifold_interface:LEE_VALVE_PLUG_IN</footprint>
@@ -127,104 +115,863 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5542A621</tstamp>
     </comp>
-    <comp ref="D1">
-      <value>LED_24V_SMD</value>
-      <footprint>hybridizer_manifold_interface:LED_555-3XXX_SMD</footprint>
+    <comp ref="P1">
+      <value>HEADER_02X07_SMD</value>
+      <footprint>hybridizer_manifold_interface:HEADER_02x07_SMD</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">S9186-ND</field>
+        <field name="Description">CONN HEADR 2.54MM 14POS GOLD SMD</field>
       </fields>
-      <libsource lib="hybridizer_manifold_interface" part="LED_24V_SMD"/>
+      <libsource lib="hybridizer_manifold_interface" part="HEADER_02X07_SMD"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5542B18A</tstamp>
+      <tstamp>5553659F</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>DRV103</value>
+      <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="DRV103"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555378C4</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>diode_schottky_20V_1A</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55538621</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555408EB</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>DRV103</value>
+      <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="DRV103"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55540C15</tstamp>
     </comp>
     <comp ref="D2">
-      <value>LED_24V_SMD</value>
-      <footprint>hybridizer_manifold_interface:LED_555-3XXX_SMD</footprint>
+      <value>diode_schottky_20V_1A</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
       </fields>
-      <libsource lib="hybridizer_manifold_interface" part="LED_24V_SMD"/>
+      <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5542B1F0</tstamp>
+      <tstamp>55540C30</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55540C6F</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>DRV103</value>
+      <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="DRV103"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554133E</tstamp>
     </comp>
     <comp ref="D3">
-      <value>LED_24V_SMD</value>
-      <footprint>hybridizer_manifold_interface:LED_555-3XXX_SMD</footprint>
+      <value>diode_schottky_20V_1A</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
       </fields>
-      <libsource lib="hybridizer_manifold_interface" part="LED_24V_SMD"/>
+      <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5542B233</tstamp>
+      <tstamp>55541359</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55541398</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>DRV103</value>
+      <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="DRV103"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555413A7</tstamp>
     </comp>
     <comp ref="D4">
-      <value>LED_24V_SMD</value>
-      <footprint>hybridizer_manifold_interface:LED_555-3XXX_SMD</footprint>
+      <value>diode_schottky_20V_1A</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
       </fields>
-      <libsource lib="hybridizer_manifold_interface" part="LED_24V_SMD"/>
+      <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5542B299</tstamp>
+      <tstamp>555413C2</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55541401</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>DRV103</value>
+      <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="DRV103"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55542088</tstamp>
     </comp>
     <comp ref="D5">
-      <value>LED_24V_SMD</value>
-      <footprint>hybridizer_manifold_interface:LED_555-3XXX_SMD</footprint>
+      <value>diode_schottky_20V_1A</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
       </fields>
-      <libsource lib="hybridizer_manifold_interface" part="LED_24V_SMD"/>
+      <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5542B2D8</tstamp>
+      <tstamp>555420A3</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555420E2</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>DRV103</value>
+      <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="DRV103"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555420F1</tstamp>
     </comp>
     <comp ref="D6">
-      <value>LED_24V_SMD</value>
-      <footprint>hybridizer_manifold_interface:LED_555-3XXX_SMD</footprint>
+      <value>diode_schottky_20V_1A</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
       </fields>
-      <libsource lib="hybridizer_manifold_interface" part="LED_24V_SMD"/>
+      <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5542B334</tstamp>
+      <tstamp>5554210C</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554214B</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>DRV103</value>
+      <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="DRV103"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554215A</tstamp>
     </comp>
     <comp ref="D7">
-      <value>LED_24V_SMD</value>
-      <footprint>hybridizer_manifold_interface:LED_555-3XXX_SMD</footprint>
+      <value>diode_schottky_20V_1A</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
       </fields>
-      <libsource lib="hybridizer_manifold_interface" part="LED_24V_SMD"/>
+      <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5542B3C0</tstamp>
+      <tstamp>55542175</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555421B4</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>DRV103</value>
+      <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="DRV103"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555421C3</tstamp>
     </comp>
     <comp ref="D8">
-      <value>LED_24V_SMD</value>
-      <footprint>hybridizer_manifold_interface:LED_555-3XXX_SMD</footprint>
+      <value>diode_schottky_20V_1A</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
       <fields>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
       </fields>
-      <libsource lib="hybridizer_manifold_interface" part="LED_24V_SMD"/>
+      <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5542B41E</tstamp>
+      <tstamp>555421DE</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554221D</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>205k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="205k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555483BB</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>205k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="205k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555485F1</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>205k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="205k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55548746</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>205k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="205k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55548866</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>205k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="205k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55548C6D</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>205k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="205k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55548CEB</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>205k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="205k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55548D70</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>205k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="205k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55548DE6</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>137k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="137k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554A121</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>137k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="137k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554A237</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>137k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="137k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554A3CA</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>137k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="137k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554A4FC</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>137k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="137k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554A66A</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>137k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="137k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554A6E0</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>137k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="137k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554A829</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>137k</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="137k_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554A93B</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>10nF</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="10nF_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554B995</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>10nF</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="10nF_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554BAE7</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>10nF</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="10nF_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554BCF6</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>10nF</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="10nF_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554BED6</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>10nF</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="10nF_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554C081</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>10nF</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="10nF_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554C30F</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10nF</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="10nF_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554C48B</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>10nF</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="10nF_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5554C643</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>LED_0805</value>
+      <footprint>hybridizer_manifold_interface:LED0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="LED_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55550D3F</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>300</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="300_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5555361A</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>LED_0805</value>
+      <footprint>hybridizer_manifold_interface:LED0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="LED_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5555420D</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>300</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="300_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5555421D</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>LED_0805</value>
+      <footprint>hybridizer_manifold_interface:LED0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="LED_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555543C3</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>300</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="300_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555543D3</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>LED_0805</value>
+      <footprint>hybridizer_manifold_interface:LED0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="LED_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555543DF</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>300</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="300_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555543EF</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>LED_0805</value>
+      <footprint>hybridizer_manifold_interface:LED0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="LED_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5555469D</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>300</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="300_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555546AD</tstamp>
+    </comp>
+    <comp ref="D14">
+      <value>LED_0805</value>
+      <footprint>hybridizer_manifold_interface:LED0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="LED_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555546B9</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>300</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="300_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555546C9</tstamp>
+    </comp>
+    <comp ref="D15">
+      <value>LED_0805</value>
+      <footprint>hybridizer_manifold_interface:LED0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="LED_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555546D5</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>300</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="300_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555546E5</tstamp>
+    </comp>
+    <comp ref="D16">
+      <value>LED_0805</value>
+      <footprint>hybridizer_manifold_interface:LED0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="LED_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>555546F1</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>300</value>
+      <footprint>hybridizer_manifold_interface:SM0402</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="300_0402"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55554701</tstamp>
     </comp>
   </components>
   <libparts>
+    <libpart lib="hybridizer_manifold_interface" part="LED_0805">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_0805</field>
+        <field name="Footprint">hybridizer_manifold_interface:LED0805</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="DRV103">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">DRV103</field>
+        <field name="Footprint">hybridizer_manifold_interface:SOIC_8</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-11622-ND</field>
+        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
+      </fields>
+      <pins>
+        <pin num="1" name="DUTY" type="passive"/>
+        <pin num="2" name="DELAY" type="passive"/>
+        <pin num="3" name="FREQ" type="passive"/>
+        <pin num="4" name="GND" type="passive"/>
+        <pin num="5" name="OUT" type="passive"/>
+        <pin num="6" name="Vs" type="power_in"/>
+        <pin num="7" name="STATUS" type="passive"/>
+        <pin num="8" name="INPUT" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="HEADER_02X07_SMD">
+      <footprints>
+        <fp>Pin_Header_Straight_2X07</fp>
+        <fp>Pin_Header_Angled_2X07</fp>
+        <fp>Socket_Strip_Straight_2X07</fp>
+        <fp>Socket_Strip_Angled_2X07</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">P</field>
+        <field name="Value">HEADER_02X07_SMD</field>
+        <field name="Footprint">hybridizer_manifold_interface:HEADER_02x07_SMD</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">S9186-ND</field>
+        <field name="Description">CONN HEADR 2.54MM 14POS GOLD SMD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+        <pin num="2" name="P2" type="passive"/>
+        <pin num="3" name="P3" type="passive"/>
+        <pin num="4" name="P4" type="passive"/>
+        <pin num="5" name="P5" type="passive"/>
+        <pin num="6" name="P6" type="passive"/>
+        <pin num="7" name="P7" type="passive"/>
+        <pin num="8" name="P8" type="passive"/>
+        <pin num="9" name="P9" type="passive"/>
+        <pin num="10" name="P10" type="passive"/>
+        <pin num="11" name="P11" type="passive"/>
+        <pin num="12" name="P12" type="passive"/>
+        <pin num="13" name="P13" type="passive"/>
+        <pin num="14" name="P14" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="hybridizer_manifold_interface" part="LEE_VALVE_PLUG_IN">
       <footprints>
         <fp>Pin_Header_Straight_1X02</fp>
@@ -245,135 +992,467 @@
         <pin num="2" name="P2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="hybridizer_manifold_interface" part="HEADER_02X08_SMD">
+    <libpart lib="hybridizer_manifold_interface" part="300_0402">
+      <description>Resistance</description>
       <footprints>
-        <fp>Pin_Header_Straight_2X08</fp>
-        <fp>Pin_Header_Angled_2X08</fp>
-        <fp>Socket_Strip_Straight_2X08</fp>
-        <fp>Socket_Strip_Angled_2X08</fp>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
       </footprints>
       <fields>
-        <field name="Reference">P</field>
-        <field name="Value">HEADER_02X08_SMD</field>
-        <field name="Footprint">hybridizer_manifold_interface:HEADER_02x08_SMD</field>
+        <field name="Reference">R</field>
+        <field name="Value">300_0402</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">HSL16H-ND</field>
-        <field name="Description">CONN HEADER LO-PRO 16POS AU SMD</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
       </fields>
       <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
-        <pin num="5" name="P5" type="passive"/>
-        <pin num="6" name="P6" type="passive"/>
-        <pin num="7" name="P7" type="passive"/>
-        <pin num="8" name="P8" type="passive"/>
-        <pin num="9" name="P9" type="passive"/>
-        <pin num="10" name="P10" type="passive"/>
-        <pin num="11" name="P11" type="passive"/>
-        <pin num="12" name="P12" type="passive"/>
-        <pin num="13" name="P13" type="passive"/>
-        <pin num="14" name="P14" type="passive"/>
-        <pin num="15" name="P15" type="passive"/>
-        <pin num="16" name="P16" type="passive"/>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="hybridizer_manifold_interface" part="LED_24V_SMD">
+    <libpart lib="hybridizer_manifold_interface" part="205k_0402">
+      <description>Resistance</description>
       <footprints>
-        <fp>LED-3MM</fp>
-        <fp>LED-5MM</fp>
-        <fp>LED-10MM</fp>
-        <fp>LED-0603</fp>
-        <fp>LED-0805</fp>
-        <fp>LED-1206</fp>
-        <fp>LEDV</fp>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">205k_0402</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="1uF_0805_POL">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">1uF_0805_POL</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0805_POL</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A">
+      <description>Diode Schottky</description>
+      <footprints>
+        <fp>Diode_*</fp>
+        <fp>D-Pak_TO252AA</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>*_Diode_*</fp>
       </footprints>
       <fields>
         <field name="Reference">D</field>
-        <field name="Value">LED_24V_SMD</field>
-        <field name="Footprint">hybridizer_manifold_interface:LED_555-3XXX_SMD</field>
+        <field name="Value">diode_schottky_20V_1A</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0805_POL</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">350-1723-ND</field>
-        <field name="Description">LED 2MM 24V VERTICAL RED PC MNT</field>
+        <field name="PartNumber">478-7800-1-ND</field>
+        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
       </fields>
       <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="K" type="passive"/>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="137k_0402">
+      <description>Resistance</description>
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">137k_0402</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="10nF_0402">
+      <description>Condensateur non polarise</description>
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">10nF_0402</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
   </libparts>
   <libraries>
     <library logical="hybridizer_manifold_interface">
-      <uri>/home/polidorop/git/automatic_hybridizer/hybridizer_manifold_interface/pcb/hybridizer_manifold_interface.lib</uri>
+      <uri>hybridizer_manifold_interface.lib</uri>
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/OUT7">
-      <node ref="P1" pin="16"/>
-      <node ref="D8" pin="2"/>
-      <node ref="S8" pin="2"/>
+    <net code="1" name="Net-(U7-Pad7)">
+      <node ref="U7" pin="7"/>
     </net>
-    <net code="2" name="/OUT5">
-      <node ref="D6" pin="2"/>
+    <net code="2" name="/IO6">
+      <node ref="U7" pin="8"/>
+      <node ref="R23" pin="1"/>
+      <node ref="P1" pin="13"/>
+    </net>
+    <net code="3" name="/SH6">
+      <node ref="U7" pin="5"/>
+      <node ref="S7" pin="1"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="4" name="VAA">
+      <node ref="D5" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U6" pin="6"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="U5" pin="6"/>
+      <node ref="D6" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="U4" pin="6"/>
+      <node ref="U1" pin="6"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="D8" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="U7" pin="6"/>
+      <node ref="U2" pin="6"/>
+      <node ref="U3" pin="6"/>
+      <node ref="P1" pin="3"/>
+      <node ref="U8" pin="6"/>
+      <node ref="P1" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="D3" pin="1"/>
+    </net>
+    <net code="5" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="U6" pin="1"/>
+    </net>
+    <net code="6" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="U6" pin="2"/>
+    </net>
+    <net code="7" name="Net-(R11-Pad1)">
+      <node ref="U6" pin="3"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="8" name="Net-(C14-Pad1)">
+      <node ref="U7" pin="2"/>
+      <node ref="C14" pin="1"/>
+    </net>
+    <net code="9" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1"/>
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="10" name="Net-(C16-Pad1)">
+      <node ref="C16" pin="1"/>
+      <node ref="U8" pin="2"/>
+    </net>
+    <net code="11" name="Net-(U8-Pad7)">
+      <node ref="U8" pin="7"/>
+    </net>
+    <net code="12" name="/IO7">
+      <node ref="U8" pin="8"/>
+      <node ref="R24" pin="1"/>
+      <node ref="P1" pin="14"/>
+    </net>
+    <net code="13" name="GND">
+      <node ref="R13" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="R10" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="R9" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U3" pin="4"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U5" pin="4"/>
+      <node ref="U2" pin="4"/>
       <node ref="S6" pin="2"/>
+      <node ref="S5" pin="2"/>
+      <node ref="S4" pin="2"/>
+      <node ref="S2" pin="2"/>
+      <node ref="S1" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="S3" pin="2"/>
+      <node ref="S7" pin="2"/>
+      <node ref="S8" pin="2"/>
+      <node ref="P1" pin="6"/>
+      <node ref="P1" pin="4"/>
+      <node ref="P1" pin="2"/>
+      <node ref="U6" pin="4"/>
+      <node ref="D12" pin="2"/>
+      <node ref="D11" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="D15" pin="2"/>
+      <node ref="D13" pin="2"/>
+      <node ref="D16" pin="2"/>
+      <node ref="D10" pin="2"/>
+      <node ref="D9" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U8" pin="4"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="U7" pin="4"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="D14" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R16" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="R12" pin="2"/>
+    </net>
+    <net code="14" name="Net-(R13-Pad1)">
+      <node ref="U7" pin="3"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="15" name="Net-(C10-Pad1)">
+      <node ref="U5" pin="2"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="16" name="Net-(R9-Pad1)">
+      <node ref="U5" pin="3"/>
+      <node ref="R9" pin="1"/>
+    </net>
+    <net code="17" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="18" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="19" name="/IO4">
+      <node ref="P1" pin="11"/>
+      <node ref="R21" pin="1"/>
+      <node ref="U5" pin="8"/>
+    </net>
+    <net code="20" name="/SH4">
+      <node ref="S5" pin="1"/>
+      <node ref="U5" pin="5"/>
+      <node ref="D5" pin="2"/>
+    </net>
+    <net code="21" name="Net-(U6-Pad7)">
+      <node ref="U6" pin="7"/>
+    </net>
+    <net code="22" name="/SH5">
+      <node ref="U6" pin="5"/>
+      <node ref="S6" pin="1"/>
+      <node ref="D6" pin="2"/>
+    </net>
+    <net code="23" name="/IO5">
+      <node ref="U6" pin="8"/>
+      <node ref="R22" pin="1"/>
       <node ref="P1" pin="12"/>
     </net>
-    <net code="3" name="/OUT2">
-      <node ref="P1" pin="6"/>
-      <node ref="D3" pin="2"/>
-      <node ref="S3" pin="2"/>
-    </net>
-    <net code="4" name="/OUT3">
+    <net code="24" name="/IO1">
+      <node ref="U2" pin="8"/>
+      <node ref="R18" pin="1"/>
       <node ref="P1" pin="8"/>
-      <node ref="S4" pin="2"/>
+    </net>
+    <net code="25" name="/IO2">
+      <node ref="P1" pin="9"/>
+      <node ref="U3" pin="8"/>
+      <node ref="R19" pin="1"/>
+    </net>
+    <net code="26" name="Net-(D11-Pad1)">
+      <node ref="R19" pin="2"/>
+      <node ref="D11" pin="1"/>
+    </net>
+    <net code="27" name="/IO3">
+      <node ref="R20" pin="1"/>
+      <node ref="P1" pin="10"/>
+      <node ref="U4" pin="8"/>
+    </net>
+    <net code="28" name="Net-(D12-Pad1)">
+      <node ref="R20" pin="2"/>
+      <node ref="D12" pin="1"/>
+    </net>
+    <net code="29" name="/IO0">
+      <node ref="R17" pin="1"/>
+      <node ref="U1" pin="8"/>
+      <node ref="P1" pin="7"/>
+    </net>
+    <net code="30" name="Net-(D9-Pad1)">
+      <node ref="D9" pin="1"/>
+      <node ref="R17" pin="2"/>
+    </net>
+    <net code="31" name="Net-(D10-Pad1)">
+      <node ref="D10" pin="1"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="32" name="Net-(D15-Pad1)">
+      <node ref="D15" pin="1"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="33" name="Net-(D16-Pad1)">
+      <node ref="D16" pin="1"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="34" name="Net-(D13-Pad1)">
+      <node ref="D13" pin="1"/>
+      <node ref="R21" pin="2"/>
+    </net>
+    <net code="35" name="Net-(D14-Pad1)">
+      <node ref="D14" pin="1"/>
+      <node ref="R22" pin="2"/>
+    </net>
+    <net code="36" name="Net-(R16-Pad1)">
+      <node ref="U8" pin="1"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="37" name="Net-(R15-Pad1)">
+      <node ref="R15" pin="1"/>
+      <node ref="U8" pin="3"/>
+    </net>
+    <net code="38" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="3"/>
+    </net>
+    <net code="39" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="40" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="41" name="/SH7">
+      <node ref="D8" pin="2"/>
+      <node ref="S8" pin="1"/>
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="42" name="Net-(R7-Pad1)">
+      <node ref="R7" pin="1"/>
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="43" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="U1" pin="1"/>
+    </net>
+    <net code="44" name="/SH2">
+      <node ref="D3" pin="2"/>
+      <node ref="U3" pin="5"/>
+      <node ref="S3" pin="1"/>
+    </net>
+    <net code="45" name="/SH0">
+      <node ref="S1" pin="1"/>
+      <node ref="U1" pin="5"/>
+      <node ref="D1" pin="2"/>
+    </net>
+    <net code="46" name="/SH1">
+      <node ref="U2" pin="5"/>
+      <node ref="D2" pin="2"/>
+      <node ref="S2" pin="1"/>
+    </net>
+    <net code="47" name="/SH3">
+      <node ref="U4" pin="5"/>
+      <node ref="S4" pin="1"/>
       <node ref="D4" pin="2"/>
     </net>
-    <net code="5" name="/OUT4">
-      <node ref="S5" pin="2"/>
-      <node ref="D5" pin="2"/>
-      <node ref="P1" pin="10"/>
+    <net code="48" name="Net-(C2-Pad1)">
+      <node ref="C2" pin="1"/>
+      <node ref="U1" pin="2"/>
     </net>
-    <net code="6" name="/OUT6">
-      <node ref="D7" pin="2"/>
-      <node ref="P1" pin="14"/>
-      <node ref="S7" pin="2"/>
+    <net code="49" name="Net-(U1-Pad7)">
+      <node ref="U1" pin="7"/>
     </net>
-    <net code="7" name="VAA">
-      <node ref="P1" pin="11"/>
-      <node ref="P1" pin="9"/>
-      <node ref="P1" pin="7"/>
+    <net code="50" name="Net-(P1-Pad5)">
       <node ref="P1" pin="5"/>
-      <node ref="P1" pin="3"/>
-      <node ref="P1" pin="1"/>
-      <node ref="P1" pin="13"/>
-      <node ref="P1" pin="15"/>
-      <node ref="S8" pin="1"/>
-      <node ref="D8" pin="1"/>
-      <node ref="D7" pin="1"/>
-      <node ref="D6" pin="1"/>
-      <node ref="D5" pin="1"/>
-      <node ref="S7" pin="1"/>
-      <node ref="D3" pin="1"/>
-      <node ref="D2" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="D4" pin="1"/>
-      <node ref="S4" pin="1"/>
-      <node ref="S6" pin="1"/>
-      <node ref="S5" pin="1"/>
-      <node ref="S3" pin="1"/>
-      <node ref="S2" pin="1"/>
-      <node ref="S1" pin="1"/>
     </net>
-    <net code="8" name="/OUT1">
-      <node ref="S2" pin="2"/>
-      <node ref="P1" pin="4"/>
-      <node ref="D2" pin="2"/>
+    <net code="51" name="Net-(R6-Pad1)">
+      <node ref="R6" pin="1"/>
+      <node ref="U3" pin="1"/>
     </net>
-    <net code="9" name="/OUT0">
-      <node ref="P1" pin="2"/>
-      <node ref="S1" pin="2"/>
-      <node ref="D1" pin="2"/>
+    <net code="52" name="Net-(C8-Pad1)">
+      <node ref="U4" pin="2"/>
+      <node ref="C8" pin="1"/>
+    </net>
+    <net code="53" name="Net-(U4-Pad7)">
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="54" name="Net-(C6-Pad1)">
+      <node ref="U3" pin="2"/>
+      <node ref="C6" pin="1"/>
+    </net>
+    <net code="55" name="Net-(R8-Pad1)">
+      <node ref="R8" pin="1"/>
+      <node ref="U4" pin="1"/>
+    </net>
+    <net code="56" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="57" name="Net-(C4-Pad1)">
+      <node ref="C4" pin="1"/>
+      <node ref="U2" pin="2"/>
+    </net>
+    <net code="58" name="Net-(U3-Pad7)">
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="59" name="Net-(R4-Pad1)">
+      <node ref="U2" pin="1"/>
+      <node ref="R4" pin="1"/>
     </net>
   </nets>
 </export>
