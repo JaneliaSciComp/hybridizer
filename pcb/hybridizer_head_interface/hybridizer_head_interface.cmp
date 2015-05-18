@@ -1,60 +1,4 @@
-Cmp-Mod V01 Genere par PcbNew le Thu 14 May 2015 04:06:54 PM EDT
-
-BeginCmp
-TimeStamp = 553EA487
-Path = /554B97B2
-Reference = S1;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA494
-Path = /554B9AFA
-Reference = S2;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4A1
-Path = /554BA2AD
-Reference = S3;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4AE
-Path = /554BA323
-Reference = S4;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4BB
-Path = /554BA46C
-Reference = S5;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4C8
-Path = /554BA4D8
-Reference = S6;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 553EA4D5
-Path = /554BA633
-Reference = S7;
-ValeurCmp = HEADER_01X02_SMD;
-IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
-EndCmp
+Cmp-Mod V01 Genere par PcbNew le Mon 18 May 2015 02:35:44 PM EDT
 
 BeginCmp
 TimeStamp = 55412999
@@ -66,57 +10,57 @@ EndCmp
 
 BeginCmp
 TimeStamp = 55412A2B
-Path = /5542AD5E
+Path = /555ABB7E
 Reference = U13;
-ValeurCmp = HALL_DRV5053;
+ValeurCmp = HALL_DRV5053_OA_-73mT;
 IdModule  = hybridizer_head_interface:SOT-23-3;
 EndCmp
 
 BeginCmp
 TimeStamp = 55412A14
-Path = /5542ABCE
+Path = /555AB6C2
 Reference = U11;
-ValeurCmp = HALL_DRV5053;
+ValeurCmp = HALL_DRV5053_OA_-73mT;
 IdModule  = hybridizer_head_interface:SOT-23-3;
 EndCmp
 
 BeginCmp
 TimeStamp = 554129FD
-Path = /5542AA26
+Path = /555AB208
 Reference = U9;
-ValeurCmp = HALL_DRV5053;
+ValeurCmp = HALL_DRV5053_OA_-73mT;
 IdModule  = hybridizer_head_interface:SOT-23-3;
 EndCmp
 
 BeginCmp
 TimeStamp = 554129E6
-Path = /5542A9A3
+Path = /555AAA96
 Reference = U7;
-ValeurCmp = HALL_DRV5053;
+ValeurCmp = HALL_DRV5053_OA_-73mT;
 IdModule  = hybridizer_head_interface:SOT-23-3;
 EndCmp
 
 BeginCmp
 TimeStamp = 554129CF
-Path = /5542A34F
+Path = /555AA5D8
 Reference = U5;
-ValeurCmp = HALL_DRV5053;
+ValeurCmp = HALL_DRV5053_OA_-73mT;
 IdModule  = hybridizer_head_interface:SOT-23-3;
 EndCmp
 
 BeginCmp
 TimeStamp = 554129B8
-Path = /554D7C92
+Path = /555A9FB2
 Reference = U3;
-ValeurCmp = HALL_DRV5053;
+ValeurCmp = HALL_DRV5053_OA_-73mT;
 IdModule  = hybridizer_head_interface:SOT-23-3;
 EndCmp
 
 BeginCmp
 TimeStamp = 554129A1
-Path = /554D7F53
+Path = /555A93A0
 Reference = U1;
-ValeurCmp = HALL_DRV5053;
+ValeurCmp = HALL_DRV5053_OA_-73mT;
 IdModule  = hybridizer_head_interface:SOT-23-3;
 EndCmp
 
@@ -1078,6 +1022,62 @@ Path = /554D7F4A
 Reference = U2;
 ValeurCmp = MAX4215;
 IdModule  = hybridizer_head_interface:SOIC_8_N;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA494
+Path = /554B9AFA
+Reference = S2;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4A1
+Path = /554BA2AD
+Reference = S3;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4AE
+Path = /554BA323
+Reference = S4;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4BB
+Path = /554BA46C
+Reference = S5;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4C8
+Path = /554BA4D8
+Reference = S6;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4D5
+Path = /554BA633
+Reference = S7;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = hybridizer_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA487
+Path = /555A0CF7
+Reference = S1;
+ValeurCmp = HEADER_01X02_SMD_N;
+IdModule  = hybridizer_head_interface:Header_2_Pin_SMD_N;
 EndCmp
 
 EndListe
