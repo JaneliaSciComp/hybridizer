@@ -1,4 +1,4 @@
-Cmp-Mod V01 Genere par PcbNew le Thu 14 May 2015 11:17:35 AM EDT
+Cmp-Mod V01 Genere par PcbNew le Fri 22 May 2015 03:48:33 PM EDT
 
 BeginCmp
 TimeStamp = 55428C47
@@ -70,70 +70,6 @@ Path = /5553659F
 Reference = P1;
 ValeurCmp = HEADER_02X07_SMD;
 IdModule  = hybridizer_manifold_interface:HEADER_02x07_SMD;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A7C0
-Path = /555421C3
-Reference = U8;
-ValeurCmp = DRV103;
-IdModule  = hybridizer_manifold_interface:SOIC_8;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A7B1
-Path = /5554215A
-Reference = U7;
-ValeurCmp = DRV103;
-IdModule  = hybridizer_manifold_interface:SOIC_8;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A7A2
-Path = /555420F1
-Reference = U6;
-ValeurCmp = DRV103;
-IdModule  = hybridizer_manifold_interface:SOIC_8;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A793
-Path = /55542088
-Reference = U5;
-ValeurCmp = DRV103;
-IdModule  = hybridizer_manifold_interface:SOIC_8;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A784
-Path = /555413A7
-Reference = U4;
-ValeurCmp = DRV103;
-IdModule  = hybridizer_manifold_interface:SOIC_8;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A775
-Path = /5554133E
-Reference = U3;
-ValeurCmp = DRV103;
-IdModule  = hybridizer_manifold_interface:SOIC_8;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A766
-Path = /55540C15
-Reference = U2;
-ValeurCmp = DRV103;
-IdModule  = hybridizer_manifold_interface:SOIC_8;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A757
-Path = /555378C4
-Reference = U1;
-ValeurCmp = DRV103;
-IdModule  = hybridizer_manifold_interface:SOIC_8;
 EndCmp
 
 BeginCmp
@@ -598,6 +534,70 @@ Path = /555546F1
 Reference = D16;
 ValeurCmp = LED_0805;
 IdModule  = hybridizer_manifold_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A757
+Path = /555378C4
+Reference = U1;
+ValeurCmp = DRV103;
+IdModule  = hybridizer_manifold_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A766
+Path = /55540C15
+Reference = U2;
+ValeurCmp = DRV103;
+IdModule  = hybridizer_manifold_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A775
+Path = /5554133E
+Reference = U3;
+ValeurCmp = DRV103;
+IdModule  = hybridizer_manifold_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A784
+Path = /555413A7
+Reference = U4;
+ValeurCmp = DRV103;
+IdModule  = hybridizer_manifold_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A793
+Path = /55542088
+Reference = U5;
+ValeurCmp = DRV103;
+IdModule  = hybridizer_manifold_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A7A2
+Path = /555420F1
+Reference = U6;
+ValeurCmp = DRV103;
+IdModule  = hybridizer_manifold_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A7B1
+Path = /5554215A
+Reference = U7;
+ValeurCmp = DRV103;
+IdModule  = hybridizer_manifold_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A7C0
+Path = /555421C3
+Reference = U8;
+ValeurCmp = DRV103;
+IdModule  = hybridizer_manifold_interface:SOIC_8;
 EndCmp
 
 EndListe
