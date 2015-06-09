@@ -2,13 +2,13 @@
 <export version="D">
   <design>
     <source>/home/polidorop/git/hybridizer/pcb/hybridizer_manifold_interface/hybridizer_manifold_interface.sch</source>
-    <date>Thu 14 May 2015 11:06:23 AM EDT</date>
-    <tool>Eeschema 0.201505120158+5650~23~ubuntu14.04.1-product</tool>
+    <date>Tue 09 Jun 2015 04:57:10 PM EDT</date>
+    <tool>Eeschema 0.201506082246+5724~23~ubuntu14.04.1-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>hybridizer_manifold_interface</title>
         <company>Janelia</company>
-        <rev>1.1</rev>
+        <rev>1.2</rev>
         <date/>
         <source>hybridizer_manifold_interface.sch</source>
         <comment number="1" value=""/>
@@ -151,18 +151,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>55538621</tstamp>
     </comp>
-    <comp ref="C1">
-      <value>1uF</value>
-      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555408EB</tstamp>
-    </comp>
     <comp ref="U2">
       <value>DRV103</value>
       <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
@@ -186,18 +174,6 @@
       <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>55540C30</tstamp>
-    </comp>
-    <comp ref="C3">
-      <value>1uF</value>
-      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55540C6F</tstamp>
     </comp>
     <comp ref="U3">
       <value>DRV103</value>
@@ -223,18 +199,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>55541359</tstamp>
     </comp>
-    <comp ref="C5">
-      <value>1uF</value>
-      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55541398</tstamp>
-    </comp>
     <comp ref="U4">
       <value>DRV103</value>
       <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
@@ -258,18 +222,6 @@
       <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>555413C2</tstamp>
-    </comp>
-    <comp ref="C7">
-      <value>1uF</value>
-      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55541401</tstamp>
     </comp>
     <comp ref="U5">
       <value>DRV103</value>
@@ -295,18 +247,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>555420A3</tstamp>
     </comp>
-    <comp ref="C9">
-      <value>1uF</value>
-      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555420E2</tstamp>
-    </comp>
     <comp ref="U6">
       <value>DRV103</value>
       <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
@@ -330,18 +270,6 @@
       <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5554210C</tstamp>
-    </comp>
-    <comp ref="C11">
-      <value>1uF</value>
-      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5554214B</tstamp>
     </comp>
     <comp ref="U7">
       <value>DRV103</value>
@@ -367,18 +295,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>55542175</tstamp>
     </comp>
-    <comp ref="C13">
-      <value>1uF</value>
-      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555421B4</tstamp>
-    </comp>
     <comp ref="U8">
       <value>DRV103</value>
       <footprint>hybridizer_manifold_interface:SOIC_8</footprint>
@@ -402,18 +318,6 @@
       <libsource lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>555421DE</tstamp>
-    </comp>
-    <comp ref="C15">
-      <value>1uF</value>
-      <footprint>hybridizer_manifold_interface:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5554221D</tstamp>
     </comp>
     <comp ref="R1">
       <value>205k</value>
@@ -895,29 +799,188 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>55554701</tstamp>
     </comp>
+    <comp ref="C1">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL_L</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55783F4F</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL_L</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5578435D</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL_L</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>557844A3</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL_L</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>557847A3</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL_L</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>557867DC</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL_L</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55786B14</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL_L</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55786D2F</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>1uF</value>
+      <footprint>hybridizer_manifold_interface:SM0805_POL_L</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
+      </fields>
+      <libsource lib="hybridizer_manifold_interface" part="1uF_0805_POL"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55786F9B</tstamp>
+    </comp>
   </components>
   <libparts>
-    <libpart lib="hybridizer_manifold_interface" part="LED_0805">
+    <libpart lib="hybridizer_manifold_interface" part="10nF_0402">
+      <description>Condensateur non polarise</description>
       <footprints>
-        <fp>LED-3MM</fp>
-        <fp>LED-5MM</fp>
-        <fp>LED-10MM</fp>
-        <fp>LED-0603</fp>
-        <fp>LED-0805</fp>
-        <fp>LED-1206</fp>
-        <fp>LEDV</fp>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
       </footprints>
       <fields>
-        <field name="Reference">D</field>
-        <field name="Value">LED_0805</field>
-        <field name="Footprint">hybridizer_manifold_interface:LED0805</field>
+        <field name="Reference">C</field>
+        <field name="Value">10nF_0402</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">160-1179-1-ND</field>
-        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+        <field name="PartNumber">399-7758-1-ND</field>
+        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
       </fields>
       <pins>
-        <pin num="1" name="A" type="passive"/>
-        <pin num="2" name="K" type="passive"/>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="137k_0402">
+      <description>Resistance</description>
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">137k_0402</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P137KLCT-ND</field>
+        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="205k_0402">
+      <description>Resistance</description>
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">205k_0402</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P205KLCT-ND</field>
+        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="300_0402">
+      <description>Resistance</description>
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">300_0402</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P300LCT-ND</field>
+        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="hybridizer_manifold_interface" part="DRV103">
@@ -972,6 +1035,29 @@
         <pin num="14" name="P14" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="hybridizer_manifold_interface" part="LED_0805">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED_0805</field>
+        <field name="Footprint">hybridizer_manifold_interface:LED0805</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">160-1179-1-ND</field>
+        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="K" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="hybridizer_manifold_interface" part="LEE_VALVE_PLUG_IN">
       <footprints>
         <fp>Pin_Header_Straight_1X02</fp>
@@ -990,73 +1076,6 @@
       <pins>
         <pin num="1" name="P1" type="passive"/>
         <pin num="2" name="P2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_manifold_interface" part="300_0402">
-      <description>Resistance</description>
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">300_0402</field>
-        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_manifold_interface" part="205k_0402">
-      <description>Resistance</description>
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">205k_0402</field>
-        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_manifold_interface" part="1uF_0805_POL">
-      <description>Polarised capacitor</description>
-      <footprints>
-        <fp>CP*</fp>
-        <fp>Elko*</fp>
-        <fp>TantalC*</fp>
-        <fp>C*elec</fp>
-        <fp>c_elec*</fp>
-        <fp>SMD*_Pol</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">1uF_0805_POL</field>
-        <field name="Footprint">hybridizer_manifold_interface:SM0805_POL</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="hybridizer_manifold_interface" part="diode_schottky_20V_1A">
@@ -1081,42 +1100,23 @@
         <pin num="2" name="A" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="hybridizer_manifold_interface" part="137k_0402">
-      <description>Resistance</description>
+    <libpart lib="hybridizer_manifold_interface" part="1uF_0805_POL">
+      <description>Polarised capacitor</description>
       <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">137k_0402</field>
-        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P137KLCT-ND</field>
-        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_manifold_interface" part="10nF_0402">
-      <description>Condensateur non polarise</description>
-      <footprints>
-        <fp>SM*</fp>
-        <fp>C?</fp>
-        <fp>C1-1</fp>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
       </footprints>
       <fields>
         <field name="Reference">C</field>
-        <field name="Value">10nF_0402</field>
-        <field name="Footprint">hybridizer_manifold_interface:SM0402</field>
+        <field name="Value">1uF_0805_POL</field>
+        <field name="Footprint">hybridizer_manifold_interface:SM0805_POL_L</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+        <field name="PartNumber">718-1720-1-ND</field>
+        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
       </fields>
       <pins>
         <pin num="1" name="~" type="passive"/>
@@ -1130,329 +1130,329 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="Net-(U7-Pad7)">
-      <node ref="U7" pin="7"/>
+    <net code="1" name="Net-(R9-Pad1)">
+      <node ref="R9" pin="1"/>
+      <node ref="U5" pin="3"/>
     </net>
-    <net code="2" name="/IO6">
-      <node ref="U7" pin="8"/>
-      <node ref="R23" pin="1"/>
-      <node ref="P1" pin="13"/>
+    <net code="2" name="Net-(R15-Pad1)">
+      <node ref="R15" pin="1"/>
+      <node ref="U8" pin="3"/>
     </net>
-    <net code="3" name="/SH6">
-      <node ref="U7" pin="5"/>
-      <node ref="S7" pin="1"/>
-      <node ref="D7" pin="2"/>
+    <net code="3" name="Net-(R1-Pad1)">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="3"/>
     </net>
-    <net code="4" name="VAA">
-      <node ref="D5" pin="1"/>
-      <node ref="D2" pin="1"/>
-      <node ref="U6" pin="6"/>
-      <node ref="C5" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="D4" pin="1"/>
-      <node ref="U5" pin="6"/>
-      <node ref="D6" pin="1"/>
-      <node ref="C9" pin="1"/>
-      <node ref="U4" pin="6"/>
-      <node ref="U1" pin="6"/>
-      <node ref="C11" pin="1"/>
-      <node ref="C15" pin="1"/>
-      <node ref="D8" pin="1"/>
-      <node ref="C3" pin="1"/>
-      <node ref="D7" pin="1"/>
-      <node ref="U7" pin="6"/>
-      <node ref="U2" pin="6"/>
-      <node ref="U3" pin="6"/>
-      <node ref="P1" pin="3"/>
-      <node ref="U8" pin="6"/>
-      <node ref="P1" pin="1"/>
-      <node ref="D1" pin="1"/>
-      <node ref="C13" pin="1"/>
-      <node ref="D3" pin="1"/>
+    <net code="4" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="3"/>
     </net>
-    <net code="5" name="Net-(R12-Pad1)">
-      <node ref="R12" pin="1"/>
-      <node ref="U6" pin="1"/>
+    <net code="5" name="Net-(R7-Pad1)">
+      <node ref="U4" pin="3"/>
+      <node ref="R7" pin="1"/>
     </net>
-    <net code="6" name="Net-(C12-Pad1)">
-      <node ref="C12" pin="1"/>
-      <node ref="U6" pin="2"/>
+    <net code="6" name="/IO0">
+      <node ref="P1" pin="7"/>
+      <node ref="R17" pin="1"/>
+      <node ref="U1" pin="8"/>
     </net>
-    <net code="7" name="Net-(R11-Pad1)">
-      <node ref="U6" pin="3"/>
-      <node ref="R11" pin="1"/>
+    <net code="7" name="Net-(D9-Pad1)">
+      <node ref="D9" pin="1"/>
+      <node ref="R17" pin="2"/>
     </net>
-    <net code="8" name="Net-(C14-Pad1)">
-      <node ref="U7" pin="2"/>
-      <node ref="C14" pin="1"/>
+    <net code="8" name="/IO1">
+      <node ref="P1" pin="8"/>
+      <node ref="R18" pin="1"/>
+      <node ref="U2" pin="8"/>
     </net>
-    <net code="9" name="Net-(R14-Pad1)">
-      <node ref="R14" pin="1"/>
-      <node ref="U7" pin="1"/>
+    <net code="9" name="Net-(D10-Pad1)">
+      <node ref="R18" pin="2"/>
+      <node ref="D10" pin="1"/>
     </net>
-    <net code="10" name="Net-(C16-Pad1)">
-      <node ref="C16" pin="1"/>
-      <node ref="U8" pin="2"/>
+    <net code="10" name="Net-(R16-Pad1)">
+      <node ref="R16" pin="1"/>
+      <node ref="U8" pin="1"/>
     </net>
-    <net code="11" name="Net-(U8-Pad7)">
-      <node ref="U8" pin="7"/>
+    <net code="11" name="Net-(C2-Pad1)">
+      <node ref="U1" pin="2"/>
+      <node ref="C2" pin="1"/>
     </net>
-    <net code="12" name="/IO7">
-      <node ref="U8" pin="8"/>
-      <node ref="R24" pin="1"/>
-      <node ref="P1" pin="14"/>
+    <net code="12" name="Net-(C4-Pad1)">
+      <node ref="U2" pin="2"/>
+      <node ref="C4" pin="1"/>
     </net>
-    <net code="13" name="GND">
-      <node ref="R13" pin="2"/>
-      <node ref="U1" pin="4"/>
-      <node ref="R10" pin="2"/>
-      <node ref="R8" pin="2"/>
-      <node ref="R6" pin="2"/>
-      <node ref="R4" pin="2"/>
-      <node ref="R2" pin="2"/>
-      <node ref="R15" pin="2"/>
-      <node ref="R11" pin="2"/>
-      <node ref="R9" pin="2"/>
-      <node ref="R7" pin="2"/>
-      <node ref="C14" pin="2"/>
-      <node ref="C12" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C8" pin="2"/>
-      <node ref="U4" pin="4"/>
-      <node ref="U3" pin="4"/>
-      <node ref="C5" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U5" pin="4"/>
-      <node ref="U2" pin="4"/>
-      <node ref="S6" pin="2"/>
-      <node ref="S5" pin="2"/>
-      <node ref="S4" pin="2"/>
-      <node ref="S2" pin="2"/>
-      <node ref="S1" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="S3" pin="2"/>
-      <node ref="S7" pin="2"/>
-      <node ref="S8" pin="2"/>
-      <node ref="P1" pin="6"/>
-      <node ref="P1" pin="4"/>
-      <node ref="P1" pin="2"/>
-      <node ref="U6" pin="4"/>
-      <node ref="D12" pin="2"/>
-      <node ref="D11" pin="2"/>
-      <node ref="C9" pin="2"/>
-      <node ref="D15" pin="2"/>
-      <node ref="D13" pin="2"/>
-      <node ref="D16" pin="2"/>
-      <node ref="D10" pin="2"/>
-      <node ref="D9" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="U8" pin="4"/>
-      <node ref="C13" pin="2"/>
-      <node ref="C11" pin="2"/>
-      <node ref="U7" pin="4"/>
-      <node ref="C6" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="R14" pin="2"/>
-      <node ref="D14" pin="2"/>
-      <node ref="R5" pin="2"/>
-      <node ref="R16" pin="2"/>
-      <node ref="R3" pin="2"/>
-      <node ref="R1" pin="2"/>
-      <node ref="C15" pin="2"/>
-      <node ref="C4" pin="2"/>
-      <node ref="R12" pin="2"/>
+    <net code="13" name="Net-(C6-Pad1)">
+      <node ref="U3" pin="2"/>
+      <node ref="C6" pin="1"/>
     </net>
-    <net code="14" name="Net-(R13-Pad1)">
-      <node ref="U7" pin="3"/>
-      <node ref="R13" pin="1"/>
-    </net>
-    <net code="15" name="Net-(C10-Pad1)">
+    <net code="14" name="Net-(C10-Pad1)">
       <node ref="U5" pin="2"/>
       <node ref="C10" pin="1"/>
     </net>
-    <net code="16" name="Net-(R9-Pad1)">
-      <node ref="U5" pin="3"/>
-      <node ref="R9" pin="1"/>
+    <net code="15" name="Net-(C16-Pad1)">
+      <node ref="U8" pin="2"/>
+      <node ref="C16" pin="1"/>
     </net>
-    <net code="17" name="Net-(R10-Pad1)">
-      <node ref="R10" pin="1"/>
-      <node ref="U5" pin="1"/>
+    <net code="16" name="GND">
+      <node ref="C1" pin="2"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C13" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="C7" pin="2"/>
+      <node ref="C5" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="D16" pin="2"/>
+      <node ref="D12" pin="2"/>
+      <node ref="D15" pin="2"/>
+      <node ref="D13" pin="2"/>
+      <node ref="D14" pin="2"/>
+      <node ref="U6" pin="4"/>
+      <node ref="U4" pin="4"/>
+      <node ref="U3" pin="4"/>
+      <node ref="P1" pin="6"/>
+      <node ref="P1" pin="4"/>
+      <node ref="P1" pin="2"/>
+      <node ref="U1" pin="4"/>
+      <node ref="U2" pin="4"/>
+      <node ref="U5" pin="4"/>
+      <node ref="D11" pin="2"/>
+      <node ref="D9" pin="2"/>
+      <node ref="D10" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="R3" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R16" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="U8" pin="4"/>
+      <node ref="R13" pin="2"/>
+      <node ref="R4" pin="2"/>
+      <node ref="R7" pin="2"/>
+      <node ref="R2" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="R6" pin="2"/>
+      <node ref="R11" pin="2"/>
+      <node ref="U7" pin="4"/>
+      <node ref="R9" pin="2"/>
+      <node ref="R8" pin="2"/>
+      <node ref="R12" pin="2"/>
+      <node ref="R10" pin="2"/>
     </net>
-    <net code="18" name="Net-(U5-Pad7)">
-      <node ref="U5" pin="7"/>
+    <net code="17" name="/IO6">
+      <node ref="R23" pin="1"/>
+      <node ref="U7" pin="8"/>
+      <node ref="P1" pin="13"/>
     </net>
-    <net code="19" name="/IO4">
-      <node ref="P1" pin="11"/>
+    <net code="18" name="Net-(U7-Pad7)">
+      <node ref="U7" pin="7"/>
+    </net>
+    <net code="19" name="/SH6">
+      <node ref="S7" pin="2"/>
+      <node ref="U7" pin="5"/>
+      <node ref="D7" pin="2"/>
+    </net>
+    <net code="20" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1"/>
+      <node ref="U7" pin="1"/>
+    </net>
+    <net code="21" name="Net-(R12-Pad1)">
+      <node ref="U6" pin="1"/>
+      <node ref="R12" pin="1"/>
+    </net>
+    <net code="22" name="Net-(C12-Pad1)">
+      <node ref="C12" pin="1"/>
+      <node ref="U6" pin="2"/>
+    </net>
+    <net code="23" name="Net-(R11-Pad1)">
+      <node ref="R11" pin="1"/>
+      <node ref="U6" pin="3"/>
+    </net>
+    <net code="24" name="VAA">
+      <node ref="S4" pin="1"/>
+      <node ref="S5" pin="1"/>
+      <node ref="S6" pin="1"/>
+      <node ref="S3" pin="1"/>
+      <node ref="S2" pin="1"/>
+      <node ref="S1" pin="1"/>
+      <node ref="S7" pin="1"/>
+      <node ref="S8" pin="1"/>
+      <node ref="U5" pin="6"/>
+      <node ref="P1" pin="1"/>
+      <node ref="U4" pin="6"/>
+      <node ref="P1" pin="3"/>
+      <node ref="C3" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="U6" pin="6"/>
+      <node ref="D6" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="U3" pin="6"/>
+      <node ref="D3" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="U8" pin="6"/>
+      <node ref="U1" pin="6"/>
+      <node ref="D8" pin="1"/>
+      <node ref="C1" pin="1"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C7" pin="1"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C11" pin="1"/>
+      <node ref="C13" pin="1"/>
+      <node ref="C15" pin="1"/>
+      <node ref="U7" pin="6"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D2" pin="1"/>
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="25" name="/SH7">
+      <node ref="D8" pin="2"/>
+      <node ref="S8" pin="2"/>
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="26" name="/IO7">
+      <node ref="R24" pin="1"/>
+      <node ref="P1" pin="14"/>
+      <node ref="U8" pin="8"/>
+    </net>
+    <net code="27" name="Net-(U8-Pad7)">
+      <node ref="U8" pin="7"/>
+    </net>
+    <net code="28" name="Net-(C14-Pad1)">
+      <node ref="C14" pin="1"/>
+      <node ref="U7" pin="2"/>
+    </net>
+    <net code="29" name="Net-(R13-Pad1)">
+      <node ref="U7" pin="3"/>
+      <node ref="R13" pin="1"/>
+    </net>
+    <net code="30" name="/IO4">
       <node ref="R21" pin="1"/>
       <node ref="U5" pin="8"/>
+      <node ref="P1" pin="11"/>
     </net>
-    <net code="20" name="/SH4">
-      <node ref="S5" pin="1"/>
-      <node ref="U5" pin="5"/>
-      <node ref="D5" pin="2"/>
+    <net code="31" name="Net-(D13-Pad1)">
+      <node ref="R21" pin="2"/>
+      <node ref="D13" pin="1"/>
     </net>
-    <net code="21" name="Net-(U6-Pad7)">
-      <node ref="U6" pin="7"/>
-    </net>
-    <net code="22" name="/SH5">
-      <node ref="U6" pin="5"/>
-      <node ref="S6" pin="1"/>
-      <node ref="D6" pin="2"/>
-    </net>
-    <net code="23" name="/IO5">
+    <net code="32" name="/IO5">
       <node ref="U6" pin="8"/>
       <node ref="R22" pin="1"/>
       <node ref="P1" pin="12"/>
     </net>
-    <net code="24" name="/IO1">
-      <node ref="U2" pin="8"/>
-      <node ref="R18" pin="1"/>
-      <node ref="P1" pin="8"/>
-    </net>
-    <net code="25" name="/IO2">
-      <node ref="P1" pin="9"/>
-      <node ref="U3" pin="8"/>
-      <node ref="R19" pin="1"/>
-    </net>
-    <net code="26" name="Net-(D11-Pad1)">
-      <node ref="R19" pin="2"/>
-      <node ref="D11" pin="1"/>
-    </net>
-    <net code="27" name="/IO3">
-      <node ref="R20" pin="1"/>
-      <node ref="P1" pin="10"/>
-      <node ref="U4" pin="8"/>
-    </net>
-    <net code="28" name="Net-(D12-Pad1)">
-      <node ref="R20" pin="2"/>
-      <node ref="D12" pin="1"/>
-    </net>
-    <net code="29" name="/IO0">
-      <node ref="R17" pin="1"/>
-      <node ref="U1" pin="8"/>
-      <node ref="P1" pin="7"/>
-    </net>
-    <net code="30" name="Net-(D9-Pad1)">
-      <node ref="D9" pin="1"/>
-      <node ref="R17" pin="2"/>
-    </net>
-    <net code="31" name="Net-(D10-Pad1)">
-      <node ref="D10" pin="1"/>
-      <node ref="R18" pin="2"/>
-    </net>
-    <net code="32" name="Net-(D15-Pad1)">
-      <node ref="D15" pin="1"/>
-      <node ref="R23" pin="2"/>
-    </net>
-    <net code="33" name="Net-(D16-Pad1)">
-      <node ref="D16" pin="1"/>
-      <node ref="R24" pin="2"/>
-    </net>
-    <net code="34" name="Net-(D13-Pad1)">
-      <node ref="D13" pin="1"/>
-      <node ref="R21" pin="2"/>
-    </net>
-    <net code="35" name="Net-(D14-Pad1)">
+    <net code="33" name="Net-(D14-Pad1)">
       <node ref="D14" pin="1"/>
       <node ref="R22" pin="2"/>
     </net>
-    <net code="36" name="Net-(R16-Pad1)">
-      <node ref="U8" pin="1"/>
-      <node ref="R16" pin="1"/>
+    <net code="34" name="/IO2">
+      <node ref="U3" pin="8"/>
+      <node ref="P1" pin="9"/>
+      <node ref="R19" pin="1"/>
     </net>
-    <net code="37" name="Net-(R15-Pad1)">
-      <node ref="R15" pin="1"/>
-      <node ref="U8" pin="3"/>
+    <net code="35" name="Net-(D11-Pad1)">
+      <node ref="D11" pin="1"/>
+      <node ref="R19" pin="2"/>
     </net>
-    <net code="38" name="Net-(R1-Pad1)">
-      <node ref="R1" pin="1"/>
-      <node ref="U1" pin="3"/>
+    <net code="36" name="/IO3">
+      <node ref="R20" pin="1"/>
+      <node ref="U4" pin="8"/>
+      <node ref="P1" pin="10"/>
     </net>
-    <net code="39" name="Net-(R3-Pad1)">
-      <node ref="R3" pin="1"/>
-      <node ref="U2" pin="3"/>
+    <net code="37" name="Net-(D12-Pad1)">
+      <node ref="D12" pin="1"/>
+      <node ref="R20" pin="2"/>
     </net>
-    <net code="40" name="Net-(R5-Pad1)">
-      <node ref="R5" pin="1"/>
-      <node ref="U3" pin="3"/>
+    <net code="38" name="/SH3">
+      <node ref="D4" pin="2"/>
+      <node ref="S4" pin="2"/>
+      <node ref="U4" pin="5"/>
     </net>
-    <net code="41" name="/SH7">
-      <node ref="D8" pin="2"/>
-      <node ref="S8" pin="1"/>
-      <node ref="U8" pin="5"/>
+    <net code="39" name="/SH4">
+      <node ref="D5" pin="2"/>
+      <node ref="S5" pin="2"/>
+      <node ref="U5" pin="5"/>
     </net>
-    <net code="42" name="Net-(R7-Pad1)">
-      <node ref="R7" pin="1"/>
-      <node ref="U4" pin="3"/>
+    <net code="40" name="/SH5">
+      <node ref="U6" pin="5"/>
+      <node ref="S6" pin="2"/>
+      <node ref="D6" pin="2"/>
     </net>
-    <net code="43" name="Net-(R2-Pad1)">
-      <node ref="R2" pin="1"/>
-      <node ref="U1" pin="1"/>
-    </net>
-    <net code="44" name="/SH2">
-      <node ref="D3" pin="2"/>
+    <net code="41" name="/SH2">
       <node ref="U3" pin="5"/>
-      <node ref="S3" pin="1"/>
+      <node ref="D3" pin="2"/>
+      <node ref="S3" pin="2"/>
     </net>
-    <net code="45" name="/SH0">
-      <node ref="S1" pin="1"/>
+    <net code="42" name="Net-(D15-Pad1)">
+      <node ref="D15" pin="1"/>
+      <node ref="R23" pin="2"/>
+    </net>
+    <net code="43" name="Net-(D16-Pad1)">
+      <node ref="D16" pin="1"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="44" name="/SH0">
       <node ref="U1" pin="5"/>
       <node ref="D1" pin="2"/>
+      <node ref="S1" pin="2"/>
     </net>
-    <net code="46" name="/SH1">
-      <node ref="U2" pin="5"/>
-      <node ref="D2" pin="2"/>
-      <node ref="S2" pin="1"/>
+    <net code="45" name="Net-(R2-Pad1)">
+      <node ref="U1" pin="1"/>
+      <node ref="R2" pin="1"/>
     </net>
-    <net code="47" name="/SH3">
-      <node ref="U4" pin="5"/>
-      <node ref="S4" pin="1"/>
-      <node ref="D4" pin="2"/>
+    <net code="46" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="U2" pin="1"/>
     </net>
-    <net code="48" name="Net-(C2-Pad1)">
-      <node ref="C2" pin="1"/>
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="49" name="Net-(U1-Pad7)">
+    <net code="47" name="Net-(U1-Pad7)">
       <node ref="U1" pin="7"/>
+    </net>
+    <net code="48" name="/SH1">
+      <node ref="U2" pin="5"/>
+      <node ref="S2" pin="2"/>
+      <node ref="D2" pin="2"/>
+    </net>
+    <net code="49" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
     </net>
     <net code="50" name="Net-(P1-Pad5)">
       <node ref="P1" pin="5"/>
     </net>
-    <net code="51" name="Net-(R6-Pad1)">
+    <net code="51" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="52" name="Net-(C8-Pad1)">
+      <node ref="C8" pin="1"/>
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="53" name="Net-(R10-Pad1)">
+      <node ref="R10" pin="1"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="54" name="Net-(U6-Pad7)">
+      <node ref="U6" pin="7"/>
+    </net>
+    <net code="55" name="Net-(R6-Pad1)">
       <node ref="R6" pin="1"/>
       <node ref="U3" pin="1"/>
     </net>
-    <net code="52" name="Net-(C8-Pad1)">
-      <node ref="U4" pin="2"/>
-      <node ref="C8" pin="1"/>
+    <net code="56" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="U3" pin="3"/>
     </net>
-    <net code="53" name="Net-(U4-Pad7)">
-      <node ref="U4" pin="7"/>
+    <net code="57" name="Net-(U3-Pad7)">
+      <node ref="U3" pin="7"/>
     </net>
-    <net code="54" name="Net-(C6-Pad1)">
-      <node ref="U3" pin="2"/>
-      <node ref="C6" pin="1"/>
-    </net>
-    <net code="55" name="Net-(R8-Pad1)">
+    <net code="58" name="Net-(R8-Pad1)">
       <node ref="R8" pin="1"/>
       <node ref="U4" pin="1"/>
     </net>
-    <net code="56" name="Net-(U2-Pad7)">
-      <node ref="U2" pin="7"/>
-    </net>
-    <net code="57" name="Net-(C4-Pad1)">
-      <node ref="C4" pin="1"/>
-      <node ref="U2" pin="2"/>
-    </net>
-    <net code="58" name="Net-(U3-Pad7)">
-      <node ref="U3" pin="7"/>
-    </net>
-    <net code="59" name="Net-(R4-Pad1)">
-      <node ref="U2" pin="1"/>
-      <node ref="R4" pin="1"/>
+    <net code="59" name="Net-(U4-Pad7)">
+      <node ref="U4" pin="7"/>
     </net>
   </nets>
 </export>

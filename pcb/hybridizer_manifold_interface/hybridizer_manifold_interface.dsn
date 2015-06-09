@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "0.201505120158+5650~23~ubuntu14.04.1-product")
+    (host_version "0.201506082246+5724~23~ubuntu14.04.1-product")
   )
   (resolution um 10)
   (unit um)
@@ -33,6 +33,16 @@
     )
   )
   (placement
+    (component hybridizer_manifold_interface:SM0805_POL
+      (place D1 45002.4 -28448 back 90 (PN diode_schottky_20V_1A))
+      (place D2 45002.4 -36068 back 90 (PN diode_schottky_20V_1A))
+      (place D3 45002.4 -43688 back 90 (PN diode_schottky_20V_1A))
+      (place D4 45002.4 -51308 back 90 (PN diode_schottky_20V_1A))
+      (place D5 45002.4 -58928 back 90 (PN diode_schottky_20V_1A))
+      (place D6 45002.4 -66548 back 90 (PN diode_schottky_20V_1A))
+      (place D7 45002.4 -74168 back 90 (PN diode_schottky_20V_1A))
+      (place D8 45002.4 -81788 back 90 (PN diode_schottky_20V_1A))
+    )
     (component hybridizer_manifold_interface:LEE_VALVE_PLUG_IN
       (place S1 47586.9 -28448 front 270 (PN LEE_VALVE_PLUG_IN))
       (place S2 47586.9 -36068 front 270 (PN LEE_VALVE_PLUG_IN))
@@ -45,16 +55,6 @@
     )
     (component hybridizer_manifold_interface:HEADER_02x07_SMD
       (place P1 31750 -55118 front 90 (PN HEADER_02X07_SMD))
-    )
-    (component hybridizer_manifold_interface:SOIC_8
-      (place U8 29762.5 -81788 back 90 (PN DRV103))
-      (place U7 29762.5 -74168 back 90 (PN DRV103))
-      (place U6 29762.5 -66548 back 90 (PN DRV103))
-      (place U5 29762.5 -58928 back 90 (PN DRV103))
-      (place U4 29762.5 -51308 back 90 (PN DRV103))
-      (place U3 29762.5 -43688 back 90 (PN DRV103))
-      (place U2 29762.5 -36068 back 90 (PN DRV103))
-      (place U1 29762.5 -28448 back 90 (PN DRV103))
     )
     (component hybridizer_manifold_interface:mounting_hole
       (place MOUNTING_HOLE_2 36334.7 -74168 front 0 (PN mounting_hole))
@@ -94,24 +94,6 @@
       (place R23 40557.4 -77343 front 90 (PN 300))
       (place R24 38652.4 -81788 front 0 (PN 300))
     )
-    (component hybridizer_manifold_interface:SM0805_POL
-      (place D8 43732.4 -80518 back 180 (PN diode_schottky_20V_1A))
-      (place D7 43732.4 -72898 back 180 (PN diode_schottky_20V_1A))
-      (place D6 43732.4 -65278 back 180 (PN diode_schottky_20V_1A))
-      (place D5 43732.4 -57658 back 180 (PN diode_schottky_20V_1A))
-      (place D4 43732.4 -50038 back 180 (PN diode_schottky_20V_1A))
-      (place D3 43732.4 -42418 back 180 (PN diode_schottky_20V_1A))
-      (place D2 43732.4 -34798 back 180 (PN diode_schottky_20V_1A))
-      (place D1 43732.4 -27178 back 180 (PN diode_schottky_20V_1A))
-      (place C15 43732.4 -83058 back 180 (PN 1uF))
-      (place C13 43732.4 -75438 back 180 (PN 1uF))
-      (place C11 43732.4 -67818 back 180 (PN 1uF))
-      (place C9 43732.4 -60198 back 180 (PN 1uF))
-      (place C7 43732.4 -52578 back 180 (PN 1uF))
-      (place C5 43732.4 -44958 back 180 (PN 1uF))
-      (place C3 43732.4 -37338 back 180 (PN 1uF))
-      (place C1 43732.4 -29718 back 180 (PN 1uF))
-    )
     (component hybridizer_manifold_interface:LED0805
       (place D9 40557.4 -28448 front 90 (PN LED_0805))
       (place D10 40557.4 -36068 front 90 (PN LED_0805))
@@ -122,8 +104,39 @@
       (place D15 40557.4 -74168 front 90 (PN LED_0805))
       (place D16 40557.4 -81788 front 90 (PN LED_0805))
     )
+    (component hybridizer_manifold_interface:SOIC_8
+      (place U1 29762.5 -28448 back 90 (PN DRV103))
+      (place U2 29762.5 -36068 back 90 (PN DRV103))
+      (place U3 29762.5 -43688 back 90 (PN DRV103))
+      (place U4 29762.5 -51308 back 90 (PN DRV103))
+      (place U5 29762.5 -58928 back 90 (PN DRV103))
+      (place U6 29762.5 -66548 back 90 (PN DRV103))
+      (place U7 29762.5 -74168 back 90 (PN DRV103))
+      (place U8 29762.5 -81788 back 90 (PN DRV103))
+    )
+    (component hybridizer_manifold_interface:SM0805_POL_L
+      (place C1 42208.4 -28448 back 90 (PN 1uF))
+      (place C3 42208.4 -36068 back 90 (PN 1uF))
+      (place C5 42208.4 -43688 back 90 (PN 1uF))
+      (place C7 42208.4 -51308 back 90 (PN 1uF))
+      (place C9 42208.4 -58928 back 90 (PN 1uF))
+      (place C11 42208.4 -66548 back 90 (PN 1uF))
+      (place C13 42208.4 -74168 back 90 (PN 1uF))
+      (place C15 42208.4 -81788 back 90 (PN 1uF))
+    )
   )
   (library
+    (image hybridizer_manifold_interface:SM0805_POL
+      (outline (path signal 127  -381 1016  -381 -1016))
+      (outline (path signal 127  -635 889  -1524 889))
+      (outline (path signal 127  -1524 889  -1524 -889))
+      (outline (path signal 127  -1524 -889  -635 -889))
+      (outline (path signal 127  635 889  1524 889))
+      (outline (path signal 127  1524 889  1524 -889))
+      (outline (path signal 127  1524 -889  635 -889))
+      (pin Rect[T]Pad_787.4x1600.2_um 1 -1041.4 0)
+      (pin Rect[T]Pad_787.4x1600.2_um 2 1041.4 0)
+    )
     (image hybridizer_manifold_interface:LEE_VALVE_PLUG_IN
       (outline (path signal 381  3556 -2032  3381.96 -3130.86  2876.86 -4122.16  2090.16 -4908.86
             1098.86 -5413.96  0 -5588  -1098.86 -5413.96  -2090.16 -4908.86
@@ -156,23 +169,6 @@
       (pin Rect[T]Pad_1016x4495.8_um 11 -5080 2997.2)
       (pin Rect[T]Pad_1016x4495.8_um 12 -5080 -2997.2)
     )
-    (image hybridizer_manifold_interface:SOIC_8
-      (outline (path signal 381  -1270 -889  -1288.65 -1006.74  -1342.77 -1112.95  -1427.05 -1197.23
-            -1533.27 -1251.35  -1651 -1270  -1768.73 -1251.35  -1874.95 -1197.23
-            -1959.23 -1112.95  -2013.35 -1006.74  -2032 -889  -2013.35 -771.265
-            -1959.23 -665.054  -1874.95 -580.765  -1768.73 -526.647  -1651 -508
-            -1533.27 -526.647  -1427.05 -580.765  -1342.77 -665.054  -1288.65 -771.265))
-      (outline (path signal 381  -2540 1905  -2540 -1905))
-      (outline (path signal 381  2540 1905  2540 -1905))
-      (pin Rect[T]Pad_599.44x1549.4_um 1 -1905 -2692.4)
-      (pin Rect[T]Pad_599.44x1549.4_um 2 -635 -2692.4)
-      (pin Rect[T]Pad_599.44x1549.4_um 3 635 -2692.4)
-      (pin Rect[T]Pad_599.44x1549.4_um 4 1905 -2692.4)
-      (pin Rect[T]Pad_599.44x1549.4_um 5 1905 2692.4)
-      (pin Rect[T]Pad_599.44x1549.4_um 6 635 2692.4)
-      (pin Rect[T]Pad_599.44x1549.4_um 7 -635 2692.4)
-      (pin Rect[T]Pad_599.44x1549.4_um 8 -1905 2692.4)
-    )
     (image hybridizer_manifold_interface:mounting_hole
       (outline (path signal 228.6  2540 0  2415.68 -784.903  2054.9 -1492.97  1492.97 -2054.9
             784.903 -2415.68  0 -2540  -784.903 -2415.68  -1492.97 -2054.9
@@ -191,17 +187,6 @@
       (pin Rect[T]Pad_619.76x619.76_um 1 -449.58 0)
       (pin Rect[T]Pad_619.76x619.76_um 2 449.58 0)
     )
-    (image hybridizer_manifold_interface:SM0805_POL
-      (outline (path signal 127  -381 1016  -381 -1016))
-      (outline (path signal 127  -635 889  -1524 889))
-      (outline (path signal 127  -1524 889  -1524 -889))
-      (outline (path signal 127  -1524 -889  -635 -889))
-      (outline (path signal 127  635 889  1524 889))
-      (outline (path signal 127  1524 889  1524 -889))
-      (outline (path signal 127  1524 -889  635 -889))
-      (pin Rect[T]Pad_787.4x1600.2_um 1 -1041.4 0)
-      (pin Rect[T]Pad_787.4x1600.2_um 2 1041.4 0)
-    )
     (image hybridizer_manifold_interface:LED0805
       (outline (path signal 127  -381 635  0 0))
       (outline (path signal 127  0 0  -381 -635))
@@ -212,6 +197,34 @@
       (outline (path signal 127  381 127  127 127))
       (pin Rect[T]Pad_1193.8x1193.8_um 1 -1054.1 0)
       (pin Rect[T]Pad_1193.8x1193.8_um 2 1054.1 0)
+    )
+    (image hybridizer_manifold_interface:SOIC_8
+      (outline (path signal 381  -1270 -889  -1288.65 -1006.74  -1342.77 -1112.95  -1427.05 -1197.23
+            -1533.27 -1251.35  -1651 -1270  -1768.73 -1251.35  -1874.95 -1197.23
+            -1959.23 -1112.95  -2013.35 -1006.74  -2032 -889  -2013.35 -771.265
+            -1959.23 -665.054  -1874.95 -580.765  -1768.73 -526.647  -1651 -508
+            -1533.27 -526.647  -1427.05 -580.765  -1342.77 -665.054  -1288.65 -771.265))
+      (outline (path signal 381  -2540 1905  -2540 -1905))
+      (outline (path signal 381  2540 1905  2540 -1905))
+      (pin Rect[T]Pad_599.44x1549.4_um 1 -1905 -2692.4)
+      (pin Rect[T]Pad_599.44x1549.4_um 2 -635 -2692.4)
+      (pin Rect[T]Pad_599.44x1549.4_um 3 635 -2692.4)
+      (pin Rect[T]Pad_599.44x1549.4_um 4 1905 -2692.4)
+      (pin Rect[T]Pad_599.44x1549.4_um 5 1905 2692.4)
+      (pin Rect[T]Pad_599.44x1549.4_um 6 635 2692.4)
+      (pin Rect[T]Pad_599.44x1549.4_um 7 -635 2692.4)
+      (pin Rect[T]Pad_599.44x1549.4_um 8 -1905 2692.4)
+    )
+    (image hybridizer_manifold_interface:SM0805_POL_L
+      (outline (path signal 127  -635 1016  -635 -1016))
+      (outline (path signal 127  -889 889  -1778 889))
+      (outline (path signal 127  -1778 889  -1778 -889))
+      (outline (path signal 127  -1778 -889  -889 -889))
+      (outline (path signal 127  889 889  1778 889))
+      (outline (path signal 127  1778 889  1778 -889))
+      (outline (path signal 127  1778 -889  889 -889))
+      (pin Rect[T]Pad_787.4x1600.2_um 1 -1270 0)
+      (pin Rect[T]Pad_787.4x1600.2_um 2 1270 0)
     )
     (padstack Round[A]Pad_2336.8_um
       (shape (circle F.Cu 2336.8))
@@ -251,138 +264,138 @@
   )
   (network
     (net VAA
-      (pins P1-1 P1-3 U8-6 U7-6 U6-6 U5-6 U4-6 U3-6 U2-6 U1-6 D8-1 D7-1 D6-1 D5-1
-        D4-1 D3-1 D2-1 D1-1 C15-1 C13-1 C11-1 C9-1 C7-1 C5-1 C3-1 C1-1)
+      (pins D1-1 D2-1 D3-1 D4-1 D5-1 D6-1 D7-1 D8-1 S1-1 S2-1 S3-1 S4-1 S5-1 S6-1
+        S7-1 S8-1 P1-1 P1-3 U1-6 U2-6 U3-6 U4-6 U5-6 U6-6 U7-6 U8-6 C1-1 C3-1 C5-1
+        C7-1 C9-1 C11-1 C13-1 C15-1)
     )
     (net GND
-      (pins S1-2 S2-2 S3-2 S4-2 S5-2 S6-2 S7-2 S8-2 P1-2 P1-4 P1-6 U8-4 U7-4 U6-4
-        U5-4 U4-4 U3-4 U2-4 U1-4 C2-2 C4-2 C6-2 C8-2 C10-2 C12-2 C14-2 C16-2 R1-2
-        R2-2 R3-2 R4-2 R5-2 R6-2 R7-2 R8-2 R9-2 R10-2 R11-2 R12-2 R13-2 R14-2 R15-2
-        R16-2 C15-2 C13-2 C11-2 C9-2 C7-2 C5-2 C3-2 C1-2 D9-2 D10-2 D11-2 D12-2 D13-2
-        D14-2 D15-2 D16-2)
+      (pins P1-2 P1-4 P1-6 C2-2 C4-2 C6-2 C8-2 C10-2 C12-2 C14-2 C16-2 R1-2 R2-2 R3-2
+        R4-2 R5-2 R6-2 R7-2 R8-2 R9-2 R10-2 R11-2 R12-2 R13-2 R14-2 R15-2 R16-2 D9-2
+        D10-2 D11-2 D12-2 D13-2 D14-2 D15-2 D16-2 U1-4 U2-4 U3-4 U4-4 U5-4 U6-4 U7-4
+        U8-4 C1-2 C3-2 C5-2 C7-2 C9-2 C11-2 C13-2 C15-2)
     )
     (net "Net-(C2-Pad1)"
-      (pins U1-2 C2-1)
+      (pins C2-1 U1-2)
     )
     (net "Net-(C4-Pad1)"
-      (pins U2-2 C4-1)
+      (pins C4-1 U2-2)
     )
     (net "Net-(C6-Pad1)"
-      (pins U3-2 C6-1)
+      (pins C6-1 U3-2)
     )
     (net "Net-(C8-Pad1)"
-      (pins U4-2 C8-1)
+      (pins C8-1 U4-2)
     )
     (net "Net-(C10-Pad1)"
-      (pins U5-2 C10-1)
+      (pins C10-1 U5-2)
     )
     (net "Net-(C12-Pad1)"
-      (pins U6-2 C12-1)
+      (pins C12-1 U6-2)
     )
     (net "Net-(C14-Pad1)"
-      (pins U7-2 C14-1)
+      (pins C14-1 U7-2)
     )
     (net "Net-(C16-Pad1)"
-      (pins U8-2 C16-1)
+      (pins C16-1 U8-2)
     )
     (net /SH0
-      (pins S1-1 U1-5 D1-2)
+      (pins D1-2 S1-2 U1-5)
     )
     (net /SH1
-      (pins S2-1 U2-5 D2-2)
+      (pins D2-2 S2-2 U2-5)
     )
     (net /SH2
-      (pins S3-1 U3-5 D3-2)
+      (pins D3-2 S3-2 U3-5)
     )
     (net /SH3
-      (pins S4-1 U4-5 D4-2)
+      (pins D4-2 S4-2 U4-5)
     )
     (net /SH4
-      (pins S5-1 U5-5 D5-2)
+      (pins D5-2 S5-2 U5-5)
     )
     (net /SH5
-      (pins S6-1 U6-5 D6-2)
+      (pins D6-2 S6-2 U6-5)
     )
     (net /SH6
-      (pins S7-1 U7-5 D7-2)
+      (pins D7-2 S7-2 U7-5)
     )
     (net /SH7
-      (pins S8-1 U8-5 D8-2)
+      (pins D8-2 S8-2 U8-5)
     )
     (net /IO7
-      (pins P1-14 U8-8 R24-1)
+      (pins P1-14 R24-1 U8-8)
     )
     (net /IO6
-      (pins P1-13 U7-8 R23-1)
+      (pins P1-13 R23-1 U7-8)
     )
     (net "Net-(P1-Pad5)"
       (pins P1-5)
     )
     (net /IO0
-      (pins P1-7 U1-8 R17-1)
+      (pins P1-7 R17-1 U1-8)
     )
     (net /IO1
-      (pins P1-8 U2-8 R18-1)
+      (pins P1-8 R18-1 U2-8)
     )
     (net /IO2
-      (pins P1-9 U3-8 R19-1)
+      (pins P1-9 R19-1 U3-8)
     )
     (net /IO3
-      (pins P1-10 U4-8 R20-1)
+      (pins P1-10 R20-1 U4-8)
     )
     (net /IO4
-      (pins P1-11 U5-8 R21-1)
+      (pins P1-11 R21-1 U5-8)
     )
     (net /IO5
-      (pins P1-12 U6-8 R22-1)
+      (pins P1-12 R22-1 U6-8)
     )
     (net "Net-(R1-Pad1)"
-      (pins U1-3 R1-1)
+      (pins R1-1 U1-3)
     )
     (net "Net-(R2-Pad1)"
-      (pins U1-1 R2-1)
+      (pins R2-1 U1-1)
     )
     (net "Net-(R3-Pad1)"
-      (pins U2-3 R3-1)
+      (pins R3-1 U2-3)
     )
     (net "Net-(R4-Pad1)"
-      (pins U2-1 R4-1)
+      (pins R4-1 U2-1)
     )
     (net "Net-(R5-Pad1)"
-      (pins U3-3 R5-1)
+      (pins R5-1 U3-3)
     )
     (net "Net-(R6-Pad1)"
-      (pins U3-1 R6-1)
+      (pins R6-1 U3-1)
     )
     (net "Net-(R7-Pad1)"
-      (pins U4-3 R7-1)
+      (pins R7-1 U4-3)
     )
     (net "Net-(R8-Pad1)"
-      (pins U4-1 R8-1)
+      (pins R8-1 U4-1)
     )
     (net "Net-(R9-Pad1)"
-      (pins U5-3 R9-1)
+      (pins R9-1 U5-3)
     )
     (net "Net-(R10-Pad1)"
-      (pins U5-1 R10-1)
+      (pins R10-1 U5-1)
     )
     (net "Net-(R11-Pad1)"
-      (pins U6-3 R11-1)
+      (pins R11-1 U6-3)
     )
     (net "Net-(R12-Pad1)"
-      (pins U6-1 R12-1)
+      (pins R12-1 U6-1)
     )
     (net "Net-(R13-Pad1)"
-      (pins U7-3 R13-1)
+      (pins R13-1 U7-3)
     )
     (net "Net-(R14-Pad1)"
-      (pins U7-1 R14-1)
+      (pins R14-1 U7-1)
     )
     (net "Net-(R15-Pad1)"
-      (pins U8-3 R15-1)
+      (pins R15-1 U8-3)
     )
     (net "Net-(R16-Pad1)"
-      (pins U8-1 R16-1)
+      (pins R16-1 U8-1)
     )
     (net "Net-(U1-Pad7)"
       (pins U1-7)
@@ -446,7 +459,7 @@
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 812.8)
+        (width 609.6)
         (clearance 254.1)
       )
     )
@@ -455,20 +468,20 @@
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 812.8)
+        (width 609.6)
         (clearance 254.1)
       )
     )
-    (class SIGNAL /IO0 /IO1 /IO2 /IO3 /IO4 /IO5 /IO6 /IO7 /OUT0 /OUT1 /OUT2
-      /OUT3 /OUT4 /OUT5 /OUT6 /OUT7 "Net-(C10-Pad1)" "Net-(C12-Pad1)" "Net-(C14-Pad1)"
-      "Net-(C16-Pad1)" "Net-(C2-Pad1)" "Net-(C4-Pad1)" "Net-(C6-Pad1)" "Net-(C8-Pad1)"
-      "Net-(D10-Pad1)" "Net-(D11-Pad1)" "Net-(D12-Pad1)" "Net-(D13-Pad1)"
-      "Net-(D14-Pad1)" "Net-(D15-Pad1)" "Net-(D16-Pad1)" "Net-(D9-Pad1)" "Net-(P1-Pad5)"
-      "Net-(R1-Pad1)" "Net-(R10-Pad1)" "Net-(R11-Pad1)" "Net-(R12-Pad1)" "Net-(R13-Pad1)"
-      "Net-(R14-Pad1)" "Net-(R15-Pad1)" "Net-(R16-Pad1)" "Net-(R2-Pad1)" "Net-(R3-Pad1)"
-      "Net-(R4-Pad1)" "Net-(R5-Pad1)" "Net-(R6-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad1)"
-      "Net-(R9-Pad1)" "Net-(U1-Pad7)" "Net-(U2-Pad7)" "Net-(U3-Pad7)" "Net-(U4-Pad7)"
-      "Net-(U5-Pad7)" "Net-(U6-Pad7)" "Net-(U7-Pad7)" "Net-(U8-Pad7)"
+    (class SIGNAL /IO0 /IO1 /IO2 /IO3 /IO4 /IO5 /IO6 /IO7 "Net-(C10-Pad1)"
+      "Net-(C12-Pad1)" "Net-(C14-Pad1)" "Net-(C16-Pad1)" "Net-(C2-Pad1)" "Net-(C4-Pad1)"
+      "Net-(C6-Pad1)" "Net-(C8-Pad1)" "Net-(D10-Pad1)" "Net-(D11-Pad1)" "Net-(D12-Pad1)"
+      "Net-(D13-Pad1)" "Net-(D14-Pad1)" "Net-(D15-Pad1)" "Net-(D16-Pad1)"
+      "Net-(D9-Pad1)" "Net-(P1-Pad5)" "Net-(R1-Pad1)" "Net-(R10-Pad1)" "Net-(R11-Pad1)"
+      "Net-(R12-Pad1)" "Net-(R13-Pad1)" "Net-(R14-Pad1)" "Net-(R15-Pad1)"
+      "Net-(R16-Pad1)" "Net-(R2-Pad1)" "Net-(R3-Pad1)" "Net-(R4-Pad1)" "Net-(R5-Pad1)"
+      "Net-(R6-Pad1)" "Net-(R7-Pad1)" "Net-(R8-Pad1)" "Net-(R9-Pad1)" "Net-(U1-Pad7)"
+      "Net-(U2-Pad7)" "Net-(U3-Pad7)" "Net-(U4-Pad7)" "Net-(U5-Pad7)" "Net-(U6-Pad7)"
+      "Net-(U7-Pad7)" "Net-(U8-Pad7)"
       (circuit
         (use_via Via[0-1]_889:635_um)
       )
@@ -479,32 +492,7 @@
     )
   )
   (wiring
-    (wire (path In1.Cu 812.8  42691.1 -80518  42691.1 -83058)(net VAA)(type protect))
-    (wire (path In1.Cu 812.8  42691.1 -72898  42691.1 -75438)(net VAA)(type protect))
-    (wire (path In1.Cu 812.8  42691.1 -65278  42691.1 -67818)(net VAA)(type protect))
-    (wire (path In1.Cu 812.8  42691.1 -57658  42691.1 -60198)(net VAA)(type protect))
-    (wire (path In1.Cu 812.8  42691.1 -50038  42691.1 -52578)(net VAA)(type protect))
-    (wire (path In1.Cu 812.8  42691.1 -42418  42691.1 -44958)(net VAA)(type protect))
-    (wire (path In1.Cu 812.8  42691.1 -34798  42691.1 -37338)(net VAA)(type protect))
-    (wire (path In1.Cu 812.8  42691.1 -27178  42691.1 -29718)(net VAA)(type protect))
-    (wire (path F.Cu 812.8  28752.8 -47498  28752.8 -50038)(net VAA)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -83058  47586.9 -83058)(net GND)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -75438  47586.9 -75438)(net GND)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -67818  47586.9 -67818)(net GND)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -60198  47586.9 -60198)(net GND)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -52578  47586.9 -52578)(net GND)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -44958  47586.9 -44958)(net GND)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -37338  47586.9 -37338)(net GND)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -29718  47586.9 -29718)(net GND)(type protect))
-    (wire (path F.Cu 812.8  34747.2 -50038  34747.2 -52578)(net GND)(type protect))
-    (wire (path F.Cu 812.8  34747.2 -47498  34747.2 -50038)(net GND)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -27178  47586.9 -27178)(net /SH0)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -34798  47586.9 -34798)(net /SH1)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -42418  47586.9 -42418)(net /SH2)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -50038  47586.9 -50038)(net /SH3)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -57658  47586.9 -57658)(net /SH4)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -65278  47586.9 -65278)(net /SH5)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -72898  47586.9 -72898)(net /SH6)(type protect))
-    (wire (path In1.Cu 812.8  44773.8 -80518  47586.9 -80518)(net /SH7)(type protect))
+    (wire (path F.Cu 609.6  28752.8 -47498  28752.8 -50038)(net VAA)(type protect))
+    (wire (path F.Cu 609.6  34747.2 -52578  34747.2 -50038  34747.2 -47498)(net GND)(type protect))
   )
 )

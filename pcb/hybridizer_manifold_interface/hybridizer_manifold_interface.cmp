@@ -1,4 +1,132 @@
-Cmp-Mod V01 Genere par PcbNew le Fri 22 May 2015 03:48:33 PM EDT
+Cmp-Mod V01 Genere par PcbNew le Tue 09 Jun 2015 04:59:37 PM EDT
+
+BeginCmp
+TimeStamp = 5553A555
+Path = /55783F4F
+Reference = C1;
+ValeurCmp = 1uF;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A56E
+Path = /5578435D
+Reference = C3;
+ValeurCmp = 1uF;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A587
+Path = /557844A3
+Reference = C5;
+ValeurCmp = 1uF;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A5A0
+Path = /557847A3
+Reference = C7;
+ValeurCmp = 1uF;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A5B9
+Path = /557867DC
+Reference = C9;
+ValeurCmp = 1uF;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A5D2
+Path = /55786B14
+Reference = C11;
+ValeurCmp = 1uF;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A5EB
+Path = /55786D2F
+Reference = C13;
+ValeurCmp = 1uF;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A604
+Path = /55786F9B
+Reference = C15;
+ValeurCmp = 1uF;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A611
+Path = /55538621
+Reference = D1;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A61D
+Path = /55540C30
+Reference = D2;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A629
+Path = /55541359
+Reference = D3;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A635
+Path = /555413C2
+Reference = D4;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A641
+Path = /555420A3
+Reference = D5;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A64D
+Path = /5554210C
+Reference = D6;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A659
+Path = /55542175
+Reference = D7;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5553A665
+Path = /555421DE
+Reference = D8;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = hybridizer_manifold_interface:SM0805_POL;
+EndCmp
 
 BeginCmp
 TimeStamp = 55428C47
@@ -278,134 +406,6 @@ Path = /5554A93B
 Reference = R16;
 ValeurCmp = 137k;
 IdModule  = hybridizer_manifold_interface:SM0402;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A665
-Path = /555421DE
-Reference = D8;
-ValeurCmp = diode_schottky_20V_1A;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A659
-Path = /55542175
-Reference = D7;
-ValeurCmp = diode_schottky_20V_1A;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A64D
-Path = /5554210C
-Reference = D6;
-ValeurCmp = diode_schottky_20V_1A;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A641
-Path = /555420A3
-Reference = D5;
-ValeurCmp = diode_schottky_20V_1A;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A635
-Path = /555413C2
-Reference = D4;
-ValeurCmp = diode_schottky_20V_1A;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A629
-Path = /55541359
-Reference = D3;
-ValeurCmp = diode_schottky_20V_1A;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A61D
-Path = /55540C30
-Reference = D2;
-ValeurCmp = diode_schottky_20V_1A;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A611
-Path = /55538621
-Reference = D1;
-ValeurCmp = diode_schottky_20V_1A;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A604
-Path = /5554221D
-Reference = C15;
-ValeurCmp = 1uF;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A5EB
-Path = /555421B4
-Reference = C13;
-ValeurCmp = 1uF;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A5D2
-Path = /5554214B
-Reference = C11;
-ValeurCmp = 1uF;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A5B9
-Path = /555420E2
-Reference = C9;
-ValeurCmp = 1uF;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A5A0
-Path = /55541401
-Reference = C7;
-ValeurCmp = 1uF;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A587
-Path = /55541398
-Reference = C5;
-ValeurCmp = 1uF;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A56E
-Path = /55540C6F
-Reference = C3;
-ValeurCmp = 1uF;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
-EndCmp
-
-BeginCmp
-TimeStamp = 5553A555
-Path = /555408EB
-Reference = C1;
-ValeurCmp = 1uF;
-IdModule  = hybridizer_manifold_interface:SM0805_POL;
 EndCmp
 
 BeginCmp
