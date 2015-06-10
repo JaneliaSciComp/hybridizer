@@ -459,7 +459,7 @@
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 609.6)
+        (width 406.4)
         (clearance 254.1)
       )
     )
@@ -468,7 +468,7 @@
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 609.6)
+        (width 406.4)
         (clearance 254.1)
       )
     )
@@ -486,13 +486,15 @@
         (use_via Via[0-1]_889:635_um)
       )
       (rule
-        (width 406.4)
+        (width 254)
         (clearance 254.1)
       )
     )
   )
   (wiring
-    (wire (path F.Cu 609.6  28752.8 -47498  28752.8 -50038)(net VAA)(type protect))
-    (wire (path F.Cu 609.6  34747.2 -52578  34747.2 -50038  34747.2 -47498)(net GND)(type protect))
+    (wire (path F.Cu 1016  28752.8 -47498  28752.8 -50038)(net VAA)(type protect))
+    (wire (path F.Cu 1016  40557.4 -42633.9  39611.3 -42633.9  34747.2 -47498)(net GND)(type protect))
+    (wire (path F.Cu 1016  34747.2 -50038  34747.2 -47498)(net GND)(type protect))
+    (wire (path F.Cu 1016  34747.2 -52578  34747.2 -50038)(net GND)(type protect))
   )
 )
