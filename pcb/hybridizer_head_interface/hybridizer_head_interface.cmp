@@ -1,4 +1,4 @@
-Cmp-Mod V01 Genere par PcbNew le Mon 18 May 2015 02:35:44 PM EDT
+Cmp-Mod V01 Created by PcbNew   date = Fri 19 Jun 2015 03:42:47 PM EDT
 
 BeginCmp
 TimeStamp = 55412999
@@ -9,81 +9,9 @@ IdModule  = hybridizer_head_interface:HEADER_02x05_SMD;
 EndCmp
 
 BeginCmp
-TimeStamp = 55412A2B
-Path = /555ABB7E
-Reference = U13;
-ValeurCmp = HALL_DRV5053_OA_-73mT;
-IdModule  = hybridizer_head_interface:SOT-23-3;
-EndCmp
-
-BeginCmp
-TimeStamp = 55412A14
-Path = /555AB6C2
-Reference = U11;
-ValeurCmp = HALL_DRV5053_OA_-73mT;
-IdModule  = hybridizer_head_interface:SOT-23-3;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129FD
-Path = /555AB208
-Reference = U9;
-ValeurCmp = HALL_DRV5053_OA_-73mT;
-IdModule  = hybridizer_head_interface:SOT-23-3;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129E6
-Path = /555AAA96
-Reference = U7;
-ValeurCmp = HALL_DRV5053_OA_-73mT;
-IdModule  = hybridizer_head_interface:SOT-23-3;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129CF
-Path = /555AA5D8
-Reference = U5;
-ValeurCmp = HALL_DRV5053_OA_-73mT;
-IdModule  = hybridizer_head_interface:SOT-23-3;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129B8
-Path = /555A9FB2
-Reference = U3;
-ValeurCmp = HALL_DRV5053_OA_-73mT;
-IdModule  = hybridizer_head_interface:SOT-23-3;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129A1
-Path = /555A93A0
-Reference = U1;
-ValeurCmp = HALL_DRV5053_OA_-73mT;
-IdModule  = hybridizer_head_interface:SOT-23-3;
-EndCmp
-
-BeginCmp
 TimeStamp = 55413BEC
 Path = /554D7EE7
 Reference = C1;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413BF8
-Path = /554D7F11
-Reference = C2;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C04
-Path = /554D7F35
-Reference = C3;
 ValeurCmp = 0.1uF;
 IdModule  = hybridizer_head_interface:SM1210;
 EndCmp
@@ -97,41 +25,9 @@ IdModule  = hybridizer_head_interface:SM1210;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C1C
-Path = /554D7C50
-Reference = C5;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C28
-Path = /554D7C74
-Reference = C6;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
 TimeStamp = 55413C34
 Path = /55415AFE
 Reference = C7;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C40
-Path = /55415B28
-Reference = C8;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C4C
-Path = /55415B55
-Reference = C9;
 ValeurCmp = 0.1uF;
 IdModule  = hybridizer_head_interface:SM1210;
 EndCmp
@@ -145,41 +41,9 @@ IdModule  = hybridizer_head_interface:SM1210;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413C64
-Path = /55415B9D
-Reference = C11;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C70
-Path = /55415BCA
-Reference = C12;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
 TimeStamp = 55413C7C
 Path = /5541622A
 Reference = C13;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C88
-Path = /55416254
-Reference = C14;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413C94
-Path = /55416281
-Reference = C15;
 ValeurCmp = 0.1uF;
 IdModule  = hybridizer_head_interface:SM1210;
 EndCmp
@@ -193,98 +57,10 @@ IdModule  = hybridizer_head_interface:SM1210;
 EndCmp
 
 BeginCmp
-TimeStamp = 55413CAC
-Path = /554162C9
-Reference = C17;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CB8
-Path = /554162F6
-Reference = C18;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
 TimeStamp = 55413CC4
 Path = /55416314
 Reference = C19;
 ValeurCmp = 0.1uF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CD0
-Path = /5541633E
-Reference = C20;
-ValeurCmp = 8.2nF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CDC
-Path = /5541636B
-Reference = C21;
-ValeurCmp = 0.1uF;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CE8
-Path = /554D7F1A
-Reference = R1;
-ValeurCmp = 200k;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413CF4
-Path = /554D7C59
-Reference = R2;
-ValeurCmp = 200k;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D00
-Path = /55415B31
-Reference = R3;
-ValeurCmp = 200k;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D0C
-Path = /55415BA6
-Reference = R4;
-ValeurCmp = 200k;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D18
-Path = /5541625D
-Reference = R5;
-ValeurCmp = 200k;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D24
-Path = /554162D2
-Reference = R6;
-ValeurCmp = 200k;
-IdModule  = hybridizer_head_interface:SM1210;
-EndCmp
-
-BeginCmp
-TimeStamp = 55413D30
-Path = /55416347
-Reference = R7;
-ValeurCmp = 200k;
 IdModule  = hybridizer_head_interface:SM1210;
 EndCmp
 
@@ -450,7 +226,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 555509EB
-Path = /55555A05
+Path = /557C2A8E
 Reference = C22;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_head_interface:SM0805_POL;
@@ -458,7 +234,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 555509F8
-Path = /5555A9AE
+Path = /557C3DF4
 Reference = C23;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_head_interface:SM0805_POL;
@@ -466,7 +242,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 55550A05
-Path = /5555B2A7
+Path = /557C3F14
 Reference = C24;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_head_interface:SM0805_POL;
@@ -474,7 +250,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 55550A12
-Path = /5555B310
+Path = /557C4024
 Reference = C25;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_head_interface:SM0805_POL;
@@ -514,7 +290,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 55550A4F
-Path = /5555C5A1
+Path = /557C506C
 Reference = C30;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_head_interface:SM0805_POL;
@@ -522,7 +298,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 55550A5C
-Path = /5555C60A
+Path = /557C55A1
 Reference = C31;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_head_interface:SM0805_POL;
@@ -530,7 +306,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 55550A69
-Path = /5555C673
+Path = /557C56B1
 Reference = C32;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_head_interface:SM0805_POL;
@@ -538,7 +314,7 @@ EndCmp
 
 BeginCmp
 TimeStamp = 55550A76
-Path = /5555C6DC
+Path = /557C57C7
 Reference = C33;
 ValeurCmp = 1uF;
 IdModule  = hybridizer_head_interface:SM0805_POL;
@@ -969,62 +745,6 @@ IdModule  = hybridizer_head_interface:SOIC_8;
 EndCmp
 
 BeginCmp
-TimeStamp = 55412A3A
-Path = /55418A58
-Reference = U14;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_head_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 55412A23
-Path = /554188E1
-Reference = U12;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_head_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 55412A0C
-Path = /5541856D
-Reference = U10;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_head_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129F5
-Path = /55418244
-Reference = U8;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_head_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129DE
-Path = /55418018
-Reference = U6;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_head_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129C7
-Path = /554D7C89
-Reference = U4;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_head_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
-TimeStamp = 554129B0
-Path = /554D7F4A
-Reference = U2;
-ValeurCmp = MAX4215;
-IdModule  = hybridizer_head_interface:SOIC_8_N;
-EndCmp
-
-BeginCmp
 TimeStamp = 553EA494
 Path = /554B9AFA
 Reference = S2;
@@ -1078,6 +798,214 @@ Path = /555A0CF7
 Reference = S1;
 ValeurCmp = HEADER_01X02_SMD_N;
 IdModule  = hybridizer_head_interface:Header_2_Pin_SMD_N;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129A1
+Path = /5584D065
+Reference = U1;
+ValeurCmp = VA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129B8
+Path = /5584D749
+Reference = U3;
+ValeurCmp = VA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129CF
+Path = /5584DE95
+Reference = U5;
+ValeurCmp = VA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129E6
+Path = /5584E253
+Reference = U7;
+ValeurCmp = VA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129FD
+Path = /5584E71C
+Reference = U9;
+ValeurCmp = VA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55412A14
+Path = /5584EC78
+Reference = U11;
+ValeurCmp = VA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55412A2B
+Path = /5584F14F
+Reference = U13;
+ValeurCmp = VA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 558472E3
+Path = /55849659
+Reference = C38;
+ValeurCmp = 0.1uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 558472EF
+Path = /55849639
+Reference = C39;
+ValeurCmp = 0.1uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 558472FB
+Path = /55849599
+Reference = C40;
+ValeurCmp = 0.1uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847307
+Path = /558495B9
+Reference = C41;
+ValeurCmp = 0.1uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847313
+Path = /558495D9
+Reference = C42;
+ValeurCmp = 0.1uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584731F
+Path = /558495F9
+Reference = C43;
+ValeurCmp = 0.1uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584732B
+Path = /55849619
+Reference = C44;
+ValeurCmp = 0.1uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847346
+Path = /5586BD56
+Reference = C46;
+ValeurCmp = 10uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847361
+Path = /5586BB0E
+Reference = C48;
+ValeurCmp = 10uF;
+IdModule  = hybridizer_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847376
+Path = /5585E573
+Reference = P3;
+ValeurCmp = HEADER_02X05_SMD;
+IdModule  = hybridizer_head_interface:HEADER_02x05_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584737E
+Path = /555A93A0
+Reference = U23;
+ValeurCmp = OA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847386
+Path = /555A9FB2
+Reference = U24;
+ValeurCmp = OA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584738E
+Path = /555AA5D8
+Reference = U25;
+ValeurCmp = OA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847396
+Path = /555AAA96
+Reference = U26;
+ValeurCmp = OA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584739E
+Path = /555AB208
+Reference = U27;
+ValeurCmp = OA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 558473A6
+Path = /555AB6C2
+Reference = U28;
+ValeurCmp = OA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 558473AE
+Path = /555ABB7E
+Reference = U29;
+ValeurCmp = OA;
+IdModule  = hybridizer_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847355
+Path = /5586CA92
+Reference = C47;
+ValeurCmp = 22uF;
+IdModule  = hybridizer_head_interface:SM1210_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584733A
+Path = /5586D025
+Reference = C45;
+ValeurCmp = 22uF;
+IdModule  = hybridizer_head_interface:SM1210_POL;
 EndCmp
 
 EndListe
