@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/polidorop/git/janelia/hybridizer/pcb/hybridizer_head_interface/hybridizer_head_interface.sch</source>
-    <date>Fri 19 Jun 2015 03:15:56 PM EDT</date>
+    <date>Tue 23 Jun 2015 12:46:16 PM EDT</date>
     <tool>Eeschema 0.201506162246+5763~23~ubuntu14.04.1-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -1452,6 +1452,28 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="hybridizer_head_interface" part="22uF_1210_POL">
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">22uF_1210_POL</field>
+        <field name="Footprint">hybridizer_head_interface:SM1210_POL</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">478-1683-1-ND</field>
+        <field name="Description">CAP TANT 22UF 20V 10% 1210</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="hybridizer_head_interface" part="300_0402">
       <description>Resistance</description>
       <footprints>
@@ -1502,6 +1524,21 @@
         <field name="Vendor">digikey</field>
         <field name="PartNumber">296-38457-1-ND</field>
         <field name="Description">IC HALL SENSOR OA -73mT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Vcc" type="power_in"/>
+        <pin num="2" name="OUT" type="output"/>
+        <pin num="3" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_head_interface" part="HALL_DRV5053_VA_-9mT">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">HALL_DRV5053_VA_-9mT</field>
+        <field name="Footprint">hybridizer_head_interface:SOT-23-3</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">296-38460-1-ND</field>
+        <field name="Description">IC HALL SENSOR VA -9mT</field>
       </fields>
       <pins>
         <pin num="1" name="Vcc" type="power_in"/>
@@ -1672,43 +1709,6 @@
       <pins>
         <pin num="1" name="K" type="passive"/>
         <pin num="2" name="A" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_head_interface" part="HALL_DRV5053_VA_-9mT">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">HALL_DRV5053_VA_-9mT</field>
-        <field name="Footprint">hybridizer_head_interface:SOT-23-3</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Vcc" type="power_in"/>
-        <pin num="2" name="OUT" type="output"/>
-        <pin num="3" name="GND" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_head_interface" part="22uF_1210_POL">
-      <footprints>
-        <fp>CP*</fp>
-        <fp>Elko*</fp>
-        <fp>TantalC*</fp>
-        <fp>C*elec</fp>
-        <fp>c_elec*</fp>
-        <fp>SMD*_Pol</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">22uF_1210_POL</field>
-        <field name="Footprint">hybridizer_head_interface:SM1210_POL</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-1683-1-ND</field>
-        <field name="Description">CAP TANT 22UF 20V 10% 1210</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
   </libparts>
