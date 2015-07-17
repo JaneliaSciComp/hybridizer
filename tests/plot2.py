@@ -18,7 +18,7 @@ def load_numpy_data(path):
 # -----------------------------------------------------------------------------------------
 if __name__ == '__main__':
     # Load data
-    data_file = 'hall_effect_data.csv'
+    data_file = 'hall_effect_data_va.csv'
     hall_effect_data = load_numpy_data(data_file)
     distances = numpy.float64(hall_effect_data['distance'])
     A1 = numpy.float64(hall_effect_data['A1'])
