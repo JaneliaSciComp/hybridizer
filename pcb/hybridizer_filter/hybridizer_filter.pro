@@ -1,4 +1,4 @@
-update=Mon 20 Jul 2015 10:24:50 AM EDT
+update=Tue 21 Jul 2015 01:52:06 PM EDT
 version=1
 last_client=kicad
 [cvpcb]
@@ -75,3 +75,4 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=hybridizer_filter
+LibName31=/home/polidorop/git/kicad/kicad-libraries/components
