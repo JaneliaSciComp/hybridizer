@@ -2,13 +2,13 @@
 <export version="D">
   <design>
     <source>/home/polidorop/git/janelia/hybridizer/pcb/hybridizer_filter/hybridizer_filter.sch</source>
-    <date>Tue 23 Jun 2015 12:46:16 PM EDT</date>
-    <tool>Eeschema 0.201506162246+5763~23~ubuntu14.04.1-product</tool>
+    <date>Wed 22 Jul 2015 12:55:37 PM EDT</date>
+    <tool>Eeschema no-vcs-found-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>hybridizer_filter</title>
         <company>Janelia</company>
-        <rev>1.2</rev>
+        <rev>1.0</rev>
         <date/>
         <source>hybridizer_filter.sch</source>
         <comment number="1" value=""/>
@@ -31,186 +31,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>553FDA31</tstamp>
     </comp>
-    <comp ref="C7">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55415AFE</tstamp>
-    </comp>
-    <comp ref="C10">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55415B73</tstamp>
-    </comp>
-    <comp ref="C13">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5541622A</tstamp>
-    </comp>
-    <comp ref="C16">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5541629F</tstamp>
-    </comp>
-    <comp ref="C19">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55416314</tstamp>
-    </comp>
-    <comp ref="S8">
-      <value>LEE_VALVE_PLUG_IN</value>
-      <footprint>hybridizer_filter:LEE_VALVE_PLUG_IN</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">ED90331-ND</field>
-        <field name="Description">CONN RCPT PIN .025-.037in SOLDER</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="LEE_VALVE_PLUG_IN"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55429749</tstamp>
-    </comp>
-    <comp ref="S2">
-      <value>HEADER_01X02_SMD</value>
-      <footprint>hybridizer_filter:Header_2_Pin_SMD</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HEADER_01X02_SMD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554B9AFA</tstamp>
-    </comp>
-    <comp ref="S3">
-      <value>HEADER_01X02_SMD</value>
-      <footprint>hybridizer_filter:Header_2_Pin_SMD</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HEADER_01X02_SMD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554BA2AD</tstamp>
-    </comp>
-    <comp ref="S4">
-      <value>HEADER_01X02_SMD</value>
-      <footprint>hybridizer_filter:Header_2_Pin_SMD</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HEADER_01X02_SMD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554BA323</tstamp>
-    </comp>
-    <comp ref="S5">
-      <value>HEADER_01X02_SMD</value>
-      <footprint>hybridizer_filter:Header_2_Pin_SMD</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HEADER_01X02_SMD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554BA46C</tstamp>
-    </comp>
-    <comp ref="S6">
-      <value>HEADER_01X02_SMD</value>
-      <footprint>hybridizer_filter:Header_2_Pin_SMD</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HEADER_01X02_SMD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554BA4D8</tstamp>
-    </comp>
-    <comp ref="S7">
-      <value>HEADER_01X02_SMD</value>
-      <footprint>hybridizer_filter:Header_2_Pin_SMD</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HEADER_01X02_SMD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554BA633</tstamp>
-    </comp>
-    <comp ref="C4">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554D7C26</tstamp>
-    </comp>
-    <comp ref="C1">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554D7EE7</tstamp>
-    </comp>
-    <comp ref="P1">
-      <value>HEADER_02X07_SMD</value>
-      <footprint>hybridizer_filter:HEADER_02x07_SMD</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">S9186-ND</field>
-        <field name="Description">CONN HEADR 2.54MM 14POS GOLD SMD</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HEADER_02X07_SMD"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>554DFABD</tstamp>
-    </comp>
     <comp ref="D1">
       <value>LED_0805</value>
       <footprint>hybridizer_filter:LED0805</footprint>
@@ -222,1026 +42,6 @@
       <libsource lib="hybridizer_filter" part="LED_0805"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>55551017</tstamp>
-    </comp>
-    <comp ref="R8">
-      <value>300</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="300_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55551C6D</tstamp>
-    </comp>
-    <comp ref="D2">
-      <value>LED_0805</value>
-      <footprint>hybridizer_filter:LED0805</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">160-1179-1-ND</field>
-        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="LED_0805"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55552D1D</tstamp>
-    </comp>
-    <comp ref="R9">
-      <value>300</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="300_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55552D27</tstamp>
-    </comp>
-    <comp ref="D3">
-      <value>LED_0805</value>
-      <footprint>hybridizer_filter:LED0805</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">160-1179-1-ND</field>
-        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="LED_0805"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55552ED9</tstamp>
-    </comp>
-    <comp ref="R10">
-      <value>300</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="300_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55552EE3</tstamp>
-    </comp>
-    <comp ref="D4">
-      <value>LED_0805</value>
-      <footprint>hybridizer_filter:LED0805</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">160-1179-1-ND</field>
-        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="LED_0805"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55552EF5</tstamp>
-    </comp>
-    <comp ref="R11">
-      <value>300</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="300_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55552EFF</tstamp>
-    </comp>
-    <comp ref="D5">
-      <value>LED_0805</value>
-      <footprint>hybridizer_filter:LED0805</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">160-1179-1-ND</field>
-        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="LED_0805"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55553639</tstamp>
-    </comp>
-    <comp ref="R12">
-      <value>300</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="300_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55553643</tstamp>
-    </comp>
-    <comp ref="D6">
-      <value>LED_0805</value>
-      <footprint>hybridizer_filter:LED0805</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">160-1179-1-ND</field>
-        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="LED_0805"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55553655</tstamp>
-    </comp>
-    <comp ref="R13">
-      <value>300</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="300_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555365F</tstamp>
-    </comp>
-    <comp ref="D7">
-      <value>LED_0805</value>
-      <footprint>hybridizer_filter:LED0805</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">160-1179-1-ND</field>
-        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="LED_0805"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55553671</tstamp>
-    </comp>
-    <comp ref="R14">
-      <value>300</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="300_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555367B</tstamp>
-    </comp>
-    <comp ref="D8">
-      <value>LED_0805</value>
-      <footprint>hybridizer_filter:LED0805</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">160-1179-1-ND</field>
-        <field name="Description">LED GREEN CLEAR 0805 SMD</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="LED_0805"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555368D</tstamp>
-    </comp>
-    <comp ref="R15">
-      <value>300</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="300_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55553697</tstamp>
-    </comp>
-    <comp ref="U15">
-      <value>DRV103</value>
-      <footprint>hybridizer_filter:SOIC_8</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="DRV103"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555483E</tstamp>
-    </comp>
-    <comp ref="D9">
-      <value>diode_schottky_20V_1A</value>
-      <footprint>hybridizer_filter:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="diode_schottky_20V_1A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555534D</tstamp>
-    </comp>
-    <comp ref="C26">
-      <value>10nF</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10nF_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55557129</tstamp>
-    </comp>
-    <comp ref="R16">
-      <value>205k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="205k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55557C04</tstamp>
-    </comp>
-    <comp ref="R17">
-      <value>110k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P110KLCT-ND</field>
-        <field name="Description">RES SMD 110K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="110k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555593ED</tstamp>
-    </comp>
-    <comp ref="U16">
-      <value>DRV103</value>
-      <footprint>hybridizer_filter:SOIC_8</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="DRV103"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555A994</tstamp>
-    </comp>
-    <comp ref="D10">
-      <value>diode_schottky_20V_1A</value>
-      <footprint>hybridizer_filter:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="diode_schottky_20V_1A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555A9A1</tstamp>
-    </comp>
-    <comp ref="C27">
-      <value>10nF</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10nF_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555A9C6</tstamp>
-    </comp>
-    <comp ref="R18">
-      <value>205k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="205k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555A9D2</tstamp>
-    </comp>
-    <comp ref="R19">
-      <value>110k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P110KLCT-ND</field>
-        <field name="Description">RES SMD 110K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="110k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555A9DE</tstamp>
-    </comp>
-    <comp ref="U17">
-      <value>DRV103</value>
-      <footprint>hybridizer_filter:SOIC_8</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="DRV103"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B28D</tstamp>
-    </comp>
-    <comp ref="D11">
-      <value>diode_schottky_20V_1A</value>
-      <footprint>hybridizer_filter:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="diode_schottky_20V_1A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B29A</tstamp>
-    </comp>
-    <comp ref="C28">
-      <value>10nF</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10nF_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B2BF</tstamp>
-    </comp>
-    <comp ref="R20">
-      <value>205k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="205k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B2CB</tstamp>
-    </comp>
-    <comp ref="R21">
-      <value>110k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P110KLCT-ND</field>
-        <field name="Description">RES SMD 110K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="110k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B2D7</tstamp>
-    </comp>
-    <comp ref="U18">
-      <value>DRV103</value>
-      <footprint>hybridizer_filter:SOIC_8</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="DRV103"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B2F6</tstamp>
-    </comp>
-    <comp ref="D12">
-      <value>diode_schottky_20V_1A</value>
-      <footprint>hybridizer_filter:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="diode_schottky_20V_1A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B303</tstamp>
-    </comp>
-    <comp ref="C29">
-      <value>10nF</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10nF_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B328</tstamp>
-    </comp>
-    <comp ref="R22">
-      <value>205k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="205k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B334</tstamp>
-    </comp>
-    <comp ref="R23">
-      <value>110k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P110KLCT-ND</field>
-        <field name="Description">RES SMD 110K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="110k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555B340</tstamp>
-    </comp>
-    <comp ref="U19">
-      <value>DRV103</value>
-      <footprint>hybridizer_filter:SOIC_8</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="DRV103"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C587</tstamp>
-    </comp>
-    <comp ref="D13">
-      <value>diode_schottky_20V_1A</value>
-      <footprint>hybridizer_filter:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="diode_schottky_20V_1A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C594</tstamp>
-    </comp>
-    <comp ref="C34">
-      <value>10nF</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10nF_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C5B9</tstamp>
-    </comp>
-    <comp ref="R24">
-      <value>205k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="205k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C5C5</tstamp>
-    </comp>
-    <comp ref="R25">
-      <value>110k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P110KLCT-ND</field>
-        <field name="Description">RES SMD 110K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="110k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C5D1</tstamp>
-    </comp>
-    <comp ref="U20">
-      <value>DRV103</value>
-      <footprint>hybridizer_filter:SOIC_8</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="DRV103"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C5F0</tstamp>
-    </comp>
-    <comp ref="D14">
-      <value>diode_schottky_20V_1A</value>
-      <footprint>hybridizer_filter:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="diode_schottky_20V_1A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C5FD</tstamp>
-    </comp>
-    <comp ref="C35">
-      <value>10nF</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10nF_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C622</tstamp>
-    </comp>
-    <comp ref="R26">
-      <value>205k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="205k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C62E</tstamp>
-    </comp>
-    <comp ref="R27">
-      <value>110k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P110KLCT-ND</field>
-        <field name="Description">RES SMD 110K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="110k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C63A</tstamp>
-    </comp>
-    <comp ref="U21">
-      <value>DRV103</value>
-      <footprint>hybridizer_filter:SOIC_8</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="DRV103"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C659</tstamp>
-    </comp>
-    <comp ref="D15">
-      <value>diode_schottky_20V_1A</value>
-      <footprint>hybridizer_filter:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="diode_schottky_20V_1A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C666</tstamp>
-    </comp>
-    <comp ref="C36">
-      <value>10nF</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10nF_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C68B</tstamp>
-    </comp>
-    <comp ref="R28">
-      <value>205k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="205k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C697</tstamp>
-    </comp>
-    <comp ref="R29">
-      <value>110k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P110KLCT-ND</field>
-        <field name="Description">RES SMD 110K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="110k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C6A3</tstamp>
-    </comp>
-    <comp ref="U22">
-      <value>DRV103</value>
-      <footprint>hybridizer_filter:SOIC_8</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="DRV103"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C6C2</tstamp>
-    </comp>
-    <comp ref="D16">
-      <value>diode_schottky_20V_1A</value>
-      <footprint>hybridizer_filter:SM0805_POL</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="diode_schottky_20V_1A"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C6CF</tstamp>
-    </comp>
-    <comp ref="C37">
-      <value>10nF</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10nF_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C6F4</tstamp>
-    </comp>
-    <comp ref="R30">
-      <value>205k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="205k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555C700</tstamp>
-    </comp>
-    <comp ref="R31">
-      <value>137k</value>
-      <footprint>hybridizer_filter:SM0402</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P137KLCT-ND</field>
-        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="137k_0402"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5555F40D</tstamp>
-    </comp>
-    <comp ref="S1">
-      <value>HEADER_01X02_SMD_N</value>
-      <footprint>hybridizer_filter:Header_2_Pin_SMD_N</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HEADER_01X02_SMD_N"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555A0CF7</tstamp>
-    </comp>
-    <comp ref="U23">
-      <value>OA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38457-1-ND</field>
-        <field name="Description">IC HALL SENSOR OA -73mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_OA_-73mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555A93A0</tstamp>
-    </comp>
-    <comp ref="U24">
-      <value>OA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38457-1-ND</field>
-        <field name="Description">IC HALL SENSOR OA -73mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_OA_-73mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555A9FB2</tstamp>
-    </comp>
-    <comp ref="U25">
-      <value>OA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38457-1-ND</field>
-        <field name="Description">IC HALL SENSOR OA -73mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_OA_-73mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555AA5D8</tstamp>
-    </comp>
-    <comp ref="U26">
-      <value>OA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38457-1-ND</field>
-        <field name="Description">IC HALL SENSOR OA -73mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_OA_-73mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555AAA96</tstamp>
-    </comp>
-    <comp ref="U27">
-      <value>OA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38457-1-ND</field>
-        <field name="Description">IC HALL SENSOR OA -73mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_OA_-73mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555AB208</tstamp>
-    </comp>
-    <comp ref="U28">
-      <value>OA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38457-1-ND</field>
-        <field name="Description">IC HALL SENSOR OA -73mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_OA_-73mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555AB6C2</tstamp>
-    </comp>
-    <comp ref="U29">
-      <value>OA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38457-1-ND</field>
-        <field name="Description">IC HALL SENSOR OA -73mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_OA_-73mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>555ABB7E</tstamp>
-    </comp>
-    <comp ref="C22">
-      <value>1uF</value>
-      <footprint>hybridizer_filter:SM0805_POL_L</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>557C2A8E</tstamp>
-    </comp>
-    <comp ref="C23">
-      <value>1uF</value>
-      <footprint>hybridizer_filter:SM0805_POL_L</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>557C3DF4</tstamp>
-    </comp>
-    <comp ref="C24">
-      <value>1uF</value>
-      <footprint>hybridizer_filter:SM0805_POL_L</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>557C3F14</tstamp>
-    </comp>
-    <comp ref="C25">
-      <value>1uF</value>
-      <footprint>hybridizer_filter:SM0805_POL_L</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>557C4024</tstamp>
-    </comp>
-    <comp ref="C30">
-      <value>1uF</value>
-      <footprint>hybridizer_filter:SM0805_POL_L</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>557C506C</tstamp>
-    </comp>
-    <comp ref="C31">
-      <value>1uF</value>
-      <footprint>hybridizer_filter:SM0805_POL_L</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>557C55A1</tstamp>
-    </comp>
-    <comp ref="C32">
-      <value>1uF</value>
-      <footprint>hybridizer_filter:SM0805_POL_L</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>557C56B1</tstamp>
-    </comp>
-    <comp ref="C33">
-      <value>1uF</value>
-      <footprint>hybridizer_filter:SM0805_POL_L</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="1uF_0805_POL"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>557C57C7</tstamp>
-    </comp>
-    <comp ref="C40">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55849599</tstamp>
-    </comp>
-    <comp ref="C41">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>558495B9</tstamp>
-    </comp>
-    <comp ref="C42">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>558495D9</tstamp>
-    </comp>
-    <comp ref="C43">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>558495F9</tstamp>
-    </comp>
-    <comp ref="C44">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55849619</tstamp>
-    </comp>
-    <comp ref="C39">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55849639</tstamp>
-    </comp>
-    <comp ref="C38">
-      <value>0.1uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="0.1uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>55849659</tstamp>
-    </comp>
-    <comp ref="U1">
-      <value>VA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_VA_-9mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5584D065</tstamp>
-    </comp>
-    <comp ref="U3">
-      <value>VA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_VA_-9mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5584D749</tstamp>
-    </comp>
-    <comp ref="U5">
-      <value>VA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_VA_-9mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5584DE95</tstamp>
-    </comp>
-    <comp ref="U7">
-      <value>VA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_VA_-9mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5584E253</tstamp>
-    </comp>
-    <comp ref="U9">
-      <value>VA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_VA_-9mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5584E71C</tstamp>
-    </comp>
-    <comp ref="U11">
-      <value>VA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_VA_-9mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5584EC78</tstamp>
-    </comp>
-    <comp ref="U13">
-      <value>VA</value>
-      <footprint>hybridizer_filter:SOT-23-3</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="HALL_DRV5053_VA_-9mT"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5584F14F</tstamp>
     </comp>
     <comp ref="P3">
       <value>HEADER_02X05_SMD</value>
@@ -1255,7 +55,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5585E573</tstamp>
     </comp>
-    <comp ref="C48">
+    <comp ref="C3">
       <value>10uF</value>
       <footprint>hybridizer_filter:SM1210</footprint>
       <fields>
@@ -1267,19 +67,7 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5586BB0E</tstamp>
     </comp>
-    <comp ref="C46">
-      <value>10uF</value>
-      <footprint>hybridizer_filter:SM1210</footprint>
-      <fields>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">445-4536-1-ND</field>
-        <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
-      </fields>
-      <libsource lib="hybridizer_filter" part="10uF"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5586BD56</tstamp>
-    </comp>
-    <comp ref="C47">
+    <comp ref="C2">
       <value>22uF</value>
       <footprint>hybridizer_filter:SM1210_POL</footprint>
       <fields>
@@ -1291,7 +79,43 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5586CA92</tstamp>
     </comp>
-    <comp ref="C45">
+    <comp ref="P1">
+      <value>PWR_JACK_2.1x5.5</value>
+      <footprint>hybridizer_filter:DCJACK_2PIN_HIGHCURRENT</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">CP-063AH-ND</field>
+        <field name="Description">CONN PWR JACK DC 2.1X5.5 8A T/H</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="PWR_JACK_2.1x5.5"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AECC15</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>10uF</value>
+      <footprint>hybridizer_filter:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-4536-1-ND</field>
+        <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="10uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AED263</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>10uF</value>
+      <footprint>hybridizer_filter:SM1210</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-4536-1-ND</field>
+        <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="10uF"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AEE48B</tstamp>
+    </comp>
+    <comp ref="C4">
       <value>22uF</value>
       <footprint>hybridizer_filter:SM1210_POL</footprint>
       <fields>
@@ -1301,43 +125,1270 @@
       </fields>
       <libsource lib="hybridizer_filter" part="22uF_1210_POL"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamp>5586D025</tstamp>
+      <tstamp>55AEE494</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AEAC5A</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AECAFC</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AECEDB</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AEE966</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AEF7A1</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AF0937</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AF099B</tstamp>
+    </comp>
+    <comp ref="U1">
+      <value>CONV_+9V_-9V_SIP8</value>
+      <footprint>hybridizer_filter:SIP8_RECOM</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">945-2401-5-ND</field>
+        <field name="Description">CONV DC/DC 2W 9-36VIN +/-09VOUT</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="CONV_+9V_-9V_SIP8"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFBE5F</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>1k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P1.00KCCT-ND</field>
+        <field name="Description">RES SMD 1K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="1k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFD150</tstamp>
+    </comp>
+    <comp ref="P4">
+      <value>HEADER_02X05_SMD</value>
+      <footprint>hybridizer_filter:HEADER_02x05_SMD</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">S9185-ND</field>
+        <field name="Description">CONN_HEADR_2.54MM_10POS_GOLD_SMD</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="HEADER_02X05_SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFDE48</tstamp>
+    </comp>
+    <comp ref="P5">
+      <value>HEADER_02X05_SMD</value>
+      <footprint>hybridizer_filter:HEADER_02x05_SMD</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">S9185-ND</field>
+        <field name="Description">CONN_HEADR_2.54MM_10POS_GOLD_SMD</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="HEADER_02X05_SMD"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFDE60</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFF552</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFF571</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFF588</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFF5AE</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFF5C0</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFF5CC</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFF5D5</tstamp>
+    </comp>
+    <comp ref="U4">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFBEA</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFC09</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFC20</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFC46</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFC58</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFC64</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFC6D</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFC8C</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFCAB</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFCC2</tstamp>
+    </comp>
+    <comp ref="R17">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFCE8</tstamp>
+    </comp>
+    <comp ref="R16">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFCFA</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFD06</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55AFFD0F</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01AED</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01B0C</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01B23</tstamp>
+    </comp>
+    <comp ref="R21">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01B49</tstamp>
+    </comp>
+    <comp ref="R20">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01B5B</tstamp>
+    </comp>
+    <comp ref="R18">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01B67</tstamp>
+    </comp>
+    <comp ref="R19">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01B70</tstamp>
+    </comp>
+    <comp ref="U7">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01B8F</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01BAE</tstamp>
+    </comp>
+    <comp ref="C17">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01BC5</tstamp>
+    </comp>
+    <comp ref="R25">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01BEB</tstamp>
+    </comp>
+    <comp ref="R24">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01BFD</tstamp>
+    </comp>
+    <comp ref="R22">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01C09</tstamp>
+    </comp>
+    <comp ref="R23">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01C12</tstamp>
+    </comp>
+    <comp ref="U8">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01C31</tstamp>
+    </comp>
+    <comp ref="C18">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01C50</tstamp>
+    </comp>
+    <comp ref="C19">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01C67</tstamp>
+    </comp>
+    <comp ref="R29">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01C8D</tstamp>
+    </comp>
+    <comp ref="R28">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01C9F</tstamp>
+    </comp>
+    <comp ref="R26">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01CAB</tstamp>
+    </comp>
+    <comp ref="R27">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B01CB4</tstamp>
+    </comp>
+    <comp ref="U9">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B09FFD</tstamp>
+    </comp>
+    <comp ref="C20">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A01C</tstamp>
+    </comp>
+    <comp ref="C21">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A033</tstamp>
+    </comp>
+    <comp ref="R33">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A059</tstamp>
+    </comp>
+    <comp ref="R32">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A06B</tstamp>
+    </comp>
+    <comp ref="R30">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A077</tstamp>
+    </comp>
+    <comp ref="R31">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A080</tstamp>
+    </comp>
+    <comp ref="U10">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A09F</tstamp>
+    </comp>
+    <comp ref="C22">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A0BE</tstamp>
+    </comp>
+    <comp ref="C23">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A0D5</tstamp>
+    </comp>
+    <comp ref="R37">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A0FB</tstamp>
+    </comp>
+    <comp ref="R36">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A10D</tstamp>
+    </comp>
+    <comp ref="R34">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A119</tstamp>
+    </comp>
+    <comp ref="R35">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A122</tstamp>
+    </comp>
+    <comp ref="U11">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A141</tstamp>
+    </comp>
+    <comp ref="C24">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A160</tstamp>
+    </comp>
+    <comp ref="C25">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A177</tstamp>
+    </comp>
+    <comp ref="R41">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A19D</tstamp>
+    </comp>
+    <comp ref="R40">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A1AF</tstamp>
+    </comp>
+    <comp ref="R38">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A1BB</tstamp>
+    </comp>
+    <comp ref="R39">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A1C4</tstamp>
+    </comp>
+    <comp ref="U12">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A1E3</tstamp>
+    </comp>
+    <comp ref="C26">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A202</tstamp>
+    </comp>
+    <comp ref="C27">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A219</tstamp>
+    </comp>
+    <comp ref="R45">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A23F</tstamp>
+    </comp>
+    <comp ref="R44">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A251</tstamp>
+    </comp>
+    <comp ref="R42">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A25D</tstamp>
+    </comp>
+    <comp ref="R43">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A266</tstamp>
+    </comp>
+    <comp ref="U13">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A285</tstamp>
+    </comp>
+    <comp ref="C28">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A2A4</tstamp>
+    </comp>
+    <comp ref="C29">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A2BB</tstamp>
+    </comp>
+    <comp ref="R49">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A2E1</tstamp>
+    </comp>
+    <comp ref="R48">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A2F3</tstamp>
+    </comp>
+    <comp ref="R46">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A2FF</tstamp>
+    </comp>
+    <comp ref="R47">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A308</tstamp>
+    </comp>
+    <comp ref="U14">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A327</tstamp>
+    </comp>
+    <comp ref="C30">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A346</tstamp>
+    </comp>
+    <comp ref="C31">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A35D</tstamp>
+    </comp>
+    <comp ref="R53">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A383</tstamp>
+    </comp>
+    <comp ref="R52">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A395</tstamp>
+    </comp>
+    <comp ref="R50">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A3A1</tstamp>
+    </comp>
+    <comp ref="R51">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A3AA</tstamp>
+    </comp>
+    <comp ref="U15">
+      <value>UAF42</value>
+      <footprint>hybridizer_filter:SOIC_16</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="UAF42"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A3C9</tstamp>
+    </comp>
+    <comp ref="C32">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A3E8</tstamp>
+    </comp>
+    <comp ref="C33">
+      <value>0.1uF</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="0.1uF_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A3FF</tstamp>
+    </comp>
+    <comp ref="R57">
+      <value>42.2k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="42.2k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A425</tstamp>
+    </comp>
+    <comp ref="R56">
+      <value>49.9k</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="49.9k_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A437</tstamp>
+    </comp>
+    <comp ref="R54">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A443</tstamp>
+    </comp>
+    <comp ref="R55">
+      <value>3.16M</value>
+      <footprint>hybridizer_filter:SM0805</footprint>
+      <fields>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
+      </fields>
+      <libsource lib="hybridizer_filter" part="3.16M_0805"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>55B0A44C</tstamp>
     </comp>
   </components>
   <libparts>
-    <libpart lib="hybridizer_filter" part="0.1uF">
+    <libpart lib="hybridizer_filter" part="3.16M_0805">
       <footprints>
-        <fp>SM*</fp>
-        <fp>C?</fp>
-        <fp>C1-1</fp>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
       </footprints>
       <fields>
-        <field name="Reference">C</field>
-        <field name="Value">0.1uF</field>
-        <field name="Footprint">hybridizer_filter:SM1210</field>
+        <field name="Reference">R</field>
+        <field name="Value">3.16M_0805</field>
+        <field name="Footprint">hybridizer_filter:SM0805</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-3586-1-ND</field>
-        <field name="Description">CAP CER 0.1UF 50V 10% X7R 1210</field>
+        <field name="PartNumber">311-3.16MCRCT-ND</field>
+        <field name="Description">RES SMD 3.16M OHM 1% 1/8W 0805</field>
       </fields>
       <pins>
         <pin num="1" name="~" type="passive"/>
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="hybridizer_filter" part="10nF_0402">
-      <description>Condensateur non polarise</description>
+    <libpart lib="hybridizer_filter" part="49.9k_0805">
       <footprints>
-        <fp>SM*</fp>
-        <fp>C?</fp>
-        <fp>C1-1</fp>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
       </footprints>
       <fields>
-        <field name="Reference">C</field>
-        <field name="Value">10nF_0402</field>
-        <field name="Footprint">hybridizer_filter:SM0402</field>
+        <field name="Reference">R</field>
+        <field name="Value">49.9k_0805</field>
+        <field name="Footprint">hybridizer_filter:SM0805</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">399-7758-1-ND</field>
-        <field name="Description">CAP CER 10000PF 50V 5% X7R 0402</field>
+        <field name="PartNumber">P49.9KCCT-ND</field>
+        <field name="Description">RES SMD 49.9K OHM 1% 1/8W 0805</field>
       </fields>
       <pins>
         <pin num="1" name="~" type="passive"/>
@@ -1357,95 +1408,6 @@
         <field name="Vendor">digikey</field>
         <field name="PartNumber">445-4536-1-ND</field>
         <field name="Description">CAP CER 10UF 50V 10% X7S 1210</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="110k_0402">
-      <description>Resistance</description>
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">110k_0402</field>
-        <field name="Footprint">hybridizer_filter:SM0402</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P110KLCT-ND</field>
-        <field name="Description">RES SMD 110K OHM 1% 1/10W 0402</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="137k_0402">
-      <description>Resistance</description>
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">137k_0402</field>
-        <field name="Footprint">hybridizer_filter:SM0402</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P137KLCT-ND</field>
-        <field name="Description">RES SMD 137K OHM 1% 1/10W 0402</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="1uF_0805_POL">
-      <description>Polarised capacitor</description>
-      <footprints>
-        <fp>CP*</fp>
-        <fp>Elko*</fp>
-        <fp>TantalC*</fp>
-        <fp>C*elec</fp>
-        <fp>c_elec*</fp>
-        <fp>SMD*_Pol</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">1uF_0805_POL</field>
-        <field name="Footprint">hybridizer_filter:SM0805_POL_L</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">718-1720-1-ND</field>
-        <field name="Description">CAP TANT 1UF 50V 20% 0805</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="205k_0402">
-      <description>Resistance</description>
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">205k_0402</field>
-        <field name="Footprint">hybridizer_filter:SM0402</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P205KLCT-ND</field>
-        <field name="Description">RES SMD 205K OHM 1% 1/10W 0402</field>
       </fields>
       <pins>
         <pin num="1" name="~" type="passive"/>
@@ -1472,118 +1434,6 @@
       <pins>
         <pin num="1" name="~" type="passive"/>
         <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="300_0402">
-      <description>Resistance</description>
-      <footprints>
-        <fp>R?</fp>
-        <fp>SM0603</fp>
-        <fp>SM0805</fp>
-        <fp>R?-*</fp>
-        <fp>SM1206</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">R</field>
-        <field name="Value">300_0402</field>
-        <field name="Footprint">hybridizer_filter:SM0402</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">P300LCT-ND</field>
-        <field name="Description">RES SMD 300 OHM 1% 1/10W 0402</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="DRV103">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">DRV103</field>
-        <field name="Footprint">hybridizer_filter:SOIC_8</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-11622-ND</field>
-        <field name="Description">IC LO-SIDE DRIVER PWM 8SOIC</field>
-      </fields>
-      <pins>
-        <pin num="1" name="DUTY" type="passive"/>
-        <pin num="2" name="DELAY" type="passive"/>
-        <pin num="3" name="FREQ" type="passive"/>
-        <pin num="4" name="GND" type="passive"/>
-        <pin num="5" name="OUT" type="passive"/>
-        <pin num="6" name="Vs" type="power_in"/>
-        <pin num="7" name="STATUS" type="passive"/>
-        <pin num="8" name="INPUT" type="input"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="HALL_DRV5053_OA_-73mT">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">HALL_DRV5053_OA_-73mT</field>
-        <field name="Footprint">hybridizer_filter:SOT-23-3</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38457-1-ND</field>
-        <field name="Description">IC HALL SENSOR OA -73mT</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Vcc" type="power_in"/>
-        <pin num="2" name="OUT" type="output"/>
-        <pin num="3" name="GND" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="HALL_DRV5053_VA_-9mT">
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">HALL_DRV5053_VA_-9mT</field>
-        <field name="Footprint">hybridizer_filter:SOT-23-3</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">296-38460-1-ND</field>
-        <field name="Description">IC HALL SENSOR VA -9mT</field>
-      </fields>
-      <pins>
-        <pin num="1" name="Vcc" type="power_in"/>
-        <pin num="2" name="OUT" type="output"/>
-        <pin num="3" name="GND" type="power_in"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="HEADER_01X02_SMD">
-      <footprints>
-        <fp>Pin_Header_Straight_1X02</fp>
-        <fp>Pin_Header_Angled_1X02</fp>
-        <fp>Socket_Strip_Straight_1X02</fp>
-        <fp>Socket_Strip_Angled_1X02</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">S</field>
-        <field name="Value">HEADER_01X02_SMD</field>
-        <field name="Footprint">hybridizer_filter:Header_2_Pin_SMD</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="hybridizer_filter" part="HEADER_01X02_SMD_N">
-      <footprints>
-        <fp>Pin_Header_Straight_1X02</fp>
-        <fp>Pin_Header_Angled_1X02</fp>
-        <fp>Socket_Strip_Straight_1X02</fp>
-        <fp>Socket_Strip_Angled_1X02</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">S</field>
-        <field name="Value">HEADER_01X02_SMD_N</field>
-        <field name="Footprint">hybridizer_filter:Header_2_Pin_SMD_N</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">WM9852-ND</field>
-        <field name="Description">CONN BREAKAWAY SMD HDR 2POS</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="hybridizer_filter" part="HEADER_02X05_SMD">
@@ -1614,38 +1464,6 @@
         <pin num="10" name="P10" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="hybridizer_filter" part="HEADER_02X07_SMD">
-      <footprints>
-        <fp>Pin_Header_Straight_2X07</fp>
-        <fp>Pin_Header_Angled_2X07</fp>
-        <fp>Socket_Strip_Straight_2X07</fp>
-        <fp>Socket_Strip_Angled_2X07</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">P</field>
-        <field name="Value">HEADER_02X07_SMD</field>
-        <field name="Footprint">hybridizer_filter:HEADER_02x07_SMD</field>
-        <field name="Vendor">digikey</field>
-        <field name="PartNumber">S9186-ND</field>
-        <field name="Description">CONN HEADR 2.54MM 14POS GOLD SMD</field>
-      </fields>
-      <pins>
-        <pin num="1" name="P1" type="passive"/>
-        <pin num="2" name="P2" type="passive"/>
-        <pin num="3" name="P3" type="passive"/>
-        <pin num="4" name="P4" type="passive"/>
-        <pin num="5" name="P5" type="passive"/>
-        <pin num="6" name="P6" type="passive"/>
-        <pin num="7" name="P7" type="passive"/>
-        <pin num="8" name="P8" type="passive"/>
-        <pin num="9" name="P9" type="passive"/>
-        <pin num="10" name="P10" type="passive"/>
-        <pin num="11" name="P11" type="passive"/>
-        <pin num="12" name="P12" type="passive"/>
-        <pin num="13" name="P13" type="passive"/>
-        <pin num="14" name="P14" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="hybridizer_filter" part="LED_0805">
       <footprints>
         <fp>LED-3MM</fp>
@@ -1669,7 +1487,7 @@
         <pin num="2" name="K" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="hybridizer_filter" part="LEE_VALVE_PLUG_IN">
+    <libpart lib="hybridizer_filter" part="PWR_JACK_2.1x5.5">
       <footprints>
         <fp>Pin_Header_Straight_1X02</fp>
         <fp>Pin_Header_Angled_1X02</fp>
@@ -1677,38 +1495,125 @@
         <fp>Socket_Strip_Angled_1X02</fp>
       </footprints>
       <fields>
-        <field name="Reference">S</field>
-        <field name="Value">LEE_VALVE_PLUG_IN</field>
-        <field name="Footprint">hybridizer_filter:LEE_VALVE_PLUG_IN</field>
+        <field name="Reference">P</field>
+        <field name="Value">PWR_JACK_2.1x5.5</field>
+        <field name="Footprint">hybridizer_filter:DCJACK_2PIN_HIGHCURRENT</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">ED90331-ND</field>
-        <field name="Description">CONN RCPT PIN .025-.037in SOLDER</field>
+        <field name="PartNumber">CP-063AH-ND</field>
+        <field name="Description">CONN PWR JACK DC 2.1X5.5 8A T/H</field>
       </fields>
       <pins>
         <pin num="1" name="P1" type="passive"/>
         <pin num="2" name="P2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="hybridizer_filter" part="diode_schottky_20V_1A">
-      <description>Diode Schottky</description>
+    <libpart lib="hybridizer_filter" part="UAF42">
       <footprints>
-        <fp>Diode_*</fp>
-        <fp>D-Pak_TO252AA</fp>
-        <fp>*SingleDiode</fp>
-        <fp>*SingleDiode*</fp>
-        <fp>*_Diode_*</fp>
+        <fp>UAF42*</fp>
       </footprints>
       <fields>
-        <field name="Reference">D</field>
-        <field name="Value">diode_schottky_20V_1A</field>
-        <field name="Footprint">hybridizer_filter:SM0805_POL</field>
+        <field name="Reference">U</field>
+        <field name="Value">UAF42</field>
+        <field name="Footprint">hybridizer_filter:SOIC_16</field>
         <field name="Vendor">digikey</field>
-        <field name="PartNumber">478-7800-1-ND</field>
-        <field name="Description">DIODE SCHOTTKY 20V 1A 0805</field>
+        <field name="PartNumber">UAF42AU-ND</field>
+        <field name="Description">IC UNIV ACTIVE FILTER 16-SOIC</field>
       </fields>
       <pins>
-        <pin num="1" name="K" type="passive"/>
-        <pin num="2" name="A" type="passive"/>
+        <pin num="1" name="LPVo" type="BiDi"/>
+        <pin num="2" name="NC1" type="power_in"/>
+        <pin num="3" name="Vin3" type="BiDi"/>
+        <pin num="4" name="Vin2" type="BiDi"/>
+        <pin num="5" name="AAin+" type="BiDi"/>
+        <pin num="6" name="AAin-" type="BiDi"/>
+        <pin num="7" name="AAVo" type="BiDi"/>
+        <pin num="8" name="BPVo" type="BiDi"/>
+        <pin num="9" name="Fadj1" type="BiDi"/>
+        <pin num="10" name="V-" type="power_in"/>
+        <pin num="11" name="V+" type="power_in"/>
+        <pin num="12" name="GND" type="power_in"/>
+        <pin num="13" name="Vin1" type="BiDi"/>
+        <pin num="14" name="HPVo" type="BiDi"/>
+        <pin num="15" name="NC2" type="power_in"/>
+        <pin num="16" name="Fadj2" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_filter" part="1k_0805">
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">1k_0805</field>
+        <field name="Footprint">hybridizer_filter:SM0805</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P1.00KCCT-ND</field>
+        <field name="Description">RES SMD 1K OHM 1% 1/8W 0805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_filter" part="42.2k_0805">
+      <footprints>
+        <fp>R?</fp>
+        <fp>SM0603</fp>
+        <fp>SM0805</fp>
+        <fp>R?-*</fp>
+        <fp>SM1206</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">42.2k_0805</field>
+        <field name="Footprint">hybridizer_filter:SM0805</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">P44.2KCCT-ND</field>
+        <field name="Description">RES SMD 44.2K OHM 1% 1/8W 0805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_filter" part="0.1uF_0805">
+      <footprints>
+        <fp>SM*</fp>
+        <fp>C?</fp>
+        <fp>C1-1</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">0.1uF_0805</field>
+        <field name="Footprint">hybridizer_filter:SM0805</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">445-8166-1-ND</field>
+        <field name="Description">CAP CER 0.1UF 50V 10% X7R 0805</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="hybridizer_filter" part="CONV_+9V_-9V_SIP8">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">CONV_+9V_-9V_SIP8</field>
+        <field name="Footprint">hybridizer_filter:SIP8_RECOM</field>
+        <field name="Vendor">digikey</field>
+        <field name="PartNumber">945-2401-5-ND</field>
+        <field name="Description">CONV DC/DC 2W 9-36VIN +/-09VOUT</field>
+      </fields>
+      <pins>
+        <pin num="1" name="-Vin" type="power_in"/>
+        <pin num="2" name="+Vin" type="power_in"/>
+        <pin num="6" name="+Vo" type="power_out"/>
+        <pin num="7" name="COM" type="power_out"/>
+        <pin num="8" name="-Vo" type="power_out"/>
       </pins>
     </libpart>
   </libparts>
@@ -1718,467 +1623,764 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="/SH0">
-      <node ref="S1" pin="2"/>
-      <node ref="U15" pin="5"/>
-      <node ref="D9" pin="2"/>
-    </net>
-    <net code="2" name="/SH1">
-      <node ref="S2" pin="2"/>
-      <node ref="U16" pin="5"/>
-      <node ref="D10" pin="2"/>
-    </net>
-    <net code="3" name="/SH2">
-      <node ref="D11" pin="2"/>
-      <node ref="S3" pin="2"/>
-      <node ref="U17" pin="5"/>
-    </net>
-    <net code="4" name="/SH3">
-      <node ref="S4" pin="2"/>
-      <node ref="U18" pin="5"/>
-      <node ref="D12" pin="2"/>
-    </net>
-    <net code="5" name="/SH4">
-      <node ref="D13" pin="2"/>
-      <node ref="U19" pin="5"/>
-      <node ref="S5" pin="2"/>
-    </net>
-    <net code="6" name="GND">
-      <node ref="R28" pin="2"/>
-      <node ref="R29" pin="2"/>
-      <node ref="U22" pin="4"/>
-      <node ref="U17" pin="4"/>
-      <node ref="U21" pin="4"/>
-      <node ref="U18" pin="4"/>
-      <node ref="R20" pin="2"/>
-      <node ref="R21" pin="2"/>
-      <node ref="C28" pin="2"/>
-      <node ref="R25" pin="2"/>
-      <node ref="R24" pin="2"/>
-      <node ref="U20" pin="4"/>
-      <node ref="U19" pin="4"/>
-      <node ref="C34" pin="2"/>
-      <node ref="C24" pin="2"/>
-      <node ref="C30" pin="2"/>
-      <node ref="C31" pin="2"/>
-      <node ref="C32" pin="2"/>
-      <node ref="C33" pin="2"/>
-      <node ref="C25" pin="2"/>
-      <node ref="P1" pin="2"/>
-      <node ref="P1" pin="4"/>
-      <node ref="P1" pin="6"/>
-      <node ref="D3" pin="2"/>
-      <node ref="C45" pin="2"/>
-      <node ref="C46" pin="2"/>
-      <node ref="C22" pin="2"/>
-      <node ref="C23" pin="2"/>
-      <node ref="D2" pin="2"/>
-      <node ref="C36" pin="2"/>
-      <node ref="D4" pin="2"/>
-      <node ref="D5" pin="2"/>
-      <node ref="D1" pin="2"/>
-      <node ref="D8" pin="2"/>
-      <node ref="R16" pin="2"/>
-      <node ref="D7" pin="2"/>
-      <node ref="D6" pin="2"/>
-      <node ref="C26" pin="2"/>
-      <node ref="R19" pin="2"/>
-      <node ref="R30" pin="2"/>
-      <node ref="R31" pin="2"/>
-      <node ref="R18" pin="2"/>
-      <node ref="C37" pin="2"/>
-      <node ref="C27" pin="2"/>
-      <node ref="C35" pin="2"/>
-      <node ref="R26" pin="2"/>
-      <node ref="U16" pin="4"/>
-      <node ref="R23" pin="2"/>
-      <node ref="R22" pin="2"/>
-      <node ref="C29" pin="2"/>
-      <node ref="R27" pin="2"/>
-      <node ref="R17" pin="2"/>
-      <node ref="U15" pin="4"/>
-    </net>
-    <net code="7" name="Net-(C37-Pad1)">
-      <node ref="U22" pin="2"/>
-      <node ref="C37" pin="1"/>
-    </net>
-    <net code="8" name="Net-(R30-Pad1)">
-      <node ref="U22" pin="3"/>
-      <node ref="R30" pin="1"/>
-    </net>
-    <net code="9" name="Net-(R31-Pad1)">
-      <node ref="U22" pin="1"/>
-      <node ref="R31" pin="1"/>
-    </net>
-    <net code="10" name="VAA">
-      <node ref="D10" pin="1"/>
-      <node ref="U16" pin="6"/>
-      <node ref="C31" pin="1"/>
-      <node ref="C32" pin="1"/>
-      <node ref="C30" pin="1"/>
-      <node ref="C25" pin="1"/>
-      <node ref="C33" pin="1"/>
-      <node ref="C24" pin="1"/>
-      <node ref="P1" pin="3"/>
-      <node ref="C23" pin="1"/>
-      <node ref="C22" pin="1"/>
-      <node ref="P1" pin="1"/>
-      <node ref="U15" pin="6"/>
-      <node ref="D9" pin="1"/>
-      <node ref="D13" pin="1"/>
-      <node ref="U19" pin="6"/>
-      <node ref="S4" pin="1"/>
-      <node ref="S8" pin="1"/>
-      <node ref="S2" pin="1"/>
-      <node ref="S3" pin="1"/>
-      <node ref="S5" pin="1"/>
-      <node ref="S6" pin="1"/>
-      <node ref="S7" pin="1"/>
-      <node ref="U18" pin="6"/>
-      <node ref="D12" pin="1"/>
-      <node ref="U17" pin="6"/>
-      <node ref="D11" pin="1"/>
-      <node ref="S1" pin="1"/>
-      <node ref="C46" pin="1"/>
-      <node ref="C45" pin="1"/>
-      <node ref="U21" pin="6"/>
-      <node ref="U20" pin="6"/>
-      <node ref="D15" pin="1"/>
-      <node ref="D14" pin="1"/>
-      <node ref="U22" pin="6"/>
-      <node ref="D16" pin="1"/>
-    </net>
-    <net code="11" name="Net-(R22-Pad1)">
-      <node ref="R22" pin="1"/>
-      <node ref="U18" pin="3"/>
-    </net>
-    <net code="12" name="Net-(C28-Pad1)">
-      <node ref="U17" pin="2"/>
-      <node ref="C28" pin="1"/>
-    </net>
-    <net code="13" name="Net-(R18-Pad1)">
-      <node ref="R18" pin="1"/>
-      <node ref="U16" pin="3"/>
-    </net>
-    <net code="14" name="Net-(R19-Pad1)">
-      <node ref="U16" pin="1"/>
-      <node ref="R19" pin="1"/>
-    </net>
-    <net code="15" name="Net-(R24-Pad1)">
-      <node ref="R24" pin="1"/>
-      <node ref="U19" pin="3"/>
-    </net>
-    <net code="16" name="Net-(R27-Pad1)">
-      <node ref="R27" pin="1"/>
-      <node ref="U20" pin="1"/>
-    </net>
-    <net code="17" name="Net-(R26-Pad1)">
-      <node ref="U20" pin="3"/>
-      <node ref="R26" pin="1"/>
-    </net>
-    <net code="18" name="Net-(R29-Pad1)">
-      <node ref="U21" pin="1"/>
-      <node ref="R29" pin="1"/>
-    </net>
-    <net code="19" name="Net-(R16-Pad1)">
-      <node ref="U15" pin="3"/>
-      <node ref="R16" pin="1"/>
-    </net>
-    <net code="20" name="Net-(C35-Pad1)">
-      <node ref="C35" pin="1"/>
-      <node ref="U20" pin="2"/>
-    </net>
-    <net code="21" name="Net-(C34-Pad1)">
-      <node ref="U19" pin="2"/>
-      <node ref="C34" pin="1"/>
-    </net>
-    <net code="22" name="/SH5">
-      <node ref="S6" pin="2"/>
-      <node ref="U20" pin="5"/>
-      <node ref="D14" pin="2"/>
-    </net>
-    <net code="23" name="Net-(U20-Pad7)">
-      <node ref="U20" pin="7"/>
-    </net>
-    <net code="24" name="/IO5">
-      <node ref="U20" pin="8"/>
-      <node ref="R13" pin="1"/>
-      <node ref="P1" pin="12"/>
-    </net>
-    <net code="25" name="Net-(C36-Pad1)">
-      <node ref="C36" pin="1"/>
-      <node ref="U21" pin="2"/>
-    </net>
-    <net code="26" name="Net-(R28-Pad1)">
-      <node ref="U21" pin="3"/>
-      <node ref="R28" pin="1"/>
-    </net>
-    <net code="27" name="/SH7">
-      <node ref="D16" pin="2"/>
-      <node ref="U22" pin="5"/>
-      <node ref="S8" pin="2"/>
-    </net>
-    <net code="28" name="Net-(U22-Pad7)">
-      <node ref="U22" pin="7"/>
-    </net>
-    <net code="29" name="/IO7">
-      <node ref="R15" pin="1"/>
-      <node ref="U22" pin="8"/>
-      <node ref="P1" pin="14"/>
-    </net>
-    <net code="30" name="/SH6">
-      <node ref="U21" pin="5"/>
-      <node ref="S7" pin="2"/>
-      <node ref="D15" pin="2"/>
-    </net>
-    <net code="31" name="Net-(U21-Pad7)">
-      <node ref="U21" pin="7"/>
-    </net>
-    <net code="32" name="/IO6">
-      <node ref="U21" pin="8"/>
-      <node ref="R14" pin="1"/>
-      <node ref="P1" pin="13"/>
-    </net>
-    <net code="33" name="Net-(P3-Pad1)">
-      <node ref="P3" pin="1"/>
-    </net>
-    <net code="34" name="/A14">
-      <node ref="U29" pin="2"/>
-      <node ref="P3" pin="9"/>
-    </net>
-    <net code="35" name="/A13">
-      <node ref="P3" pin="8"/>
-      <node ref="U28" pin="2"/>
-    </net>
-    <net code="36" name="/A12">
-      <node ref="U27" pin="2"/>
-      <node ref="P3" pin="7"/>
-    </net>
-    <net code="37" name="/A11">
-      <node ref="P3" pin="6"/>
-      <node ref="U26" pin="2"/>
-    </net>
-    <net code="38" name="/A10">
-      <node ref="P3" pin="5"/>
-      <node ref="U25" pin="2"/>
-    </net>
-    <net code="39" name="/A9">
-      <node ref="U24" pin="2"/>
-      <node ref="P3" pin="4"/>
-    </net>
-    <net code="40" name="/A8">
-      <node ref="U23" pin="2"/>
-      <node ref="P3" pin="3"/>
-    </net>
-    <net code="41" name="Net-(P3-Pad2)">
-      <node ref="P3" pin="2"/>
-    </net>
-    <net code="42" name="Net-(P3-Pad10)">
-      <node ref="P3" pin="10"/>
-    </net>
-    <net code="43" name="+5V">
-      <node ref="U26" pin="1"/>
-      <node ref="C13" pin="1"/>
-      <node ref="C10" pin="1"/>
-      <node ref="U27" pin="1"/>
-      <node ref="U28" pin="1"/>
-      <node ref="C16" pin="1"/>
-      <node ref="C19" pin="1"/>
-      <node ref="U23" pin="1"/>
-      <node ref="U29" pin="1"/>
-      <node ref="C7" pin="1"/>
-      <node ref="P2" pin="1"/>
-      <node ref="U25" pin="1"/>
-      <node ref="U24" pin="1"/>
-      <node ref="C4" pin="1"/>
-      <node ref="U5" pin="1"/>
-      <node ref="C42" pin="1"/>
-      <node ref="U3" pin="1"/>
-      <node ref="U1" pin="1"/>
-      <node ref="C38" pin="1"/>
-      <node ref="C40" pin="1"/>
-      <node ref="U7" pin="1"/>
-      <node ref="U13" pin="1"/>
-      <node ref="C1" pin="1"/>
-      <node ref="U9" pin="1"/>
-      <node ref="C39" pin="1"/>
-      <node ref="C47" pin="1"/>
-      <node ref="C44" pin="1"/>
-      <node ref="U11" pin="1"/>
-      <node ref="C48" pin="1"/>
-      <node ref="C41" pin="1"/>
-      <node ref="C43" pin="1"/>
-    </net>
-    <net code="44" name="/A0">
-      <node ref="P2" pin="3"/>
-      <node ref="U1" pin="2"/>
-    </net>
-    <net code="45" name="/A1">
-      <node ref="U3" pin="2"/>
-      <node ref="P2" pin="4"/>
-    </net>
-    <net code="46" name="/A2">
-      <node ref="P2" pin="5"/>
-      <node ref="U5" pin="2"/>
-    </net>
-    <net code="47" name="/A3">
-      <node ref="P2" pin="6"/>
-      <node ref="U7" pin="2"/>
-    </net>
-    <net code="48" name="/A4">
-      <node ref="P2" pin="7"/>
-      <node ref="U9" pin="2"/>
-    </net>
-    <net code="49" name="/A5">
-      <node ref="U11" pin="2"/>
-      <node ref="P2" pin="8"/>
-    </net>
-    <net code="50" name="/A6">
-      <node ref="U13" pin="2"/>
-      <node ref="P2" pin="9"/>
-    </net>
-    <net code="51" name="GNDA">
-      <node ref="C43" pin="2"/>
-      <node ref="C38" pin="2"/>
-      <node ref="C39" pin="2"/>
-      <node ref="U29" pin="3"/>
-      <node ref="C41" pin="2"/>
-      <node ref="U23" pin="3"/>
-      <node ref="U24" pin="3"/>
-      <node ref="U28" pin="3"/>
-      <node ref="U26" pin="3"/>
-      <node ref="U27" pin="3"/>
-      <node ref="U11" pin="3"/>
-      <node ref="U13" pin="3"/>
-      <node ref="C47" pin="2"/>
-      <node ref="C48" pin="2"/>
-      <node ref="C42" pin="2"/>
-      <node ref="C40" pin="2"/>
-      <node ref="U1" pin="3"/>
-      <node ref="U3" pin="3"/>
-      <node ref="C4" pin="2"/>
-      <node ref="C16" pin="2"/>
-      <node ref="U5" pin="3"/>
-      <node ref="C19" pin="2"/>
-      <node ref="C1" pin="2"/>
-      <node ref="C10" pin="2"/>
-      <node ref="C13" pin="2"/>
-      <node ref="P2" pin="2"/>
-      <node ref="C7" pin="2"/>
-      <node ref="U7" pin="3"/>
-      <node ref="C44" pin="2"/>
-      <node ref="U25" pin="3"/>
-      <node ref="U9" pin="3"/>
-    </net>
-    <net code="52" name="/IO3">
-      <node ref="R11" pin="1"/>
-      <node ref="P1" pin="10"/>
-      <node ref="U18" pin="8"/>
-    </net>
-    <net code="53" name="/IO1">
-      <node ref="R9" pin="1"/>
-      <node ref="P1" pin="8"/>
-      <node ref="U16" pin="8"/>
-    </net>
-    <net code="54" name="Net-(P1-Pad5)">
-      <node ref="P1" pin="5"/>
-    </net>
-    <net code="55" name="/IO0">
-      <node ref="P1" pin="7"/>
-      <node ref="R8" pin="1"/>
-      <node ref="U15" pin="8"/>
-    </net>
-    <net code="56" name="/IO4">
-      <node ref="P1" pin="11"/>
-      <node ref="U19" pin="8"/>
-      <node ref="R12" pin="1"/>
-    </net>
-    <net code="57" name="/IO2">
-      <node ref="R10" pin="1"/>
-      <node ref="U17" pin="8"/>
-      <node ref="P1" pin="9"/>
-    </net>
-    <net code="58" name="Net-(D3-Pad1)">
-      <node ref="D3" pin="1"/>
+    <net code="1" name="Net-(R10-Pad2)">
+      <node ref="U4" pin="14"/>
       <node ref="R10" pin="2"/>
     </net>
-    <net code="59" name="Net-(D2-Pad1)">
-      <node ref="D2" pin="1"/>
-      <node ref="R9" pin="2"/>
+    <net code="2" name="Net-(R10-Pad1)">
+      <node ref="U4" pin="9"/>
+      <node ref="R10" pin="1"/>
     </net>
-    <net code="60" name="Net-(D4-Pad1)">
-      <node ref="D4" pin="1"/>
-      <node ref="R11" pin="2"/>
-    </net>
-    <net code="61" name="Net-(D5-Pad1)">
-      <node ref="D5" pin="1"/>
+    <net code="3" name="/A2">
+      <node ref="P2" pin="5"/>
       <node ref="R12" pin="2"/>
     </net>
-    <net code="62" name="Net-(D1-Pad1)">
+    <net code="4" name="Net-(R12-Pad1)">
+      <node ref="R12" pin="1"/>
+      <node ref="U4" pin="13"/>
+    </net>
+    <net code="5" name="Net-(R13-Pad1)">
+      <node ref="R13" pin="1"/>
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="6" name="/A2_LP">
+      <node ref="U4" pin="1"/>
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="7" name="/A2_F">
+      <node ref="U4" pin="6"/>
+      <node ref="P3" pin="5"/>
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="8" name="Net-(R11-Pad1)">
+      <node ref="U4" pin="16"/>
+      <node ref="R11" pin="1"/>
+    </net>
+    <net code="9" name="Net-(R11-Pad2)">
+      <node ref="U4" pin="8"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="10" name="/A1">
+      <node ref="P2" pin="4"/>
       <node ref="R8" pin="2"/>
-      <node ref="D1" pin="1"/>
     </net>
-    <net code="63" name="Net-(P2-Pad10)">
-      <node ref="P2" pin="10"/>
+    <net code="11" name="Net-(R8-Pad1)">
+      <node ref="U3" pin="13"/>
+      <node ref="R8" pin="1"/>
     </net>
-    <net code="64" name="Net-(R23-Pad1)">
-      <node ref="R23" pin="1"/>
-      <node ref="U18" pin="1"/>
+    <net code="12" name="Net-(R9-Pad1)">
+      <node ref="R9" pin="1"/>
+      <node ref="U3" pin="4"/>
     </net>
-    <net code="65" name="Net-(C29-Pad1)">
-      <node ref="U18" pin="2"/>
-      <node ref="C29" pin="1"/>
+    <net code="13" name="Net-(R7-Pad1)">
+      <node ref="U3" pin="16"/>
+      <node ref="R7" pin="1"/>
     </net>
-    <net code="66" name="Net-(R20-Pad1)">
+    <net code="14" name="/A1_F">
+      <node ref="P3" pin="4"/>
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="15" name="/A1_LP">
+      <node ref="U3" pin="1"/>
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="16" name="Net-(R7-Pad2)">
+      <node ref="R7" pin="2"/>
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="17" name="Net-(R6-Pad2)">
+      <node ref="R6" pin="2"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="18" name="Net-(R6-Pad1)">
+      <node ref="U3" pin="9"/>
+      <node ref="R6" pin="1"/>
+    </net>
+    <net code="19" name="Net-(R19-Pad1)">
+      <node ref="U6" pin="16"/>
+      <node ref="R19" pin="1"/>
+    </net>
+    <net code="20" name="Net-(R19-Pad2)">
+      <node ref="R19" pin="2"/>
+      <node ref="U6" pin="8"/>
+    </net>
+    <net code="21" name="Net-(R18-Pad2)">
+      <node ref="U6" pin="14"/>
+      <node ref="R18" pin="2"/>
+    </net>
+    <net code="22" name="Net-(R18-Pad1)">
+      <node ref="U6" pin="9"/>
+      <node ref="R18" pin="1"/>
+    </net>
+    <net code="23" name="/A4">
+      <node ref="R20" pin="2"/>
+      <node ref="P2" pin="7"/>
+    </net>
+    <net code="24" name="Net-(R20-Pad1)">
       <node ref="R20" pin="1"/>
-      <node ref="U17" pin="3"/>
+      <node ref="U6" pin="13"/>
     </net>
-    <net code="67" name="Net-(U18-Pad7)">
-      <node ref="U18" pin="7"/>
-    </net>
-    <net code="68" name="Net-(U17-Pad7)">
-      <node ref="U17" pin="7"/>
-    </net>
-    <net code="69" name="Net-(R21-Pad1)">
-      <node ref="U17" pin="1"/>
+    <net code="25" name="Net-(R21-Pad1)">
+      <node ref="U6" pin="4"/>
       <node ref="R21" pin="1"/>
     </net>
-    <net code="70" name="Net-(U19-Pad7)">
-      <node ref="U19" pin="7"/>
+    <net code="26" name="/A4_F">
+      <node ref="U6" pin="6"/>
+      <node ref="U6" pin="7"/>
+      <node ref="P3" pin="7"/>
     </net>
-    <net code="71" name="Net-(R25-Pad1)">
-      <node ref="R25" pin="1"/>
-      <node ref="U19" pin="1"/>
+    <net code="27" name="/A4_LP">
+      <node ref="U6" pin="5"/>
+      <node ref="U6" pin="1"/>
     </net>
-    <net code="72" name="Net-(U15-Pad7)">
-      <node ref="U15" pin="7"/>
-    </net>
-    <net code="73" name="Net-(C26-Pad1)">
-      <node ref="U15" pin="2"/>
-      <node ref="C26" pin="1"/>
-    </net>
-    <net code="74" name="Net-(R17-Pad1)">
+    <net code="28" name="Net-(R17-Pad1)">
+      <node ref="U5" pin="4"/>
       <node ref="R17" pin="1"/>
+    </net>
+    <net code="29" name="Net-(R15-Pad2)">
+      <node ref="U5" pin="8"/>
+      <node ref="R15" pin="2"/>
+    </net>
+    <net code="30" name="Net-(R14-Pad2)">
+      <node ref="U5" pin="14"/>
+      <node ref="R14" pin="2"/>
+    </net>
+    <net code="31" name="Net-(R14-Pad1)">
+      <node ref="R14" pin="1"/>
+      <node ref="U5" pin="9"/>
+    </net>
+    <net code="32" name="/A3">
+      <node ref="P2" pin="6"/>
+      <node ref="R16" pin="2"/>
+    </net>
+    <net code="33" name="Net-(R16-Pad1)">
+      <node ref="U5" pin="13"/>
+      <node ref="R16" pin="1"/>
+    </net>
+    <net code="34" name="/A3_F">
+      <node ref="P3" pin="6"/>
+      <node ref="U5" pin="6"/>
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="35" name="/Gb">
+      <node ref="P4" pin="2"/>
+      <node ref="P5" pin="2"/>
+    </net>
+    <net code="36" name="/A3_LP">
+      <node ref="U5" pin="5"/>
+      <node ref="U5" pin="1"/>
+    </net>
+    <net code="37" name="Net-(R15-Pad1)">
+      <node ref="R15" pin="1"/>
+      <node ref="U5" pin="16"/>
+    </net>
+    <net code="38" name="/A5">
+      <node ref="P2" pin="8"/>
+      <node ref="R24" pin="2"/>
+    </net>
+    <net code="39" name="/A14_LP">
+      <node ref="U15" pin="5"/>
       <node ref="U15" pin="1"/>
     </net>
-    <net code="75" name="Net-(D6-Pad1)">
-      <node ref="D6" pin="1"/>
+    <net code="40" name="Net-(R55-Pad1)">
+      <node ref="R55" pin="1"/>
+      <node ref="U15" pin="16"/>
+    </net>
+    <net code="41" name="Net-(R54-Pad2)">
+      <node ref="U15" pin="14"/>
+      <node ref="R54" pin="2"/>
+    </net>
+    <net code="42" name="Net-(R54-Pad1)">
+      <node ref="U15" pin="9"/>
+      <node ref="R54" pin="1"/>
+    </net>
+    <net code="43" name="/A0">
+      <node ref="P2" pin="3"/>
+      <node ref="R4" pin="2"/>
+    </net>
+    <net code="44" name="/A14">
+      <node ref="P4" pin="9"/>
+      <node ref="R56" pin="2"/>
+    </net>
+    <net code="45" name="Net-(R57-Pad1)">
+      <node ref="U15" pin="4"/>
+      <node ref="R57" pin="1"/>
+    </net>
+    <net code="46" name="VDD">
+      <node ref="U3" pin="11"/>
+      <node ref="U1" pin="6"/>
+      <node ref="C14" pin="1"/>
+      <node ref="C26" pin="1"/>
+      <node ref="C24" pin="1"/>
+      <node ref="U11" pin="11"/>
+      <node ref="U12" pin="11"/>
+      <node ref="U6" pin="11"/>
+      <node ref="C8" pin="1"/>
+      <node ref="U2" pin="11"/>
+      <node ref="C6" pin="1"/>
+      <node ref="U4" pin="11"/>
+      <node ref="C10" pin="1"/>
+      <node ref="C12" pin="1"/>
+      <node ref="C3" pin="1"/>
+      <node ref="C2" pin="1"/>
+      <node ref="U5" pin="11"/>
+      <node ref="C28" pin="1"/>
+      <node ref="U9" pin="11"/>
+      <node ref="C32" pin="1"/>
+      <node ref="C18" pin="1"/>
+      <node ref="U8" pin="11"/>
+      <node ref="U15" pin="11"/>
+      <node ref="C20" pin="1"/>
+      <node ref="U13" pin="11"/>
+      <node ref="U14" pin="11"/>
+      <node ref="C30" pin="1"/>
+      <node ref="U10" pin="11"/>
+      <node ref="U7" pin="11"/>
+      <node ref="C16" pin="1"/>
+      <node ref="C22" pin="1"/>
+    </net>
+    <net code="47" name="VEE">
+      <node ref="C5" pin="2"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C17" pin="2"/>
+      <node ref="C33" pin="2"/>
+      <node ref="U2" pin="10"/>
+      <node ref="C19" pin="2"/>
+      <node ref="C25" pin="2"/>
+      <node ref="U7" pin="10"/>
+      <node ref="U14" pin="10"/>
+      <node ref="C23" pin="2"/>
+      <node ref="U5" pin="10"/>
+      <node ref="U8" pin="10"/>
+      <node ref="U3" pin="10"/>
+      <node ref="C13" pin="2"/>
+      <node ref="U11" pin="10"/>
+      <node ref="U13" pin="10"/>
+      <node ref="U1" pin="8"/>
+      <node ref="U12" pin="10"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C21" pin="2"/>
+      <node ref="C31" pin="2"/>
+      <node ref="U4" pin="10"/>
+      <node ref="C7" pin="2"/>
+      <node ref="U6" pin="10"/>
+      <node ref="C9" pin="2"/>
+      <node ref="U10" pin="10"/>
+      <node ref="U9" pin="10"/>
+      <node ref="U15" pin="10"/>
+      <node ref="C27" pin="2"/>
+      <node ref="C29" pin="2"/>
+    </net>
+    <net code="48" name="GNDA">
+      <node ref="R9" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="U6" pin="15"/>
+      <node ref="C15" pin="1"/>
+      <node ref="U9" pin="15"/>
+      <node ref="U9" pin="12"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C10" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U9" pin="2"/>
       <node ref="R13" pin="2"/>
-    </net>
-    <net code="76" name="Net-(D7-Pad1)">
-      <node ref="R14" pin="2"/>
-      <node ref="D7" pin="1"/>
-    </net>
-    <net code="77" name="Net-(D8-Pad1)">
-      <node ref="R15" pin="2"/>
-      <node ref="D8" pin="1"/>
-    </net>
-    <net code="78" name="Net-(C27-Pad1)">
+      <node ref="R33" pin="2"/>
+      <node ref="U5" pin="2"/>
+      <node ref="U4" pin="12"/>
+      <node ref="C21" pin="1"/>
+      <node ref="U4" pin="15"/>
+      <node ref="C23" pin="1"/>
+      <node ref="U4" pin="2"/>
+      <node ref="C22" pin="2"/>
+      <node ref="U3" pin="12"/>
+      <node ref="C11" pin="1"/>
+      <node ref="U3" pin="15"/>
+      <node ref="U13" pin="12"/>
+      <node ref="U13" pin="2"/>
+      <node ref="R5" pin="2"/>
+      <node ref="U14" pin="12"/>
+      <node ref="U14" pin="15"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U1" pin="7"/>
+      <node ref="C28" pin="2"/>
+      <node ref="P2" pin="2"/>
+      <node ref="C2" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="C29" pin="1"/>
+      <node ref="U3" pin="2"/>
+      <node ref="R45" pin="2"/>
+      <node ref="U12" pin="15"/>
+      <node ref="U11" pin="15"/>
+      <node ref="U11" pin="12"/>
+      <node ref="U11" pin="2"/>
+      <node ref="R41" pin="2"/>
+      <node ref="U14" pin="2"/>
+      <node ref="C25" pin="1"/>
+      <node ref="C24" pin="2"/>
+      <node ref="U12" pin="2"/>
+      <node ref="U12" pin="12"/>
+      <node ref="C31" pin="1"/>
       <node ref="C27" pin="1"/>
-      <node ref="U16" pin="2"/>
+      <node ref="U13" pin="15"/>
+      <node ref="C30" pin="2"/>
+      <node ref="C26" pin="2"/>
+      <node ref="C20" pin="2"/>
+      <node ref="R49" pin="2"/>
+      <node ref="U6" pin="2"/>
+      <node ref="R25" pin="2"/>
+      <node ref="U5" pin="15"/>
+      <node ref="U5" pin="12"/>
+      <node ref="C12" pin="2"/>
+      <node ref="U7" pin="2"/>
+      <node ref="U7" pin="12"/>
+      <node ref="U7" pin="15"/>
+      <node ref="C17" pin="1"/>
+      <node ref="R37" pin="2"/>
+      <node ref="U10" pin="2"/>
+      <node ref="R21" pin="2"/>
+      <node ref="U10" pin="12"/>
+      <node ref="U10" pin="15"/>
+      <node ref="R17" pin="2"/>
+      <node ref="C13" pin="1"/>
+      <node ref="U8" pin="2"/>
+      <node ref="U2" pin="15"/>
+      <node ref="U2" pin="12"/>
+      <node ref="U2" pin="2"/>
+      <node ref="P3" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="U8" pin="12"/>
+      <node ref="U8" pin="15"/>
+      <node ref="C18" pin="2"/>
+      <node ref="U6" pin="12"/>
+      <node ref="R29" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C19" pin="1"/>
+      <node ref="C16" pin="2"/>
+      <node ref="U15" pin="15"/>
+      <node ref="U15" pin="12"/>
+      <node ref="C32" pin="2"/>
+      <node ref="R57" pin="2"/>
+      <node ref="U15" pin="2"/>
+      <node ref="R53" pin="2"/>
+      <node ref="C33" pin="1"/>
     </net>
-    <net code="79" name="Net-(U16-Pad7)">
-      <node ref="U16" pin="7"/>
+    <net code="49" name="/Va">
+      <node ref="P3" pin="1"/>
+      <node ref="P2" pin="1"/>
+    </net>
+    <net code="50" name="/A6_F">
+      <node ref="U8" pin="6"/>
+      <node ref="U8" pin="7"/>
+      <node ref="P3" pin="9"/>
+    </net>
+    <net code="51" name="/A5_F">
+      <node ref="P3" pin="8"/>
+      <node ref="U7" pin="7"/>
+      <node ref="U7" pin="6"/>
+    </net>
+    <net code="52" name="/A6">
+      <node ref="R28" pin="2"/>
+      <node ref="P2" pin="9"/>
+    </net>
+    <net code="53" name="Net-(R50-Pad2)">
+      <node ref="U14" pin="14"/>
+      <node ref="R50" pin="2"/>
+    </net>
+    <net code="54" name="Net-(U15-Pad3)">
+      <node ref="U15" pin="3"/>
+    </net>
+    <net code="55" name="/A13_LP">
+      <node ref="U14" pin="5"/>
+      <node ref="U14" pin="1"/>
+    </net>
+    <net code="56" name="Net-(R51-Pad1)">
+      <node ref="U14" pin="16"/>
+      <node ref="R51" pin="1"/>
+    </net>
+    <net code="57" name="Net-(R55-Pad2)">
+      <node ref="R55" pin="2"/>
+      <node ref="U15" pin="8"/>
+    </net>
+    <net code="58" name="/A13">
+      <node ref="R52" pin="2"/>
+      <node ref="P4" pin="8"/>
+    </net>
+    <net code="59" name="Net-(R52-Pad1)">
+      <node ref="R52" pin="1"/>
+      <node ref="U14" pin="13"/>
+    </net>
+    <net code="60" name="Net-(R56-Pad1)">
+      <node ref="U15" pin="13"/>
+      <node ref="R56" pin="1"/>
+    </net>
+    <net code="61" name="Net-(R2-Pad2)">
+      <node ref="R2" pin="2"/>
+      <node ref="U2" pin="14"/>
+    </net>
+    <net code="62" name="/A0_LP">
+      <node ref="U2" pin="1"/>
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="63" name="Net-(R3-Pad1)">
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="64" name="Net-(R3-Pad2)">
+      <node ref="R3" pin="2"/>
+      <node ref="U2" pin="8"/>
+    </net>
+    <net code="65" name="Net-(R2-Pad1)">
+      <node ref="R2" pin="1"/>
+      <node ref="U2" pin="9"/>
+    </net>
+    <net code="66" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="67" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="68" name="/A12">
+      <node ref="P4" pin="7"/>
+      <node ref="R48" pin="2"/>
+    </net>
+    <net code="69" name="/Vb">
+      <node ref="P4" pin="1"/>
+      <node ref="P5" pin="1"/>
+    </net>
+    <net code="70" name="/A12_F">
+      <node ref="U13" pin="7"/>
+      <node ref="P5" pin="7"/>
+      <node ref="U13" pin="6"/>
+    </net>
+    <net code="71" name="/A10_F">
+      <node ref="P5" pin="5"/>
+      <node ref="U11" pin="7"/>
+      <node ref="U11" pin="6"/>
+    </net>
+    <net code="72" name="/A8_F">
+      <node ref="U9" pin="7"/>
+      <node ref="U9" pin="6"/>
+      <node ref="P5" pin="3"/>
+    </net>
+    <net code="73" name="/A13_F">
+      <node ref="P5" pin="8"/>
+      <node ref="U14" pin="7"/>
+      <node ref="U14" pin="6"/>
+    </net>
+    <net code="74" name="/A11_F">
+      <node ref="P5" pin="6"/>
+      <node ref="U12" pin="7"/>
+      <node ref="U12" pin="6"/>
+    </net>
+    <net code="75" name="/A9_F">
+      <node ref="U10" pin="6"/>
+      <node ref="P5" pin="4"/>
+      <node ref="U10" pin="7"/>
+    </net>
+    <net code="76" name="/A10">
+      <node ref="R40" pin="2"/>
+      <node ref="P4" pin="5"/>
+    </net>
+    <net code="77" name="/A8">
+      <node ref="R32" pin="2"/>
+      <node ref="P4" pin="3"/>
+    </net>
+    <net code="78" name="/A11">
+      <node ref="R44" pin="2"/>
+      <node ref="P4" pin="6"/>
+    </net>
+    <net code="79" name="/A9">
+      <node ref="R36" pin="2"/>
+      <node ref="P4" pin="4"/>
+    </net>
+    <net code="80" name="Net-(D1-Pad1)">
+      <node ref="R1" pin="2"/>
+      <node ref="D1" pin="1"/>
+    </net>
+    <net code="81" name="/A0_F">
+      <node ref="U2" pin="6"/>
+      <node ref="P3" pin="3"/>
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="82" name="GND">
+      <node ref="C1" pin="2"/>
+      <node ref="U1" pin="1"/>
+      <node ref="D1" pin="2"/>
+      <node ref="P1" pin="2"/>
+    </net>
+    <net code="83" name="VAA">
+      <node ref="R1" pin="1"/>
+      <node ref="U1" pin="2"/>
+      <node ref="P1" pin="1"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="84" name="/A11_LP">
+      <node ref="U12" pin="1"/>
+      <node ref="U12" pin="5"/>
+    </net>
+    <net code="85" name="Net-(R46-Pad2)">
+      <node ref="R46" pin="2"/>
+      <node ref="U13" pin="14"/>
+    </net>
+    <net code="86" name="/A12_LP">
+      <node ref="U13" pin="1"/>
+      <node ref="U13" pin="5"/>
+    </net>
+    <net code="87" name="Net-(R47-Pad1)">
+      <node ref="R47" pin="1"/>
+      <node ref="U13" pin="16"/>
+    </net>
+    <net code="88" name="Net-(R47-Pad2)">
+      <node ref="R47" pin="2"/>
+      <node ref="U13" pin="8"/>
+    </net>
+    <net code="89" name="Net-(R46-Pad1)">
+      <node ref="R46" pin="1"/>
+      <node ref="U13" pin="9"/>
+    </net>
+    <net code="90" name="Net-(R48-Pad1)">
+      <node ref="R48" pin="1"/>
+      <node ref="U13" pin="13"/>
+    </net>
+    <net code="91" name="Net-(R49-Pad1)">
+      <node ref="U13" pin="4"/>
+      <node ref="R49" pin="1"/>
+    </net>
+    <net code="92" name="/A10_LP">
+      <node ref="U11" pin="5"/>
+      <node ref="U11" pin="1"/>
+    </net>
+    <net code="93" name="Net-(R39-Pad1)">
+      <node ref="R39" pin="1"/>
+      <node ref="U11" pin="16"/>
+    </net>
+    <net code="94" name="Net-(R43-Pad1)">
+      <node ref="R43" pin="1"/>
+      <node ref="U12" pin="16"/>
+    </net>
+    <net code="95" name="Net-(R43-Pad2)">
+      <node ref="R43" pin="2"/>
+      <node ref="U12" pin="8"/>
+    </net>
+    <net code="96" name="Net-(R42-Pad2)">
+      <node ref="R42" pin="2"/>
+      <node ref="U12" pin="14"/>
+    </net>
+    <net code="97" name="Net-(R42-Pad1)">
+      <node ref="U12" pin="9"/>
+      <node ref="R42" pin="1"/>
+    </net>
+    <net code="98" name="Net-(R44-Pad1)">
+      <node ref="R44" pin="1"/>
+      <node ref="U12" pin="13"/>
+    </net>
+    <net code="99" name="Net-(R45-Pad1)">
+      <node ref="U12" pin="4"/>
+      <node ref="R45" pin="1"/>
+    </net>
+    <net code="100" name="/A14_F">
+      <node ref="U15" pin="6"/>
+      <node ref="P5" pin="9"/>
+      <node ref="U15" pin="7"/>
+    </net>
+    <net code="101" name="Net-(R53-Pad1)">
+      <node ref="U14" pin="4"/>
+      <node ref="R53" pin="1"/>
+    </net>
+    <net code="102" name="Net-(R51-Pad2)">
+      <node ref="U14" pin="8"/>
+      <node ref="R51" pin="2"/>
+    </net>
+    <net code="103" name="Net-(R39-Pad2)">
+      <node ref="U11" pin="8"/>
+      <node ref="R39" pin="2"/>
+    </net>
+    <net code="104" name="Net-(R50-Pad1)">
+      <node ref="R50" pin="1"/>
+      <node ref="U14" pin="9"/>
+    </net>
+    <net code="105" name="Net-(R27-Pad2)">
+      <node ref="R27" pin="2"/>
+      <node ref="U8" pin="8"/>
+    </net>
+    <net code="106" name="/A6_LP">
+      <node ref="U8" pin="1"/>
+      <node ref="U8" pin="5"/>
+    </net>
+    <net code="107" name="Net-(R27-Pad1)">
+      <node ref="U8" pin="16"/>
+      <node ref="R27" pin="1"/>
+    </net>
+    <net code="108" name="Net-(R26-Pad2)">
+      <node ref="U8" pin="14"/>
+      <node ref="R26" pin="2"/>
+    </net>
+    <net code="109" name="Net-(R26-Pad1)">
+      <node ref="R26" pin="1"/>
+      <node ref="U8" pin="9"/>
+    </net>
+    <net code="110" name="Net-(R28-Pad1)">
+      <node ref="U8" pin="13"/>
+      <node ref="R28" pin="1"/>
+    </net>
+    <net code="111" name="Net-(R29-Pad1)">
+      <node ref="R29" pin="1"/>
+      <node ref="U8" pin="4"/>
+    </net>
+    <net code="112" name="Net-(R32-Pad1)">
+      <node ref="U9" pin="13"/>
+      <node ref="R32" pin="1"/>
+    </net>
+    <net code="113" name="Net-(R33-Pad1)">
+      <node ref="U9" pin="4"/>
+      <node ref="R33" pin="1"/>
+    </net>
+    <net code="114" name="Net-(R22-Pad2)">
+      <node ref="R22" pin="2"/>
+      <node ref="U7" pin="14"/>
+    </net>
+    <net code="115" name="/A5_LP">
+      <node ref="U7" pin="1"/>
+      <node ref="U7" pin="5"/>
+    </net>
+    <net code="116" name="Net-(R23-Pad1)">
+      <node ref="U7" pin="16"/>
+      <node ref="R23" pin="1"/>
+    </net>
+    <net code="117" name="Net-(R23-Pad2)">
+      <node ref="R23" pin="2"/>
+      <node ref="U7" pin="8"/>
+    </net>
+    <net code="118" name="Net-(R22-Pad1)">
+      <node ref="R22" pin="1"/>
+      <node ref="U7" pin="9"/>
+    </net>
+    <net code="119" name="Net-(R24-Pad1)">
+      <node ref="R24" pin="1"/>
+      <node ref="U7" pin="13"/>
+    </net>
+    <net code="120" name="Net-(R25-Pad1)">
+      <node ref="R25" pin="1"/>
+      <node ref="U7" pin="4"/>
+    </net>
+    <net code="121" name="/A9_LP">
+      <node ref="U10" pin="5"/>
+      <node ref="U10" pin="1"/>
+    </net>
+    <net code="122" name="Net-(R35-Pad1)">
+      <node ref="U10" pin="16"/>
+      <node ref="R35" pin="1"/>
+    </net>
+    <net code="123" name="Net-(R35-Pad2)">
+      <node ref="R35" pin="2"/>
+      <node ref="U10" pin="8"/>
+    </net>
+    <net code="124" name="Net-(R34-Pad2)">
+      <node ref="U10" pin="14"/>
+      <node ref="R34" pin="2"/>
+    </net>
+    <net code="125" name="Net-(R41-Pad1)">
+      <node ref="R41" pin="1"/>
+      <node ref="U11" pin="4"/>
+    </net>
+    <net code="126" name="Net-(R38-Pad2)">
+      <node ref="U11" pin="14"/>
+      <node ref="R38" pin="2"/>
+    </net>
+    <net code="127" name="Net-(R38-Pad1)">
+      <node ref="R38" pin="1"/>
+      <node ref="U11" pin="9"/>
+    </net>
+    <net code="128" name="Net-(R40-Pad1)">
+      <node ref="R40" pin="1"/>
+      <node ref="U11" pin="13"/>
+    </net>
+    <net code="129" name="/A8_LP">
+      <node ref="U9" pin="1"/>
+      <node ref="U9" pin="5"/>
+    </net>
+    <net code="130" name="Net-(R31-Pad1)">
+      <node ref="R31" pin="1"/>
+      <node ref="U9" pin="16"/>
+    </net>
+    <net code="131" name="Net-(R31-Pad2)">
+      <node ref="R31" pin="2"/>
+      <node ref="U9" pin="8"/>
+    </net>
+    <net code="132" name="Net-(R30-Pad2)">
+      <node ref="U9" pin="14"/>
+      <node ref="R30" pin="2"/>
+    </net>
+    <net code="133" name="Net-(R30-Pad1)">
+      <node ref="R30" pin="1"/>
+      <node ref="U9" pin="9"/>
+    </net>
+    <net code="134" name="Net-(R34-Pad1)">
+      <node ref="R34" pin="1"/>
+      <node ref="U10" pin="9"/>
+    </net>
+    <net code="135" name="Net-(R36-Pad1)">
+      <node ref="R36" pin="1"/>
+      <node ref="U10" pin="13"/>
+    </net>
+    <net code="136" name="Net-(R37-Pad1)">
+      <node ref="U10" pin="4"/>
+      <node ref="R37" pin="1"/>
+    </net>
+    <net code="137" name="Net-(U4-Pad3)">
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="138" name="Net-(U5-Pad3)">
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="139" name="Net-(U3-Pad3)">
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="140" name="Net-(U6-Pad3)">
+      <node ref="U6" pin="3"/>
+    </net>
+    <net code="141" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="142" name="Net-(P2-Pad10)">
+      <node ref="P2" pin="10"/>
+    </net>
+    <net code="143" name="Net-(P3-Pad10)">
+      <node ref="P3" pin="10"/>
+    </net>
+    <net code="144" name="Net-(P4-Pad10)">
+      <node ref="P4" pin="10"/>
+    </net>
+    <net code="145" name="Net-(P5-Pad10)">
+      <node ref="P5" pin="10"/>
+    </net>
+    <net code="146" name="Net-(U12-Pad3)">
+      <node ref="U12" pin="3"/>
+    </net>
+    <net code="147" name="Net-(U11-Pad3)">
+      <node ref="U11" pin="3"/>
+    </net>
+    <net code="148" name="Net-(U14-Pad3)">
+      <node ref="U14" pin="3"/>
+    </net>
+    <net code="149" name="Net-(U13-Pad3)">
+      <node ref="U13" pin="3"/>
+    </net>
+    <net code="150" name="Net-(U8-Pad3)">
+      <node ref="U8" pin="3"/>
+    </net>
+    <net code="151" name="Net-(U7-Pad3)">
+      <node ref="U7" pin="3"/>
+    </net>
+    <net code="152" name="Net-(U10-Pad3)">
+      <node ref="U10" pin="3"/>
+    </net>
+    <net code="153" name="Net-(U9-Pad3)">
+      <node ref="U9" pin="3"/>
     </net>
   </nets>
 </export>
