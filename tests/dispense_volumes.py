@@ -357,8 +357,8 @@ class Hybridizer(object):
         self._adc_values_min = {}
         for head_valve in head_valves:
             try:
-                ain = self._config['head'][head_valve]['analog_inputs'][0]
-                adc_value = self._msc.get_analog_input(ain)
+                ain = self._config['head'][head_valve]['analog_inputs']['low']
+                adc_value = int(self._msc.get_analog_input(ain))
                 self._adc_values_min[head_valve] = adc_value
             except KeyError:
                 continue
@@ -385,14 +385,14 @@ class Hybridizer(object):
     def _volume_to_adc_and_ain(self,valve_key,volume):
         valve = self._valves[valve_key]
         if volume <= self._config['volume_crossover']:
-            ain = valve['analog_inputs'][0]
+            ain = valve['analog_inputs']['low']
         else:
             ain = valve['analog_inputs'][1]
         if volume > self._config['volume_max']:
-            raise HybridizerError('Asking for volume greater than the max volume of {}'.format(self._config['volume_max']))
+            raise HybridizerError('Asking for volume greater than the max volume of {0}!'.format(self._config['volume_max']))
         if volume <= self._config['volume_crossover']:
             poly = Polynomial(self._config['poly_coefficients']['volume_to_adc_low'])
-            adc_value = poly(volume)
+            adc_value = int(round(poly(volume)))
             adc_value += self._adc_values_min[valve_key]
             self._debug_print("valve: {0}, adc_value: {1}, ain: {2}".format(valve_key,adc_value,ain))
             return adc_value,ain
