@@ -410,10 +410,16 @@ class Hybridizer(object):
         return volume
 
     def run_dispense_tests(self):
-        self._setup()
+        #self._setup()
+        self._store_adc_values_min()
         self.protocol_start_time = time.time()
         self._debug_print('running dispense tests...')
+        self._set_valve_on('system')
         self._set_valve_on_until('quad1',3)
+        self._set_valve_off('system')
+        time.sleep(1)
+        self._set_valve_on('quad1')
+        time.sleep(4)
 
 # -----------------------------------------------------------------------------------------
 if __name__ == '__main__':

@@ -182,7 +182,7 @@ protocol:
   shake_speed: 400
   temperature: null
 separate_shake_speed: 200
-setup_duration: 2
+setup_duration: 10
 shake_speed_max: 3000
 shake_speed_min: 200
 system_prime_count: 1
