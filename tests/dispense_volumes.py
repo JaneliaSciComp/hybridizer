@@ -375,6 +375,8 @@ class Hybridizer(object):
                 self._debug_print('{0} is at {1}, waiting to reach {2}'.format(valve_key,adc_value,adc_value_goal))
                 time.sleep(1)
             self._msc.remove_set_until(set_until_index)
+            adc_value = self._msc.get_analog_input(ain)
+            volume = self._adc_to_volume_low(valve_key,adc_value)
         except KeyError:
             raise HybridizerError('Unknown valve: ' + str(valve_key) + ', or valve does not have analog_input. Check yaml config file for errors.')
 
@@ -398,6 +400,14 @@ class Hybridizer(object):
             return adc_value,ain
         else:
             return 400
+
+    def _adc_to_volume_low(self,valve_key,adc_value):
+        valve = self._valves[valve_key]
+        adc_value -= self._adc_values_min[valve_key]
+        poly = Polynomial(self._config['poly_coefficients']['adc_to_volume_low'])
+        volume = poly(adc_value)
+        self._debug_print("valve: {0}, adc_value: {1}, volume: {2}".format(valve_key,adc_value,volume))
+        return volume
 
     def run_dispense_tests(self):
         self._setup()
