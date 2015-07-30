@@ -59,12 +59,12 @@ manifold:
   separate:
     channel: 30
 poly_coefficients:
-  adc_to_volume_va:
+  adc_to_volume_low:
   - 0.07829537
   - 0.12717718
   - -0.00111122
   - 0.00000439
-  volume_to_adc_va:
+  volume_to_adc_low:
   - -0.4301732
   - 8.08879401
   - -0.09342674
@@ -182,7 +182,9 @@ protocol:
   shake_speed: 400
   temperature: null
 separate_shake_speed: 200
-setup_duration: 20
+setup_duration: 2
 shake_speed_max: 3000
 shake_speed_min: 200
 system_prime_count: 1
+volume_crossover: 6
+volume_max: 10

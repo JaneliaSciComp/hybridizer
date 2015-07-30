@@ -7,6 +7,7 @@ import os
 import time
 import yaml
 import argparse
+from numpy.polynomial.polynomial import polyfit,polyadd,Polynomial
 
 # try:
 #     from pkg_resources import get_distribution, DistributionNotFound
@@ -55,25 +56,25 @@ class Hybridizer(object):
         else:
             kwargs.update({'debug': DEBUG})
             self._debug = DEBUG
-        with open(config_file_path, 'r') as config_stream:
+        with open(config_file_path,'r') as config_stream:
             self._config = yaml.load(config_stream)
         self._valves = self._config['head']
         self._valves.update(self._config['manifold'])
         ports = find_serial_device_ports(debug=self._debug)
         self._debug_print('Found serial devices on ports ' + str(ports))
         self._debug_print('Identifying connected devices (may take some time)...')
-        try:
-            self._bsc = BioshakeDevice()
-        except RuntimeError:
-            # try one more time
-            self._bsc = BioshakeDevice()
-        self._debug_print('Found bioshake device on port ' + str(self._bsc.get_port()))
-        ports.remove(self._bsc.get_port())
-        self._SHAKE_SPEED_MIN = self._bsc.get_shake_speed_min()
-        self._SHAKE_SPEED_MAX = self._bsc.get_shake_speed_max()
-        self._SHAKE_DURATION_MIN = 10
-        self._SHAKE_ATTEMPTS = 2
-        self._POST_SHAKE_OFF_DURATION = 5
+        # try:
+        #     self._bsc = BioshakeDevice()
+        # except RuntimeError:
+        #     # try one more time
+        #     self._bsc = BioshakeDevice()
+        # self._debug_print('Found bioshake device on port ' + str(self._bsc.get_port()))
+        # ports.remove(self._bsc.get_port())
+        # self._SHAKE_SPEED_MIN = self._bsc.get_shake_speed_min()
+        # self._SHAKE_SPEED_MAX = self._bsc.get_shake_speed_max()
+        # self._SHAKE_DURATION_MIN = 10
+        # self._SHAKE_ATTEMPTS = 2
+        # self._POST_SHAKE_OFF_DURATION = 5
         modular_devices = ModularDevices(try_ports=ports)
 
         try:
@@ -84,6 +85,9 @@ class Hybridizer(object):
             raise HybridizerError('More than one mixed_signal_controller found. Only one should be connected.')
         self._msc = msc_dict[msc_dict.keys()[0]]
         self._debug_print('Found mixed_signal_controller on port ' + str(self._msc.get_port()))
+
+        self._adc_values_min = None
+        self._adc_values_max = None
 
     def prime_system(self):
         self._setup()
@@ -163,12 +167,13 @@ class Hybridizer(object):
         self._debug_print('protocol finished! it took ' + str(round(protocol_run_time/60)) + ' mins to run.')
 
     def _setup(self):
-        self._bsc.reset_device()
+        # self._bsc.reset_device()
         self._set_all_valves_off()
         self._set_valves_on(['primer','quad1','quad2','quad3','quad4','quad5','quad6'])
         self._debug_print('setting up for ' + str(self._config['setup_duration']) + 's...')
         time.sleep(self._config['setup_duration'])
         self._set_all_valves_off()
+        self._store_adc_values_min()
         self._debug_print('setup finished!')
 
     def _prime_chemical(self,chemical,prime_count):
@@ -205,11 +210,11 @@ class Hybridizer(object):
             self._debug_print('turning on temperature control for ' + chemical + '...')
             self._bsc.temp_on(temp_target)
             temp_actual = self._bsc.get_temp_actual()
-            self._debug_print('actual temperature: ' + str(temp_actual) + ', target temperature: ' + str(temp_target))
+            self._debug_print('actual temperature: ' + str(temp_actual) + ',target temperature: ' + str(temp_target))
             while abs(temp_target - temp_actual) > 0.5:
                 time.sleep(1)
                 temp_actual = self._bsc.get_temp_actual()
-                self._debug_print('actual temperature: ' + str(temp_actual) + ', target temperature: ' + str(temp_target))
+                self._debug_print('actual temperature: ' + str(temp_actual) + ',target temperature: ' + str(temp_target))
             self._debug_print()
         self._prime_chemical(chemical,prime_count)
         for run in range(run_count):
@@ -304,11 +309,11 @@ class Hybridizer(object):
                     time.sleep(self._config['setup_duration'])
             time.sleep(self._POST_SHAKE_OFF_DURATION)
 
-    def _debug_print(self, *args):
+    def _debug_print(self,*args):
         if self._debug:
             print(*args)
 
-    def _set_valve_on(self, valve_key):
+    def _set_valve_on(self,valve_key):
         try:
             valve = self._valves[valve_key]
             channels = [valve['channel']]
@@ -316,14 +321,14 @@ class Hybridizer(object):
         except KeyError:
             raise HybridizerError('Unknown valve: ' + str(valve_key) + '. Check yaml config file for errors.')
 
-    def _set_valves_on(self, valve_keys):
+    def _set_valves_on(self,valve_keys):
         try:
             channels = [self._valves[valve_key]['channel'] for valve_key in valve_keys]
             self._msc.set_channels_on(channels)
         except KeyError:
             raise HybridizerError('Unknown valve: ' + str(valve_key) + '. Check yaml config file for errors.')
 
-    def _set_valve_off(self, valve_key):
+    def _set_valve_off(self,valve_key):
         try:
             valve = self._valves[valve_key]
             channels = [valve['channel']]
@@ -331,7 +336,7 @@ class Hybridizer(object):
         except KeyError:
             raise HybridizerError('Unknown valve: ' + str(valve_key) + '. Check yaml config file for errors.')
 
-    def _set_valves_off(self, valve_keys):
+    def _set_valves_off(self,valve_keys):
         try:
             channels = [self._valves[valve_key]['channel'] for valve_key in valve_keys]
             self._msc.set_channels_off(channels)
@@ -347,29 +352,63 @@ class Hybridizer(object):
         valve_keys.sort()
         return valve_keys
 
-    def _set_valve_on_until(self, valve_key, percent):
+    def _store_adc_values_min(self):
+        head_valves = self._config['head']
+        self._adc_values_min = {}
+        for head_valve in head_valves:
+            try:
+                ain = self._config['head'][head_valve]['analog_inputs'][0]
+                adc_value = self._msc.get_analog_input(ain)
+                self._adc_values_min[head_valve] = adc_value
+            except KeyError:
+                continue
+        self._debug_print(self._adc_values_min)
+
+    def _set_valve_on_until(self,valve_key,volume):
         try:
             valve = self._valves[valve_key]
             channels = [valve['channel']]
-            ain = valve['analog_input']
-            set_until_index = self._msc.set_channels_on_until(channels,ain,percent)
+            adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
+            set_until_index = self._msc.set_channels_on_until(channels,ain,adc_value_goal)
             while not self._msc.is_set_until_complete(set_until_index):
-                percent_current = self._msc.get_analog_input(ain)
-                self._debug_print(str(valve_key) + ' is at ' + str(percent_current) + '%, waiting to reach ' + str(percent) + '%')
+                adc_value = self._msc.get_analog_input(ain)
+                self._debug_print('{0} is at {1}, waiting to reach {2}'.format(valve_key,adc_value,adc_value_goal))
                 time.sleep(1)
             self._msc.remove_set_until(set_until_index)
         except KeyError:
             raise HybridizerError('Unknown valve: ' + str(valve_key) + ', or valve does not have analog_input. Check yaml config file for errors.')
 
-    def _set_valves_on_until_serial(self, valve_keys, percent):
+    def _set_valves_on_until_serial(self,valve_keys,volume):
         for valve_key in valve_keys:
             self._set_valve_on_until(valve_key,percent)
 
+    def _volume_to_adc_and_ain(self,valve_key,volume):
+        valve = self._valves[valve_key]
+        if volume <= self._config['volume_crossover']:
+            ain = valve['analog_inputs'][0]
+        else:
+            ain = valve['analog_inputs'][1]
+        if volume > self._config['volume_max']:
+            raise HybridizerError('Asking for volume greater than the max volume of {}'.format(self._config['volume_max']))
+        if volume <= self._config['volume_crossover']:
+            poly = Polynomial(self._config['poly_coefficients']['volume_to_adc_low'])
+            adc_value = poly(volume)
+            adc_value += self._adc_values_min[valve_key]
+            self._debug_print("valve: {0}, adc_value: {1}, ain: {2}".format(valve_key,adc_value,ain))
+            return adc_value,ain
+        else:
+            return 400
+
+    def run_dispense_tests(self):
+        self._setup()
+        self.protocol_start_time = time.time()
+        self._debug_print('running dispense tests...')
+        self._set_valve_on_until('quad1',3)
 
 # -----------------------------------------------------------------------------------------
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument("config_file_path", help="Path to yaml config file.")
+    parser.add_argument("config_file_path",help="Path to yaml config file.")
 
     args = parser.parse_args()
     config_file_path = args.config_file_path
@@ -377,4 +416,5 @@ if __name__ == '__main__':
 
     debug = True
     hyb = Hybridizer(debug=debug,config_file_path=config_file_path)
-    hyb.run_protocol()
+    # hyb.run_protocol()
+    hyb.run_dispense_tests()
