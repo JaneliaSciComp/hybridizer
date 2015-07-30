@@ -1,0 +1,188 @@
+aspirate_shake_speed: 200
+chemical_aspirate_duration: 40
+chemical_separate_duration: 40
+dispense_duration: 6
+head:
+  primer:
+    analog_inputs:
+    - 0
+    - 8
+    channel: 8
+  quad1:
+    analog_inputs:
+    - 1
+    - 9
+    channel: 9
+  quad2:
+    analog_inputs:
+    - 2
+    - 10
+    channel: 10
+  quad3:
+    analog_inputs:
+    - 3
+    - 11
+    channel: 11
+  quad4:
+    analog_inputs:
+    - 4
+    - 12
+    channel: 12
+  quad5:
+    analog_inputs:
+    - 5
+    - 13
+    channel: 13
+  quad6:
+    analog_inputs:
+    - 6
+    - 14
+    channel: 14
+  system:
+    channel: 15
+inter_dispense_shake_duration: 10
+inter_dispense_shake_speed: 400
+load_duration: 6
+manifold:
+  aspirate:
+    channel: 29
+  bleach:
+    channel: 16
+  heptane:
+    channel: 17
+  methanol:
+    channel: 19
+  pbt:
+    channel: 28
+  pfa:
+    channel: 18
+  separate:
+    channel: 30
+poly_coefficients:
+  adc_to_volume_va:
+  - 0.07829537
+  - 0.12717718
+  - -0.00111122
+  - 0.00000439
+  volume_to_adc_va:
+  - -0.4301732
+  - 8.08879401
+  - -0.09342674
+  - 0.25061474
+prime_aspirate_duration: 15
+prime_duration: 10
+protocol:
+- aspirate: true
+  chemical: bleach
+  dispense_count: 1
+  post_shake_duration: 0
+  prime_count: 1
+  repeat: 1
+  separate: false
+  shake_duration: 30
+  shake_speed: 400
+- aspirate: true
+  chemical: pbt
+  dispense_count: 1
+  post_shake_duration: 0
+  prime_count: 0
+  repeat: 4
+  separate: false
+  shake_duration: 10
+  shake_speed: 400
+  temperature: 59
+- aspirate: true
+  chemical: heptane
+  dispense_count: 1
+  post_shake_duration: 0
+  prime_count: 1
+  repeat: 1
+  separate: false
+  shake_duration: 10
+  shake_speed: 400
+  temperature: null
+- aspirate: false
+  chemical: heptane
+  dispense_count: 1
+  post_shake_duration: 0
+  prime_count: 0
+  repeat: 0
+  separate: false
+  shake_duration: 0
+  shake_speed: 0
+  temperature: null
+- aspirate: false
+  chemical: methanol
+  dispense_count: 1
+  post_shake_duration: 30
+  prime_count: 1
+  repeat: 0
+  separate: true
+  shake_duration: 30
+  shake_speed: 1000
+  temperature: null
+- aspirate: false
+  chemical: methanol
+  dispense_count: 1
+  post_shake_duration: 30
+  prime_count: 0
+  repeat: 3
+  separate: true
+  shake_duration: 0
+  shake_speed: 0
+  temperature: null
+- aspirate: true
+  chemical: methanol
+  dispense_count: 1
+  post_shake_duration: 30
+  prime_count: 0
+  repeat: 1
+  separate: true
+  shake_duration: 0
+  shake_speed: 0
+  temperature: null
+- aspirate: true
+  chemical: pbt
+  dispense_count: 1
+  post_shake_duration: 0
+  prime_count: 0
+  repeat: 2
+  separate: false
+  shake_duration: 30
+  shake_speed: 400
+  temperature: null
+- aspirate: true
+  chemical: pfa
+  dispense_count: 1
+  post_shake_duration: 0
+  prime_count: 0
+  repeat: 0
+  separate: false
+  shake_duration: 20
+  shake_speed: 400
+  temperature: null
+- aspirate: true
+  chemical: pfa
+  dispense_count: 1
+  post_shake_duration: 0
+  prime_count: 0
+  repeat: 0
+  separate: false
+  shake_duration: 1200
+  shake_speed: 400
+  temperature: null
+- aspirate: true
+  chemical: pbt
+  dispense_count: 1
+  post_shake_duration: 0
+  prime_count: 1
+  repeat: 4
+  separate: false
+  shake_duration: 30
+  shake_speed: 400
+  temperature: null
+separate_shake_speed: 200
+setup_duration: 20
+shake_speed_max: 3000
+shake_speed_min: 200
+system_prime_count: 1

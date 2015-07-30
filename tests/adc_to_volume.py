@@ -3,6 +3,8 @@ from __future__ import print_function, division
 import matplotlib.pyplot as plot
 import numpy
 from numpy.polynomial.polynomial import polyfit,polyadd,Polynomial
+import yaml
+
 
 INCHES_PER_ML = 0.078
 VOLTS_PER_ADC_UNIT = 0.0049
@@ -65,7 +67,7 @@ if __name__ == '__main__':
 
     # Create figure
     fig = plot.figure()
-    fig.suptitle('hall effect sensors', fontsize=14, fontweight='bold')
+    fig.suptitle('hall effect sensors',fontsize=14,fontweight='bold')
     fig.subplots_adjust(top=0.85)
     colors = ['b','g','r','c','m','y','k','b']
     markers = ['o','o','o','o','o','o','o','^']
@@ -75,11 +77,11 @@ if __name__ == '__main__':
     for column_index in range(0,data_va.shape[1]):
         color = colors[column_index]
         marker = markers[column_index]
-        ax1.plot(data_va[:,column_index], volumes_va, marker=marker, linestyle='--', color=color)
-    for column_index in range(0,data_oa.shape[1]):
-        color = colors[column_index]
-        marker = markers[column_index]
-        ax1.plot(data_oa[:,column_index], volumes_oa, marker=marker, linestyle='--', color=color)
+        ax1.plot(data_va[:,column_index],volumes_va,marker=marker,linestyle='--',color=color)
+    # for column_index in range(0,data_oa.shape[1]):
+    #     color = colors[column_index]
+    #     marker = markers[column_index]
+    #     ax1.plot(data_oa[:,column_index],volumes_oa,marker=marker,linestyle='--',color=color)
     ax1.set_xlabel('mean signals (ADC units)')
     ax1.set_ylabel('volume (ml)')
 
@@ -88,46 +90,50 @@ if __name__ == '__main__':
     # Axis 2
     for column_index in range(0,data_va.shape[1]):
         data_va[:,column_index] -= data_va[:,column_index].min()
-    for column_index in range(0,data_oa.shape[1]):
-        data_oa[:,column_index] -= data_oa[:,column_index].max()
+
+    MAX_VA = 120
+    data_va = data_va[numpy.all(data_va<MAX_VA,axis=1)]
+    length = data_va.shape[0]
+    volumes_va = volumes_va[-length:]
+
+    # for column_index in range(0,data_oa.shape[1]):
+    #     data_oa[:,column_index] -= data_oa[:,column_index].max()
 
     ax2 = fig.add_subplot(122)
     for column_index in range(0,data_va.shape[1]):
         color = colors[column_index]
         marker = markers[column_index]
-        ax2.plot(data_va[:,column_index], volumes_va, marker=marker, linestyle='--', color=color)
-    for column_index in range(0,data_oa.shape[1]):
-        color = colors[column_index]
-        marker = markers[column_index]
-        ax2.plot(data_oa[:,column_index], volumes_oa, marker=marker, linestyle='--', color=color)
+        ax2.plot(data_va[:,column_index],volumes_va,marker=marker,linestyle='--',color=color)
+    # for column_index in range(0,data_oa.shape[1]):
+    #     color = colors[column_index]
+    #     marker = markers[column_index]
+    #     ax2.plot(data_oa[:,column_index],volumes_oa,marker=marker,linestyle='--',color=color)
     ax2.set_xlabel('offset mean signals (ADC units)')
     ax2.set_ylabel('volume (ml)')
 
     ax2.grid(True)
 
-    MAX = 300
-    data_va = data_va[numpy.all(data_va<MAX,axis=1)]
-    length = data_va.shape[0]
-    volumes_va = volumes_va[-length:]
     order = 3
 
-    sum = None
+    sum_va = None
     for column_index in range(0,data_va.shape[1]):
-        coefficients = polyfit(data_va[:,column_index],volumes_va,order)
-        if sum is None:
-            sum = coefficients
+        coefficients_va = polyfit(data_va[:,column_index],volumes_va,order)
+        if sum_va is None:
+            sum_va = coefficients_va
         else:
-            sum = polyadd(sum,coefficients)
-    average = sum/data_va.shape[1]
+            sum_va = polyadd(sum_va,coefficients_va)
+    average_va = sum_va/data_va.shape[1]
+    with open('adc_to_volume_va.yaml', 'w') as f:
+        yaml.dump(average_va, f, default_flow_style=False)
 
     round_digits = 8
-    average = [round(i,round_digits) for i in average]
+    average_va = [round(i,round_digits) for i in average_va]
 
-    poly = Polynomial(average)
-    ys = poly(data_va[:,-1])
-    ax2.plot(data_va[:,-1],ys,'r',linewidth=3)
+    poly = Polynomial(average_va)
+    ys_va = poly(data_va[:,-1])
+    ax2.plot(data_va[:,-1],ys_va,'r',linewidth=3)
 
     ax2.text(5,7.5,r'$v = c_0 + c_1s + c_2s^2 + c_3s^3$',fontsize=20)
-    ax2.text(5,6.5,str(average),fontsize=18,color='r')
+    ax2.text(5,6.5,str(average_va),fontsize=18,color='r')
 
     plot.show()
