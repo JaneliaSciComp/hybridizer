@@ -426,24 +426,32 @@ class Hybridizer(object):
         return volume
 
     def run_dispense_tests(self):
-        #self._setup()
-        self._set_all_valves_off()
-        self._store_adc_values_min()
+        self._setup()
+        # self._debug_print('Sleeping to aspirate...')
+        # time.sleep(40)
+        self._set_valve_on('aspirate')
+        # self._store_adc_values_min()
         valves = ['quad1','quad2','quad3','quad4','quad5','quad6']
         self.protocol_start_time = time.time()
         self._debug_print('running dispense tests...')
         self._set_valve_on('system')
-        self._set_valves_on_until_parallel(valves,3)
+        self._set_valves_on_until_parallel(valves,2.0)
+        # self._set_valves_on(valves)
+        # time.sleep(10)
+        # self._set_valves_off(valves)
         self._set_valve_off('system')
-        time.sleep(1)
+        time.sleep(4)
         for valve in valves:
+            self._debug_print('Dispensing {0}'.format(valve))
             self._set_valve_on(valve)
             time.sleep(4)
             self._set_valve_off(valve)
+            self._debug_print('Make measurement.')
             time.sleep(10)
-            self._set_valve_on('aspirate')
-            time.sleep(10)
-            self._set_valve_off('aspirate')
+        self._set_valve_off('aspirate')
+        time.sleep(40)
+        self._set_valve_on('aspirate')
+        self._set_all_valves_off()
 
 
 # -----------------------------------------------------------------------------------------
