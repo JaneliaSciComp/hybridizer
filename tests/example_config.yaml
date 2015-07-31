@@ -44,8 +44,10 @@ inter_dispense_shake_duration: 10
 inter_dispense_shake_speed: 400
 load_duration: 6
 manifold:
+  # aspirate:
+  #   channel: 29
   aspirate:
-    channel: 29
+    channel: 16
   bleach:
     channel: 16
   heptane:

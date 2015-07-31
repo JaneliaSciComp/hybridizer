@@ -384,6 +384,22 @@ class Hybridizer(object):
         for valve_key in valve_keys:
             self._set_valve_on_until(valve_key,percent)
 
+    def _set_valves_on_until_parallel(self,valve_keys,volume):
+        for valve_key in valve_keys:
+            valve = self._valves[valve_key]
+            channels = [valve['channel']]
+            adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
+            set_until_index = self._msc.set_channels_on_until(channels,ain,adc_value_goal)
+        while not self._msc.are_all_set_untils_complete():
+            self._debug_print('Waiting...')
+            time.sleep(1)
+        self._msc.remove_all_set_untils()
+        for valve_key in valve_keys:
+            valve = self._valves[valve_key]
+            adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
+            adc_value = self._msc.get_analog_input(ain)
+            volume = self._adc_to_volume_low(valve_key,adc_value)
+
     def _volume_to_adc_and_ain(self,valve_key,volume):
         valve = self._valves[valve_key]
         if volume <= self._config['volume_crossover']:
@@ -411,15 +427,24 @@ class Hybridizer(object):
 
     def run_dispense_tests(self):
         #self._setup()
+        self._set_all_valves_off()
         self._store_adc_values_min()
+        valves = ['quad1','quad2','quad3','quad4','quad5','quad6']
         self.protocol_start_time = time.time()
         self._debug_print('running dispense tests...')
         self._set_valve_on('system')
-        self._set_valve_on_until('quad1',3)
+        self._set_valves_on_until_parallel(valves,3)
         self._set_valve_off('system')
         time.sleep(1)
-        self._set_valve_on('quad1')
-        time.sleep(4)
+        for valve in valves:
+            self._set_valve_on(valve)
+            time.sleep(4)
+            self._set_valve_off(valve)
+            time.sleep(10)
+            self._set_valve_on('aspirate')
+            time.sleep(10)
+            self._set_valve_off('aspirate')
+
 
 # -----------------------------------------------------------------------------------------
 if __name__ == '__main__':
