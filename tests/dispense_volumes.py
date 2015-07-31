@@ -420,7 +420,7 @@ class Hybridizer(object):
             self._debug_print("valve: {0}, adc_value: {1}, ain: {2}".format(valve_key,adc_value,ain))
             return adc_value,ain
         else:
-            return 400
+            return 400,ain
 
     def _adc_to_volume_low(self,valve_key,adc_value):
         valve = self._valves[valve_key]
@@ -452,7 +452,7 @@ class Hybridizer(object):
         header = ['dispense_goal','initial_weight']
         header.extend(valves)
         data_writer.writerow(header)
-        dispense_goals = [6,5,4,3,2,1]
+        dispense_goals = [5,4,3,2,1]
         run_count = 10
         for dispense_goal in dispense_goals:
             for run in range(run_count):
