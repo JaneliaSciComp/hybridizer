@@ -431,11 +431,20 @@ class Hybridizer(object):
         return volume
 
     def run_dispense_tests(self):
+        valves = ['quad1','quad2','quad3','quad4','quad5','quad6']
+        self._set_valve_on('aspirate')
+        self._set_valve_on('system')
+        self._set_valves_on(valves)
+        time.sleep(10)
+        self._set_valve_off('system')
+        time.sleep(10)
+        self._set_valve_off('aspirate')
+        time.sleep(20)
         self._setup()
         self._set_valve_on('aspirate')
         time.sleep(4)
+        self._debug_print('zeroing balance...')
         self._balance.zero()
-        valves = ['quad1','quad2','quad3','quad4','quad5','quad6']
         self._debug_print('running dispense tests...')
         timestr = time.strftime("%Y%m%d-%H%M%S")
         data_file = open(timestr+'.csv','w')
@@ -443,13 +452,17 @@ class Hybridizer(object):
         header = ['dispense_goal','initial_weight']
         header.extend(valves)
         data_writer.writerow(header)
-        dispense_goals = [3.0,4.0]
-        run_count = 2
+        dispense_goals = [1,2,3,4,5,6]
+        run_count = 10
         for dispense_goal in dispense_goals:
             for run in range(run_count):
+                self._set_valve_on('aspirate')
+                time.sleep(2)
+                self._debug_print('dispense_goal: {0}, run: {1} out of {2}'.format(dispense_goal,run+1,run_count))
                 row_data = []
                 row_data.append(dispense_goal)
-                initial_weight = self._balance.get_weight()[0]
+                initial_weight = float(self._balance.get_weight()[0])
+                self._debug_print('initial_weight: {0}'.format(initial_weight))
                 row_data.append(initial_weight)
                 self._set_valve_on('system')
                 self._set_valves_on_until_parallel(valves,dispense_goal)
@@ -464,16 +477,48 @@ class Hybridizer(object):
                     self._set_valve_on(valve)
                     time.sleep(4)
                     self._set_valve_off(valve)
-                    self._debug_print('Making measurement.')
-                    weight_total = self._balance.get_weight()[0]
+                    weight_total = float(self._balance.get_weight()[0])
                     weight = weight_total - weight_prev
+                    self._debug_print('{0} measured {1}'.format(valve,weight))
                     row_data.append(weight)
                     weight_prev = weight_total
                 self._set_valve_off('aspirate')
-                time.sleep(40)
-                self._set_valve_on('aspirate')
+                self._debug_print('aspirating...')
+                time.sleep(20)
                 self._set_all_valves_off()
                 data_writer.writerow(row_data)
+        dispense_goal = 10
+        for run in range(run_count):
+            self._set_valve_on('aspirate')
+            time.sleep(2)
+            self._debug_print('dispense_goal: {0}, run: {1} out of {2}'.format(dispense_goal,run+1,run_count))
+            row_data = []
+            row_data.append(dispense_goal)
+            initial_weight = float(self._balance.get_weight()[0])
+            self._debug_print('initial_weight: {0}'.format(initial_weight))
+            row_data.append(initial_weight)
+            self._set_valve_on('system')
+            self._set_valves_on(valves)
+            time.sleep(10)
+            self._set_valves_off(valves)
+            self._set_valve_off('system')
+            time.sleep(4)
+            weight_prev = initial_weight
+            for valve in valves:
+                self._debug_print('Dispensing {0}'.format(valve))
+                self._set_valve_on(valve)
+                time.sleep(4)
+                self._set_valve_off(valve)
+                weight_total = float(self._balance.get_weight()[0])
+                weight = weight_total - weight_prev
+                self._debug_print('{0} measured {1}'.format(valve,weight))
+                row_data.append(weight)
+                weight_prev = weight_total
+            self._set_valve_off('aspirate')
+            self._debug_print('aspirating...')
+            time.sleep(20)
+            self._set_all_valves_off()
+            data_writer.writerow(row_data)
         data_file.close()
 
 
