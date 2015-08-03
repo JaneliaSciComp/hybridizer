@@ -452,7 +452,8 @@ class Hybridizer(object):
         header = ['dispense_goal','initial_weight']
         header.extend(valves)
         data_writer.writerow(header)
-        dispense_goals = [5,4,3,2,1]
+        # dispense_goals = [5,4,3,2,1]
+        dispense_goals = [2,1]
         run_count = 10
         for dispense_goal in dispense_goals:
             for run in range(run_count):
@@ -461,7 +462,7 @@ class Hybridizer(object):
                 self._debug_print('dispense_goal: {0}, run: {1} out of {2}'.format(dispense_goal,run+1,run_count))
                 row_data = []
                 row_data.append(dispense_goal)
-                initial_weight = float(self._balance.get_weight()[0])
+                initial_weight = self._balance.get_weight()[0]
                 self._debug_print('initial_weight: {0}'.format(initial_weight))
                 row_data.append(initial_weight)
                 self._set_valve_on('system')
@@ -477,7 +478,7 @@ class Hybridizer(object):
                     self._set_valve_on(valve)
                     time.sleep(4)
                     self._set_valve_off(valve)
-                    weight_total = float(self._balance.get_weight()[0])
+                    weight_total = self._balance.get_weight()[0]
                     weight = weight_total - weight_prev
                     self._debug_print('{0} measured {1}'.format(valve,weight))
                     row_data.append(weight)
