@@ -3,6 +3,7 @@ from __future__ import print_function, division
 import matplotlib.pyplot as plot
 import numpy
 from numpy.polynomial.polynomial import polyfit,polyadd,Polynomial
+import argparse
 
 INCHES_PER_ML = 0.078
 VOLTS_PER_ADC_UNIT = 0.0049
@@ -17,9 +18,17 @@ def load_numpy_data(path):
 
 # -----------------------------------------------------------------------------------------
 if __name__ == '__main__':
+    parser = argparse.ArgumentParser()
+    parser.add_argument("data_file_path",help="Path to csv data file.")
+    parser.add_argument("plot_title",help="Plot title.")
+    args = parser.parse_args()
+    data_file_path = args.data_file_path
+    plot_title = args.plot_title
+    print("Data File Path: {0}".format(data_file_path))
+    print("Plot title: {0}".format(plot_title))
+
     # Load data
-    data_file = 'dispense_data.csv'
-    dispense_data = load_numpy_data(data_file)
+    dispense_data = load_numpy_data(data_file_path)
     cylinders = list(dispense_data.dtype.names)
     cylinders.remove('dispense_goal')
     cylinders.remove('initial_weight')
@@ -68,7 +77,7 @@ if __name__ == '__main__':
 
 plot.xlabel('Dispense Volume Goal (ml)')
 plot.ylabel('Dispense Volume Measured (ml)')
-plot.title('ELF Dispense Tests')
+plot.title('ELF Dispense Test: ' + plot_title)
 plot.xticks(index+(bar_width*cylinder_count/2),dispense_goal_set)
 plot.legend()
 plot.grid(True)
