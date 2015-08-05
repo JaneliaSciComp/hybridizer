@@ -11,7 +11,7 @@ from numpy.polynomial.polynomial import polyfit,polyadd,Polynomial
 from mettler_toledo_device import MettlerToledoDevice
 import csv
 import copy
-
+import numpy
 
 # try:
 #     from pkg_resources import get_distribution, DistributionNotFound
@@ -416,7 +416,7 @@ class Hybridizer(object):
             self._msc.set_channels_on_for(channels,self._feedback_period)
             while not self._msc.are_all_set_fors_complete():
                 self._debug_print('Waiting...')
-                time.sleep(self._feedback_period)
+                time.sleep(self._feedback_period/1000)
             self._msc.remove_all_set_fors()
             adc_values_filtered = self._get_adc_values_filtered()
             ains_copy = copy.copy(ains)
@@ -430,7 +430,7 @@ class Hybridizer(object):
         for valve_key in valve_keys:
             valve = self._valves[valve_key]
             adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
-            adc_value = adc_values_filtered(ain)
+            adc_value = adc_values_filtered[ain]
             volume = self._adc_to_volume_low(valve_key,adc_value)
 
     def _volume_to_adc_and_ain(self,valve_key,volume):
@@ -459,6 +459,7 @@ class Hybridizer(object):
         return volume
 
     def run_dispense_tests(self):
+        self._debug_print('pre setup sequence...')
         valves = ['quad1','quad2','quad3','quad4','quad5','quad6']
         self._set_valve_on('aspirate')
         self._set_valve_on('system')
