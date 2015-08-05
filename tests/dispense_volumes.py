@@ -405,12 +405,14 @@ class Hybridizer(object):
         channels = []
         adc_value_goals = []
         ains = []
+        jumps = []
         for valve_key in valve_keys:
             valve = self._valves[valve_key]
             channels.append(valve['channel'])
             adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
             adc_value_goals.append(adc_value_goal)
             ains.append(ain)
+            jumps.append(0)
         while len(channels) > 0:
             self._debug_print("Setting {0} channels on for {1}ms".format(channels,self._feedback_period))
             self._msc.set_channels_on_for(channels,self._feedback_period)
@@ -422,6 +424,7 @@ class Hybridizer(object):
             ains_copy = copy.copy(ains)
             for ain in ains_copy:
                 index = ains.index(ain)
+                jumps[index] += 1
                 if adc_values_filtered[ain] >= adc_value_goals[index]:
                     channels.pop(index)
                     adc_value_goals.pop(index)
@@ -434,7 +437,7 @@ class Hybridizer(object):
             adc_value = adc_values_filtered[ain]
             final_adc_values.append(adc_value)
             # volume = self._adc_to_volume_low(valve_key,adc_value)
-        return final_adc_values
+        return final_adc_values,jumps
 
     def _volume_to_adc_and_ain(self,valve_key,volume):
         valve = self._valves[valve_key]
@@ -486,6 +489,8 @@ class Hybridizer(object):
         header = ['dispense_goal','initial_weight']
         valve_adc = [valve+'_adc' for valve in valves]
         header.extend(valve_adc)
+        valve_jumps = [valve+'_jumps' for valve in valves]
+        header.extend(valve_jumps)
         header.extend(valves)
         data_writer.writerow(header)
         # dispense_goals = [5,4,3,2,1]
@@ -505,8 +510,9 @@ class Hybridizer(object):
                 row_data.append(initial_weight)
                 self._set_valve_on('system')
                 time.sleep(2)
-                final_adc_values = self._set_valves_on_until(valves,dispense_goal)
+                final_adc_values,jumps = self._set_valves_on_until(valves,dispense_goal)
                 row_data.extend(final_adc_values)
+                row_data.extend(jumps)
                 # self._set_valves_on(valves)
                 # time.sleep(10)
                 # self._set_valves_off(valves)
