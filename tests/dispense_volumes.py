@@ -427,11 +427,14 @@ class Hybridizer(object):
                     adc_value_goals.pop(index)
                     ains.pop(index)
         adc_values_filtered = self._get_adc_values_filtered()
+        final_adc_values = []
         for valve_key in valve_keys:
             valve = self._valves[valve_key]
             adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
             adc_value = adc_values_filtered[ain]
-            volume = self._adc_to_volume_low(valve_key,adc_value)
+            final_adc_values.append(adc_value)
+            # volume = self._adc_to_volume_low(valve_key,adc_value)
+        return final_adc_values
 
     def _volume_to_adc_and_ain(self,valve_key,volume):
         valve = self._valves[valve_key]
@@ -481,11 +484,15 @@ class Hybridizer(object):
         data_file = open(timestr+'.csv','w')
         data_writer = csv.writer(data_file)
         header = ['dispense_goal','initial_weight']
+        valve_adc = [valve+'_adc' for valve in valves]
+        header.extend(valve_adc)
         header.extend(valves)
         data_writer.writerow(header)
-        dispense_goals = [5,4,3,2,1]
+        # dispense_goals = [5,4,3,2,1]
         # dispense_goals = [2,1]
-        run_count = 10
+        # run_count = 10
+        dispense_goals = [1]
+        run_count = 2
         for dispense_goal in dispense_goals:
             for run in range(run_count):
                 self._set_valve_on('aspirate')
@@ -498,7 +505,8 @@ class Hybridizer(object):
                 row_data.append(initial_weight)
                 self._set_valve_on('system')
                 time.sleep(2)
-                self._set_valves_on_until(valves,dispense_goal)
+                final_adc_values = self._set_valves_on_until(valves,dispense_goal)
+                row_data.extend(final_adc_values)
                 # self._set_valves_on(valves)
                 # time.sleep(10)
                 # self._set_valves_off(valves)
