@@ -10,6 +10,7 @@ import argparse
 from numpy.polynomial.polynomial import polyfit,polyadd,Polynomial
 from mettler_toledo_device import MettlerToledoDevice
 import csv
+import copy
 
 
 # try:
@@ -93,6 +94,8 @@ class Hybridizer(object):
 
         self._adc_values_min = None
         self._adc_values_max = None
+        self._adc_sample_count = 21
+        self._feedback_period = 250
 
     def prime_system(self):
         self._setup()
@@ -178,7 +181,6 @@ class Hybridizer(object):
         self._debug_print('setting up for ' + str(self._config['setup_duration']) + 's...')
         time.sleep(self._config['setup_duration'])
         self._set_all_valves_off()
-        self._store_adc_values_min()
         self._debug_print('setup finished!')
 
     def _prime_chemical(self,chemical,prime_count):
@@ -357,52 +359,78 @@ class Hybridizer(object):
         valve_keys.sort()
         return valve_keys
 
+    def _get_adc_values_filtered(self):
+        adc_values = None
+        for sample_n in range(self._adc_sample_count):
+            sample_values = self._msc.get_analog_inputs_filtered()
+            if adc_values is None:
+                adc_values = numpy.array([sample_values],int)
+            else:
+                adc_values = numpy.append(adc_values,[sample_values],axis=0)
+            time.sleep(0.1)
+        adc_values_filtered = numpy.median(adc_values,axis=0)
+        adc_values_filtered = adc_values_filtered.astype(int)
+        return adc_values_filtered
+
     def _store_adc_values_min(self):
-        head_valves = self._config['head']
         self._adc_values_min = {}
+        adc_values_filtered = self._get_adc_values_filtered()
+        head_valves = self._config['head']
         for head_valve in head_valves:
             try:
                 ain = self._config['head'][head_valve]['analog_inputs']['low']
-                adc_value = int(self._msc.get_analog_input(ain))
+                adc_value = adc_values_filtered[ain]
                 self._adc_values_min[head_valve] = adc_value
             except KeyError:
                 continue
         self._debug_print(self._adc_values_min)
 
-    def _set_valve_on_until(self,valve_key,volume):
-        try:
-            valve = self._valves[valve_key]
-            channels = [valve['channel']]
-            adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
-            set_until_index = self._msc.set_channels_on_until(channels,ain,adc_value_goal)
-            while not self._msc.is_set_until_complete(set_until_index):
-                adc_value = self._msc.get_analog_input(ain)
-                self._debug_print('{0} is at {1}, waiting to reach {2}'.format(valve_key,adc_value,adc_value_goal))
-                time.sleep(1)
-            self._msc.remove_set_until(set_until_index)
-            adc_value = self._msc.get_analog_input(ain)
-            volume = self._adc_to_volume_low(valve_key,adc_value)
-        except KeyError:
-            raise HybridizerError('Unknown valve: ' + str(valve_key) + ', or valve does not have analog_input. Check yaml config file for errors.')
+    # def _set_valves_on_until(self,valve_keys,volume):
+    #     for valve_key in valve_keys:
+    #         valve = self._valves[valve_key]
+    #         channels = [valve['channel']]
+    #         adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
+    #         set_until_index = self._msc.set_channels_on_until(channels,ain,adc_value_goal)
+    #     while not self._msc.are_all_set_untils_complete():
+    #         self._debug_print('Waiting...')
+    #         time.sleep(1)
+    #     self._msc.remove_all_set_untils()
+    #     for valve_key in valve_keys:
+    #         valve = self._valves[valve_key]
+    #         adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
+    #         adc_value = self._msc.get_analog_input(ain)
+    #         volume = self._adc_to_volume_low(valve_key,adc_value)
 
-    def _set_valves_on_until_serial(self,valve_keys,volume):
-        for valve_key in valve_keys:
-            self._set_valve_on_until(valve_key,percent)
-
-    def _set_valves_on_until_parallel(self,valve_keys,volume):
-        for valve_key in valve_keys:
-            valve = self._valves[valve_key]
-            channels = [valve['channel']]
-            adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
-            set_until_index = self._msc.set_channels_on_until(channels,ain,adc_value_goal)
-        while not self._msc.are_all_set_untils_complete():
-            self._debug_print('Waiting...')
-            time.sleep(1)
-        self._msc.remove_all_set_untils()
+    def _set_valves_on_until(self,valve_keys,volume):
+        channels = []
+        adc_value_goals = []
+        ains = []
         for valve_key in valve_keys:
             valve = self._valves[valve_key]
+            channels.append(valve['channel'])
             adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
-            adc_value = self._msc.get_analog_input(ain)
+            adc_value_goals.append(adc_value_goal)
+            ains.append(ain)
+        while len(channels) > 0:
+            self._debug_print("Setting {0} channels on for {1}ms".format(channels,self._feedback_period))
+            self._msc.set_channels_on_for(channels,self._feedback_period)
+            while not self._msc.are_all_set_fors_complete():
+                self._debug_print('Waiting...')
+                time.sleep(self._feedback_period)
+            self._msc.remove_all_set_fors()
+            adc_values_filtered = self._get_adc_values_filtered()
+            ains_copy = copy.copy(ains)
+            for ain in ains_copy:
+                index = ains.index(ain)
+                if adc_values_filtered[ain] >= adc_value_goals[index]:
+                    channels.pop(index)
+                    adc_value_goals.pop(index)
+                    ains.pop(index)
+        adc_values_filtered = self._get_adc_values_filtered()
+        for valve_key in valve_keys:
+            valve = self._valves[valve_key]
+            adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
+            adc_value = adc_values_filtered(ain)
             volume = self._adc_to_volume_low(valve_key,adc_value)
 
     def _volume_to_adc_and_ain(self,valve_key,volume):
@@ -442,7 +470,9 @@ class Hybridizer(object):
         time.sleep(20)
         self._setup()
         self._set_valve_on('aspirate')
-        time.sleep(4)
+        time.sleep(10)
+        self._debug_print('zeroing hall effect sensors...')
+        self._store_adc_values_min()
         self._debug_print('zeroing balance...')
         self._balance.zero()
         self._debug_print('running dispense tests...')
@@ -466,7 +496,8 @@ class Hybridizer(object):
                 self._debug_print('initial_weight: {0}'.format(initial_weight))
                 row_data.append(initial_weight)
                 self._set_valve_on('system')
-                self._set_valves_on_until_parallel(valves,dispense_goal)
+                time.sleep(2)
+                self._set_valves_on_until(valves,dispense_goal)
                 # self._set_valves_on(valves)
                 # time.sleep(10)
                 # self._set_valves_off(valves)
@@ -478,6 +509,7 @@ class Hybridizer(object):
                     self._set_valve_on(valve)
                     time.sleep(4)
                     self._set_valve_off(valve)
+                    time.sleep(2)
                     weight_total = self._balance.get_weight()[0]
                     weight = weight_total - weight_prev
                     self._debug_print('{0} measured {1}'.format(valve,weight))
