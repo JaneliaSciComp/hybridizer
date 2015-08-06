@@ -103,7 +103,7 @@ class Hybridizer(object):
         self._adc_values_min = None
         self._adc_values_max = None
         self._adc_sample_count = 21
-        self._feedback_period = 250
+        self._feedback_period = 100
         self._volume_crossover = 6
 
     def prime_system(self):
