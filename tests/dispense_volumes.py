@@ -405,16 +405,17 @@ class Hybridizer(object):
         channels = []
         adc_value_goals = []
         ains = []
-        jumps = []
+        jumps = {}
+        valve_keys_copy = copy.copy(valve_keys)
         for valve_key in valve_keys:
             valve = self._valves[valve_key]
             channels.append(valve['channel'])
             adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
             adc_value_goals.append(adc_value_goal)
             ains.append(ain)
-            jumps.append(0)
+            jumps[valve_key] = 0
         while len(channels) > 0:
-            self._debug_print("Setting {0} channels on for {1}ms".format(channels,self._feedback_period))
+            self._debug_print("Setting {0} valves on for {1}ms".format(valve_keys_copy,self._feedback_period))
             self._msc.set_channels_on_for(channels,self._feedback_period)
             while not self._msc.are_all_set_fors_complete():
                 self._debug_print('Waiting...')
@@ -424,20 +425,23 @@ class Hybridizer(object):
             ains_copy = copy.copy(ains)
             for ain in ains_copy:
                 index = ains.index(ain)
-                jumps[index] += 1
+                valve_key_copy = valve_keys_copy[index]
+                jumps[valve_key_copy] += 1
                 if adc_values_filtered[ain] >= adc_value_goals[index]:
                     channels.pop(index)
                     adc_value_goals.pop(index)
                     ains.pop(index)
+                    valve_keys_copy.pop(index)
         adc_values_filtered = self._get_adc_values_filtered()
         final_adc_values = []
+        jumps_list = []
         for valve_key in valve_keys:
-            valve = self._valves[valve_key]
             adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
             adc_value = adc_values_filtered[ain]
             final_adc_values.append(adc_value)
+            jumps_list.append(jumps[valve_key])
             # volume = self._adc_to_volume_low(valve_key,adc_value)
-        return final_adc_values,jumps
+        return final_adc_values,jumps_list
 
     def _volume_to_adc_and_ain(self,valve_key,volume):
         valve = self._valves[valve_key]
