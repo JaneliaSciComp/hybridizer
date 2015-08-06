@@ -5,6 +5,7 @@ import numpy
 from numpy.polynomial.polynomial import polyfit,polyadd,Polynomial
 import argparse
 import copy
+import yaml
 
 
 INCHES_PER_ML = 0.078
@@ -45,6 +46,7 @@ if __name__ == '__main__':
     colors = ['b','g','r','c','m','y','k','b']
     markers = ['o','o','o','o','o','o','o','^']
 
+    output_data = {}
     # Axis 1
     ax1 = fig.add_subplot(131)
     index = 0
@@ -58,10 +60,6 @@ if __name__ == '__main__':
                  color=color,
                  label=cylinder)
         index += 1
-    # for column_index in range(0,data_oa.shape[1]):
-    #     color = colors[column_index]
-    #     marker = markers[column_index]
-    #     ax1.plot(volumes_oa,data_oa[:,column_index],marker=marker,linestyle='--',color=color)
     ax1.set_xlabel('fill duration (ms)')
     ax1.set_ylabel('volume (ml)')
     ax1.legend(loc='best')
@@ -69,18 +67,38 @@ if __name__ == '__main__':
 
     ax1.grid(True)
 
+    order = 3
+
     # Axis 2
     ax2 = fig.add_subplot(132)
     index = 0
     for cylinder in cylinders:
         color = colors[index]
         marker = markers[index]
-        ax2.plot(calibration_data[cylinder],
-                 calibration_data[cylinder+'_adc_low'],
+        volumes_all = numpy.float64(calibration_data[cylinder])
+        volumes = volumes_all[volumes_all<=6]
+        adc_values = numpy.float64(calibration_data[cylinder+'_adc_low'])
+        adc_values = adc_values[volumes_all<=6]
+        ax2.plot(volumes,
+                 adc_values,
                  marker=marker,
                  linestyle='--',
                  color=color,
                  label=cylinder)
+        coefficients = polyfit(volumes,
+                               adc_values,
+                               order)
+        poly_fit = Polynomial(coefficients)
+        adc_values_fit = poly_fit(volumes)
+        ax2.plot(volumes,
+                 adc_values_fit,
+                 marker=None,
+                 linestyle='-',
+                 color=color,
+                 label=cylinder)
+        coefficients_list = [float(coefficient) for coefficient in coefficients]
+        output_data[cylinder] = {'low':coefficients_list}
+        print(coefficients)
         index += 1
     ax2.set_xlabel('volume (ml)')
     ax2.set_ylabel('adc low value (adc units)')
@@ -94,18 +112,40 @@ if __name__ == '__main__':
     for cylinder in cylinders:
         color = colors[index]
         marker = markers[index]
-        ax3.plot(calibration_data[cylinder],
-                 calibration_data[cylinder+'_adc_high'],
+        volumes_all = numpy.float64(calibration_data[cylinder])
+        volumes = volumes_all[volumes_all>=6]
+        adc_values = numpy.float64(calibration_data[cylinder+'_adc_high'])
+        adc_values = adc_values[volumes_all>=6]
+        ax3.plot(volumes,
+                 adc_values,
                  marker=marker,
                  linestyle='--',
                  color=color,
                  label=cylinder)
+        coefficients = polyfit(volumes,
+                               adc_values,
+                               order)
+        poly_fit = Polynomial(coefficients)
+        adc_values_fit = poly_fit(volumes)
+        ax3.plot(volumes,
+                 adc_values_fit,
+                 marker=None,
+                 linestyle='-',
+                 color=color,
+                 label=cylinder)
+        coefficients_list = [float(coefficient) for coefficient in coefficients]
+        output_data[cylinder]['high'] = coefficients_list
+        print(coefficients)
         index += 1
     ax3.set_xlabel('volume (ml)')
     ax3.set_ylabel('adc high value (adc units)')
     ax3.legend(loc='best')
 
     ax3.grid(True)
+
+    print(output_data)
+    with open('calibration.yaml', 'w') as f:
+        yaml.dump(output_data, f, default_flow_style=False)
 
     plot.show()
 #     header = list(calibration_data.dtype.names)
