@@ -32,6 +32,7 @@ if __name__ == '__main__':
     cylinders = list(dispense_data.dtype.names)
     cylinders.remove('dispense_goal')
     cylinders.remove('initial_weight')
+    cylinders = [cylinder for cylinder in cylinders if 'jumps' not in cylinder and 'adc' not in cylinder]
     print(cylinders)
     cylinder_count = len(cylinders)
     print(cylinder_count)

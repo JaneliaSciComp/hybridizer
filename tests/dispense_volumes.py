@@ -541,6 +541,90 @@ class Hybridizer(object):
                 data_writer.writerow(row_data)
         data_file.close()
 
+    def run_calibration(self):
+        self._debug_print('pre setup sequence...')
+        valves = ['quad1','quad2','quad3','quad4','quad5','quad6']
+        self._set_valve_on('aspirate')
+        self._set_valve_on('system')
+        self._set_valves_on(valves)
+        time.sleep(10)
+        self._set_valve_off('system')
+        time.sleep(10)
+        self._set_valve_off('aspirate')
+        time.sleep(20)
+        self._setup()
+        self._set_valve_on('aspirate')
+        time.sleep(10)
+        self._debug_print('zeroing hall effect sensors...')
+        self._store_adc_values_min()
+        self._debug_print('zeroing balance...')
+        self._balance.zero()
+        self._debug_print('running calibration...')
+        timestr = time.strftime("%Y%m%d-%H%M%S")
+        data_file = open(timestr+'.csv','w')
+        data_writer = csv.writer(data_file)
+        header = ['fill_duration','initial_weight']
+        valve_adc_low = [valve+'_adc_low' for valve in valves]
+        header.extend(valve_adc_low)
+        valve_adc_high = [valve+'_adc_high' for valve in valves]
+        header.extend(valve_adc_high)
+        header.extend(valves)
+        data_writer.writerow(header)
+        duration_inc = 1000
+        duration_max = 10000
+        fill_durations = range(duration_inc,duration_max+duration_inc,duration_inc)
+        run_count = 1
+        for run in range(run_count):
+            for fill_duration in fill_durations:
+                self._set_valve_on('aspirate')
+                time.sleep(2)
+                self._debug_print('fill_duration: {0}, run: {1} out of {2}'.format(fill_duration,run+1,run_count))
+                row_data = []
+                row_data.append(fill_duration)
+                initial_weight = self._balance.get_weight()[0]
+                self._debug_print('initial_weight: {0}'.format(initial_weight))
+                row_data.append(initial_weight)
+                self._set_valve_on('system')
+                time.sleep(2)
+                channels = []
+                adc_low_ain = []
+                adc_high_ain = []
+                for valve_key in valves:
+                    valve = self._valves[valve_key]
+                    channels.append(valve['channel'])
+                    adc_low_ain.append(valve['analog_inputs']['low'])
+                    adc_high_ain.append(valve['analog_inputs']['high'])
+                self._msc.set_channels_on_for(channels,fill_duration)
+                while not self._msc.are_all_set_fors_complete():
+                    self._debug_print('Waiting...')
+                    time.sleep(fill_duration/1000)
+                self._msc.remove_all_set_fors()
+                adc_values_filtered = self._get_adc_values_filtered()
+                adc_low_values = [adc_values_filtered[ain] for ain in adc_low_ain]
+                adc_high_values = [adc_values_filtered[ain] for ain in adc_high_ain]
+                row_data.extend(adc_low_values)
+                row_data.extend(adc_high_values)
+                self._set_valve_off('system')
+                time.sleep(4)
+                weight_prev = initial_weight
+                for valve in valves:
+                    self._debug_print('Dispensing {0}'.format(valve))
+                    self._set_valve_on(valve)
+                    time.sleep(4)
+                    self._set_valve_off(valve)
+                    time.sleep(2)
+                    weight_total = self._balance.get_weight()[0]
+                    weight = weight_total - weight_prev
+                    self._debug_print('{0} measured {1}'.format(valve,weight))
+                    row_data.append(weight)
+                    weight_prev = weight_total
+                self._set_valve_off('aspirate')
+                self._debug_print('aspirating...')
+                time.sleep(20)
+                self._set_all_valves_off()
+                data_writer.writerow(row_data)
+        data_file.close()
+
 
 # -----------------------------------------------------------------------------------------
 if __name__ == '__main__':
@@ -554,4 +638,5 @@ if __name__ == '__main__':
     debug = True
     hyb = Hybridizer(debug=debug,config_file_path=config_file_path)
     # hyb.run_protocol()
-    hyb.run_dispense_tests()
+    # hyb.run_dispense_tests()
+    hyb.run_calibration()
