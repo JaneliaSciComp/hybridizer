@@ -37,7 +37,6 @@ if __name__ == '__main__':
     cylinders.remove('fill_duration')
     cylinders.remove('initial_weight')
     cylinders = [column for column in cylinders if 'adc' not in column]
-    print(cylinders)
 
     # Create figure
     fig = plot.figure()
@@ -46,28 +45,62 @@ if __name__ == '__main__':
     colors = ['b','g','r','c','m','y','k','b']
     markers = ['o','o','o','o','o','o','o','^']
 
+    order = 3
+
     output_data = {}
+
+    fill_durations = numpy.int16(calibration_data['fill_duration'])
+    fill_durations_set = list(set(fill_durations))
+    fill_durations_set.sort()
+
     # Axis 1
     ax1 = fig.add_subplot(131)
+
     index = 0
     for cylinder in cylinders:
         color = colors[index]
         marker = markers[index]
-        ax1.plot(calibration_data['fill_duration'],
-                 calibration_data[cylinder],
-                 marker=marker,
-                 linestyle='--',
-                 color=color,
-                 label=cylinder)
         index += 1
-    ax1.set_xlabel('fill duration (ms)')
-    ax1.set_ylabel('volume (ml)')
+        volume_means = []
+        volume_stds = []
+        for fill_duration in fill_durations_set:
+            measured_data = calibration_data[fill_durations==fill_duration]
+            volume_data = numpy.float64(measured_data[cylinder])
+            volume_mean = numpy.mean(volume_data)
+            volume_means.append(volume_mean)
+            volume_std = numpy.std(volume_data)
+            volume_stds.append(volume_std)
+        fill_durations_array = numpy.array(fill_durations_set)
+        volume_means_array = numpy.array(volume_means)
+        volume_stds_array = numpy.array(volume_stds)
+        volume_thresh = 9.5
+        fill_durations_array = fill_durations_array[volume_means_array<volume_thresh]
+        volume_means_array = volume_means_array[volume_means_array<volume_thresh]
+        volume_stds_array = volume_stds_array[volume_means_array<volume_thresh]
+        ax1.errorbar(volume_means_array,
+                    fill_durations_array,
+                    None,
+                    volume_stds_array,
+                    linestyle='--',
+                    color=color)
+        coefficients = polyfit(volume_means_array,
+                               fill_durations_array,
+                               order)
+        coefficients_list = [float(coefficient) for coefficient in coefficients]
+        output_data[cylinder] = {'volume_to_fill_duration':coefficients_list}
+        poly_fit = Polynomial(coefficients)
+        fill_durations_fit = poly_fit(volume_means_array)
+        ax1.plot(volume_means_array,
+                fill_durations_fit,
+                linestyle='-',
+                linewidth=2,
+                color=color,
+                label=cylinder)
+    ax1.set_xlabel('volume (ml)')
+    ax1.set_ylabel('fill duration (ms)')
     ax1.legend(loc='best')
-    plot.yticks(range(0,11,1))
 
     ax1.grid(True)
-
-    order = 3
 
     # Axis 2
     ax2 = fig.add_subplot(132)
@@ -75,31 +108,51 @@ if __name__ == '__main__':
     for cylinder in cylinders:
         color = colors[index]
         marker = markers[index]
-        volumes_all = numpy.float64(calibration_data[cylinder])
-        volumes = volumes_all[volumes_all<=6]
-        adc_values = numpy.float64(calibration_data[cylinder+'_adc_low'])
-        adc_values = adc_values[volumes_all<=6]
-        ax2.plot(volumes,
-                 adc_values,
-                 marker=marker,
-                 linestyle='--',
-                 color=color,
-                 label=cylinder)
-        coefficients = polyfit(volumes,
-                               adc_values,
-                               order)
-        poly_fit = Polynomial(coefficients)
-        adc_values_fit = poly_fit(volumes)
-        ax2.plot(volumes,
-                 adc_values_fit,
-                 marker=None,
-                 linestyle='-',
-                 color=color,
-                 label=cylinder)
-        coefficients_list = [float(coefficient) for coefficient in coefficients]
-        output_data[cylinder] = {'low':coefficients_list}
-        print(coefficients)
         index += 1
+        volume_data = []
+        adc_data = []
+        for fill_duration in fill_durations_set:
+            measured_data = calibration_data[fill_durations==fill_duration]
+            volume_data_run = numpy.float64(measured_data[cylinder])
+            volume_data.append(volume_data_run)
+            adc_data_run = numpy.int16(measured_data[cylinder+'_adc_low'])
+            adc_data.append(adc_data_run)
+        run_count = len(volume_data[0])
+        data_point_count = len(volume_data)
+        coefficients_sum = None
+        for run in range(run_count):
+            volume_data_points = []
+            adc_data_points = []
+            for data_n in range(data_point_count):
+                volume_data_point = volume_data[data_n][run]
+                volume_data_points.append(volume_data_point)
+                adc_data_point = adc_data[data_n][run]
+                adc_data_points.append(adc_data_point)
+            volume_array = numpy.array(volume_data_points,dtype='float64')
+            adc_array = numpy.array(adc_data_points,dtype='int')
+            adc_array = adc_array[volume_array<=6]
+            volume_array = volume_array[volume_array<=6]
+            ax2.plot(volume_array,
+                     adc_array,
+                     linestyle='--',
+                     linewidth=1,
+                     color=color)
+            coefficients = polyfit(volume_array,adc_array,order)
+            if coefficients_sum is None:
+                coefficients_sum = coefficients
+            else:
+                coefficients_sum = polyadd(coefficients_sum,coefficients)
+        coefficients_average = coefficients_sum/run_count
+        poly_fit = Polynomial(coefficients_average)
+        adc_fit = poly_fit(volume_array)
+        ax2.plot(volume_array,
+                 adc_fit,
+                 linestyle='-',
+                 linewidth=2,
+                 label=cylinder,
+                 color=color)
+        coefficients_list = [float(coefficient) for coefficient in coefficients_average]
+        output_data[cylinder]['volume_to_adc_low'] = coefficients_list
     ax2.set_xlabel('volume (ml)')
     ax2.set_ylabel('adc low value (adc units)')
     ax2.legend(loc='best')
@@ -112,96 +165,59 @@ if __name__ == '__main__':
     for cylinder in cylinders:
         color = colors[index]
         marker = markers[index]
-        volumes_all = numpy.float64(calibration_data[cylinder])
-        volumes = volumes_all[volumes_all>=6]
-        adc_values = numpy.float64(calibration_data[cylinder+'_adc_high'])
-        adc_values = adc_values[volumes_all>=6]
-        ax3.plot(volumes,
-                 adc_values,
-                 marker=marker,
-                 linestyle='--',
-                 color=color,
-                 label=cylinder)
-        coefficients = polyfit(volumes,
-                               adc_values,
-                               order)
-        poly_fit = Polynomial(coefficients)
-        adc_values_fit = poly_fit(volumes)
-        ax3.plot(volumes,
-                 adc_values_fit,
-                 marker=None,
-                 linestyle='-',
-                 color=color,
-                 label=cylinder)
-        coefficients_list = [float(coefficient) for coefficient in coefficients]
-        output_data[cylinder]['high'] = coefficients_list
-        print(coefficients)
         index += 1
+        volume_data = []
+        adc_data = []
+        for fill_duration in fill_durations_set:
+            measured_data = calibration_data[fill_durations==fill_duration]
+            volume_data_run = numpy.float64(measured_data[cylinder])
+            volume_data.append(volume_data_run)
+            adc_data_run = numpy.int16(measured_data[cylinder+'_adc_high'])
+            adc_data.append(adc_data_run)
+        run_count = len(volume_data[0])
+        data_point_count = len(volume_data)
+        coefficients_sum = None
+        for run in range(run_count):
+            volume_data_points = []
+            adc_data_points = []
+            for data_n in range(data_point_count):
+                volume_data_point = volume_data[data_n][run]
+                volume_data_points.append(volume_data_point)
+                adc_data_point = adc_data[data_n][run]
+                adc_data_points.append(adc_data_point)
+            volume_array = numpy.array(volume_data_points,dtype='float64')
+            adc_array = numpy.array(adc_data_points,dtype='int')
+            adc_array = adc_array[volume_array>=6]
+            volume_array = volume_array[volume_array>=6]
+            ax3.plot(volume_array,
+                     adc_array,
+                     linestyle='--',
+                     linewidth=1,
+                     color=color)
+            coefficients = polyfit(volume_array,adc_array,order)
+            if coefficients_sum is None:
+                coefficients_sum = coefficients
+            else:
+                coefficients_sum = polyadd(coefficients_sum,coefficients)
+        coefficients_average = coefficients_sum/run_count
+        poly_fit = Polynomial(coefficients_average)
+        adc_fit = poly_fit(volume_array)
+        ax3.plot(volume_array,
+                 adc_fit,
+                 linestyle='-',
+                 linewidth=2,
+                 label=cylinder,
+                 color=color)
+        coefficients_list = [float(coefficient) for coefficient in coefficients_average]
+        output_data[cylinder]['volume_to_adc_high'] = coefficients_list
     ax3.set_xlabel('volume (ml)')
     ax3.set_ylabel('adc high value (adc units)')
     ax3.legend(loc='best')
 
     ax3.grid(True)
 
-    print(output_data)
+    # print(output_data)
     with open('calibration.yaml', 'w') as f:
         yaml.dump(output_data, f, default_flow_style=False)
 
     plot.show()
-#     header = list(calibration_data.dtype.names)
-#     header.remove('dispense_goal')
-#     header.remove('initial_weight')
-#     cylinders = [cylinder for cylinder in cylinders if 'jumps' not in cylinder and 'adc' not in cylinder]
-#     print(cylinders)
-#     cylinder_count = len(cylinders)
-#     print(cylinder_count)
-#     dispense_goals = numpy.int16(calibration_data['dispense_goal'])
-#     dispense_goal_set = list(set(dispense_goals))
-#     dispense_goal_set.sort(reverse=True)
-#     print(dispense_goal_set)
-#     goal_count = len(dispense_goal_set)
-#     print(goal_count)
-
-#     index = numpy.arange(goal_count)
-#     index = index*cylinder_count
-#     bar_width = 0.35
-
-#     fig, ax = plot.subplots()
-
-#     opacity = 0.6
-#     error_config = {'ecolor': '0.3'}
-#     colors = ['b','g','r','c','m','y','k','b']
-
-#     for cylinder_n in range(cylinder_count):
-#         cylinder_means = []
-#         cylinder_stds = []
-#         for dispense_goal in dispense_goal_set:
-#             goal_data = calibration_data[dispense_goals==dispense_goal]
-#             cylinder_data = numpy.float64(goal_data[cylinders[cylinder_n]])
-#             cylinder_mean = numpy.mean(cylinder_data)
-#             cylinder_means.append(cylinder_mean)
-#             cylinder_std = numpy.std(cylinder_data)
-#             cylinder_stds.append(cylinder_std)
-#         print(cylinder_n)
-#         print(cylinder_means)
-#         print(cylinder_stds)
-#         print('')
-#         plot.bar(index+bar_width*(cylinder_n),
-#                  cylinder_means,
-#                  bar_width,
-#                  alpha=opacity,
-#                  color=colors[cylinder_n],
-#                  yerr=cylinder_stds,
-#                  error_kw=error_config,
-#                  label=cylinders[cylinder_n])
-
-# plot.xlabel('Dispense Volume Goal (ml)')
-# plot.ylabel('Dispense Volume Measured (ml)')
-# plot.title('ELF Dispense Test: ' + plot_title)
-# plot.xticks(index+(bar_width*cylinder_count/2),dispense_goal_set)
-# plot.legend()
-# plot.grid(True)
-# plot.ylim((0,11))
-# plot.yticks(numpy.arange(0,11,1.0))
-
-# plot.tight_layout()
