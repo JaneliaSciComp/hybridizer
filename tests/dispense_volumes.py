@@ -662,7 +662,7 @@ if __name__ == '__main__':
 
     args = parser.parse_args()
     config_file_path = args.config_file_path
-    calibration_file_path = args.config_file_path
+    calibration_file_path = args.calibration_file_path
     print("Config File Path: {0}".format(config_file_path))
     print("Calibration File Path: {0}".format(calibration_file_path))
 
