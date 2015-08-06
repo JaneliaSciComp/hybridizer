@@ -54,7 +54,13 @@ class Hybridizer(object):
     hyb.run_protocol()
     '''
 
-    def __init__(self,config_file_path,*args,**kwargs):
+    # def __init__(self,
+    #              config_file_path,
+    #              *args,**kwargs):
+    def __init__(self,
+                 config_file_path,
+                 calibration_file_path,
+                 *args,**kwargs):
         if 'debug' in kwargs:
             self._debug = kwargs['debug']
         else:
@@ -62,6 +68,8 @@ class Hybridizer(object):
             self._debug = DEBUG
         with open(config_file_path,'r') as config_stream:
             self._config = yaml.load(config_stream)
+        with open(calibration_file_path,'r') as calibration_stream:
+            self._calibration = yaml.load(calibration_stream)
         self._valves = self._config['head']
         self._valves.update(self._config['manifold'])
         ports = find_serial_device_ports(debug=self._debug)
@@ -96,6 +104,7 @@ class Hybridizer(object):
         self._adc_values_max = None
         self._adc_sample_count = 21
         self._feedback_period = 250
+        self._volume_crossover = 6
 
     def prime_system(self):
         self._setup()
@@ -443,22 +452,41 @@ class Hybridizer(object):
             # volume = self._adc_to_volume_low(valve_key,adc_value)
         return final_adc_values,jumps_list
 
+    # def _volume_to_adc_and_ain(self,valve_key,volume):
+    #     valve = self._valves[valve_key]
+    #     if volume <= self._config['volume_crossover']:
+    #         ain = valve['analog_inputs']['low']
+    #     else:
+    #         ain = valve['analog_inputs']['low']
+    #     if volume > self._config['volume_max']:
+    #         raise HybridizerError('Asking for volume greater than the max volume of {0}!'.format(self._config['volume_max']))
+    #     if volume <= self._config['volume_crossover']:
+    #         poly = Polynomial(self._config['poly_coefficients']['volume_to_adc_low'])
+    #         adc_value = int(round(poly(volume)))
+    #         adc_value += self._adc_values_min[valve_key]
+    #         self._debug_print("valve: {0}, adc_value: {1}, ain: {2}".format(valve_key,adc_value,ain))
+    #         return adc_value,ain
+    #     else:
+    #         return 400,ain
+
     def _volume_to_adc_and_ain(self,valve_key,volume):
         valve = self._valves[valve_key]
-        if volume <= self._config['volume_crossover']:
+        if volume <= self._volume_crossover:
             ain = valve['analog_inputs']['low']
         else:
-            ain = valve['analog_inputs']['low']
+            ain = valve['analog_inputs']['high']
         if volume > self._config['volume_max']:
             raise HybridizerError('Asking for volume greater than the max volume of {0}!'.format(self._config['volume_max']))
-        if volume <= self._config['volume_crossover']:
-            poly = Polynomial(self._config['poly_coefficients']['volume_to_adc_low'])
+        if volume <= self._volume_crossover:
+            poly = Polynomial(self._calibration[valve_key]['low'])
             adc_value = int(round(poly(volume)))
-            adc_value += self._adc_values_min[valve_key]
             self._debug_print("valve: {0}, adc_value: {1}, ain: {2}".format(valve_key,adc_value,ain))
             return adc_value,ain
         else:
-            return 400,ain
+            poly = Polynomial(self._calibration[valve_key]['high'])
+            adc_value = int(round(poly(volume)))
+            self._debug_print("valve: {0}, adc_value: {1}, ain: {2}".format(valve_key,adc_value,ain))
+            return adc_value,ain
 
     def _adc_to_volume_low(self,valve_key,adc_value):
         valve = self._valves[valve_key]
@@ -497,11 +525,11 @@ class Hybridizer(object):
         header.extend(valve_jumps)
         header.extend(valves)
         data_writer.writerow(header)
-        # dispense_goals = [5,4,3,2,1]
+        dispense_goals = [5,4,3,2,1]
         # dispense_goals = [2,1]
-        # run_count = 10
-        dispense_goals = [1]
-        run_count = 2
+        run_count = 10
+        # dispense_goals = [1]
+        # run_count = 2
         for dispense_goal in dispense_goals:
             for run in range(run_count):
                 self._set_valve_on('aspirate')
@@ -630,13 +658,19 @@ class Hybridizer(object):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument("config_file_path",help="Path to yaml config file.")
+    parser.add_argument("calibration_file_path",help="Path to yaml calibration file.")
 
     args = parser.parse_args()
     config_file_path = args.config_file_path
+    calibration_file_path = args.config_file_path
     print("Config File Path: {0}".format(config_file_path))
+    print("Calibration File Path: {0}".format(calibration_file_path))
 
     debug = True
-    hyb = Hybridizer(debug=debug,config_file_path=config_file_path)
+    # hyb = Hybridizer(debug=debug,config_file_path=config_file_path)
+    hyb = Hybridizer(debug=debug,
+                     config_file_path=config_file_path,
+                     calibration_file_path=calibration_file_path)
     # hyb.run_protocol()
-    # hyb.run_dispense_tests()
-    hyb.run_calibration()
+    hyb.run_dispense_tests()
+    # hyb.run_calibration()
