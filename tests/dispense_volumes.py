@@ -103,7 +103,7 @@ class Hybridizer(object):
         self._adc_values_min = None
         self._adc_values_max = None
         self._adc_sample_count = 21
-        self._feedback_period = 100
+        self._feedback_period = 200
         self._volume_crossover = 6
 
     def prime_system(self):
@@ -381,18 +381,18 @@ class Hybridizer(object):
         adc_values_filtered = adc_values_filtered.astype(int)
         return adc_values_filtered
 
-    def _store_adc_values_min(self):
-        self._adc_values_min = {}
-        adc_values_filtered = self._get_adc_values_filtered()
-        head_valves = self._config['head']
-        for head_valve in head_valves:
-            try:
-                ain = self._config['head'][head_valve]['analog_inputs']['low']
-                adc_value = adc_values_filtered[ain]
-                self._adc_values_min[head_valve] = adc_value
-            except KeyError:
-                continue
-        self._debug_print(self._adc_values_min)
+    # def _store_adc_values_min(self):
+    #     self._adc_values_min = {}
+    #     adc_values_filtered = self._get_adc_values_filtered()
+    #     head_valves = self._config['head']
+    #     for head_valve in head_valves:
+    #         try:
+    #             ain = self._config['head'][head_valve]['analog_inputs']['low']
+    #             adc_value = adc_values_filtered[ain]
+    #             self._adc_values_min[head_valve] = adc_value
+    #         except KeyError:
+    #             continue
+    #     self._debug_print(self._adc_values_min)
 
     # def _set_valves_on_until(self,valve_keys,volume):
     #     for valve_key in valve_keys:
@@ -423,6 +423,20 @@ class Hybridizer(object):
             adc_value_goals.append(adc_value_goal)
             ains.append(ain)
             jumps[valve_key] = 0
+
+        volume_goal_initial = volume - 1
+        if volume_goal_intial >= 1:
+            fill_durations_inital = []
+            for valve_key in valve_keys:
+                fill_duration_initial = self._volume_to_fill_duration(valve_key,volume_goal_initial)
+                fill_durations_inital.append(fill_duration_initial)
+            fill_duration_initial = min(fill_durations_initial)
+            self._msc.set_channels_on_for(channels,fill_duration_initial)
+            while not self._msc.are_all_set_fors_complete():
+                self._debug_print('Waiting...')
+                time.sleep(fill_duration_initial/1000)
+            self._msc.remove_all_set_fors()
+
         while len(channels) > 0:
             self._debug_print("Setting {0} valves on for {1}ms".format(valve_keys_copy,self._feedback_period))
             self._msc.set_channels_on_for(channels,self._feedback_period)
@@ -478,15 +492,20 @@ class Hybridizer(object):
         if volume > self._config['volume_max']:
             raise HybridizerError('Asking for volume greater than the max volume of {0}!'.format(self._config['volume_max']))
         if volume <= self._volume_crossover:
-            poly = Polynomial(self._calibration[valve_key]['low'])
+            poly = Polynomial(self._calibration[valve_key]['volume_to_adc_low'])
             adc_value = int(round(poly(volume)))
             self._debug_print("valve: {0}, adc_value: {1}, ain: {2}".format(valve_key,adc_value,ain))
             return adc_value,ain
         else:
-            poly = Polynomial(self._calibration[valve_key]['high'])
+            poly = Polynomial(self._calibration[valve_key]['volume_to_adc_high'])
             adc_value = int(round(poly(volume)))
             self._debug_print("valve: {0}, adc_value: {1}, ain: {2}".format(valve_key,adc_value,ain))
             return adc_value,ain
+
+    def _volume_to_fill_duration(self,valve_key,volume):
+        poly = Polynomial(self._calibration[valve_key]['volume_to_fill_duration'])
+        fill_duration = int(round(poly(volume)))
+        return fill_duration
 
     def _adc_to_volume_low(self,valve_key,adc_value):
         valve = self._valves[valve_key]
@@ -510,8 +529,8 @@ class Hybridizer(object):
         self._setup()
         self._set_valve_on('aspirate')
         time.sleep(10)
-        self._debug_print('zeroing hall effect sensors...')
-        self._store_adc_values_min()
+        # self._debug_print('zeroing hall effect sensors...')
+        # self._store_adc_values_min()
         self._debug_print('zeroing balance...')
         self._balance.zero()
         self._debug_print('running dispense tests...')
@@ -545,9 +564,6 @@ class Hybridizer(object):
                 final_adc_values,jumps = self._set_valves_on_until(valves,dispense_goal)
                 row_data.extend(final_adc_values)
                 row_data.extend(jumps)
-                # self._set_valves_on(valves)
-                # time.sleep(10)
-                # self._set_valves_off(valves)
                 self._set_valve_off('system')
                 time.sleep(4)
                 weight_prev = initial_weight
@@ -583,8 +599,8 @@ class Hybridizer(object):
         self._setup()
         self._set_valve_on('aspirate')
         time.sleep(10)
-        self._debug_print('zeroing hall effect sensors...')
-        self._store_adc_values_min()
+        # self._debug_print('zeroing hall effect sensors...')
+        # self._store_adc_values_min()
         self._debug_print('zeroing balance...')
         self._balance.zero()
         self._debug_print('running calibration...')
