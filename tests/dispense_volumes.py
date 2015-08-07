@@ -103,7 +103,8 @@ class Hybridizer(object):
         self._adc_values_min = None
         self._adc_values_max = None
         self._adc_sample_count = 21
-        self._feedback_period = 250
+        self._fill_duration_all_cylinders = 250
+        self._fill_duration_one_cylinder = 100
         self._volume_crossover = 6
         self._volume_threshold_initial = 1.0
 
@@ -433,26 +434,22 @@ class Hybridizer(object):
             for valve_key in valve_keys:
                 fill_duration_initial = self._volume_to_fill_duration(valve_key,volume_goal_initial)
                 fill_durations_initial.append(fill_duration_initial)
-                # self._debug_print('valve: {0}, volume: {1}, fill_duration: {2}'.format(valve_key,volume_goal_initial,fill_duration_initial))
-                # valve = self._valves[valve_key]
-                # channels_initial = [valve['channel']]
-                # self._msc.set_channels_on_for(channels_initial,fill_duration_initial)
-                # if fill_duration_initial > fill_duration_initial_max:
-                #     fill_duration_initial_max = fill_duration_initial
             fill_duration_initial_min = min(fill_durations_initial)
             self._msc.set_channels_on_for(channels,fill_duration_initial_min)
             while not self._msc.are_all_set_fors_complete():
                 self._debug_print('Waiting...')
-                # time.sleep(0.5 + fill_duration_initial_max/1000)
                 time.sleep(0.5 + fill_duration_initial_min/1000)
             self._msc.remove_all_set_fors()
 
+        fill_duration_base = self._fill_duration_one_cylinder
+        fill_duration_per_cylinder = (self._fill_duration_all_cylinders - self._fill_duration_one_cylinder)//len(channels)
         while len(channels) > 0:
-            self._debug_print("Setting {0} valves on for {1}ms".format(valve_keys_copy,self._feedback_period))
-            self._msc.set_channels_on_for(channels,self._feedback_period)
+            fill_duration = fill_duration_base + fill_duration_per_cylinder*len(channels)
+            self._debug_print("Setting {0} valves on for {1}ms".format(valve_keys_copy,fill_duration))
+            self._msc.set_channels_on_for(channels,fill_duration)
             while not self._msc.are_all_set_fors_complete():
                 self._debug_print('Waiting...')
-                time.sleep(self._feedback_period/1000)
+                time.sleep(fill_duration/1000)
             self._msc.remove_all_set_fors()
             adc_values_filtered = self._get_adc_values_filtered()
             ains_copy = copy.copy(ains)
