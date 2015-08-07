@@ -414,7 +414,7 @@ class Hybridizer(object):
     def _set_valves_on_until(self,valve_keys,volume):
         volume_goal_initial = volume - self._volume_threshold_initial
         fill_duration_initial_max = 0
-        if volume_goal_intial >= 0:
+        if volume_goal_initial >= 0:
             for valve_key in valve_keys:
                 fill_duration_initial = self._volume_to_fill_duration(valve_key,volume_goal_initial)
                 valve = self._valves[valve_key]
