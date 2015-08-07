@@ -430,7 +430,7 @@ class Hybridizer(object):
         volume_goal_initial = volume - self._volume_threshold_initial
         fill_duration_initial_max = 0
         fill_durations_initial = []
-        if volume_goal_initial >= 0:
+        if volume_goal_initial >= self._volume_threshold_initial/2:
             for valve_key in valve_keys:
                 fill_duration_initial = self._volume_to_fill_duration(valve_key,volume_goal_initial)
                 fill_durations_initial.append(fill_duration_initial)
@@ -551,7 +551,8 @@ class Hybridizer(object):
         header.extend(valve_jumps)
         header.extend(valves)
         data_writer.writerow(header)
-        dispense_goals = [5,4,3,2,1]
+        # dispense_goals = [5,4,3,2,1]
+        dispense_goals = [1,0.75,0.5,0.25]
         # dispense_goals = [2,1]
         run_count = 10
         # dispense_goals = [1]
