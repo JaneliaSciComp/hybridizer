@@ -425,7 +425,7 @@ class Hybridizer(object):
                     fill_duration_initial_max = fill_duration_initial
             while not self._msc.are_all_set_fors_complete():
                 self._debug_print('Waiting...')
-                time.sleep(500 + fill_duration_initial_max/1000)
+                time.sleep(0.5 + fill_duration_initial_max/1000)
             self._msc.remove_all_set_fors()
 
         channels = []
@@ -617,10 +617,10 @@ class Hybridizer(object):
         header.extend(valve_adc_high)
         header.extend(valves)
         data_writer.writerow(header)
-        duration_inc = 1000
+        duration_inc = 100
         duration_max = 10000
         fill_durations = range(duration_inc,duration_max+duration_inc,duration_inc)
-        run_count = 1
+        run_count = 3
         for run in range(run_count):
             for fill_duration in fill_durations:
                 self._set_valve_on('aspirate')
@@ -691,5 +691,5 @@ if __name__ == '__main__':
                      config_file_path=config_file_path,
                      calibration_file_path=calibration_file_path)
     # hyb.run_protocol()
-    hyb.run_dispense_tests()
-    # hyb.run_calibration()
+    # hyb.run_dispense_tests()
+    hyb.run_calibration()
