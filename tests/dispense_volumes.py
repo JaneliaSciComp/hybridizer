@@ -417,10 +417,11 @@ class Hybridizer(object):
         if volume_goal_initial >= 0:
             for valve_key in valve_keys:
                 fill_duration_initial = self._volume_to_fill_duration(valve_key,volume_goal_initial)
+                self._debug_print('valve: {0}, volume: {1}, fill_duration: {2}'.format(valve_key,volume_goal_initial,fill_duration_initial))
                 valve = self._valves[valve_key]
                 channels_initial = [valve['channel']]
                 self._msc.set_channels_on_for(channels_initial,fill_duration_initial)
-                if fill_duration_intial > fill_duration_initial_max:
+                if fill_duration_initial > fill_duration_initial_max:
                     fill_duration_initial_max = fill_duration_initial
             while not self._msc.are_all_set_fors_complete():
                 self._debug_print('Waiting...')
