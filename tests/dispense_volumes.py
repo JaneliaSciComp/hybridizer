@@ -105,7 +105,7 @@ class Hybridizer(object):
         self._adc_sample_count = 21
         self._feedback_period = 200
         self._volume_crossover = 6
-        self._volume_threshold_initial 1.0
+        self._volume_threshold_initial = 1.0
 
     def prime_system(self):
         self._setup()
