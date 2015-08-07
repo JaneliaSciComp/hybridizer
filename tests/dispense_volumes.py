@@ -103,7 +103,7 @@ class Hybridizer(object):
         self._adc_values_min = None
         self._adc_values_max = None
         self._adc_sample_count = 21
-        self._feedback_period = 200
+        self._feedback_period = 250
         self._volume_crossover = 6
         self._volume_threshold_initial = 1.0
 
@@ -186,6 +186,7 @@ class Hybridizer(object):
 
     def _setup(self):
         # self._bsc.reset_device()
+        self._msc.remove_all_set_fors()
         self._set_all_valves_off()
         self._set_valves_on(['primer','quad1','quad2','quad3','quad4','quad5','quad6'])
         self._debug_print('setting up for ' + str(self._config['setup_duration']) + 's...')
@@ -439,7 +440,7 @@ class Hybridizer(object):
             adc_value_goal,ain = self._volume_to_adc_and_ain(valve_key,volume)
             adc_value_goals.append(adc_value_goal)
             ains.append(ain)
-            jumps[valve_key] = 1
+            jumps[valve_key] = 0
         while len(channels) > 0:
             self._debug_print("Setting {0} valves on for {1}ms".format(valve_keys_copy,self._feedback_period))
             self._msc.set_channels_on_for(channels,self._feedback_period)
@@ -617,7 +618,7 @@ class Hybridizer(object):
         header.extend(valve_adc_high)
         header.extend(valves)
         data_writer.writerow(header)
-        duration_inc = 100
+        duration_inc = 250
         duration_max = 10000
         fill_durations = range(duration_inc,duration_max+duration_inc,duration_inc)
         run_count = 3
