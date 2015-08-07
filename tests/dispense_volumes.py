@@ -552,9 +552,11 @@ class Hybridizer(object):
         header.extend(valves)
         data_writer.writerow(header)
         # dispense_goals = [5,4,3,2,1]
-        dispense_goals = [1,0.75,0.5,0.25]
+        # dispense_goals = [1,0.75,0.5,0.25]
+        dispense_goals = [5,1,0.5]
         # dispense_goals = [2,1]
-        run_count = 10
+        # run_count = 10
+        run_count = 1
         # dispense_goals = [1]
         # run_count = 2
         for dispense_goal in dispense_goals:
