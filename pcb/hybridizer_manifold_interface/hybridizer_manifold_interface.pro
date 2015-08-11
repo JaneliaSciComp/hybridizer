@@ -1,6 +1,6 @@
-update=Wed 13 May 2015 10:11:44 AM EDT
+update=Tue 11 Aug 2015 11:00:01 AM EDT
 version=1
-last_client=eeschema
+last_client=kicad
 [cvpcb]
 version=1
 NetIExt=net
@@ -75,4 +75,3 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=hybridizer_manifold_interface
-LibName31=/home/polidorop/git/kicad-libraries/components

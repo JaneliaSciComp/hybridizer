@@ -3,7 +3,7 @@
     (string_quote ")
     (space_in_quoted_tokens on)
     (host_cad "KiCad's Pcbnew")
-    (host_version "0.201506162246+5763~23~ubuntu14.04.1-product")
+    (host_version "0.201508110901+6083~28~ubuntu14.04.1-product")
   )
   (resolution um 10)
   (unit um)
@@ -14,7 +14,7 @@
         (index 0)
       )
     )
-    (layer In1.Cu
+    (layer B.Cu
       (type signal)
       (property
         (index 1)
@@ -40,7 +40,8 @@
             89244.4 -155612  88676.1 -154800  88257.3 -153902  88000.8 -152945
             87914.5 -151958  87917 -125484  87874.8 -125001  87749.3 -124532
             87544.4 -124093  87266.3 -123696  86923.5 -123353  86526.4 -123075
-            86087 -122870  85618.7 -122745  85135.7 -122702  53581.3 -122702)
+            86087 -122870  85618.7 -122745  85135.7 -122702  53581.3 -122702
+            53581.3 -122702)
     )
     (via "Via[0-1]_889:635_um")
     (rule
@@ -101,24 +102,6 @@
     (component hybridizer_head_interface:LEE_VALVE_PLUG_IN
       (place S8 93599 -140503 front 180 (PN LEE_VALVE_PLUG_IN))
     )
-    (component hybridizer_head_interface:SM0805_POL
-      (place C22 89154 -104531 front 90 (PN 1uF))
-      (place C23 95504 -34681.2 front 180 (PN 1uF))
-      (place C24 95504 -53096.2 front 180 (PN 1uF))
-      (place C25 95504 -71511.2 front 180 (PN 1uF))
-      (place C30 91694 -36586.2 front 0 (PN 1uF))
-      (place C31 91694 -55001.2 front 0 (PN 1uF))
-      (place C32 91694 -73416.2 front 0 (PN 1uF))
-      (place C33 91059 -91196.2 front 90 (PN 1uF))
-      (place D9 92329 -109611 front 180 (PN diode_schottky_20V_1A))
-      (place D10 101219 -31506.2 front 270 (PN diode_schottky_20V_1A))
-      (place D11 101219 -49921.2 front 270 (PN diode_schottky_20V_1A))
-      (place D12 101219 -68336.2 front 270 (PN diode_schottky_20V_1A))
-      (place D13 85979 -39761.2 front 90 (PN diode_schottky_20V_1A))
-      (place D14 85979 -58176.2 front 90 (PN diode_schottky_20V_1A))
-      (place D15 85979 -76591.2 front 90 (PN diode_schottky_20V_1A))
-      (place D16 95504 -96911.2 front 180 (PN diode_schottky_20V_1A))
-    )
     (component hybridizer_head_interface:SM0402
       (place C26 91694 -97546.2 front 180 (PN 10nF))
       (place C27 88519 -31506.2 front 270 (PN 10nF))
@@ -152,6 +135,16 @@
       (place R29 100584 -76591.2 front 90 (PN 110k))
       (place R30 94234 -86116.2 front 180 (PN 205k))
       (place R31 94234 -82306.2 front 180 (PN 137k))
+    )
+    (component hybridizer_head_interface:SM0805_POL
+      (place D9 92329 -109611 front 180 (PN diode_schottky_20V_1A))
+      (place D10 101219 -31506.2 front 270 (PN diode_schottky_20V_1A))
+      (place D11 101219 -49921.2 front 270 (PN diode_schottky_20V_1A))
+      (place D12 101219 -68336.2 front 270 (PN diode_schottky_20V_1A))
+      (place D13 85979 -39761.2 front 90 (PN diode_schottky_20V_1A))
+      (place D14 85979 -58176.2 front 90 (PN diode_schottky_20V_1A))
+      (place D15 85979 -76591.2 front 90 (PN diode_schottky_20V_1A))
+      (place D16 95504 -96911.2 front 180 (PN diode_schottky_20V_1A))
     )
     (component hybridizer_head_interface:HEADER_02x07_SMD
       (place P1 58039 -93101.2 front 90 (PN HEADER_02X07_SMD))
@@ -203,9 +196,19 @@
       (place U28 76672.4 -75829.2 back 180 (PN OA))
       (place U29 76672.4 -113391 back 180 (PN OA))
     )
+    (component hybridizer_head_interface:SM0805_POL_L
+      (place C22 89154 -104531 front 90 (PN 1uF))
+      (place C23 95504 -34681.2 front 180 (PN 1uF))
+      (place C24 95504 -53096.2 front 180 (PN 1uF))
+      (place C25 95504 -71511.2 front 180 (PN 1uF))
+      (place C30 91694 -36586.2 front 0 (PN 1uF))
+      (place C31 91694 -55001.2 front 0 (PN 1uF))
+      (place C32 91694 -73416.2 front 0 (PN 1uF))
+      (place C33 91059 -91196.2 front 90 (PN 1uF))
+    )
     (component hybridizer_head_interface:SM1210_POL
-      (place C47 117729 -89926.2 front 180 (PN 22uF))
       (place C45 69469 -96276.2 front 0 (PN 22uF))
+      (place C47 117729 -89926.2 front 180 (PN 22uF))
     )
   )
   (library
@@ -261,6 +264,16 @@
       (pin Round[A]Pad_2336.8_um 1 -1270 0)
       (pin Round[A]Pad_2336.8_um 2 1270 0)
     )
+    (image hybridizer_head_interface:SM0402
+      (outline (path signal 127  -127 381  -762 381))
+      (outline (path signal 127  -762 381  -762 -381))
+      (outline (path signal 127  -762 -381  -127 -381))
+      (outline (path signal 127  127 381  762 381))
+      (outline (path signal 127  762 381  762 -381))
+      (outline (path signal 127  762 -381  127 -381))
+      (pin Rect[T]Pad_619.76x619.76_um 1 -449.58 0)
+      (pin Rect[T]Pad_619.76x619.76_um 2 449.58 0)
+    )
     (image hybridizer_head_interface:SM0805_POL
       (outline (path signal 127  -381 1016  -381 -1016))
       (outline (path signal 127  -635 889  -1524 889))
@@ -271,16 +284,6 @@
       (outline (path signal 127  1524 -889  635 -889))
       (pin Rect[T]Pad_787.4x1600.2_um 1 -1041.4 0)
       (pin Rect[T]Pad_787.4x1600.2_um 2 1041.4 0)
-    )
-    (image hybridizer_head_interface:SM0402
-      (outline (path signal 127  -127 381  -762 381))
-      (outline (path signal 127  -762 381  -762 -381))
-      (outline (path signal 127  -762 -381  -127 -381))
-      (outline (path signal 127  127 381  762 381))
-      (outline (path signal 127  762 381  762 -381))
-      (outline (path signal 127  762 -381  127 -381))
-      (pin Rect[T]Pad_619.76x619.76_um 1 -449.58 0)
-      (pin Rect[T]Pad_619.76x619.76_um 2 449.58 0)
     )
     (image hybridizer_head_interface:HEADER_02x07_SMD
       (outline (path signal 381  -12700 -4572  12700 -4572))
@@ -361,10 +364,19 @@
       (pin Rect[T]Pad_701.04x1000.76_um 2 949.96 -1198.88)
       (pin Rect[T]Pad_701.04x1000.76_um 3 0 1198.88)
     )
+    (image hybridizer_head_interface:SM0805_POL_L
+      (outline (path signal 127  -635 1016  -635 -1016))
+      (outline (path signal 127  -889 889  -1778 889))
+      (outline (path signal 127  -1778 889  -1778 -889))
+      (outline (path signal 127  -1778 -889  -889 -889))
+      (outline (path signal 127  889 889  1778 889))
+      (outline (path signal 127  1778 889  1778 -889))
+      (outline (path signal 127  1778 -889  889 -889))
+      (pin Rect[T]Pad_787.4x1600.2_um 1 -1270 0)
+      (pin Rect[T]Pad_787.4x1600.2_um 2 1270 0)
+    )
     (image hybridizer_head_interface:SM1210_POL
       (outline (path signal 127  -508 1397  -508 -1397))
-      (outline (path signal 381  -3048 -508  -3048 508))
-      (outline (path signal 381  -2540 0  -3556 0))
       (outline (path signal 127  -762 1397  -2286 1397))
       (outline (path signal 127  -2286 1397  -2286 -1397))
       (outline (path signal 127  -2286 -1397  -762 -1397))
@@ -376,22 +388,22 @@
     )
     (padstack Round[A]Pad_2336.8_um
       (shape (circle F.Cu 2336.8))
-      (shape (circle In1.Cu 2336.8))
+      (shape (circle B.Cu 2336.8))
       (attach off)
     )
     (padstack Round[A]Pad_3556_um
       (shape (circle F.Cu 3556))
-      (shape (circle In1.Cu 3556))
+      (shape (circle B.Cu 3556))
       (attach off)
     )
     (padstack Round[A]Pad_8128_um
       (shape (circle F.Cu 8128))
-      (shape (circle In1.Cu 8128))
+      (shape (circle B.Cu 8128))
       (attach off)
     )
     (padstack Round[A]Pad_8712.2_um
       (shape (circle F.Cu 8712.2))
-      (shape (circle In1.Cu 8712.2))
+      (shape (circle B.Cu 8712.2))
       (attach off)
     )
     (padstack Rect[T]Pad_599.44x1549.4_um
@@ -432,15 +444,15 @@
     )
     (padstack "Via[0-1]_889:635_um"
       (shape (circle F.Cu 889))
-      (shape (circle In1.Cu 889))
+      (shape (circle B.Cu 889))
       (attach off)
     )
   )
   (network
     (net VAA
-      (pins S8-1 C22-1 C23-1 C24-1 C25-1 C30-1 C31-1 C32-1 C33-1 D9-1 D10-1 D11-1
-        D12-1 D13-1 D14-1 D15-1 D16-1 P1-1 P1-3 U15-6 U16-6 U17-6 U18-6 U19-6 U20-6
-        U21-6 U22-6 S2-1 S3-1 S4-1 S5-1 S6-1 S7-1 S1-1 C46-1 C45-1)
+      (pins S8-1 D9-1 D10-1 D11-1 D12-1 D13-1 D14-1 D15-1 D16-1 P1-1 P1-3 U15-6 U16-6
+        U17-6 U18-6 U19-6 U20-6 U21-6 U22-6 S2-1 S3-1 S4-1 S5-1 S6-1 S7-1 S1-1 C46-1
+        C22-1 C23-1 C24-1 C25-1 C30-1 C31-1 C32-1 C33-1 C45-1)
     )
     (net +5V
       (pins P2-1 C1-1 C4-1 C7-1 C10-1 C13-1 C16-1 C19-1 U1-1 U3-1 U5-1 U7-1 U9-1 U11-1
@@ -469,10 +481,10 @@
       (pins P2-9 U13-2)
     )
     (net GND
-      (pins C22-2 C23-2 C24-2 C25-2 C26-2 C27-2 C28-2 C29-2 C30-2 C31-2 C32-2 C33-2
-        C34-2 C35-2 C36-2 C37-2 R16-2 R17-2 R18-2 R19-2 R20-2 R21-2 R22-2 R23-2 R24-2
-        R25-2 R26-2 R27-2 R28-2 R29-2 R30-2 R31-2 P1-2 P1-4 P1-6 D8-2 D7-2 D6-2 D5-2
-        D4-2 D3-2 D2-2 D1-2 U15-4 U16-4 U17-4 U18-4 U19-4 U20-4 U21-4 U22-4 C46-2
+      (pins C26-2 C27-2 C28-2 C29-2 C34-2 C35-2 C36-2 C37-2 R16-2 R17-2 R18-2 R19-2
+        R20-2 R21-2 R22-2 R23-2 R24-2 R25-2 R26-2 R27-2 R28-2 R29-2 R30-2 R31-2 P1-2
+        P1-4 P1-6 D8-2 D7-2 D6-2 D5-2 D4-2 D3-2 D2-2 D1-2 U15-4 U16-4 U17-4 U18-4
+        U19-4 U20-4 U21-4 U22-4 C46-2 C22-2 C23-2 C24-2 C25-2 C30-2 C31-2 C32-2 C33-2
         C45-2)
     )
     (net "Net-(P2-Pad10)"
@@ -716,12 +728,11 @@
       "Net-(C28-Pad1)" "Net-(C29-Pad1)" "Net-(C34-Pad1)" "Net-(C35-Pad1)"
       "Net-(C36-Pad1)" "Net-(C37-Pad1)" "Net-(D1-Pad1)" "Net-(D2-Pad1)" "Net-(D3-Pad1)"
       "Net-(D4-Pad1)" "Net-(D5-Pad1)" "Net-(D6-Pad1)" "Net-(D7-Pad1)" "Net-(D8-Pad1)"
-      "Net-(P1-Pad5)" "Net-(P2-Pad10)" "Net-(P2-Pad2)" "Net-(P3-Pad1)" "Net-(P3-Pad10)"
-      "Net-(P3-Pad2)" "Net-(R1-Pad2)" "Net-(R16-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)"
-      "Net-(R19-Pad1)" "Net-(R2-Pad2)" "Net-(R20-Pad1)" "Net-(R21-Pad1)" "Net-(R22-Pad1)"
-      "Net-(R23-Pad1)" "Net-(R24-Pad1)" "Net-(R25-Pad1)" "Net-(R26-Pad1)"
-      "Net-(R27-Pad1)" "Net-(R28-Pad1)" "Net-(R29-Pad1)" "Net-(R3-Pad2)" "Net-(R30-Pad1)"
-      "Net-(R31-Pad1)" "Net-(R4-Pad2)" "Net-(R5-Pad2)" "Net-(R6-Pad2)" "Net-(R7-Pad2)"
+      "Net-(P1-Pad5)" "Net-(P2-Pad10)" "Net-(P3-Pad1)" "Net-(P3-Pad10)" "Net-(P3-Pad2)"
+      "Net-(R16-Pad1)" "Net-(R17-Pad1)" "Net-(R18-Pad1)" "Net-(R19-Pad1)"
+      "Net-(R20-Pad1)" "Net-(R21-Pad1)" "Net-(R22-Pad1)" "Net-(R23-Pad1)"
+      "Net-(R24-Pad1)" "Net-(R25-Pad1)" "Net-(R26-Pad1)" "Net-(R27-Pad1)"
+      "Net-(R28-Pad1)" "Net-(R29-Pad1)" "Net-(R30-Pad1)" "Net-(R31-Pad1)"
       "Net-(U15-Pad7)" "Net-(U16-Pad7)" "Net-(U17-Pad7)" "Net-(U18-Pad7)"
       "Net-(U19-Pad7)" "Net-(U20-Pad7)" "Net-(U21-Pad7)" "Net-(U22-Pad7)"
       (circuit
@@ -734,7 +745,5 @@
     )
   )
   (wiring
-    (wire (path F.Cu 812.8  55041.8 -88021.2  55041.8 -85481.2)(net VAA)(type protect))
-    (wire (path F.Cu 508  61036.2 -90561.2  61036.2 -88021.2  61036.2 -85481.2)(net GND)(type protect))
   )
 )
