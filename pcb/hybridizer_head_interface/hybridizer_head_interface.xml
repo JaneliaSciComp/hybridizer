@@ -2,13 +2,13 @@
 <export version="D">
   <design>
     <source>/home/polidorop/git/janelia/hybridizer/pcb/hybridizer_head_interface/hybridizer_head_interface.sch</source>
-    <date>Tue 23 Jun 2015 12:46:16 PM EDT</date>
-    <tool>Eeschema 0.201506162246+5763~23~ubuntu14.04.1-product</tool>
+    <date>Wed 12 Aug 2015 09:28:05 AM EDT</date>
+    <tool>Eeschema 0.201508110901+6083~28~ubuntu14.04.1-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>hybridizer_head_interface</title>
         <company>Janelia</company>
-        <rev>1.2</rev>
+        <rev>1.3</rev>
         <date/>
         <source>hybridizer_head_interface.sch</source>
         <comment number="1" value=""/>
@@ -1325,7 +1325,6 @@
       </pins>
     </libpart>
     <libpart lib="hybridizer_head_interface" part="10nF_0402">
-      <description>Condensateur non polarise</description>
       <footprints>
         <fp>SM*</fp>
         <fp>C?</fp>
@@ -1364,7 +1363,6 @@
       </pins>
     </libpart>
     <libpart lib="hybridizer_head_interface" part="110k_0402">
-      <description>Resistance</description>
       <footprints>
         <fp>R?</fp>
         <fp>SM0603</fp>
@@ -1386,7 +1384,6 @@
       </pins>
     </libpart>
     <libpart lib="hybridizer_head_interface" part="137k_0402">
-      <description>Resistance</description>
       <footprints>
         <fp>R?</fp>
         <fp>SM0603</fp>
@@ -1408,7 +1405,6 @@
       </pins>
     </libpart>
     <libpart lib="hybridizer_head_interface" part="1uF_0805_POL">
-      <description>Polarised capacitor</description>
       <footprints>
         <fp>CP*</fp>
         <fp>Elko*</fp>
@@ -1431,7 +1427,6 @@
       </pins>
     </libpart>
     <libpart lib="hybridizer_head_interface" part="205k_0402">
-      <description>Resistance</description>
       <footprints>
         <fp>R?</fp>
         <fp>SM0603</fp>
@@ -1475,7 +1470,6 @@
       </pins>
     </libpart>
     <libpart lib="hybridizer_head_interface" part="300_0402">
-      <description>Resistance</description>
       <footprints>
         <fp>R?</fp>
         <fp>SM0603</fp>
@@ -1690,7 +1684,6 @@
       </pins>
     </libpart>
     <libpart lib="hybridizer_head_interface" part="diode_schottky_20V_1A">
-      <description>Diode Schottky</description>
       <footprints>
         <fp>Diode_*</fp>
         <fp>D-Pak_TO252AA</fp>
