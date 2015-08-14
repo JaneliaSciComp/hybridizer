@@ -100,8 +100,8 @@ class Hybridizer(object):
         self._msc = msc_dict[msc_dict.keys()[0]]
         self._debug_print('Found mixed_signal_controller on port ' + str(self._msc.get_port()))
 
-        self._adc_values_min = None
-        self._adc_values_max = None
+        # self._adc_values_min = None
+        # self._adc_values_max = None
         self._adc_sample_count = 21
         self._fill_duration_all_cylinders = 250
         self._fill_duration_one_cylinder = 100
@@ -514,13 +514,13 @@ class Hybridizer(object):
         fill_duration = int(round(poly(volume)))
         return fill_duration
 
-    def _adc_to_volume_low(self,valve_key,adc_value):
-        valve = self._valves[valve_key]
-        adc_value -= self._adc_values_min[valve_key]
-        poly = Polynomial(self._config['poly_coefficients']['adc_to_volume_low'])
-        volume = poly(adc_value)
-        self._debug_print("valve: {0}, adc_value: {1}, volume: {2}".format(valve_key,adc_value,volume))
-        return volume
+    # def _adc_to_volume_low(self,valve_key,adc_value):
+    #     valve = self._valves[valve_key]
+    #     adc_value -= self._adc_values_min[valve_key]
+    #     poly = Polynomial(self._config['poly_coefficients']['adc_to_volume_low'])
+    #     volume = poly(adc_value)
+    #     self._debug_print("valve: {0}, adc_value: {1}, volume: {2}".format(valve_key,adc_value,volume))
+    #     return volume
 
     def run_dispense_tests(self):
         self._debug_print('pre setup sequence...')
