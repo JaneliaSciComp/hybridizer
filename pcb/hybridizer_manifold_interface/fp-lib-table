@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name hybridizer_manifold_interface)(type KiCad)(uri ${KIPRJMOD}/hybridizer_manifold_interface.pretty)(options "")(descr ""))
-  (lib (name footprints)(type KiCad)(uri /home/polidorop/git/kicad-libraries/footprints.pretty)(options "")(descr ""))
-)

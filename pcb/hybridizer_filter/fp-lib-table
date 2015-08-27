@@ -1,4 +1,0 @@
-(fp_lib_table
-  (lib (name hybridizer_filter)(type KiCad)(uri ${KIPRJMOD}/hybridizer_filter.pretty)(options "")(descr ""))
-  (lib (name footprints)(type KiCad)(uri ${KILIBS}/footprints.pretty)(options "")(descr ""))
-)

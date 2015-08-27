@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name elf_head_interface)(type KiCad)(uri ${KIPRJMOD}/elf_head_interface.pretty)(options "")(descr ""))
+  (lib (name footprints)(type KiCad)(uri ${KILIBS}/footprints.pretty)(options "")(descr ""))
+)

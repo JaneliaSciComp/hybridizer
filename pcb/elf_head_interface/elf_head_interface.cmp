@@ -1,0 +1,1011 @@
+Cmp-Mod V01 Created by PcbNew   date = Tue 11 Aug 2015 04:12:53 PM EDT
+
+BeginCmp
+TimeStamp = 55412999
+Path = /553FDA31
+Reference = P2;
+ValeurCmp = HEADER_02X05_SMD;
+IdModule  = elf_head_interface:HEADER_02x05_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 55413BEC
+Path = /554D7EE7
+Reference = C1;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55413C10
+Path = /554D7C26
+Reference = C4;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55413C34
+Path = /55415AFE
+Reference = C7;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55413C58
+Path = /55415B73
+Reference = C10;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55413C7C
+Path = /5541622A
+Reference = C13;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55413CA0
+Path = /5541629F
+Reference = C16;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55413CC4
+Path = /55416314
+Reference = C19;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FC005
+Path = 
+Reference = CLEARANCE_HOLE_3;
+ValeurCmp = clearance_hole;
+IdModule  = elf_head_interface:clearance_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FBFFC
+Path = 
+Reference = CLEARANCE_HOLE_2;
+ValeurCmp = clearance_hole;
+IdModule  = elf_head_interface:clearance_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FBFF3
+Path = 
+Reference = CLEARANCE_HOLE_1;
+ValeurCmp = clearance_hole;
+IdModule  = elf_head_interface:clearance_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FBFEA
+Path = 
+Reference = CLEARANCE_HOLE_6;
+ValeurCmp = clearance_hole;
+IdModule  = elf_head_interface:clearance_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FBFE1
+Path = 
+Reference = CLEARANCE_HOLE_5;
+ValeurCmp = clearance_hole;
+IdModule  = elf_head_interface:clearance_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FBFD8
+Path = 
+Reference = CLEARANCE_HOLE_4;
+ValeurCmp = clearance_hole;
+IdModule  = elf_head_interface:clearance_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A8286
+Path = 
+Reference = VALVE_HOLE_4;
+ValeurCmp = valve_hole;
+IdModule  = elf_head_interface:valve_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A82A0
+Path = 
+Reference = VALVE_HOLE_1;
+ValeurCmp = valve_hole;
+IdModule  = elf_head_interface:valve_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A82AA
+Path = 
+Reference = VALVE_HOLE_5;
+ValeurCmp = valve_hole;
+IdModule  = elf_head_interface:valve_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A82B3
+Path = 
+Reference = VALVE_HOLE_2;
+ValeurCmp = valve_hole;
+IdModule  = elf_head_interface:valve_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A82BC
+Path = 
+Reference = VALVE_HOLE_6;
+ValeurCmp = valve_hole;
+IdModule  = elf_head_interface:valve_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A82C5
+Path = 
+Reference = VALVE_HOLE_3;
+ValeurCmp = valve_hole;
+IdModule  = elf_head_interface:valve_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A82CE
+Path = 
+Reference = REF**;
+ValeurCmp = valve_hole;
+IdModule  = elf_head_interface:valve_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A78EB
+Path = 
+Reference = MOUNTING_HOLE_3;
+ValeurCmp = mounting_hole;
+IdModule  = elf_head_interface:mounting_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A78E2
+Path = 
+Reference = MOUNTING_HOLE_6;
+ValeurCmp = mounting_hole;
+IdModule  = elf_head_interface:mounting_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A78D9
+Path = 
+Reference = MOUNTING_HOLE_2;
+ValeurCmp = mounting_hole;
+IdModule  = elf_head_interface:mounting_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A78D0
+Path = 
+Reference = MOUNTING_HOLE_5;
+ValeurCmp = mounting_hole;
+IdModule  = elf_head_interface:mounting_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A78C7
+Path = 
+Reference = MOUNTING_HOLE_1;
+ValeurCmp = mounting_hole;
+IdModule  = elf_head_interface:mounting_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553A6100
+Path = 
+Reference = MOUNTING_HOLE_4;
+ValeurCmp = mounting_hole;
+IdModule  = elf_head_interface:mounting_hole;
+EndCmp
+
+BeginCmp
+TimeStamp = 553FC8EE
+Path = /55429749
+Reference = S8;
+ValeurCmp = LEE_VALVE_PLUG_IN;
+IdModule  = elf_head_interface:LEE_VALVE_PLUG_IN;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550A1E
+Path = /55557129
+Reference = C26;
+ValeurCmp = 10nF;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550A2A
+Path = /5555A9C6
+Reference = C27;
+ValeurCmp = 10nF;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550A36
+Path = /5555B2BF
+Reference = C28;
+ValeurCmp = 10nF;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550A42
+Path = /5555B328
+Reference = C29;
+ValeurCmp = 10nF;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550A82
+Path = /5555C5B9
+Reference = C34;
+ValeurCmp = 10nF;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550A8E
+Path = /5555C622
+Reference = C35;
+ValeurCmp = 10nF;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550A9A
+Path = /5555C68B
+Reference = C36;
+ValeurCmp = 10nF;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550AA6
+Path = /5555C6F4
+Reference = C37;
+ValeurCmp = 10nF;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B13
+Path = /5555534D
+Reference = D9;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = elf_head_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B20
+Path = /5555A9A1
+Reference = D10;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = elf_head_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B2D
+Path = /5555B29A
+Reference = D11;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = elf_head_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B3A
+Path = /5555B303
+Reference = D12;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = elf_head_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B47
+Path = /5555C594
+Reference = D13;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = elf_head_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B54
+Path = /5555C5FD
+Reference = D14;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = elf_head_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B61
+Path = /5555C666
+Reference = D15;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = elf_head_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B6E
+Path = /5555C6CF
+Reference = D16;
+ValeurCmp = diode_schottky_20V_1A;
+IdModule  = elf_head_interface:SM0805_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B92
+Path = /55551C6D
+Reference = R8;
+ValeurCmp = 300;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B9E
+Path = /55552D27
+Reference = R9;
+ValeurCmp = 300;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550BAA
+Path = /55552EE3
+Reference = R10;
+ValeurCmp = 300;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550BB6
+Path = /55552EFF
+Reference = R11;
+ValeurCmp = 300;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550BC2
+Path = /55553643
+Reference = R12;
+ValeurCmp = 300;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550BCE
+Path = /5555365F
+Reference = R13;
+ValeurCmp = 300;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550BDA
+Path = /5555367B
+Reference = R14;
+ValeurCmp = 300;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550BE6
+Path = /55553697
+Reference = R15;
+ValeurCmp = 300;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550BF2
+Path = /55557C04
+Reference = R16;
+ValeurCmp = 205k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550BFE
+Path = /555593ED
+Reference = R17;
+ValeurCmp = 110k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C0A
+Path = /5555A9D2
+Reference = R18;
+ValeurCmp = 205k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C16
+Path = /5555A9DE
+Reference = R19;
+ValeurCmp = 110k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C22
+Path = /5555B2CB
+Reference = R20;
+ValeurCmp = 205k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C2E
+Path = /5555B2D7
+Reference = R21;
+ValeurCmp = 110k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C3A
+Path = /5555B334
+Reference = R22;
+ValeurCmp = 205k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C46
+Path = /5555B340
+Reference = R23;
+ValeurCmp = 110k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C52
+Path = /5555C5C5
+Reference = R24;
+ValeurCmp = 205k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C5E
+Path = /5555C5D1
+Reference = R25;
+ValeurCmp = 110k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C6A
+Path = /5555C62E
+Reference = R26;
+ValeurCmp = 205k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C76
+Path = /5555C63A
+Reference = R27;
+ValeurCmp = 110k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C82
+Path = /5555C697
+Reference = R28;
+ValeurCmp = 205k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C8E
+Path = /5555C6A3
+Reference = R29;
+ValeurCmp = 110k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550C9A
+Path = /5555C700
+Reference = R30;
+ValeurCmp = 205k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550CA6
+Path = /5555F40D
+Reference = R31;
+ValeurCmp = 137k;
+IdModule  = elf_head_interface:SM0402;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550B6F
+Path = /554DFABD
+Reference = P1;
+ValeurCmp = HEADER_02X07_SMD;
+IdModule  = elf_head_interface:HEADER_02x07_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550AFB
+Path = /5555368D
+Reference = D8;
+ValeurCmp = LED_0805;
+IdModule  = elf_head_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550AEF
+Path = /55553671
+Reference = D7;
+ValeurCmp = LED_0805;
+IdModule  = elf_head_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550AE3
+Path = /55553655
+Reference = D6;
+ValeurCmp = LED_0805;
+IdModule  = elf_head_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550AD7
+Path = /55553639
+Reference = D5;
+ValeurCmp = LED_0805;
+IdModule  = elf_head_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550ACB
+Path = /55552EF5
+Reference = D4;
+ValeurCmp = LED_0805;
+IdModule  = elf_head_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550ABF
+Path = /55552ED9
+Reference = D3;
+ValeurCmp = LED_0805;
+IdModule  = elf_head_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550AB3
+Path = /55552D1D
+Reference = D2;
+ValeurCmp = LED_0805;
+IdModule  = elf_head_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550AA7
+Path = /55551017
+Reference = D1;
+ValeurCmp = LED_0805;
+IdModule  = elf_head_interface:LED0805;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550CB5
+Path = /5555483E
+Reference = U15;
+ValeurCmp = DRV103;
+IdModule  = elf_head_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550CC4
+Path = /5555A994
+Reference = U16;
+ValeurCmp = DRV103;
+IdModule  = elf_head_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550CD3
+Path = /5555B28D
+Reference = U17;
+ValeurCmp = DRV103;
+IdModule  = elf_head_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550CE2
+Path = /5555B2F6
+Reference = U18;
+ValeurCmp = DRV103;
+IdModule  = elf_head_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550CF1
+Path = /5555C587
+Reference = U19;
+ValeurCmp = DRV103;
+IdModule  = elf_head_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550D00
+Path = /5555C5F0
+Reference = U20;
+ValeurCmp = DRV103;
+IdModule  = elf_head_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550D0F
+Path = /5555C659
+Reference = U21;
+ValeurCmp = DRV103;
+IdModule  = elf_head_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 55550D1E
+Path = /5555C6C2
+Reference = U22;
+ValeurCmp = DRV103;
+IdModule  = elf_head_interface:SOIC_8;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA494
+Path = /554B9AFA
+Reference = S2;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = elf_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4A1
+Path = /554BA2AD
+Reference = S3;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = elf_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4AE
+Path = /554BA323
+Reference = S4;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = elf_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4BB
+Path = /554BA46C
+Reference = S5;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = elf_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4C8
+Path = /554BA4D8
+Reference = S6;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = elf_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA4D5
+Path = /554BA633
+Reference = S7;
+ValeurCmp = HEADER_01X02_SMD;
+IdModule  = elf_head_interface:Header_2_Pin_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 553EA487
+Path = /555A0CF7
+Reference = S1;
+ValeurCmp = HEADER_01X02_SMD_N;
+IdModule  = elf_head_interface:Header_2_Pin_SMD_N;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129A1
+Path = /5584D065
+Reference = U1;
+ValeurCmp = VA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129B8
+Path = /5584D749
+Reference = U3;
+ValeurCmp = VA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129CF
+Path = /5584DE95
+Reference = U5;
+ValeurCmp = VA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129E6
+Path = /5584E253
+Reference = U7;
+ValeurCmp = VA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 554129FD
+Path = /5584E71C
+Reference = U9;
+ValeurCmp = VA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55412A14
+Path = /5584EC78
+Reference = U11;
+ValeurCmp = VA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55412A2B
+Path = /5584F14F
+Reference = U13;
+ValeurCmp = VA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 558472E3
+Path = /55849659
+Reference = C38;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 558472EF
+Path = /55849639
+Reference = C39;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 558472FB
+Path = /55849599
+Reference = C40;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847307
+Path = /558495B9
+Reference = C41;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847313
+Path = /558495D9
+Reference = C42;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584731F
+Path = /558495F9
+Reference = C43;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584732B
+Path = /55849619
+Reference = C44;
+ValeurCmp = 0.1uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847346
+Path = /5586BD56
+Reference = C46;
+ValeurCmp = 10uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847361
+Path = /5586BB0E
+Reference = C48;
+ValeurCmp = 10uF;
+IdModule  = elf_head_interface:SM1210;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847376
+Path = /5585E573
+Reference = P3;
+ValeurCmp = HEADER_02X05_SMD;
+IdModule  = elf_head_interface:HEADER_02x05_SMD;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584737E
+Path = /555A93A0
+Reference = U23;
+ValeurCmp = OA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847386
+Path = /555A9FB2
+Reference = U24;
+ValeurCmp = OA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584738E
+Path = /555AA5D8
+Reference = U25;
+ValeurCmp = OA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847396
+Path = /555AAA96
+Reference = U26;
+ValeurCmp = OA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584739E
+Path = /555AB208
+Reference = U27;
+ValeurCmp = OA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 558473A6
+Path = /555AB6C2
+Reference = U28;
+ValeurCmp = OA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 558473AE
+Path = /555ABB7E
+Reference = U29;
+ValeurCmp = OA;
+IdModule  = elf_head_interface:SOT-23-3;
+EndCmp
+
+BeginCmp
+TimeStamp = 55CA1766
+Path = /557C2A8E
+Reference = C22;
+ValeurCmp = 1uF;
+IdModule  = elf_head_interface:SM0805_POL_L;
+EndCmp
+
+BeginCmp
+TimeStamp = 55CA1772
+Path = /557C3DF4
+Reference = C23;
+ValeurCmp = 1uF;
+IdModule  = elf_head_interface:SM0805_POL_L;
+EndCmp
+
+BeginCmp
+TimeStamp = 55CA177E
+Path = /557C3F14
+Reference = C24;
+ValeurCmp = 1uF;
+IdModule  = elf_head_interface:SM0805_POL_L;
+EndCmp
+
+BeginCmp
+TimeStamp = 55CA178A
+Path = /557C4024
+Reference = C25;
+ValeurCmp = 1uF;
+IdModule  = elf_head_interface:SM0805_POL_L;
+EndCmp
+
+BeginCmp
+TimeStamp = 55CA1796
+Path = /557C506C
+Reference = C30;
+ValeurCmp = 1uF;
+IdModule  = elf_head_interface:SM0805_POL_L;
+EndCmp
+
+BeginCmp
+TimeStamp = 55CA17A2
+Path = /557C55A1
+Reference = C31;
+ValeurCmp = 1uF;
+IdModule  = elf_head_interface:SM0805_POL_L;
+EndCmp
+
+BeginCmp
+TimeStamp = 55CA17AE
+Path = /557C56B1
+Reference = C32;
+ValeurCmp = 1uF;
+IdModule  = elf_head_interface:SM0805_POL_L;
+EndCmp
+
+BeginCmp
+TimeStamp = 55CA17BA
+Path = /557C57C7
+Reference = C33;
+ValeurCmp = 1uF;
+IdModule  = elf_head_interface:SM0805_POL_L;
+EndCmp
+
+BeginCmp
+TimeStamp = 5584733A
+Path = /5586D025
+Reference = C45;
+ValeurCmp = 22uF;
+IdModule  = elf_head_interface:SM1210_POL;
+EndCmp
+
+BeginCmp
+TimeStamp = 55847355
+Path = /5586CA92
+Reference = C47;
+ValeurCmp = 22uF;
+IdModule  = elf_head_interface:SM1210_POL;
+EndCmp
+
+EndListe
