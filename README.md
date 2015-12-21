@@ -1,5 +1,4 @@
-elf
-===
+#elf
 
 Authors:
 
@@ -15,8 +14,8 @@ Open a terminal by typing Ctrl+Alt+T and enter:
 
 ```shell
 source ~/virtualenvs/elfcommander/bin/activate
-cd ~/git/elf_config/
-elfcommander unit01_calibration.yaml demo_config.yaml
+cd ~/git/
+elfcommander elf_calibration/unit01_calibration.yaml elf_config/demo_config.yaml
 ```
 
 ##Installation
@@ -26,11 +25,7 @@ sudo apt-get install git
 mkdir ~/git
 cd ~/git
 git clone https://github.com/janelia-idf/elf_config.git
-git clone https://github.com/janelia-idf/elf.git
-cd elf
-git submodule init
-git submodule update
-cd ~
+git clone https://github.com/janelia-idf/elf_calibration.git
 sudo apt-get install python-pip python-virtualenv python-dev build-essential
 mkdir ~/virtualenvs
 cd ~/virtualenvs
