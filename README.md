@@ -18,6 +18,18 @@ cd ~/git/
 elfcommander elf_calibration/unit01_calibration.yaml elf_config/demo_config.yaml
 ```
 
+##Calibration
+
+Setup ELF unit on calibration rig.
+
+Open a terminal by typing Ctrl+Alt+T and enter:
+
+```shell
+source ~/virtualenvs/elfcommander/bin/activate
+cd ~/git/
+elfcommander -c elf_calibration/unit10_calibration.yaml elf_config/calibration_config.yaml
+```
+
 ##Installation
 
 ```shell
