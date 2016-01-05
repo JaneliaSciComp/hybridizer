@@ -54,7 +54,7 @@ if __name__ == '__main__':
     fill_durations_set.sort()
 
     # Axis 1
-    ax1 = fig.add_subplot(131)
+    ax1 = fig.add_subplot(121)
 
     index = 0
     for cylinder in cylinders:
@@ -103,7 +103,7 @@ if __name__ == '__main__':
     ax1.grid(True)
 
     # Axis 2
-    ax2 = fig.add_subplot(132)
+    ax2 = fig.add_subplot(122)
     index = 0
     for cylinder in cylinders:
         color = colors[index]
@@ -160,61 +160,61 @@ if __name__ == '__main__':
     ax2.grid(True)
 
     # Axis 3
-    ax3 = fig.add_subplot(133)
-    index = 0
-    for cylinder in cylinders:
-        color = colors[index]
-        marker = markers[index]
-        index += 1
-        volume_data = []
-        adc_data = []
-        for fill_duration in fill_durations_set:
-            measured_data = calibration_data[fill_durations==fill_duration]
-            volume_data_run = numpy.float64(measured_data[cylinder])
-            volume_data.append(volume_data_run)
-            adc_data_run = numpy.int16(measured_data[cylinder+'_adc_high'])
-            adc_data.append(adc_data_run)
-        run_count = len(volume_data[0])
-        data_point_count = len(volume_data)
-        coefficients_sum = None
-        for run in range(run_count):
-            volume_data_points = []
-            adc_data_points = []
-            for data_n in range(data_point_count):
-                volume_data_point = volume_data[data_n][run]
-                volume_data_points.append(volume_data_point)
-                adc_data_point = adc_data[data_n][run]
-                adc_data_points.append(adc_data_point)
-            volume_array = numpy.array(volume_data_points,dtype='float64')
-            adc_array = numpy.array(adc_data_points,dtype='int')
-            adc_array = adc_array[volume_array>=6]
-            volume_array = volume_array[volume_array>=6]
-            ax3.plot(volume_array,
-                     adc_array,
-                     linestyle='--',
-                     linewidth=1,
-                     color=color)
-            coefficients = polyfit(volume_array,adc_array,order)
-            if coefficients_sum is None:
-                coefficients_sum = coefficients
-            else:
-                coefficients_sum = polyadd(coefficients_sum,coefficients)
-        coefficients_average = coefficients_sum/run_count
-        poly_fit = Polynomial(coefficients_average)
-        adc_fit = poly_fit(volume_array)
-        ax3.plot(volume_array,
-                 adc_fit,
-                 linestyle='-',
-                 linewidth=2,
-                 label=cylinder,
-                 color=color)
-        coefficients_list = [float(coefficient) for coefficient in coefficients_average]
-        output_data[cylinder]['volume_to_adc_high'] = coefficients_list
-    ax3.set_xlabel('volume (ml)')
-    ax3.set_ylabel('adc high value (adc units)')
-    ax3.legend(loc='best')
+    # ax3 = fig.add_subplot(133)
+    # index = 0
+    # for cylinder in cylinders:
+    #     color = colors[index]
+    #     marker = markers[index]
+    #     index += 1
+    #     volume_data = []
+    #     adc_data = []
+    #     for fill_duration in fill_durations_set:
+    #         measured_data = calibration_data[fill_durations==fill_duration]
+    #         volume_data_run = numpy.float64(measured_data[cylinder])
+    #         volume_data.append(volume_data_run)
+    #         adc_data_run = numpy.int16(measured_data[cylinder+'_adc_high'])
+    #         adc_data.append(adc_data_run)
+    #     run_count = len(volume_data[0])
+    #     data_point_count = len(volume_data)
+    #     coefficients_sum = None
+    #     for run in range(run_count):
+    #         volume_data_points = []
+    #         adc_data_points = []
+    #         for data_n in range(data_point_count):
+    #             volume_data_point = volume_data[data_n][run]
+    #             volume_data_points.append(volume_data_point)
+    #             adc_data_point = adc_data[data_n][run]
+    #             adc_data_points.append(adc_data_point)
+    #         volume_array = numpy.array(volume_data_points,dtype='float64')
+    #         adc_array = numpy.array(adc_data_points,dtype='int')
+    #         adc_array = adc_array[volume_array>=6]
+    #         volume_array = volume_array[volume_array>=6]
+    #         ax3.plot(volume_array,
+    #                  adc_array,
+    #                  linestyle='--',
+    #                  linewidth=1,
+    #                  color=color)
+    #         coefficients = polyfit(volume_array,adc_array,order)
+    #         if coefficients_sum is None:
+    #             coefficients_sum = coefficients
+    #         else:
+    #             coefficients_sum = polyadd(coefficients_sum,coefficients)
+    #     coefficients_average = coefficients_sum/run_count
+    #     poly_fit = Polynomial(coefficients_average)
+    #     adc_fit = poly_fit(volume_array)
+    #     ax3.plot(volume_array,
+    #              adc_fit,
+    #              linestyle='-',
+    #              linewidth=2,
+    #              label=cylinder,
+    #              color=color)
+    #     coefficients_list = [float(coefficient) for coefficient in coefficients_average]
+    #     output_data[cylinder]['volume_to_adc_high'] = coefficients_list
+    # ax3.set_xlabel('volume (ml)')
+    # ax3.set_ylabel('adc high value (adc units)')
+    # ax3.legend(loc='best')
 
-    ax3.grid(True)
+    # ax3.grid(True)
 
     # print(output_data)
     with open('calibration.yaml', 'w') as f:

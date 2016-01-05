@@ -15,7 +15,7 @@ Open a terminal by typing Ctrl+Alt+T and enter:
 ```shell
 source ~/virtualenvs/elfcommander/bin/activate
 cd ~/git/
-elfcommander elf_calibration/unit01_calibration.yaml elf_config/demo_config.yaml
+elfcommander elf_calibration/unit01/calibration.yaml elf_config/demo_config.yaml
 ```
 
 ##Calibration
@@ -27,7 +27,7 @@ Open a terminal by typing Ctrl+Alt+T and enter:
 ```shell
 source ~/virtualenvs/elfcommander/bin/activate
 cd ~/git/
-elfcommander -c elf_calibration/unit10_calibration.yaml elf_config/calibration_config.yaml
+elfcommander -c elf_calibration/unit01/ elf_config/calibration_config.yaml
 ```
 
 ##Installation
