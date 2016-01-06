@@ -15,7 +15,7 @@ Open a terminal by typing Ctrl+Alt+T and enter:
 ```shell
 source ~/virtualenvs/elfcommander/bin/activate
 cd ~/git/
-elfcommander elf_calibration/unit01/calibration.yaml elf_config/demo_config.yaml
+elfcommander elf_calibration/unit1/calibration.yaml elf_config/demo_config.yaml
 ```
 
 ##Calibration
@@ -27,7 +27,7 @@ Open a terminal by typing Ctrl+Alt+T and enter:
 ```shell
 source ~/virtualenvs/elfcommander/bin/activate
 cd ~/git/
-elfcommander -c elf_calibration/unit01/ elf_config/calibration_config.yaml
+elfcommander -c elf_calibration/unit1/ elf_config/calibration_config.yaml
 ```
 
 ##Installation
@@ -38,7 +38,7 @@ mkdir ~/git
 cd ~/git
 git clone https://github.com/janelia-idf/elf_config.git
 git clone https://github.com/janelia-idf/elf_calibration.git
-sudo apt-get install python-pip python-virtualenv python-dev build-essential
+sudo apt-get install python-pip python-virtualenv python-dev build-essential libfreetype6-dev
 mkdir ~/virtualenvs
 cd ~/virtualenvs
 virtualenv elfcommander
