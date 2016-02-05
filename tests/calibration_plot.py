@@ -53,6 +53,8 @@ if __name__ == '__main__':
     fill_durations_set = list(set(fill_durations))
     fill_durations_set.sort()
 
+    cylinders = [cylinders[0]]
+
     # Axis 1
     ax1 = fig.add_subplot(121)
 
@@ -120,7 +122,8 @@ if __name__ == '__main__':
         run_count = len(volume_data[0])
         data_point_count = len(volume_data)
         coefficients_sum = None
-        for run in range(run_count):
+        # for run in range(run_count):
+        for run in range(1):
             volume_data_points = []
             adc_data_points = []
             for data_n in range(data_point_count):
@@ -128,6 +131,7 @@ if __name__ == '__main__':
                 volume_data_points.append(volume_data_point)
                 adc_data_point = adc_data[data_n][run]
                 adc_data_points.append(adc_data_point)
+            print(adc_data_points)
             volume_array = numpy.array(volume_data_points,dtype='float64')
             adc_array = numpy.array(adc_data_points,dtype='int')
             adc_array = adc_array[volume_array<=6]
