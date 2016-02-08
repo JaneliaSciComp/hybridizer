@@ -85,6 +85,6 @@ cd ~/git
 git clone https://github.com/peterpolidoro/home.git
 cd home
 python symlinks.py -i -p -f
-sudo apt-get install emacs
+sudo apt-get install emacs ipython
 sudo reboot
 ```
